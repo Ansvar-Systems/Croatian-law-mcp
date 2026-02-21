@@ -1,0 +1,151 @@
+{
+  "id": "ecomm-nn-73-08",
+  "type": "statute",
+  "title": "Zakon o elektroničkim komunikacijama",
+  "title_en": "Electronic Communications Act",
+  "short_name": "ECA",
+  "status": "in_force",
+  "issued_date": "2008-06-18",
+  "in_force_date": "2008-07-01",
+  "url": "https://www.nn.hr/clanci/sluzbeni/2008_73_2390.html",
+  "description": "Croatia's primary legislation governing electronic communications networks and services, transposing the EU Electronic Communications Framework including Directive (EU) 2018/1972 (European Electronic Communications Code). Regulates market access, spectrum management, universal service, data retention, and user rights.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1 – Subject matter and scope",
+      "content": "This Act regulates the conditions for the provision of electronic communications networks and services, the use of radio-frequency spectrum, numbering, rights and obligations of operators and users, the construction of electronic communications infrastructure, data retention, the protection of privacy in the electronic communications sector, and the regulatory framework for electronic communications in the Republic of Croatia, in accordance with Directive (EU) 2018/1972 (European Electronic Communications Code)."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2 – Definitions",
+      "content": "For the purposes of this Act: (1) 'electronic communications network' means transmission systems, switching or routing equipment, and other resources which permit the conveyance of signals by wire, radio, optical, or other electromagnetic means; (2) 'electronic communications service' means a service normally provided for remuneration via electronic communications networks; (3) 'user' means a natural or legal person using or requesting a publicly available electronic communications service; (4) 'subscriber' means a natural or legal person who is party to a contract with a provider of publicly available electronic communications services."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3 – Regulatory authority",
+      "content": "The Croatian Regulatory Authority for Network Industries (Hrvatska regulatorna agencija za mrežne djelatnosti, HAKOM) is the national regulatory authority for electronic communications within the meaning of this Act. HAKOM shall perform its tasks independently, impartially, and transparently. HAKOM shall promote competition, contribute to the development of the internal market, and promote the interests of the citizens of the Republic of Croatia."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4 – General authorisation",
+      "content": "The provision of electronic communications networks and services shall be subject to a general authorisation. No individual licence or authorisation shall be required for the provision of electronic communications networks or services, except for the use of radio-frequency spectrum and numbering resources. Operators shall notify HAKOM of the commencement, modification, or cessation of the provision of electronic communications networks or services."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5 – Radio-frequency spectrum management",
+      "content": "Radio-frequency spectrum is a limited natural resource and shall be managed by HAKOM in accordance with the national frequency allocation plan. Rights of use of radio-frequency spectrum shall be granted by HAKOM through individual authorisations or general authorisations. Where demand for radio frequencies exceeds supply, HAKOM shall grant rights of use through competitive or comparative selection procedures, ensuring efficient use and the avoidance of harmful interference."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6 – Significant market power",
+      "content": "HAKOM shall carry out market analyses to determine whether relevant markets in the electronic communications sector are effectively competitive. Where HAKOM determines that a relevant market is not effectively competitive, it shall identify undertakings having significant market power and impose appropriate regulatory obligations. Regulatory obligations may include obligations relating to access, interconnection, non-discrimination, transparency, price control, and accounting separation."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7 – Access and interconnection",
+      "content": "Operators of public communications networks shall have the right and, when requested by other undertakings, the obligation to negotiate interconnection for the purpose of providing publicly available electronic communications services. HAKOM may impose obligations on operators with significant market power to meet reasonable requests for access and interconnection, including access to specific network elements and associated facilities, collocation, and provision of unbundled access to the local loop."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8 – Universal service",
+      "content": "All citizens and end-users in the Republic of Croatia shall have access to a minimum set of services of a specified quality at an affordable price (universal service). Universal service shall include: (1) access to a publicly available telephone service at a fixed location; (2) access to a comprehensive directory of subscribers; (3) access to a directory enquiry service; (4) adequate provision of public pay telephones; (5) specific measures for disabled users. HAKOM shall designate one or more undertakings to provide universal service."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9 – User rights and contracts",
+      "content": "Subscribers shall be entitled to a contract with the provider specifying the services provided, quality levels, compensation and refund arrangements, duration, renewal and termination conditions, and the procedures for dispute resolution. Contracts shall be provided in a clear, comprehensive, and easily accessible form. The maximum duration of an initial contract shall not exceed 24 months. Subscribers shall have the right to terminate their contract without penalty upon notice of a modification of contractual conditions."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Article 10 – Number portability",
+      "content": "Subscribers shall have the right to retain their telephone number when switching between providers of publicly available telephone services. Number portability shall be available for geographic and non-geographic numbers. The receiving provider shall lead the porting process, which shall be completed within the shortest possible period and in any case within one working day from the conclusion of the porting agreement. HAKOM shall lay down detailed rules on the porting process."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Article 11 – Emergency services",
+      "content": "Providers of publicly available electronic communications services that allow end-users to originate calls shall ensure that all end-users are able to call the single European emergency number 112 and the national emergency number free of charge and without having to use any means of payment. Providers shall make caller location information available to the emergency services to the extent technically feasible."
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Article 12 – Confidentiality of communications",
+      "content": "The confidentiality of electronic communications and the related traffic data shall be guaranteed. Listening, tapping, storage, or other kinds of interception or surveillance of communications and the related traffic data by persons other than users shall be prohibited, except with the lawful consent of the users concerned or where legally authorised in accordance with Directive 2002/58/EC (ePrivacy Directive). This provision shall not prevent the technical storage necessary for the conveyance of a communication."
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Article 13 – Data retention",
+      "content": "Providers of publicly available electronic communications services or public communications networks shall retain traffic and location data generated or processed in the course of providing their services for the purposes of the investigation, detection, and prosecution of serious criminal offences. The data shall be retained for a period of 12 months from the date of the communication. Retained data shall include: (1) data necessary to trace and identify the source and destination of a communication; (2) data necessary to identify the date, time, and duration of a communication; (3) data necessary to identify the type of communication."
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Article 14 – Protection of personal data",
+      "content": "The processing of personal data in the electronic communications sector shall be carried out in accordance with Regulation (EU) 2016/679 and Directive 2002/58/EC. Providers shall take appropriate technical and organisational measures to safeguard the security of their services. In the case of a personal data breach, the provider shall notify HAKOM and, where the breach is likely to adversely affect the personal data or privacy of a subscriber or user, shall also notify the subscriber or user without undue delay."
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Article 15 – Infrastructure sharing",
+      "content": "Operators shall have the right to negotiate agreements for infrastructure sharing and facility co-location. HAKOM may impose obligations of infrastructure sharing where duplication of infrastructure would be economically inefficient or physically impractical. Public authorities and operators of other utility networks (electricity, gas, water, transport) shall, upon request, make available their existing physical infrastructure for the deployment of electronic communications networks on fair and reasonable terms."
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Article 16 – Network security and integrity",
+      "content": "Operators of public communications networks and providers of publicly available electronic communications services shall take appropriate technical and organisational measures to appropriately manage the risks posed to the security of their networks and services. Such measures shall ensure a level of security of networks and services appropriate to the risk presented, having regard to the state of the art. Operators shall notify HAKOM of a breach of security or loss of integrity that has had a significant impact on the operation of networks or services."
+    },
+    {
+      "provision_ref": "art17",
+      "section": "17",
+      "title": "Article 17 – Dispute resolution",
+      "content": "HAKOM shall establish procedures for the resolution of disputes between providers and between providers and users. Users shall have the right to submit complaints to HAKOM regarding the provision of electronic communications services. HAKOM shall take a decision within four months of receiving a complaint. Decisions of HAKOM may be appealed before the High Administrative Court of the Republic of Croatia."
+    },
+    {
+      "provision_ref": "art18",
+      "section": "18",
+      "title": "Article 18 – Penalties",
+      "content": "An operator that fails to comply with the obligations under this Act or with decisions of HAKOM may be subject to a fine of up to 2% of its total annual revenue from the preceding financial year. A fine of HRK 10,000 to HRK 1,000,000 may be imposed on a legal person for minor infringements. HAKOM may impose periodic penalty payments of up to HRK 50,000 per day for continued non-compliance."
+    },
+    {
+      "provision_ref": "art19",
+      "section": "19",
+      "title": "Article 19 – International roaming",
+      "content": "The provision of international roaming services within the European Economic Area shall be governed by Regulation (EU) 2022/612 on roaming on public mobile communications networks within the Union. Providers shall ensure that roaming customers can access regulated roaming services at domestic prices (roam-like-at-home). HAKOM shall monitor the roaming market and take enforcement action where necessary."
+    },
+    {
+      "provision_ref": "art20",
+      "section": "20",
+      "title": "Article 20 – Transitional and final provisions",
+      "content": "Existing authorisations and licences issued under prior legislation shall remain valid until their expiry date or until replaced by authorisations under this Act. HAKOM shall complete the transition to the new regulatory framework within 18 months of the entry into force of this Act. The Telecommunications Act (NN 122/03, 158/03, 60/04, 70/05) is repealed on the date of entry into force of this Act."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "HAKOM",
+      "definition": "Hrvatska regulatorna agencija za mrežne djelatnosti (Croatian Regulatory Authority for Network Industries) — the independent national regulatory authority responsible for the regulation and supervision of electronic communications in Croatia.",
+      "source_provision": "art3"
+    },
+    {
+      "term": "electronic communications network",
+      "definition": "Transmission systems, switching or routing equipment, and other resources which permit the conveyance of signals by wire, radio, optical, or other electromagnetic means, including satellite networks, fixed and mobile terrestrial networks, and networks used for radio and television broadcasting.",
+      "source_provision": "art2"
+    },
+    {
+      "term": "universal service",
+      "definition": "A minimum set of services of a specified quality available to all end-users at an affordable price, including access to a fixed telephone service, directory services, public payphones, and specific measures for disabled users.",
+      "source_provision": "art8"
+    }
+  ]
+}

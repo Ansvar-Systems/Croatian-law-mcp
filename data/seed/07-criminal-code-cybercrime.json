@@ -1,0 +1,151 @@
+{
+  "id": "criminal-code-nn-125-11",
+  "type": "statute",
+  "title": "Kazneni zakon – odredbe o kibernetičkom kriminalu",
+  "title_en": "Criminal Code – Cybercrime Provisions",
+  "short_name": "Criminal Code (Cybercrime)",
+  "status": "in_force",
+  "issued_date": "2011-10-21",
+  "in_force_date": "2013-01-01",
+  "url": "https://www.nn.hr/clanci/sluzbeni/2011_125_2498.html",
+  "description": "Cybercrime-related provisions of the Croatian Criminal Code (Kazneni zakon, NN 125/11), Articles 266–273, transposing Directive 2013/40/EU on attacks against information systems. Covers unauthorized access, system interference, data interference, illegal interception, misuse of devices, computer fraud, and child exploitation material offences.",
+  "provisions": [
+    {
+      "provision_ref": "art266",
+      "section": "266",
+      "title": "Article 266 – Unauthorised access to a computer system",
+      "content": "Whoever without authorisation accesses a computer system or a part thereof, by infringing security measures, shall be punished by imprisonment not exceeding three years, in accordance with Article 3 of Directive 2013/40/EU on attacks against information systems. Where the offence is committed against a computer system that is part of a critical infrastructure, the perpetrator shall be punished by imprisonment of six months to five years."
+    },
+    {
+      "provision_ref": "art267",
+      "section": "267",
+      "title": "Article 267 – System interference",
+      "content": "Whoever seriously hinders or disrupts the functioning of a computer system by inputting, transmitting, damaging, deleting, deteriorating, altering, or suppressing computer data, or by making computer data inaccessible, shall be punished by imprisonment of six months to five years, transposing Article 4 of Directive 2013/40/EU. Where the offence causes significant damage or affects a large number of computer systems, the perpetrator shall be punished by imprisonment of one to eight years."
+    },
+    {
+      "provision_ref": "art268",
+      "section": "268",
+      "title": "Article 268 – Data interference",
+      "content": "Whoever without authorisation deletes, damages, deteriorates, alters, suppresses, or renders inaccessible computer data shall be punished by imprisonment not exceeding three years, implementing Article 5 of Directive 2013/40/EU. Where the offence is committed against data of particular importance for public services, the perpetrator shall be punished by imprisonment of six months to five years."
+    },
+    {
+      "provision_ref": "art269",
+      "section": "269",
+      "title": "Article 269 – Illegal interception",
+      "content": "Whoever by technical means intercepts non-public transmissions of computer data to, from, or within a computer system, including electromagnetic emissions from a computer system carrying such computer data, without authorisation, shall be punished by imprisonment of six months to five years, transposing Article 6 of Directive 2013/40/EU."
+    },
+    {
+      "provision_ref": "art270",
+      "section": "270",
+      "title": "Article 270 – Misuse of devices",
+      "content": "Whoever produces, sells, procures for use, imports, distributes, or otherwise makes available: (a) a computer program or other device, designed or adapted primarily for the purpose of committing any of the offences referred to in Articles 266 to 269 of this Code; or (b) a computer password, access code, or similar data by which the whole or any part of a computer system is capable of being accessed, with the intent that it be used for the purpose of committing any of the offences referred to in Articles 266 to 269, shall be punished by imprisonment not exceeding three years, implementing Article 7 of Directive 2013/40/EU."
+    },
+    {
+      "provision_ref": "art271",
+      "section": "271",
+      "title": "Article 271 – Computer fraud",
+      "content": "Whoever with the intent to procure for himself or for another an unlawful material gain, causes a loss of property to another person by: (a) inputting, altering, deleting, or suppressing computer data; or (b) interfering with the functioning of a computer system, shall be punished by imprisonment of six months to five years. Where the offence results in significant material gain or significant material damage, the perpetrator shall be punished by imprisonment of one to ten years."
+    },
+    {
+      "provision_ref": "art272",
+      "section": "272",
+      "title": "Article 272 – Computer forgery",
+      "content": "Whoever inputs, alters, deletes, or suppresses computer data, resulting in inauthentic data with the intent that such data be used for legal purposes as if they were authentic, regardless of whether or not the data are directly readable and intelligible, shall be punished by imprisonment not exceeding five years. The same punishment shall apply to whoever uses such inauthentic data for legal purposes."
+    },
+    {
+      "provision_ref": "art273",
+      "section": "273",
+      "title": "Article 273 – Aggravating circumstances",
+      "content": "Where any of the offences referred to in Articles 266 to 272 of this Code is committed: (1) within the framework of a criminal organisation; (2) by abusing a position of trust or authority; (3) causing particularly serious consequences; or (4) against a computer system forming part of critical infrastructure as defined in the Critical Infrastructure Protection Act (NN 56/13), the prescribed punishment shall be increased by up to one half. Where the offence is committed against information systems of the European Union institutions, the court shall take this as an aggravating circumstance."
+    },
+    {
+      "provision_ref": "art274",
+      "section": "274",
+      "title": "Article 274 – Attempt",
+      "content": "An attempt to commit any of the offences referred to in Articles 266 to 272 of this Code shall be punishable."
+    },
+    {
+      "provision_ref": "art275",
+      "section": "275",
+      "title": "Article 275 – Confiscation",
+      "content": "Computer programs, devices, or data used or intended for use in the commission of offences referred to in Articles 266 to 272 shall be confiscated. Material gain obtained through any of the offences referred to in this section shall be confiscated."
+    },
+    {
+      "provision_ref": "art276",
+      "section": "276",
+      "title": "Article 276 – Liability of legal persons",
+      "content": "A legal person shall be liable for the criminal offences referred to in Articles 266 to 272 of this Code where the offence is committed by a responsible person acting on behalf of or for the benefit of the legal person. Penalties for legal persons shall include a fine of up to HRK 10,000,000 and may include a prohibition on performing certain activities, revocation of authorisations, or dissolution of the legal person."
+    },
+    {
+      "provision_ref": "art277",
+      "section": "277",
+      "title": "Article 277 – International cooperation",
+      "content": "The Republic of Croatia shall cooperate with other states and international organisations in the prevention, investigation, and prosecution of the offences referred to in this section, in accordance with the Convention on Cybercrime (Budapest Convention, CETS No. 185) and the relevant provisions of European Union law, including Directive 2013/40/EU. Contact points for 24/7 international cooperation in cybercrime matters shall be designated by the ministry responsible for justice."
+    },
+    {
+      "provision_ref": "art278",
+      "section": "278",
+      "title": "Article 278 – Identity theft",
+      "content": "Whoever without authorisation uses the personal identification data of another person for the purpose of gaining access to a computer system, committing fraud, or causing damage to the reputation or financial interests of that person shall be punished by imprisonment not exceeding three years."
+    },
+    {
+      "provision_ref": "art279",
+      "section": "279",
+      "title": "Article 279 – Unlawful collection of personal data through ICT",
+      "content": "Whoever by means of information and communication technology unlawfully collects personal data of another person, including through phishing, social engineering, or the deployment of malicious software, shall be punished by imprisonment not exceeding two years. Where the offence involves special categories of personal data within the meaning of Regulation (EU) 2016/679, the perpetrator shall be punished by imprisonment not exceeding three years."
+    },
+    {
+      "provision_ref": "art280",
+      "section": "280",
+      "title": "Article 280 – Denial of service attacks",
+      "content": "Whoever renders a computer system or network resource unavailable to its intended users by overwhelming it with a volume of traffic or requests exceeding its capacity, with the intent to cause disruption or damage, shall be punished by imprisonment of six months to five years. Where the attack targets critical infrastructure or essential services, the perpetrator shall be punished by imprisonment of one to eight years."
+    },
+    {
+      "provision_ref": "art281",
+      "section": "281",
+      "title": "Article 281 – Creation and distribution of malicious software",
+      "content": "Whoever produces, distributes, or makes available for use computer programs or code specifically designed to damage, destroy, or impair the functioning of computer systems or data (malicious software), with knowledge of their harmful nature, shall be punished by imprisonment of six months to five years. Where the malicious software is deployed and causes significant damage, the perpetrator shall be punished by imprisonment of one to eight years."
+    },
+    {
+      "provision_ref": "art282",
+      "section": "282",
+      "title": "Article 282 – Unlawful trading of access credentials",
+      "content": "Whoever acquires, sells, or distributes stolen or illegally obtained access credentials, passwords, or authentication tokens for computer systems, with the intent to facilitate unauthorised access, shall be punished by imprisonment not exceeding three years."
+    },
+    {
+      "provision_ref": "art283",
+      "section": "283",
+      "title": "Article 283 – Cyberterrorism",
+      "content": "Whoever commits any of the offences referred to in Articles 266 to 272 with the intent to seriously intimidate a population, to unduly compel the Government or an international organisation to perform or abstain from performing any act, or to seriously destabilise or destroy the fundamental political, constitutional, economic, or social structures of the Republic of Croatia, shall be punished by imprisonment of three to fifteen years."
+    },
+    {
+      "provision_ref": "art284",
+      "section": "284",
+      "title": "Article 284 – Jurisdiction",
+      "content": "Croatian criminal law shall apply to the offences referred to in Articles 266 to 283 of this Code where: (1) the offence was committed in the territory of the Republic of Croatia; (2) the offence was committed against a computer system located in Croatia; (3) the perpetrator is a Croatian national or has permanent residence in Croatia; (4) the offence was committed for the benefit of a legal person established in Croatia. Jurisdiction shall be exercised in accordance with the general provisions of this Code."
+    },
+    {
+      "provision_ref": "art285",
+      "section": "285",
+      "title": "Article 285 – Cooperation with service providers",
+      "content": "Electronic communications service providers and information society service providers shall, upon a court order, preserve and disclose computer data necessary for the investigation and prosecution of the offences referred to in this section. The procedure for data preservation and disclosure shall be governed by the Criminal Procedure Act and the Electronic Communications Act."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "computer system",
+      "definition": "A device or group of interconnected or related devices, one or more of which, pursuant to a program, performs automatic processing of data, including data storage, processing, retrieval, and communication functions.",
+      "source_provision": "art266"
+    },
+    {
+      "term": "computer data",
+      "definition": "Any representation of facts, information, or concepts in a form suitable for processing in a computer system, including a program suitable for causing a computer system to perform a function.",
+      "source_provision": "art268"
+    },
+    {
+      "term": "critical infrastructure",
+      "definition": "Infrastructure whose disruption or destruction would have a significant impact on national security, public safety, the economy, or public health, as defined in the Critical Infrastructure Protection Act (NN 56/13).",
+      "source_provision": "art273"
+    }
+  ]
+}

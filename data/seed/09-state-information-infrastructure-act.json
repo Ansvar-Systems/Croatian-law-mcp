@@ -1,0 +1,151 @@
+{
+  "id": "sii-nn-92-14",
+  "type": "statute",
+  "title": "Zakon o državnoj informacijskoj infrastrukturi",
+  "title_en": "Act on State Information Infrastructure",
+  "short_name": "SII Act",
+  "status": "in_force",
+  "issued_date": "2014-07-22",
+  "in_force_date": "2014-07-30",
+  "url": "https://www.nn.hr/clanci/sluzbeni/2014_92_1846.html",
+  "description": "Croatia's legislation establishing the framework for state information infrastructure, including shared ICT services for public administration, interoperability requirements, the state cloud, data exchange, and information security standards for government systems.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1 – Subject matter",
+      "content": "This Act establishes the framework for the planning, development, maintenance, and use of state information infrastructure in the Republic of Croatia. State information infrastructure comprises the shared ICT systems, services, and networks used by state bodies and public administration bodies for the performance of their functions, the provision of public services, and the exchange of data."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2 – Definitions",
+      "content": "For the purposes of this Act: (1) 'state information infrastructure' means the totality of ICT systems, services, networks, and databases used by public administration bodies, including hardware, software, data, and communication links; (2) 'shared services' means ICT services provided centrally for use by multiple public administration bodies; (3) 'interoperability' means the ability of ICT systems and business processes to exchange data and enable the sharing of information and knowledge; (4) 'state cloud' means the shared cloud computing infrastructure operated for the use of public administration bodies."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3 – Scope",
+      "content": "This Act applies to: (1) state bodies, including ministries, central state administration offices, and government offices; (2) local and regional self-government units; (3) legal persons with public powers that use state information infrastructure; (4) other entities that are connected to the state information infrastructure or use shared services. This Act does not apply to the ICT systems of the Croatian Army that are governed by special regulations."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4 – Central coordination body",
+      "content": "The ministry responsible for public administration shall be the central body for the coordination and management of state information infrastructure. The central body shall: (1) adopt the strategy for the development of state information infrastructure; (2) establish standards and guidelines for ICT in public administration; (3) coordinate ICT investments across public administration; (4) manage shared services and the state cloud; (5) promote interoperability and open standards."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5 – Strategy and planning",
+      "content": "The Government shall adopt a strategy for the development of state information infrastructure for a period of five years. The strategy shall define: (1) strategic objectives for digitalisation of public administration; (2) priorities for the development and modernisation of ICT systems; (3) investment plans and funding sources; (4) key performance indicators and targets. Public administration bodies shall align their ICT plans with the national strategy."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6 – Shared services",
+      "content": "The central body shall establish and operate shared ICT services for public administration, including: (1) email and communication services; (2) document management systems; (3) identity management and authentication services; (4) data hosting and storage services; (5) application platforms. Public administration bodies shall use shared services unless a justified exemption is granted by the central body."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7 – State cloud",
+      "content": "The state cloud (Državni oblak) shall provide cloud computing services (infrastructure as a service, platform as a service, and software as a service) to public administration bodies. The state cloud shall be operated by the central body or by a designated operator. Data stored in the state cloud shall be located in the territory of the Republic of Croatia or in the territory of a Member State of the European Union, subject to the requirements of Regulation (EU) 2016/679."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8 – Interoperability framework",
+      "content": "Public administration bodies shall ensure the interoperability of their ICT systems in accordance with the national interoperability framework. The national interoperability framework shall be aligned with the European Interoperability Framework (EIF) and shall define: (1) organisational interoperability requirements; (2) semantic interoperability requirements; (3) technical interoperability standards; (4) legal interoperability provisions. The central body shall maintain a registry of interoperability specifications."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9 – Data exchange",
+      "content": "Public administration bodies shall exchange data through the state data exchange system (sustav za razmjenu podataka). The data exchange system shall enable secure, reliable, and standardised data exchange between public administration bodies. Public administration bodies shall not require citizens or businesses to provide information that is already held by another public administration body and available through the data exchange system."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Article 10 – Registers and databases",
+      "content": "Public administration bodies shall maintain their registers and databases in electronic form. The central body shall establish a meta-register of all public registers and databases. Data in registers shall be authoritative and other public administration bodies shall rely on the data from the authoritative register without requiring additional verification."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Article 11 – Open data",
+      "content": "Public administration bodies shall make data available as open data in machine-readable formats, in accordance with Directive (EU) 2019/1024 (Open Data Directive) and the Right of Access to Information Act (NN 25/13). High-value datasets, as determined by the European Commission, shall be made available free of charge, in machine-readable formats, and via application programming interfaces (APIs)."
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Article 12 – Information security",
+      "content": "Public administration bodies shall implement information security measures in accordance with recognised national and international standards, including ISO/IEC 27001. The central body shall establish an information security policy for state information infrastructure and shall provide guidance on its implementation. Public administration bodies shall conduct regular risk assessments and implement appropriate technical and organisational measures."
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Article 13 – Incident management",
+      "content": "Public administration bodies shall report information security incidents affecting state information infrastructure to the central body and to the national CSIRT. The central body shall coordinate the response to incidents affecting multiple public administration bodies. The central body shall maintain a central log of information security incidents and shall publish an anonymised annual report on incident trends."
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Article 14 – ICT procurement",
+      "content": "The procurement of ICT goods and services for public administration shall be carried out in accordance with the Public Procurement Act and the standards established by the central body. The central body may conduct centralised procurement of ICT goods and services on behalf of public administration bodies. ICT procurement shall favour open standards and interoperable solutions."
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Article 15 – Digital skills",
+      "content": "Public administration bodies shall ensure that their staff have adequate digital skills for the use of state information infrastructure. The central body shall organise training programmes for public administration staff on the use of shared services, information security, and data management. The Government shall promote digital literacy programmes for citizens."
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Article 16 – e-Government services",
+      "content": "Public administration bodies shall provide their services to citizens and businesses electronically through the central e-Government portal (e-Građani). Electronic services shall be designed following the once-only principle, digital-by-default approach, and user-centric design. The central body shall ensure that electronic services are accessible to persons with disabilities in accordance with Directive (EU) 2016/2102 on the accessibility of public sector websites and mobile applications."
+    },
+    {
+      "provision_ref": "art17",
+      "section": "17",
+      "title": "Article 17 – Business continuity",
+      "content": "Public administration bodies shall establish business continuity plans for their ICT systems. Business continuity plans shall include: (1) identification of critical systems and services; (2) recovery time objectives and recovery point objectives; (3) backup and recovery procedures; (4) testing and exercise schedules. The central body shall establish a disaster recovery site for the state cloud."
+    },
+    {
+      "provision_ref": "art18",
+      "section": "18",
+      "title": "Article 18 – Supervision",
+      "content": "The central body shall supervise compliance with this Act. The central body may conduct audits of ICT systems used by public administration bodies and issue binding recommendations for improvement. Public administration bodies shall provide the central body with information necessary for the performance of its supervisory tasks."
+    },
+    {
+      "provision_ref": "art19",
+      "section": "19",
+      "title": "Article 19 – Penalties",
+      "content": "A fine of HRK 10,000 to HRK 200,000 shall be imposed on a public administration body that fails to comply with the obligations under this Act, including the failure to use shared services, failure to implement information security measures, or failure to report incidents. A fine of HRK 5,000 to HRK 50,000 shall be imposed on a responsible person for the same offence."
+    },
+    {
+      "provision_ref": "art20",
+      "section": "20",
+      "title": "Article 20 – Entry into force",
+      "content": "This Act shall enter into force on the eighth day after its publication in the Official Gazette (Narodne novine). The Government shall adopt implementing regulations within 12 months of the entry into force of this Act."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "state information infrastructure",
+      "definition": "The totality of ICT systems, services, networks, and databases used by public administration bodies, including hardware, software, data, and communication links, for the performance of public functions and the provision of public services.",
+      "source_provision": "art2"
+    },
+    {
+      "term": "state cloud",
+      "definition": "Državni oblak — the shared cloud computing infrastructure operated for use by public administration bodies, providing IaaS, PaaS, and SaaS services with data located in Croatia or the EU.",
+      "source_provision": "art7"
+    },
+    {
+      "term": "interoperability",
+      "definition": "The ability of ICT systems and business processes to exchange data and enable the sharing of information and knowledge between public administration bodies.",
+      "source_provision": "art2"
+    }
+  ]
+}

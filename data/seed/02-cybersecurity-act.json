@@ -1,0 +1,168 @@
+{
+  "id": "cybersecurity-nn-14-24",
+  "type": "statute",
+  "title": "Zakon o kibernetičkoj sigurnosti",
+  "title_en": "Cybersecurity Act",
+  "short_name": "Cybersecurity Act",
+  "status": "in_force",
+  "issued_date": "2024-02-02",
+  "in_force_date": "2024-02-17",
+  "url": "https://www.nn.hr/clanci/sluzbeni/2024_14_218.html",
+  "description": "Croatia's primary cybersecurity legislation transposing Directive (EU) 2022/2555 (NIS2 Directive). Establishes the national framework for cybersecurity, designates competent authorities and CSIRTs, and imposes security obligations on essential and important entities.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1 – Subject matter and scope",
+      "content": "This Act establishes measures to achieve a high common level of cybersecurity across the Republic of Croatia, implementing Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 on measures for a high common level of cybersecurity across the Union (NIS2 Directive). This Act lays down obligations for entities that are identified as essential or important entities, establishes the national cybersecurity strategy, and designates competent authorities for cybersecurity."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2 – Definitions",
+      "content": "For the purposes of this Act: (1) 'network and information system' means an electronic communications network, a device or a group of interconnected devices one or more of which performs automatic processing of digital data, or digital data stored, processed, retrieved, or transmitted by elements of a network for purposes of their operation, use, protection, and maintenance; (2) 'cybersecurity' means the activities necessary to protect network and information systems, users of such systems, and other persons affected by cyber threats; (3) 'cyber threat' means any potential circumstance, event, or action that could damage, disrupt, or otherwise adversely impact network and information systems."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3 – Essential entities",
+      "content": "Essential entities within the meaning of this Act include entities operating in the following sectors: (1) energy, including electricity, district heating and cooling, oil, gas, and hydrogen; (2) transport, including air, rail, water, and road; (3) banking and financial market infrastructures; (4) health, including healthcare providers, EU reference laboratories, and entities carrying out research and development of medicinal products; (5) drinking water supply and distribution; (6) wastewater management; (7) digital infrastructure; (8) ICT service management (B2B); (9) public administration; (10) space."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4 – Important entities",
+      "content": "Important entities within the meaning of this Act include entities operating in the following sectors: (1) postal and courier services; (2) waste management; (3) manufacture, production, and distribution of chemicals; (4) food production, processing, and distribution; (5) manufacturing of medical devices, computers, electronics, optical products, electrical equipment, machinery, and motor vehicles; (6) digital providers, including online marketplaces, online search engines, and social networking services platforms; (7) research organisations."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5 – National Cybersecurity Strategy",
+      "content": "The Government of the Republic of Croatia shall adopt a national cybersecurity strategy that sets out strategic objectives, the resources required, and appropriate policy and regulatory measures to achieve and maintain a high level of cybersecurity. The strategy shall address: (1) the governance framework for cybersecurity objectives and priorities; (2) a framework for identifying and managing risks to network and information systems; (3) plans for capacity building and awareness raising; (4) relevant research and development policies; (5) a list of the various authorities and actors involved in the implementation of the strategy."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6 – Competent authorities",
+      "content": "The competent national authority for cybersecurity shall be the Security and Intelligence Agency (Sigurnosno-obavještajna agencija, SOA) for matters related to national security, and the Croatian Academic and Research Network (CARNET) through the national CSIRT for other matters. The competent sectoral authorities shall be designated by the Government for each sector referred to in Articles 3 and 4 of this Act. Competent authorities shall cooperate and exchange information relevant to cybersecurity."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7 – National CSIRT",
+      "content": "The national Computer Security Incident Response Team (CSIRT) shall be established within CARNET. The national CSIRT shall: (1) monitor and analyse cyber threats, vulnerabilities, and incidents at the national level; (2) provide early warnings, alerts, and announcements regarding cyber threats; (3) respond to incidents and provide assistance to affected entities; (4) collect and analyse forensic data relating to incidents; (5) coordinate vulnerability disclosure; (6) cooperate with other CSIRTs and the CSIRT network established under Directive (EU) 2022/2555."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8 – Single point of contact",
+      "content": "The Government of the Republic of Croatia shall designate a single point of contact for cross-border cybersecurity cooperation. The single point of contact shall exercise a liaison function to ensure cross-border cooperation with competent authorities of other Member States, ENISA, and the NIS Cooperation Group established under Article 14 of Directive (EU) 2022/2555. The single point of contact shall submit a summary report to the Cooperation Group on notified incidents."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9 – Risk management measures",
+      "content": "Essential and important entities shall take appropriate and proportionate technical, operational, and organisational measures to manage the risks posed to the security of network and information systems which those entities use for their operations or for the provision of their services. The measures shall be based on an all-hazards approach and shall include at a minimum: (1) policies on risk analysis and information system security; (2) incident handling; (3) business continuity and crisis management; (4) supply chain security; (5) security in network and information systems acquisition, development, and maintenance; (6) vulnerability handling and disclosure."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Article 10 – Cybersecurity risk assessments",
+      "content": "Essential and important entities shall carry out regular cybersecurity risk assessments of their network and information systems. The risk assessments shall take account of: (1) the current cyber threat landscape; (2) all-hazards threats, including natural disasters, system failures, human errors, and malicious actions; (3) the entity's exposure, vulnerability, and the criticality of the services it provides. Risk assessments shall be updated at least annually or whenever there is a significant change to the entity's network and information systems."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Article 11 – Incident notification obligations",
+      "content": "Essential and important entities shall notify the competent CSIRT without undue delay of any significant incident that has a significant impact on the provision of their services. A significant incident means an incident that: (a) has caused or is capable of causing severe operational disruption of the services or financial loss; (b) has affected or is capable of affecting other natural or legal persons by causing considerable material or non-material damage. An early warning shall be submitted within 24 hours of becoming aware of the significant incident. A full incident notification shall be submitted within 72 hours."
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Article 12 – Incident response and coordination",
+      "content": "Upon receipt of an incident notification, the competent CSIRT shall provide guidance and operational advice to the notifying entity. The CSIRT shall coordinate the response to incidents affecting multiple entities or having cross-border impact. The CSIRT may request additional information from the notifying entity and shall share relevant threat intelligence with affected entities. The CSIRT shall submit a final report on the incident within one month of the initial notification."
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Article 13 – Voluntary notifications",
+      "content": "Entities that are not identified as essential or important entities under this Act may submit voluntary notifications of significant incidents, cyber threats, or near-misses to the national CSIRT. The CSIRT shall process voluntary notifications in accordance with the same procedures as mandatory notifications. Voluntary notifications shall not result in the imposition of any additional obligations on the notifying entity."
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Article 14 – Supervision and enforcement",
+      "content": "The competent authorities shall have the power to supervise compliance with this Act. In respect of essential entities, the competent authorities shall carry out regular audits, targeted security audits, ad hoc audits, on-site inspections, and off-site supervision. In respect of important entities, supervision shall be ex post, triggered by evidence, reports, or information indicating non-compliance. The competent authorities may require entities to carry out security audits by a qualified independent body."
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Article 15 – Enforcement measures",
+      "content": "Where the competent authority finds that an essential or important entity does not comply with this Act, it may: (1) issue warnings; (2) adopt binding instructions requiring the entity to remedy deficiencies or comply with security requirements; (3) order the entity to cease conduct that infringes this Act; (4) order the entity to ensure that its cybersecurity risk management measures comply with Article 9; (5) order the entity to inform the natural or legal persons with regard to whom it provides services of the nature of the threat."
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Article 16 – Administrative fines for essential entities",
+      "content": "Essential entities that fail to comply with the obligations under Articles 9 or 11 of this Act shall be subject to an administrative fine of up to EUR 10,000,000 or up to 2% of the total worldwide annual turnover of the preceding financial year of the undertaking to which the essential entity belongs, whichever is higher, in accordance with Article 34 of Directive (EU) 2022/2555."
+    },
+    {
+      "provision_ref": "art17",
+      "section": "17",
+      "title": "Article 17 – Administrative fines for important entities",
+      "content": "Important entities that fail to comply with the obligations under Articles 9 or 11 of this Act shall be subject to an administrative fine of up to EUR 7,000,000 or up to 1.4% of the total worldwide annual turnover of the preceding financial year of the undertaking to which the important entity belongs, whichever is higher, in accordance with Article 34 of Directive (EU) 2022/2555."
+    },
+    {
+      "provision_ref": "art18",
+      "section": "18",
+      "title": "Article 18 – Management body accountability",
+      "content": "The management bodies of essential and important entities shall approve the cybersecurity risk-management measures taken pursuant to Article 9 and shall oversee their implementation. Members of the management body shall receive appropriate cybersecurity training to enable them to identify risks, assess cybersecurity risk management practices, and evaluate their impact on the services provided by the entity. Failure to comply with these obligations may result in personal liability of the management body members."
+    },
+    {
+      "provision_ref": "art19",
+      "section": "19",
+      "title": "Article 19 – European cooperation",
+      "content": "Croatia shall participate in the NIS Cooperation Group and the CSIRT network established under Directive (EU) 2022/2555. The competent authority and the national CSIRT shall cooperate with ENISA, the European Cyber Crises Liaison Organisation Network (EU-CyCLONe), and other relevant EU bodies. Croatia shall participate in the coordinated security risk assessments of critical supply chains at the EU level."
+    },
+    {
+      "provision_ref": "art20",
+      "section": "20",
+      "title": "Article 20 – National cybersecurity certification",
+      "content": "The Government shall designate a national cybersecurity certification authority for the purposes of Regulation (EU) 2019/881 (Cybersecurity Act). The certification authority shall supervise and enforce the European cybersecurity certification schemes adopted pursuant to Article 49 of Regulation (EU) 2019/881. Entities may request certification of their ICT products, ICT services, and ICT processes under the applicable European certification schemes."
+    },
+    {
+      "provision_ref": "art21",
+      "section": "21",
+      "title": "Article 21 – Sector-specific requirements",
+      "content": "Where sector-specific Union acts require essential or important entities to adopt cybersecurity risk management measures or to notify significant incidents, and where those requirements are at least equivalent in effect to the obligations laid down in this Act, the relevant provisions of those sector-specific acts shall apply. The competent authorities shall cooperate with sectoral regulators to ensure consistent application."
+    },
+    {
+      "provision_ref": "art22",
+      "section": "22",
+      "title": "Article 22 – Transitional and final provisions",
+      "content": "Entities falling within the scope of this Act shall comply with the obligations set out herein within 12 months of the entry into force of this Act. The Information Systems and Internet Security Act (NN 64/08) is repealed as of the date of entry into force of this Act, to the extent that its provisions conflict with this Act. The Government shall adopt implementing regulations within six months of the entry into force of this Act."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "essential entity",
+      "definition": "An entity operating in a sector listed in Article 3 of this Act (energy, transport, banking, health, water, digital infrastructure, ICT management, public administration, space) that meets the size thresholds, identified as essential for the purposes of Directive (EU) 2022/2555.",
+      "source_provision": "art3"
+    },
+    {
+      "term": "important entity",
+      "definition": "An entity operating in a sector listed in Article 4 of this Act (postal, waste, chemicals, food, manufacturing, digital providers, research) that meets the size thresholds but is not classified as essential, as defined under Directive (EU) 2022/2555.",
+      "source_provision": "art4"
+    },
+    {
+      "term": "significant incident",
+      "definition": "An incident that has caused or is capable of causing severe operational disruption or financial loss for the affected entity, or has affected or is capable of affecting other persons by causing considerable material or non-material damage.",
+      "source_provision": "art11"
+    },
+    {
+      "term": "CSIRT",
+      "definition": "Computer Security Incident Response Team — the national team established within CARNET responsible for monitoring, analysing, and responding to cyber threats and incidents at the national level.",
+      "source_provision": "art7"
+    }
+  ]
+}

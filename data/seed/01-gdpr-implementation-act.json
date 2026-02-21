@@ -1,0 +1,175 @@
+{
+  "id": "gdpr-impl-nn-42-18",
+  "type": "statute",
+  "title": "Zakon o provedbi Opće uredbe o zaštiti podataka",
+  "title_en": "Act on Implementation of the General Data Protection Regulation",
+  "short_name": "GDPR Implementation Act",
+  "status": "in_force",
+  "issued_date": "2018-05-09",
+  "in_force_date": "2018-05-25",
+  "url": "https://www.nn.hr/clanci/sluzbeni/2018_42_805.html",
+  "description": "Croatia's primary legislation implementing Regulation (EU) 2016/679 (GDPR). Establishes the Croatian Personal Data Protection Agency (AZOP) as the supervisory authority and provides supplementary rules on personal data processing, including derogations permitted under the GDPR.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1 – Subject matter",
+      "content": "This Act regulates the implementation of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data (General Data Protection Regulation). This Act establishes supplementary provisions for the application of the General Data Protection Regulation in the Republic of Croatia."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2 – Scope",
+      "content": "This Act applies to the processing of personal data wholly or partly by automated means and to the processing other than by automated means of personal data which form part of a filing system or are intended to form part of a filing system. The provisions of this Act apply to the processing of personal data in the context of the activities of a controller or processor established in the Republic of Croatia, regardless of whether the processing takes place in Croatia or not."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3 – Definitions",
+      "content": "The terms used in this Act shall have the same meaning as the terms defined in Article 4 of Regulation (EU) 2016/679. For the purposes of this Act, 'Agency' means the Croatian Personal Data Protection Agency (Agencija za zaštitu osobnih podataka, AZOP) established under this Act as the supervisory authority within the meaning of Article 51 of the General Data Protection Regulation."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4 – Legal bases for processing",
+      "content": "Personal data may be processed where there is a legal basis provided for in Article 6(1) of Regulation (EU) 2016/679 or in this Act. Processing of personal data for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller shall have a basis in law."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5 – Processing of special categories of personal data",
+      "content": "Special categories of personal data referred to in Article 9 of Regulation (EU) 2016/679 may be processed on the basis of a law that specifies the categories of data, the purposes of processing, and appropriate safeguards for the rights and freedoms of the data subject. Processing of genetic data, biometric data, and health data for employment purposes is permitted only where necessary for the performance of the employer's obligations arising from labour law."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6 – Processing of personal identification number (OIB)",
+      "content": "The personal identification number (osobni identifikacijski broj, OIB) may be processed without the consent of the data subject where processing is necessary for: (1) unambiguous identification of the data subject in administrative, judicial, or other official proceedings; (2) the performance of a contract; (3) compliance with a legal obligation; (4) the performance of a task carried out in the public interest."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7 – Age of consent for children",
+      "content": "In relation to the offer of information society services directly to a child, the processing of personal data of a child shall be lawful where the child is at least 16 years of age, in accordance with Article 8(1) of Regulation (EU) 2016/679. Where the child is below the age of 16 years, such processing shall be lawful only if and to the extent that consent is given or authorised by the holder of parental responsibility over the child."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8 – Processing for journalistic and academic purposes",
+      "content": "Personal data may be processed for journalistic purposes and for the purposes of academic, artistic, or literary expression, provided that appropriate safeguards for the rights and freedoms of data subjects are in place, in accordance with Article 85 of Regulation (EU) 2016/679. The right of access, right to rectification, right to restriction of processing, and right to object shall not apply to the extent that such rights would render impossible or seriously impair the achievement of such purposes."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9 – Processing of deceased persons' data",
+      "content": "Personal data of deceased persons may be processed for purposes related to succession law, the protection of the legitimate interests of heirs, or for historical research and statistical purposes. The heirs of the deceased person may exercise the rights of the data subject in respect of the personal data of the deceased, subject to the conditions laid down in a separate law."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Article 10 – Croatian Personal Data Protection Agency (AZOP)",
+      "content": "The Croatian Personal Data Protection Agency (Agencija za zaštitu osobnih podataka, AZOP) is hereby established as the independent supervisory authority for the purposes of Article 51 of Regulation (EU) 2016/679. The Agency shall have legal personality and shall be operationally independent. The Agency shall perform the tasks and exercise the powers laid down in Article 57 and Article 58 of the General Data Protection Regulation and in this Act."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Article 11 – Director of the Agency",
+      "content": "The Agency shall be managed by the Director, who shall be appointed by the Croatian Parliament (Hrvatski sabor) on the proposal of the Government of the Republic of Croatia for a term of five years, renewable once. The Director must be a Croatian national with a university degree in law and at least ten years of professional experience in the field of personal data protection or a related field."
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Article 12 – Tasks of the Agency",
+      "content": "In addition to the tasks specified in Article 57 of Regulation (EU) 2016/679, the Agency shall: (1) monitor and enforce the application of this Act and the General Data Protection Regulation; (2) handle complaints lodged by data subjects; (3) conduct inspections and audits; (4) provide guidance and recommendations to controllers and processors; (5) cooperate with the supervisory authorities of other EU Member States and the European Data Protection Board; (6) issue opinions on proposed legislation relating to personal data processing."
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Article 13 – Powers of the Agency",
+      "content": "The Agency shall have the investigative, corrective, and advisory powers provided for in Article 58 of Regulation (EU) 2016/679. In particular, the Agency may: (1) order the controller or processor to comply with the General Data Protection Regulation; (2) impose a temporary or definitive limitation, including a ban, on processing; (3) order the rectification or erasure of personal data; (4) impose administrative fines in accordance with Article 83 of the General Data Protection Regulation."
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Article 14 – Data Protection Officer",
+      "content": "A controller or processor shall designate a data protection officer in the cases provided for in Article 37 of Regulation (EU) 2016/679. In addition, public authorities and bodies in the Republic of Croatia shall be required to designate a data protection officer regardless of the nature or scope of data processing they carry out. The data protection officer shall perform the tasks specified in Article 39 of the General Data Protection Regulation."
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Article 15 – International data transfers",
+      "content": "Any transfer of personal data to a third country or an international organisation shall be carried out in accordance with Chapter V of Regulation (EU) 2016/679. The Agency may approve transfers on the basis of appropriate safeguards as referred to in Article 46(3) of the General Data Protection Regulation. The Agency shall be consulted in respect of administrative arrangements as referred to in Article 46(3)(b) of the General Data Protection Regulation."
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Article 16 – Right to judicial remedy",
+      "content": "Every data subject shall have the right to an effective judicial remedy against a legally binding decision of the Agency. The competent court for actions against the Agency shall be the High Administrative Court of the Republic of Croatia (Visoki upravni sud Republike Hrvatske). Proceedings shall be conducted in accordance with the Administrative Disputes Act."
+    },
+    {
+      "provision_ref": "art17",
+      "section": "17",
+      "title": "Article 17 – Administrative fines",
+      "content": "The Agency shall impose administrative fines in accordance with Article 83 of Regulation (EU) 2016/679. When deciding on the amount of an administrative fine, the Agency shall take due account of the criteria specified in Article 83(2) of the General Data Protection Regulation, including the nature, gravity, and duration of the infringement, whether the infringement was intentional or negligent, and any mitigating or aggravating factors."
+    },
+    {
+      "provision_ref": "art18",
+      "section": "18",
+      "title": "Article 18 – Minor offences",
+      "content": "A fine of HRK 5,000 to HRK 50,000 shall be imposed on a natural person who processes personal data in violation of the provisions of this Act or the General Data Protection Regulation where such processing does not constitute an infringement subject to administrative fines under Article 83 of Regulation (EU) 2016/679. A fine of HRK 10,000 to HRK 100,000 shall be imposed on a legal person for the same offence."
+    },
+    {
+      "provision_ref": "art19",
+      "section": "19",
+      "title": "Article 19 – Processing by public authorities",
+      "content": "Public authorities and bodies in the Republic of Croatia shall process personal data only on the basis of and within the limits set by law, in accordance with Article 6(1)(c) and (e) of Regulation (EU) 2016/679. Where a public authority processes personal data for a purpose other than the purpose for which the data were initially collected, the processing shall be permitted only where provided for by law and necessary in a democratic society."
+    },
+    {
+      "provision_ref": "art20",
+      "section": "20",
+      "title": "Article 20 – Video surveillance",
+      "content": "Video surveillance in public spaces may be carried out only where necessary for the protection of persons and property, or for the performance of a task in the public interest. The controller shall clearly mark the surveilled area with a notice indicating the identity of the controller and contact details. Recordings shall be stored for no longer than necessary and in any case not longer than six months, unless a longer retention period is provided by law."
+    },
+    {
+      "provision_ref": "art21",
+      "section": "21",
+      "title": "Article 21 – Processing for archiving, research, and statistical purposes",
+      "content": "Personal data may be processed for archiving purposes in the public interest, scientific or historical research purposes, or statistical purposes, subject to appropriate safeguards in accordance with Article 89 of Regulation (EU) 2016/679. Such safeguards shall include technical and organisational measures, in particular data minimisation and, where possible, pseudonymisation."
+    },
+    {
+      "provision_ref": "art22",
+      "section": "22",
+      "title": "Article 22 – Transitional provisions",
+      "content": "Controllers and processors who were registered with the Croatian Personal Data Protection Agency before the entry into force of this Act shall ensure compliance with the General Data Protection Regulation and this Act within one year of the entry into force of this Act. Existing approvals and authorisations issued under the previous Personal Data Protection Act (NN 103/03, 118/06, 41/08, 130/11, 106/12) shall remain valid for a period of one year."
+    },
+    {
+      "provision_ref": "art23",
+      "section": "23",
+      "title": "Article 23 – Repeal",
+      "content": "The Personal Data Protection Act (Narodne novine, No. 103/03, 118/06, 41/08, 130/11, 106/12) is hereby repealed on the day this Act enters into force."
+    },
+    {
+      "provision_ref": "art24",
+      "section": "24",
+      "title": "Article 24 – Entry into force",
+      "content": "This Act shall enter into force on 25 May 2018, the date of application of Regulation (EU) 2016/679 of the European Parliament and of the Council."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "AZOP",
+      "definition": "Agencija za zaštitu osobnih podataka (Croatian Personal Data Protection Agency) — the independent supervisory authority for data protection in Croatia, established pursuant to Article 51 of Regulation (EU) 2016/679.",
+      "source_provision": "art3"
+    },
+    {
+      "term": "OIB",
+      "definition": "Osobni identifikacijski broj (Personal Identification Number) — a unique 11-digit identification number assigned to every natural and legal person in Croatia for use in administrative, judicial, and commercial transactions.",
+      "source_provision": "art6"
+    },
+    {
+      "term": "personal data",
+      "definition": "Any information relating to an identified or identifiable natural person, as defined in Article 4(1) of Regulation (EU) 2016/679.",
+      "source_provision": "art3"
+    }
+  ]
+}

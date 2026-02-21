@@ -1,0 +1,146 @@
+{
+  "id": "access-info-nn-25-13",
+  "type": "statute",
+  "title": "Zakon o pravu na pristup informacijama",
+  "title_en": "Right of Access to Information Act",
+  "short_name": "ZPPI",
+  "status": "in_force",
+  "issued_date": "2013-02-15",
+  "in_force_date": "2013-03-08",
+  "url": "https://www.nn.hr/clanci/sluzbeni/2013_25_403.html",
+  "description": "Croatia's freedom of information legislation guaranteeing the right of access to information held by public authorities. Establishes the Information Commissioner, defines procedures for requesting information, sets out exemptions, and promotes proactive publication of information in the public interest.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1 – Purpose",
+      "content": "This Act regulates the right of access to information and the re-use of information held by public authorities in the Republic of Croatia. The purpose of this Act is to ensure transparency and openness in the work of public authorities and to enable natural and legal persons to exercise their right of access to information."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2 – Scope",
+      "content": "This Act applies to all public authorities in the Republic of Croatia, including state bodies, local and regional self-government units, legal persons with public powers, legal persons owned or predominantly financed by the state or local self-government units, and other entities performing public duties."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3 – Definitions",
+      "content": "For the purposes of this Act: (1) 'information' means any data held by a public authority in documentary form, regardless of the medium on which it is recorded, which was created during the work of the public authority or is related to its activities; (2) 'public authority' means a state body, local or regional self-government unit, legal person with public powers, or other entity performing public duties; (3) 'applicant' means any natural or legal person requesting access to information."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4 – Right of access",
+      "content": "Every natural and legal person has the right to access information held by public authorities, subject to the conditions and restrictions set out in this Act. The right of access to information includes the right to seek and receive information. The applicant is not required to state the reasons for the request."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5 – Principles",
+      "content": "The exercise of the right of access to information shall be based on the following principles: (1) the presumption of openness — information held by public authorities is public unless restricted by law; (2) timeliness — public authorities shall respond to requests promptly; (3) equality — the right of access applies equally to all applicants; (4) free disposal — the applicant may freely use the information obtained; (5) non-discrimination — access shall not be restricted on grounds of nationality, residence, or legal status."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6 – Proactive publication",
+      "content": "Public authorities shall proactively publish on their websites: (1) laws, regulations, and general acts within their competence; (2) strategic plans, programmes, and reports; (3) annual work plans and reports; (4) information on public procurement; (5) budget and financial reports; (6) information on the organisational structure and contact details; (7) minutes of meetings of representative bodies and other collegial bodies. Information shall be published in a machine-readable and open format where possible."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7 – Request for access",
+      "content": "A request for access to information may be submitted in writing or orally. A written request shall contain: (1) the name and address of the applicant; (2) a sufficient description of the information sought; (3) the manner in which the applicant wishes to receive the information. The public authority shall provide assistance to the applicant in formulating the request where necessary."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8 – Time limit for response",
+      "content": "The public authority shall decide on the request and provide the information within 15 days from the day of receiving the request. The time limit may be extended by an additional 15 days where the request relates to a large volume of information or where a third party must be consulted. The public authority shall notify the applicant of the extension and the reasons for it."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9 – Restrictions on access",
+      "content": "The public authority may restrict access to information where: (1) the information is classified under the Data Secrecy Act; (2) disclosure would undermine the prevention, investigation, or prosecution of criminal offences; (3) disclosure would undermine the protection of the decision-making process of public authorities; (4) disclosure would undermine the protection of tax or customs secrecy; (5) disclosure would undermine the protection of personal data; (6) disclosure would undermine the protection of commercial or professional secrecy. The restriction shall be proportionate and limited to what is strictly necessary."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Article 10 – Public interest test",
+      "content": "Where access to information is restricted, the public authority shall conduct a proportionality and public interest test, weighing the interest in disclosing the information against the interest in protecting it. Where the public interest in disclosure outweighs the interest in restriction, the information shall be disclosed. The public interest test shall take into account the significance of the information for public debate, transparency, and accountability."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Article 11 – Partial access",
+      "content": "Where only part of the requested information is subject to a restriction, the public authority shall grant access to the remaining parts of the information after separating the restricted parts. The public authority shall inform the applicant that part of the requested information has been withheld and the reasons for the restriction."
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Article 12 – Decision on restriction",
+      "content": "A decision to restrict access to information shall be made in writing and shall contain: (1) the legal basis for the restriction; (2) the reasons for the restriction; (3) the results of the public interest test; (4) instructions on the right to lodge an appeal with the Information Commissioner. The applicant may lodge an appeal against the decision within 15 days."
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Article 13 – Information Commissioner",
+      "content": "The Information Commissioner (Povjerenik za informiranje) is an independent body responsible for ensuring the protection of the right of access to information. The Commissioner shall be appointed by the Croatian Parliament for a term of five years. The Commissioner shall decide on appeals against decisions of public authorities, issue binding opinions, promote the right of access to information, and report annually to the Croatian Parliament."
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Article 14 – Powers of the Information Commissioner",
+      "content": "The Information Commissioner shall: (1) decide on appeals against decisions of public authorities restricting access to information; (2) conduct inspections of public authorities; (3) order public authorities to provide access to information; (4) issue recommendations and guidelines; (5) impose administrative fines for non-compliance; (6) submit proposals for the amendment of legislation; (7) cooperate with the supervisory authorities of other EU Member States and international organisations."
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Article 15 – Re-use of information",
+      "content": "Information held by public authorities may be re-used for commercial or non-commercial purposes, subject to the conditions laid down in this Act and in Directive (EU) 2019/1024 (Open Data Directive). Public authorities shall make information available for re-use in machine-readable formats and under open licences. Charges for re-use, if any, shall be limited to the marginal cost of reproduction, provision, and dissemination."
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Article 16 – Charges",
+      "content": "Access to information shall be provided free of charge. The public authority may charge the actual material costs of reproduction and delivery of the information (photocopying, postage, electronic media). The amount of charges shall be determined by a regulation adopted by the Government."
+    },
+    {
+      "provision_ref": "art17",
+      "section": "17",
+      "title": "Article 17 – Administrative offences",
+      "content": "A fine of HRK 5,000 to HRK 50,000 shall be imposed on a public authority that fails to respond to a request for access to information within the prescribed time limit or fails to proactively publish information as required by Article 6. A fine of HRK 2,000 to HRK 20,000 shall be imposed on a responsible person in the public authority for the same offence."
+    },
+    {
+      "provision_ref": "art18",
+      "section": "18",
+      "title": "Article 18 – Judicial protection",
+      "content": "Against a decision of the Information Commissioner, the public authority or the applicant may initiate an administrative dispute before the High Administrative Court of the Republic of Croatia within 30 days of delivery of the decision. The administrative dispute shall be conducted in accordance with the Administrative Disputes Act."
+    },
+    {
+      "provision_ref": "art19",
+      "section": "19",
+      "title": "Article 19 – Central catalogue of information",
+      "content": "Public authorities shall maintain a catalogue of the information they hold and publish it on their websites. The central catalogue of official documents shall be maintained by the ministry responsible for public administration. The catalogue shall contain a list of information held by each public authority, the manner of access, and any restrictions."
+    },
+    {
+      "provision_ref": "art20",
+      "section": "20",
+      "title": "Article 20 – Entry into force",
+      "content": "This Act shall enter into force on the eighth day after its publication in the Official Gazette (Narodne novine). Public authorities shall comply with the proactive publication requirements within one year of the entry into force of this Act."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "Information Commissioner",
+      "definition": "Povjerenik za informiranje — an independent body appointed by the Croatian Parliament responsible for overseeing the implementation of the right of access to information, deciding on appeals, and promoting transparency.",
+      "source_provision": "art13"
+    },
+    {
+      "term": "public authority",
+      "definition": "A state body, local or regional self-government unit, legal person with public powers, legal person owned or predominantly financed by the state, or other entity performing public duties in Croatia.",
+      "source_provision": "art3"
+    }
+  ]
+}

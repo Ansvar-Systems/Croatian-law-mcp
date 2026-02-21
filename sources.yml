@@ -1,0 +1,25 @@
+schema_version: "1.0"
+mcp_name: "Croatian Law MCP"
+jurisdiction: "HR"
+
+sources:
+  - name: "Narodne novine (Official Gazette)"
+    authority: "Narodne novine d.d."
+    official_portal: "https://www.nn.hr"
+    retrieval_method: "HTML_SCRAPE"
+    update_frequency: "weekly"
+    last_ingested: "2026-02-21"
+    license_or_terms:
+      type: "Croatian Government Open Data (public domain under Croatian Copyright Act Art. 8)"
+      url: "https://www.nn.hr"
+      summary: "Official legislative texts are public domain"
+    coverage:
+      scope: "Key Croatian legislation covering data protection, cybersecurity, e-commerce, criminal law cyber provisions, and related statutes"
+      limitations: "AI-generated seed data; full official ingestion pending"
+    languages:
+      - "hr"
+
+data_freshness:
+  automated_checks: true
+  check_frequency: "weekly"
+  last_verified: "2026-02-21"

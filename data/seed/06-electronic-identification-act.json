@@ -1,0 +1,151 @@
+{
+  "id": "eid-trust-nn-62-17",
+  "type": "statute",
+  "title": "Zakon o provedbi Uredbe (EU) br. 910/2014 o elektroničkoj identifikaciji i uslugama povjerenja",
+  "title_en": "Electronic Identification and Trust Services Act",
+  "short_name": "eIDAS Implementation Act",
+  "status": "in_force",
+  "issued_date": "2017-06-30",
+  "in_force_date": "2017-07-15",
+  "url": "https://www.nn.hr/clanci/sluzbeni/2017_62_1369.html",
+  "description": "Croatia's legislation implementing Regulation (EU) No 910/2014 (eIDAS Regulation) on electronic identification and trust services for electronic transactions in the internal market. Designates the supervisory body, establishes the national eID scheme, and regulates trust service providers.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1 – Subject matter",
+      "content": "This Act regulates the implementation of Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market (eIDAS Regulation). This Act designates the competent authorities, establishes the national electronic identification scheme, and provides supplementary rules for trust services in the Republic of Croatia."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2 – Definitions",
+      "content": "The terms used in this Act shall have the same meaning as in Regulation (EU) No 910/2014. For the purposes of this Act: (1) 'supervisory body' means the body designated under this Act for the supervision of trust service providers; (2) 'national eID scheme' means the Croatian electronic identification scheme notified to the European Commission under Article 9 of Regulation (EU) No 910/2014."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3 – Supervisory body",
+      "content": "The ministry responsible for the economy shall be the supervisory body for trust service providers in the Republic of Croatia for the purposes of Article 17 of Regulation (EU) No 910/2014. The supervisory body shall supervise qualified and non-qualified trust service providers established in the territory of Croatia and shall ensure compliance with the requirements of the eIDAS Regulation."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4 – Tasks of the supervisory body",
+      "content": "The supervisory body shall: (1) supervise qualified trust service providers to ensure they meet the requirements of Article 24 of Regulation (EU) No 910/2014; (2) take action against trust service providers that do not fulfil the requirements; (3) grant qualified status to trust service providers and maintain the trusted list; (4) verify the conformity assessment reports of qualified trust service providers; (5) cooperate with supervisory bodies of other Member States; (6) report to the European Commission as required by the eIDAS Regulation."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5 – Trusted list",
+      "content": "The supervisory body shall establish and maintain the national trusted list of qualified trust service providers and the qualified trust services they provide, in accordance with Article 22 of Regulation (EU) No 910/2014. The trusted list shall be published in a form suitable for automated processing and shall be made available electronically. The supervisory body shall notify the European Commission of the trusted list and any changes thereto."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6 – National electronic identification scheme",
+      "content": "The Republic of Croatia shall establish a national electronic identification scheme for the purpose of cross-border authentication in accordance with Article 6 of Regulation (EU) No 910/2014. The national eID scheme shall be based on the Croatian personal identity card (osobna iskaznica) with electronic identification functionality. The scheme shall be notified to the European Commission and shall be interoperable with other notified schemes."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7 – Assurance levels",
+      "content": "The national electronic identification scheme shall provide assurance levels as defined in Article 8 of Regulation (EU) No 910/2014 and Commission Implementing Regulation (EU) 2015/1502. The personal identity card with electronic identification functionality shall provide at least a substantial or high assurance level. The ministry responsible for public administration shall determine the specific technical and procedural requirements for each assurance level."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8 – Qualified trust service providers",
+      "content": "Trust service providers intending to provide qualified trust services shall notify the supervisory body and submit a conformity assessment report issued by a conformity assessment body. The supervisory body shall verify the report and, if the requirements are met, grant qualified status within three months. Qualified trust service providers shall be subject to at least biennial audits by a conformity assessment body."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9 – Qualified electronic signatures",
+      "content": "A qualified electronic signature shall have the equivalent legal effect of a handwritten signature in the Republic of Croatia, in accordance with Article 25(2) of Regulation (EU) No 910/2014. A qualified electronic signature based on a qualified certificate issued in one Member State shall be recognised as a qualified electronic signature in all other Member States. Public authorities shall accept qualified electronic signatures for their online services."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Article 10 – Qualified electronic seals",
+      "content": "A qualified electronic seal shall enjoy the presumption of integrity of the data and of correctness of the origin of the data to which the qualified electronic seal is linked, in accordance with Article 35(2) of Regulation (EU) No 910/2014. Legal persons may use qualified electronic seals to ensure the origin and integrity of data in electronic documents."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Article 11 – Qualified electronic time stamps",
+      "content": "A qualified electronic time stamp shall enjoy the presumption of the accuracy of the date and time it indicates and the integrity of the data to which the date and time are bound, in accordance with Article 41(2) of Regulation (EU) No 910/2014. Qualified electronic time stamps shall be admissible as evidence in legal proceedings."
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Article 12 – Electronic registered delivery services",
+      "content": "Data sent and received using a qualified electronic registered delivery service shall enjoy the presumption of the integrity of the data, the sending of the data by the identified sender, its receipt by the identified addressee, and the accuracy of the date and time of sending and receipt, in accordance with Article 43(2) of Regulation (EU) No 910/2014."
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Article 13 – Website authentication",
+      "content": "Qualified certificates for website authentication shall be issued by qualified trust service providers and shall provide assurance of the identity of the natural or legal person to whom the certificate is issued and the association of that person with the website, in accordance with Article 45 of Regulation (EU) No 910/2014."
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Article 14 – Liability of trust service providers",
+      "content": "Qualified trust service providers shall be liable for damage caused intentionally or negligently to any natural or legal person due to a failure to comply with the obligations under the eIDAS Regulation. The burden of proving the intention or negligence of a qualified trust service provider shall lie with the injured party. Where a qualified trust service provider informs its customers of the limitations on the use of services, the provider shall not be liable for damages arising from the use of services exceeding those limitations."
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Article 15 – Security requirements",
+      "content": "Qualified trust service providers shall take appropriate technical and organisational measures to manage the risks posed to the security of the trust services they provide. Those measures shall ensure a level of security commensurate with the degree of risk, taking into account the latest technological developments. In the event of a security breach that significantly impacts the trust service or the personal data maintained therein, the trust service provider shall notify the supervisory body within 24 hours."
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Article 16 – Recognition of third-country trust services",
+      "content": "Trust services provided by trust service providers established in a third country shall be recognised as legally equivalent to qualified trust services provided by qualified trust service providers established in the Union where: (a) the trust services originate from a third country that has concluded a mutual recognition agreement with the Union; or (b) the trust services meet the requirements of the eIDAS Regulation and are guaranteed by a qualified trust service provider established in the Union."
+    },
+    {
+      "provision_ref": "art17",
+      "section": "17",
+      "title": "Article 17 – Enforcement measures",
+      "content": "Where a trust service provider fails to comply with the requirements of the eIDAS Regulation or this Act, the supervisory body may: (1) issue a warning; (2) require the trust service provider to remedy the failure within a specified time limit; (3) withdraw the qualified status of the trust service provider; (4) require the trust service provider to cease operations. The supervisory body shall inform the European Commission and other Member States of the withdrawal of qualified status."
+    },
+    {
+      "provision_ref": "art18",
+      "section": "18",
+      "title": "Article 18 – Penalties",
+      "content": "A fine of HRK 10,000 to HRK 300,000 shall be imposed on a trust service provider that fails to comply with the notification requirements, security requirements, or other obligations under this Act or the eIDAS Regulation. A fine of HRK 5,000 to HRK 50,000 shall be imposed on a responsible person in a legal entity for the same offence."
+    },
+    {
+      "provision_ref": "art19",
+      "section": "19",
+      "title": "Article 19 – Transitional provisions",
+      "content": "Trust service providers that were providing trust services before the entry into force of this Act shall comply with the requirements of the eIDAS Regulation and this Act within 12 months. Qualified certificates and qualified electronic signatures issued before the entry into force of this Act under the previous Electronic Signature Act (NN 10/02, 80/08) shall remain valid until their expiry."
+    },
+    {
+      "provision_ref": "art20",
+      "section": "20",
+      "title": "Article 20 – Entry into force",
+      "content": "This Act shall enter into force on the fifteenth day after its publication in the Official Gazette (Narodne novine). The Electronic Signature Act (Narodne novine, No. 10/02, 80/08) is hereby repealed."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "qualified trust service provider",
+      "definition": "A trust service provider who provides one or more qualified trust services and is granted the qualified status by the supervisory body, in accordance with Article 3(20) of Regulation (EU) No 910/2014.",
+      "source_provision": "art8"
+    },
+    {
+      "term": "electronic identification",
+      "definition": "The process of using person identification data in electronic form uniquely representing a natural or legal person, or a natural person representing a legal person, as defined in Article 3(1) of Regulation (EU) No 910/2014.",
+      "source_provision": "art2"
+    },
+    {
+      "term": "national eID scheme",
+      "definition": "The Croatian electronic identification scheme based on the personal identity card (osobna iskaznica) with electronic identification functionality, notified to the European Commission under Article 9 of the eIDAS Regulation.",
+      "source_provision": "art6"
+    }
+  ]
+}

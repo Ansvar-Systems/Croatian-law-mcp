@@ -1,0 +1,183 @@
+{
+  "$schema": "./golden-tests.schema.json",
+  "version": "1.0",
+  "mcp_name": "Croatian Law MCP",
+  "description": "Golden contract tests for the Croatian Law MCP -- 12 tests covering article retrieval, search, citation, cross-reference, and negative cases",
+  "tests": [
+    {
+      "id": "hr-001",
+      "category": "article_retrieval",
+      "description": "Retrieve GDPR Implementation Act Art. 1 -- scope and subject matter of the Croatian GDPR implementing provisions",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Zakon o provedbi Opće uredbe o zaštiti podataka",
+        "article": "1"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["Regulation (EU) 2016/679", "General Data Protection Regulation", "personal data", "Republic of Croatia"],
+        "fields_present": ["text", "article_number"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "hr-002",
+      "category": "article_retrieval",
+      "description": "Retrieve Cybersecurity Act Art. 1 -- scope of the Croatian NIS2 transposition",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Zakon o kibernetičkoj sigurnosti",
+        "article": "1"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["cybersecurity", "Directive (EU) 2022/2555", "NIS2", "essential"],
+        "fields_present": ["text", "article_number"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "hr-003",
+      "category": "article_retrieval",
+      "description": "Retrieve Criminal Code Art. 266 -- unauthorised access to a computer system",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Kazneni zakon",
+        "article": "266"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["computer system", "unauthorised", "access", "security measures"],
+        "fields_present": ["text", "article_number"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "hr-004",
+      "category": "article_retrieval",
+      "description": "Retrieve Critical Infrastructure Protection Act Art. 7 -- operator security plans",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Zakon o kritičnim infrastrukturama",
+        "article": "7"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["operator security plan", "risk assessment", "security measures", "critical"],
+        "fields_present": ["text", "article_number"],
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "hr-005",
+      "category": "search",
+      "description": "Full-text search for 'personal data' returns GDPR Implementation Act and related provisions",
+      "tool": "search_legislation",
+      "input": {
+        "query": "personal data"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "min_results": 1,
+        "any_result_contains": ["personal data", "data protection", "GDPR", "Regulation (EU) 2016/679"]
+      }
+    },
+    {
+      "id": "hr-006",
+      "category": "search",
+      "description": "Full-text search for 'cybersecurity' returns Cybersecurity Act provisions",
+      "tool": "search_legislation",
+      "input": {
+        "query": "cybersecurity"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "min_results": 1,
+        "any_result_contains": ["cybersecurity", "NIS2", "essential entities", "CSIRT"]
+      }
+    },
+    {
+      "id": "hr-007",
+      "category": "search",
+      "description": "Full-text search for 'trade secret' returns Trade Secrets Act provisions",
+      "tool": "search_legislation",
+      "input": {
+        "query": "trade secret"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "min_results": 1,
+        "any_result_contains": ["trade secret", "unlawful acquisition", "disclosure", "Directive (EU) 2016/943"]
+      }
+    },
+    {
+      "id": "hr-008",
+      "category": "citation_roundtrip",
+      "description": "Citation for GDPR Implementation Act Art. 10 includes nn.hr URL pattern",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "GDPR Implementation Act",
+        "article": "10"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "citation_url_pattern": "nn\\.hr",
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "hr-009",
+      "category": "citation_roundtrip",
+      "description": "Citation for Electronic Communications Act Art. 3 includes nn.hr URL pattern",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Zakon o elektroničkim komunikacijama",
+        "article": "3"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "citation_url_pattern": "nn\\.hr",
+        "text_not_empty": true
+      }
+    },
+    {
+      "id": "hr-010",
+      "category": "eu_cross_reference",
+      "description": "GDPR Implementation Act cross-reference to EU GDPR -- Croatian GDPR Act implements Regulation (EU) 2016/679",
+      "tool": "get_provision_eu_basis",
+      "input": {
+        "law_identifier": "Zakon o provedbi Opće uredbe o zaštiti podataka"
+      },
+      "assertions": {
+        "result_not_empty": true,
+        "any_result_contains": ["GDPR", "General Data Protection Regulation", "2016/679"]
+      }
+    },
+    {
+      "id": "hr-011",
+      "category": "negative_test",
+      "description": "Non-existent Croatian law returns graceful error or empty result",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Zakon o izmišljenim stvarima (NN 99/99)",
+        "article": "1"
+      },
+      "assertions": {
+        "handles_gracefully": true
+      }
+    },
+    {
+      "id": "hr-012",
+      "category": "negative_test",
+      "description": "Malformed article number returns graceful error or empty result",
+      "tool": "get_provision",
+      "input": {
+        "law_identifier": "Zakon o provedbi Opće uredbe o zaštiti podataka",
+        "article": "999ZZZ-INVALID"
+      },
+      "assertions": {
+        "handles_gracefully": true
+      }
+    }
+  ]
+}

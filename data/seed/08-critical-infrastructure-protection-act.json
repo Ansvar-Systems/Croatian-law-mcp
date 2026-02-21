@@ -1,0 +1,151 @@
+{
+  "id": "cip-nn-56-13",
+  "type": "statute",
+  "title": "Zakon o kritičnim infrastrukturama",
+  "title_en": "Critical Infrastructure Protection Act",
+  "short_name": "CIP Act",
+  "status": "in_force",
+  "issued_date": "2013-05-08",
+  "in_force_date": "2013-05-16",
+  "url": "https://www.nn.hr/clanci/sluzbeni/2013_56_1135.html",
+  "description": "Croatia's legislation on the identification and designation of critical infrastructures and their protection, implementing Directive 2008/114/EC on the identification and designation of European critical infrastructures. Establishes the framework for risk assessment, security planning, and coordination of critical infrastructure protection.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1 – Subject matter and scope",
+      "content": "This Act establishes the procedure for the identification and designation of national and European critical infrastructures in the Republic of Croatia and lays down measures for their protection, implementing Directive 2008/114/EC of the Council of 8 December 2008 on the identification and designation of European critical infrastructures and the assessment of the need to improve their protection. This Act applies to critical infrastructures in the sectors of energy and transport, and may be extended to other sectors by Government decision."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2 – Definitions",
+      "content": "For the purposes of this Act: (1) 'critical infrastructure' means an asset, system, or part thereof located in the Republic of Croatia which is essential for the maintenance of vital societal functions, health, safety, security, economic well-being, or social well-being of people, and the disruption or destruction of which would have a significant impact in Croatia; (2) 'European critical infrastructure' means critical infrastructure located in Croatia the disruption or destruction of which would have a significant impact on at least two Member States; (3) 'operator' means a public or private entity responsible for the operation of a critical infrastructure."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3 – Sectors",
+      "content": "Critical infrastructures shall be identified in the following sectors: (1) energy, including electricity generation, transmission, and distribution, oil and gas production, refining, and distribution, and district heating; (2) transport, including road, rail, air, and maritime transport, and related logistics; (3) information and communication technology; (4) water supply and wastewater management; (5) food supply and distribution; (6) health, including hospitals and pharmaceutical supply chains; (7) financial services, including banking and payment systems; (8) public administration and emergency services."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4 – Identification criteria",
+      "content": "The identification of critical infrastructure shall be based on the following cross-cutting criteria: (1) the number of persons potentially affected (casualties and injuries); (2) the economic impact (significant economic loss and deterioration of products or services); (3) the public impact (impact on public confidence, physical suffering, and disruption of daily life); (4) the environmental impact. An infrastructure shall be designated as critical where its disruption would meet the thresholds set by Government regulation."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5 – Identification and designation procedure",
+      "content": "The Government of the Republic of Croatia shall, on the proposal of the competent ministries and in consultation with the operators, identify and designate critical infrastructures and European critical infrastructures. The identification shall be reviewed annually and updated as necessary. The designation of a European critical infrastructure shall be carried out in agreement with the Member States that may be significantly affected."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6 – Competent authority",
+      "content": "The ministry responsible for internal affairs shall be the national contact point for the protection of European critical infrastructures. Sectoral competent authorities shall be designated by the Government for each sector referred to in Article 3. The competent authorities shall coordinate the protection of critical infrastructures, supervise operators, and liaise with the European Commission and other Member States."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7 – Operator security plans",
+      "content": "Each operator of a designated critical infrastructure shall prepare and maintain an operator security plan (plan sigurnosti operatora). The plan shall identify: (1) the critical assets of the infrastructure; (2) the risk assessment, including threat scenarios and vulnerability analysis; (3) the security measures in place or planned, including physical, organisational, and cybersecurity measures; (4) procedures for incident detection, response, and recovery; (5) communication protocols with competent authorities. The plan shall be submitted to the competent authority and updated annually."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8 – Risk assessment",
+      "content": "Operators shall conduct risk assessments for their critical infrastructures, taking into account: (1) all relevant threats, including natural hazards, technological accidents, and deliberate attacks; (2) vulnerabilities of the infrastructure, including interdependencies with other critical infrastructures; (3) potential consequences of disruption or destruction. Risk assessments shall follow recognised national or international standards and shall be reviewed at least every two years."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9 – Security liaison officers",
+      "content": "Each operator of a designated critical infrastructure shall appoint a security liaison officer who shall serve as the point of contact with the competent authority. The security liaison officer shall be responsible for implementing the operator security plan, liaising with competent authorities, and ensuring that security measures are maintained. The security liaison officer shall have appropriate security clearance."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Article 10 – Confidentiality",
+      "content": "All information relating to the designation and security of critical infrastructures, including operator security plans, risk assessments, and vulnerability analyses, shall be classified in accordance with the Data Secrecy Act (NN 79/07). Access to such information shall be restricted to persons with appropriate security clearance and a legitimate need to know."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Article 11 – Coordination and cooperation",
+      "content": "The Government shall establish a coordination body for critical infrastructure protection, composed of representatives of the competent ministries, security services, and other relevant bodies. The coordination body shall: (1) coordinate the implementation of this Act; (2) develop national guidelines for critical infrastructure protection; (3) organise exercises and drills; (4) facilitate the exchange of information between operators and competent authorities."
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Article 12 – Inspections",
+      "content": "The competent authorities shall carry out inspections of designated critical infrastructures to verify compliance with this Act. Inspections may include: (1) review of operator security plans and risk assessments; (2) on-site visits; (3) testing of security measures; (4) interviews with security liaison officers and other personnel. The competent authority shall issue a report following each inspection and may issue binding orders to remedy deficiencies."
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Article 13 – Incident reporting",
+      "content": "Operators shall report to the competent authority any incident that has or may have a significant impact on the continuity of the critical infrastructure. The report shall be made without undue delay and shall include: (1) a description of the incident; (2) the nature and extent of the impact; (3) the measures taken in response. The competent authority shall coordinate the response where the incident affects multiple critical infrastructures or has cross-border implications."
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Article 14 – Interdependency analysis",
+      "content": "The coordination body shall conduct analyses of interdependencies between critical infrastructures, including cross-sector and cross-border interdependencies. The analysis shall identify cascading effects and single points of failure. The results of interdependency analyses shall be taken into account in operator security plans and in national risk assessments."
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Article 15 – European critical infrastructure",
+      "content": "Where a critical infrastructure located in Croatia is designated as a European critical infrastructure, the competent authority shall inform the European Commission and the other Member States concerned. The operator shall prepare a security plan that addresses the specific risks to the European critical infrastructure and shall appoint a security liaison officer. Croatia shall participate in bilateral and multilateral arrangements for the protection of European critical infrastructures."
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Article 16 – Research and development",
+      "content": "The Government shall promote research and development in the field of critical infrastructure protection, including: (1) development of risk assessment methodologies; (2) new technologies for physical and cyber protection; (3) interdependency modelling; (4) resilience enhancement. Research programmes shall be coordinated with EU-funded research initiatives."
+    },
+    {
+      "provision_ref": "art17",
+      "section": "17",
+      "title": "Article 17 – Training and exercises",
+      "content": "The competent authorities shall organise regular training programmes and exercises for operators, security liaison officers, and relevant public authorities. Exercises shall test the effectiveness of security plans, incident response procedures, and coordination mechanisms. Croatia shall participate in exercises organised at the EU level."
+    },
+    {
+      "provision_ref": "art18",
+      "section": "18",
+      "title": "Article 18 – Penalties",
+      "content": "A fine of HRK 50,000 to HRK 500,000 shall be imposed on a legal person (operator) that: (1) fails to prepare or maintain an operator security plan; (2) fails to conduct or update a risk assessment; (3) fails to appoint a security liaison officer; (4) fails to report an incident as required by Article 13. A fine of HRK 10,000 to HRK 100,000 shall be imposed on a responsible person in the legal entity for the same offence."
+    },
+    {
+      "provision_ref": "art19",
+      "section": "19",
+      "title": "Article 19 – Transitional provisions",
+      "content": "The Government shall adopt implementing regulations within 12 months of the entry into force of this Act, including the thresholds for identifying critical infrastructures and the form and content of operator security plans. Operators of infrastructures designated as critical before the entry into force of this Act shall submit their operator security plans within 12 months."
+    },
+    {
+      "provision_ref": "art20",
+      "section": "20",
+      "title": "Article 20 – Entry into force",
+      "content": "This Act shall enter into force on the eighth day after its publication in the Official Gazette (Narodne novine)."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "critical infrastructure",
+      "definition": "An asset, system, or part thereof located in Croatia which is essential for the maintenance of vital societal functions, health, safety, security, economic well-being, or social well-being, and the disruption or destruction of which would have a significant impact.",
+      "source_provision": "art2"
+    },
+    {
+      "term": "operator",
+      "definition": "A public or private entity responsible for the investment in, and the day-to-day operation of, a critical infrastructure designated under this Act.",
+      "source_provision": "art2"
+    },
+    {
+      "term": "operator security plan",
+      "definition": "A plan prepared and maintained by the operator of a designated critical infrastructure, identifying critical assets, risk assessments, security measures, incident response procedures, and communication protocols.",
+      "source_provision": "art7"
+    }
+  ]
+}

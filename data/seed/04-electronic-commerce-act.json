@@ -1,0 +1,151 @@
+{
+  "id": "ecommerce-nn-173-03",
+  "type": "statute",
+  "title": "Zakon o elektroničkoj trgovini",
+  "title_en": "Electronic Commerce Act",
+  "short_name": "ZET",
+  "status": "in_force",
+  "issued_date": "2003-10-24",
+  "in_force_date": "2003-11-08",
+  "url": "https://www.nn.hr/clanci/sluzbeni/2003_173_2739.html",
+  "description": "Croatia's legislation on electronic commerce, transposing Directive 2000/31/EC (E-Commerce Directive). Regulates information society services, electronic contracts, intermediary liability, commercial communications, and establishes the principle of the country of origin.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Article 1 – Subject matter",
+      "content": "This Act regulates the provision of information society services in the Republic of Croatia, implementing Directive 2000/31/EC of the European Parliament and of the Council of 8 June 2000 on certain legal aspects of information society services, in particular electronic commerce, in the Internal Market (E-Commerce Directive). This Act establishes the legal framework for electronic contracts, intermediary service provider liability, commercial communications, and supervision of information society services."
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Article 2 – Definitions",
+      "content": "For the purposes of this Act: (1) 'information society service' means any service normally provided for remuneration, at a distance, by electronic means and at the individual request of a recipient of the service; (2) 'service provider' means any natural or legal person providing an information society service; (3) 'recipient of the service' means any natural or legal person who, for professional or other purposes, uses an information society service; (4) 'commercial communication' means any form of communication designed to promote, directly or indirectly, the goods, services, or image of a company, organisation, or person."
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Article 3 – Country of origin principle",
+      "content": "Information society services provided by a service provider established in the Republic of Croatia shall comply with Croatian law regarding the coordinated field. Croatia shall not restrict the freedom to provide information society services from another Member State of the European Union, except where necessary for reasons of public policy, public health, public security, or consumer protection, and in accordance with the procedures laid down in Directive 2000/31/EC."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Article 4 – Information requirements",
+      "content": "A service provider shall make available to recipients of the service and to competent authorities, in an easily, directly, and permanently accessible manner: (1) the name and legal form of the service provider; (2) the geographic address at which the service provider is established; (3) contact details, including email address; (4) the trade register in which the service provider is entered and the registration number; (5) the VAT identification number; (6) where the activity is subject to an authorisation scheme, the particulars of the relevant supervisory authority."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Article 5 – Commercial communications",
+      "content": "Commercial communications which are part of, or constitute, an information society service shall be clearly identifiable as such. The natural or legal person on whose behalf the commercial communication is made shall be clearly identifiable. Promotional offers, competitions, and games shall be clearly identifiable as such, and the conditions for participation shall be easily accessible and presented clearly and unambiguously. Unsolicited commercial communications by email shall be clearly and unambiguously identifiable as such as soon as they are received."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Article 6 – Regulated professions",
+      "content": "Commercial communications by members of regulated professions shall be permitted provided that they comply with the professional rules regarding the independence, dignity, and honour of the profession, professional secrecy, and fairness towards clients and other members of the profession. The relevant professional bodies shall be encouraged to establish codes of conduct relating to commercial communications."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Article 7 – Electronic contracts",
+      "content": "Contracts concluded by electronic means shall not be denied legal effectiveness and validity solely on the ground that they are concluded by electronic means. The legal requirements for the formation and validity of contracts shall apply equally to contracts concluded by electronic means, including requirements as to offer and acceptance, consideration, and capacity of the parties. Specific provisions of consumer protection law shall apply to electronic contracts concluded with consumers."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Article 8 – Information prior to placing an order",
+      "content": "Before an order is placed, the service provider shall provide the recipient with the following information clearly, comprehensibly, and unambiguously: (1) the technical steps to follow to conclude the contract; (2) whether the concluded contract will be filed by the service provider and whether it will be accessible; (3) the technical means for identifying and correcting input errors prior to placing the order; (4) the languages offered for the conclusion of the contract; (5) the relevant codes of conduct and the means of accessing them."
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Article 9 – Order placement and acknowledgement",
+      "content": "Where a recipient of the service places an order through electronic means, the service provider shall acknowledge receipt of the order without undue delay and by electronic means. The order and the acknowledgement of receipt shall be deemed to be received when the parties to whom they are addressed are able to access them. The service provider shall make available to the recipient appropriate, effective, and accessible technical means allowing the identification and correction of input errors prior to placing the order."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Article 10 – Mere conduit",
+      "content": "Where an information society service is provided that consists of the transmission in a communication network of information provided by a recipient of the service, or the provision of access to a communication network, the service provider shall not be liable for the information transmitted, on condition that the provider: (a) does not initiate the transmission; (b) does not select the receiver of the transmission; and (c) does not select or modify the information contained in the transmission."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Article 11 – Caching",
+      "content": "Where an information society service is provided that consists of the transmission in a communication network of information provided by a recipient of the service, the service provider shall not be liable for the automatic, intermediate, and temporary storage of that information, performed for the sole purpose of making more efficient the onward transmission of the information to other recipients, on condition that the provider: (a) does not modify the information; (b) complies with conditions on access to the information; (c) acts expeditiously to remove or disable access to the information upon obtaining actual knowledge that the information has been removed or access to it disabled."
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Article 12 – Hosting",
+      "content": "Where an information society service is provided that consists of the storage of information provided by a recipient of the service, the service provider shall not be liable for the information stored at the request of a recipient of the service, on condition that: (a) the provider does not have actual knowledge of illegal activity or information and is not aware of facts or circumstances from which the illegal activity or information is apparent; or (b) the provider, upon obtaining such knowledge or awareness, acts expeditiously to remove or disable access to the information."
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Article 13 – No general obligation to monitor",
+      "content": "Service providers shall not be under a general obligation to monitor the information which they transmit or store, nor under a general obligation actively to seek facts or circumstances indicating illegal activity. This provision shall not affect any obligation imposed by the competent court or administrative authority to remove or prevent access to specific identified illegal content, in accordance with applicable law."
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Article 14 – Codes of conduct",
+      "content": "Trade associations, consumer organisations, and professional bodies shall be encouraged to draw up codes of conduct at the national and European level for the purpose of the proper implementation of this Act. Where appropriate, the codes of conduct shall address the protection of minors and human dignity. The Government shall encourage the involvement of associations representing consumers in the drafting of codes of conduct."
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Article 15 – Out-of-court dispute settlement",
+      "content": "The law shall not hamper the use of out-of-court dispute settlement mechanisms, including appropriate electronic means, for the resolution of disputes arising from the provision of information society services. Bodies responsible for out-of-court settlement of disputes shall operate in compliance with the principles of independence, transparency, and due process."
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Article 16 – Court proceedings",
+      "content": "Court proceedings relating to information society services shall allow for appropriate measures to be taken, including interim measures, to terminate any alleged infringement and to prevent any further impairment of the interests involved. Courts may order service providers to terminate or prevent an infringement, including by removing illegal content or disabling access to it."
+    },
+    {
+      "provision_ref": "art17",
+      "section": "17",
+      "title": "Article 17 – Supervision",
+      "content": "The ministry responsible for the economy shall be the competent authority for the supervision of information society services. The competent authority shall cooperate with the competent authorities of other EU Member States for the purposes of the effective implementation of Directive 2000/31/EC. The competent authority shall provide a contact point for questions arising from the provision of information society services."
+    },
+    {
+      "provision_ref": "art18",
+      "section": "18",
+      "title": "Article 18 – Penalties",
+      "content": "A fine of HRK 10,000 to HRK 500,000 shall be imposed on a legal person that fails to comply with the information requirements set out in Article 4 of this Act or the requirements for commercial communications set out in Article 5. A fine of HRK 5,000 to HRK 100,000 shall be imposed on a responsible person in a legal entity for the same infringement."
+    },
+    {
+      "provision_ref": "art19",
+      "section": "19",
+      "title": "Article 19 – Transitional provisions",
+      "content": "Service providers established in the Republic of Croatia that were providing information society services before the entry into force of this Act shall ensure compliance with the requirements of this Act within six months of its entry into force."
+    },
+    {
+      "provision_ref": "art20",
+      "section": "20",
+      "title": "Article 20 – Entry into force",
+      "content": "This Act shall enter into force on the eighth day after its publication in the Official Gazette (Narodne novine). The provisions of this Act relating to the coordinated field and the country of origin principle shall apply from the date of accession of the Republic of Croatia to the European Union."
+    }
+  ],
+  "definitions": [
+    {
+      "term": "information society service",
+      "definition": "Any service normally provided for remuneration, at a distance, by electronic means and at the individual request of a recipient of the service, as defined in Directive 2000/31/EC and Directive (EU) 2015/1535.",
+      "source_provision": "art2"
+    },
+    {
+      "term": "service provider",
+      "definition": "Any natural or legal person providing an information society service.",
+      "source_provision": "art2"
+    },
+    {
+      "term": "commercial communication",
+      "definition": "Any form of communication designed to promote, directly or indirectly, the goods, services, or image of a company, organisation, or person pursuing a commercial, industrial, or craft activity or exercising a regulated profession.",
+      "source_provision": "art2"
+    }
+  ]
+}
