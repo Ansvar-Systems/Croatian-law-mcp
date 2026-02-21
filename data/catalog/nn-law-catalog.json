@@ -1,0 +1,564 @@
+{
+  "generated_at": "2026-02-21T20:34:56.546Z",
+  "source": "https://narodne-novine.nn.hr/api",
+  "entries": [
+    {
+      "key": "2015-15-276",
+      "year": 2015,
+      "issue": 15,
+      "act_num": "276",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o veterinarsko-medicinskim proizvodima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/15/276"
+    },
+    {
+      "key": "2015-15-277",
+      "year": 2015,
+      "issue": 15,
+      "act_num": "277",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o proračunu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/15/277"
+    },
+    {
+      "key": "2015-18-354",
+      "year": 2015,
+      "issue": 18,
+      "act_num": "354",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o tržištu kapitala",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/18/354"
+    },
+    {
+      "key": "2015-18-355",
+      "year": 2015,
+      "issue": 18,
+      "act_num": "355",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o sigurnosti i interoperabilnosti željezničkog sustava",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/18/355"
+    },
+    {
+      "key": "2015-18-356",
+      "year": 2015,
+      "issue": 18,
+      "act_num": "356",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o područjima posebne državne skrbi",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/18/356"
+    },
+    {
+      "key": "2015-19-396",
+      "year": 2015,
+      "issue": 19,
+      "act_num": "396",
+      "type": "ZAKON",
+      "title": "Zakon o sanaciji kreditnih institucija i investicijskih društava",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/19/396"
+    },
+    {
+      "key": "2015-19-397",
+      "year": 2015,
+      "issue": 19,
+      "act_num": "397",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o kreditnim institucijama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/19/397"
+    },
+    {
+      "key": "2015-19-398",
+      "year": 2015,
+      "issue": 19,
+      "act_num": "398",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o izborima zastupnika u Hrvatski sabor",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/19/398"
+    },
+    {
+      "key": "2015-26-539",
+      "year": 2015,
+      "issue": 26,
+      "act_num": "539",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o pravosudnoj suradnji u kaznenim stvarima s državama članicama Europske unije",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/26/539"
+    },
+    {
+      "key": "2015-26-540",
+      "year": 2015,
+      "issue": 26,
+      "act_num": "540",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Pomorskog zakonika",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/26/540"
+    },
+    {
+      "key": "2015-26-541",
+      "year": 2015,
+      "issue": 26,
+      "act_num": "541",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Općeg poreznog zakona",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/26/541"
+    },
+    {
+      "key": "2015-26-542",
+      "year": 2015,
+      "issue": 26,
+      "act_num": "542",
+      "type": "ZAKON",
+      "title": "Zakon o dopuni Zakona o reprezentativnosti udruga poslodavaca i sindikata",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/26/542"
+    },
+    {
+      "key": "2015-26-543",
+      "year": 2015,
+      "issue": 26,
+      "act_num": "543",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o društveno poticanoj stanogradnji",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/26/543"
+    },
+    {
+      "key": "2015-30-611",
+      "year": 2015,
+      "issue": 30,
+      "act_num": "611",
+      "type": "ZAKON",
+      "title": "Zakon o osiguranju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/30/611"
+    },
+    {
+      "key": "2015-30-612",
+      "year": 2015,
+      "issue": 30,
+      "act_num": "612",
+      "type": "ZAKON",
+      "title": "Zakon o poljoprivredi",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/30/612"
+    },
+    {
+      "key": "2015-30-613",
+      "year": 2015,
+      "issue": 30,
+      "act_num": "613",
+      "type": "ZAKON",
+      "title": "Zakon o prestanku važenja Zakona o listi tjelesnih oštećenja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/30/613"
+    },
+    {
+      "key": "2015-33-677",
+      "year": 2015,
+      "issue": 33,
+      "act_num": "677",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o mirovinskom osiguranju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/33/677"
+    },
+    {
+      "key": "2015-33-678",
+      "year": 2015,
+      "issue": 33,
+      "act_num": "678",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o policiji",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/33/678"
+    },
+    {
+      "key": "2015-33-679",
+      "year": 2015,
+      "issue": 33,
+      "act_num": "679",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o sudovima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/33/679"
+    },
+    {
+      "key": "2015-33-680",
+      "year": 2015,
+      "issue": 33,
+      "act_num": "680",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o državnom odvjetništvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/33/680"
+    },
+    {
+      "key": "2015-33-681",
+      "year": 2015,
+      "issue": 33,
+      "act_num": "681",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o nasljeđivanju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/33/681"
+    },
+    {
+      "key": "2015-33-682",
+      "year": 2015,
+      "issue": 33,
+      "act_num": "682",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o Nacionalnom preventivnom mehanizmu za sprečavanje mučenja i drugih okrutnih, neljudskih ili ponižavajućih postupaka ili kažnjavanja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/33/682"
+    },
+    {
+      "key": "2015-36-732",
+      "year": 2015,
+      "issue": 36,
+      "act_num": "732",
+      "type": "ZAKON",
+      "title": "Zakon o pogrebničkoj djelatnosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/36/732"
+    },
+    {
+      "key": "2015-36-733",
+      "year": 2015,
+      "issue": 36,
+      "act_num": "733",
+      "type": "ZAKON",
+      "title": "Zakon o nadzoru predmeta od plemenitih kovina",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/36/733"
+    },
+    {
+      "key": "2015-36-734",
+      "year": 2015,
+      "issue": 36,
+      "act_num": "734",
+      "type": "ZAKON",
+      "title": "Zakon o uskrati isplate pojedinih materijalnih prava zaposlenima u javnim službama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/36/734"
+    },
+    {
+      "key": "2015-36-735",
+      "year": 2015,
+      "issue": 36,
+      "act_num": "735",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o uskrati prava na uvećanje plaće po osnovi ostvarenih godina radnog staža",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/36/735"
+    },
+    {
+      "key": "2015-36-736",
+      "year": 2015,
+      "issue": 36,
+      "act_num": "736",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o prikupljanju, obradi, povezivanju, korištenju i razmjeni podataka o primicima i javnim davanjima po osiguranicima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/36/736"
+    },
+    {
+      "key": "2015-36-737",
+      "year": 2015,
+      "issue": 36,
+      "act_num": "737",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o radnom vremenu, obveznim odmorima mobilnih radnika i uređajima za bilježenje u cestovnom prijevozu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/36/737"
+    },
+    {
+      "key": "2015-39-803",
+      "year": 2015,
+      "issue": 39,
+      "act_num": "803",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o radiološkoj i nuklearnoj sigurnosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/39/803"
+    },
+    {
+      "key": "2015-48-936",
+      "year": 2015,
+      "issue": 48,
+      "act_num": "936",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o poljoprivrednom zemljištu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/48/936"
+    },
+    {
+      "key": "2015-51-994",
+      "year": 2015,
+      "issue": 51,
+      "act_num": "994",
+      "type": "ZAKON",
+      "title": "Zakon o komasaciji poljoprivrednog zemljišta",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/51/994"
+    },
+    {
+      "key": "2015-51-995",
+      "year": 2015,
+      "issue": 51,
+      "act_num": "995",
+      "type": "ZAKON",
+      "title": "Zakon o Hrvatskoj agronomskoj komori",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/51/995"
+    },
+    {
+      "key": "2015-56-1092",
+      "year": 2015,
+      "issue": 56,
+      "act_num": "1092",
+      "type": "ZAKON",
+      "title": "Zakon o zaštiti novčarskih institucija",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/56/1092"
+    },
+    {
+      "key": "2015-56-1093",
+      "year": 2015,
+      "issue": 56,
+      "act_num": "1093",
+      "type": "ZAKON",
+      "title": "Zakon o pojednostavljenju razmjene podataka između tijela država članica Europske unije nadležnih za provedbu zakona",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/56/1093"
+    },
+    {
+      "key": "2015-56-1094",
+      "year": 2015,
+      "issue": 56,
+      "act_num": "1094",
+      "type": "ZAKON",
+      "title": "Zakon o provedbi Uredbe (EU) br. 258/2012 o provedbi članka 10. Protokola Ujedinjenih naroda o vatrenom oružju, utvrđivanju odobrenja za izvoz vatrenog oružja, mjera za uvoz i provoz vatrenog oružja, njegovih dijelova i komponenata i streljiva",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/56/1094"
+    },
+    {
+      "key": "2015-56-1095",
+      "year": 2015,
+      "issue": 56,
+      "act_num": "1095",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Kaznenog zakona",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/56/1095"
+    },
+    {
+      "key": "2015-56-1096",
+      "year": 2015,
+      "issue": 56,
+      "act_num": "1096",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o sudovima za mladež",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/56/1096"
+    },
+    {
+      "key": "2015-56-1097",
+      "year": 2015,
+      "issue": 56,
+      "act_num": "1097",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o službenim kontrolama koje se provode sukladno propisima o hrani, hrani za životinje, o zdravlju i dobrobiti životinja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/56/1097"
+    },
+    {
+      "key": "2015-57-1113",
+      "year": 2015,
+      "issue": 57,
+      "act_num": "1113",
+      "type": "ZAKON",
+      "title": "Zakon o dopuni Zakona o sprječavanju sukoba interesa",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/57/1113"
+    },
+    {
+      "key": "2015-61-1188",
+      "year": 2015,
+      "issue": 61,
+      "act_num": "1188",
+      "type": "ZAKON",
+      "title": "Ispravak Zakona o izmjenama i dopunama Kaznenog zakona",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/61/1188"
+    },
+    {
+      "key": "2015-62-1189",
+      "year": 2015,
+      "issue": 62,
+      "act_num": "1189",
+      "type": "ZAKON",
+      "title": "Zakon o osobnoj iskaznici",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/62/1189"
+    },
+    {
+      "key": "2015-64-1221",
+      "year": 2015,
+      "issue": 64,
+      "act_num": "1221",
+      "type": "ZAKON",
+      "title": "Zakon o pravima žrtava seksualnog nasilja za vrijeme oružane agresije na Republiku Hrvatsku u Domovinskom ratu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/64/1221"
+    },
+    {
+      "key": "2015-64-1222",
+      "year": 2015,
+      "issue": 64,
+      "act_num": "1222",
+      "type": "ZAKON",
+      "title": "Zakon o prijenosu osnivačkih prava nad Sveučilištem Sjever na Republiku Hrvatsku",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/64/1222"
+    },
+    {
+      "key": "2015-64-1223",
+      "year": 2015,
+      "issue": 64,
+      "act_num": "1223",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o zakupu i kupoprodaji poslovnoga prostora",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/64/1223"
+    },
+    {
+      "key": "2015-64-1224",
+      "year": 2015,
+      "issue": 64,
+      "act_num": "1224",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o vodi za ljudsku potrošnju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/64/1224"
+    },
+    {
+      "key": "2015-64-1225",
+      "year": 2015,
+      "issue": 64,
+      "act_num": "1225",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o sigurnosti prometa na cestama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/64/1225"
+    },
+    {
+      "key": "2015-66-1259",
+      "year": 2015,
+      "issue": 66,
+      "act_num": "1259",
+      "type": "ZAKON",
+      "title": "Zakon o izborima zastupnika u Hrvatski sabor (pročišćeni tekst)",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/66/1259"
+    },
+    {
+      "key": "2015-70-1328",
+      "year": 2015,
+      "issue": 70,
+      "act_num": "1328",
+      "type": "ZAKON",
+      "title": "Zakon o međunarodnoj i privremenoj zaštiti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/70/1328"
+    },
+    {
+      "key": "2015-71-1365",
+      "year": 2015,
+      "issue": 71,
+      "act_num": "1365",
+      "type": "ZAKON",
+      "title": "Stečajni zakon",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/71/1365"
+    },
+    {
+      "key": "2015-75-1430",
+      "year": 2015,
+      "issue": 75,
+      "act_num": "1430",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o obrani",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/75/1430"
+    },
+    {
+      "key": "2015-75-1431",
+      "year": 2015,
+      "issue": 75,
+      "act_num": "1431",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o službi u oružanim snagama Republike Hrvatske",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/75/1431"
+    },
+    {
+      "key": "2015-78-1489",
+      "year": 2015,
+      "issue": 78,
+      "act_num": "1489",
+      "type": "ZAKON",
+      "title": "Zakon o poslovima i djelatnostima prostornog uređenja i gradnje",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/78/1489"
+    },
+    {
+      "key": "2015-78-1490",
+      "year": 2015,
+      "issue": 78,
+      "act_num": "1490",
+      "type": "ZAKON",
+      "title": "Zakon o komori arhitekata i komorama inženjera u graditeljstvu i prostornom uređenju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/78/1490"
+    },
+    {
+      "key": "2015-78-1491",
+      "year": 2015,
+      "issue": 78,
+      "act_num": "1491",
+      "type": "ZAKON",
+      "title": "Zakon o procjeni vrijednosti nekretnina",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/78/1491"
+    },
+    {
+      "key": "2015-78-1492",
+      "year": 2015,
+      "issue": 78,
+      "act_num": "1492",
+      "type": "ZAKON",
+      "title": "Zakon o sustavu unutarnjih kontrola u javnom sektoru",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/78/1492"
+    },
+    {
+      "key": "2015-78-1493",
+      "year": 2015,
+      "issue": 78,
+      "act_num": "1493",
+      "type": "ZAKON",
+      "title": "Zakon o računovodstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/78/1493"
+    },
+    {
+      "key": "2015-78-1494",
+      "year": 2015,
+      "issue": 78,
+      "act_num": "1494",
+      "type": "ZAKON",
+      "title": "Zakon o sigurnosti pri odobalnom istraživanju i eksploataciji ugljikovodika",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/78/1494"
+    },
+    {
+      "key": "2015-78-1495",
+      "year": 2015,
+      "issue": 78,
+      "act_num": "1495",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o obveznim odnosima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/78/1495"
+    },
+    {
+      "key": "2015-78-1496",
+      "year": 2015,
+      "issue": 78,
+      "act_num": "1496",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o zračnim lukama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/78/1496"
+    },
+    {
+      "key": "2015-78-1497",
+      "year": 2015,
+      "issue": 78,
+      "act_num": "1497",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o poštanskim uslugama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/78/1497"
+    },
+    {
+      "key": "2015-78-1498",
+      "year": 2015,
+      "issue": 78,
+      "act_num": "1498",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o zaštiti okoliša",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/78/1498"
+    },
+    {
+      "key": "2015-9-199",
+      "year": 2015,
+      "issue": 9,
+      "act_num": "199",
+      "type": "ZAKON",
+      "title": "Zakon o dopuni Zakona o potrošačkom kreditiranju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2015/9/199"
+    }
+  ]
+}
