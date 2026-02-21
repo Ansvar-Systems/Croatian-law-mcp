@@ -72,7 +72,7 @@ describe('GDPR Implementation Act', () => {
       "SELECT content FROM legal_provisions WHERE document_id = 'gdpr-impl-nn-42-18' AND provision_ref = 'art1'"
     ).get() as { content: string } | undefined;
     expect(row).toBeDefined();
-    expect(row!.content).toContain('Regulation (EU) 2016/679');
+    expect(row!.content).toContain('Uredbe (EU) 2016/679');
   });
 
   it('should have GDPR EU reference', () => {
@@ -91,9 +91,9 @@ describe('Cybersecurity Act', () => {
     expect(row).toBeDefined();
   });
 
-  it('should have art7 about CSIRT', () => {
+  it('should have art37 about CSIRT notifications', () => {
     const row = db.prepare(
-      "SELECT content FROM legal_provisions WHERE document_id = 'cybersecurity-nn-14-24' AND provision_ref = 'art7'"
+      "SELECT content FROM legal_provisions WHERE document_id = 'cybersecurity-nn-14-24' AND provision_ref = 'art37'"
     ).get() as { content: string } | undefined;
     expect(row).toBeDefined();
     expect(row!.content).toContain('CSIRT');
@@ -103,14 +103,14 @@ describe('Cybersecurity Act', () => {
 describe('FTS5 search', () => {
   it('should find provisions matching "personal data"', () => {
     const rows = db.prepare(
-      "SELECT COUNT(*) as cnt FROM provisions_fts WHERE provisions_fts MATCH '\"personal data\"'"
+      "SELECT COUNT(*) as cnt FROM provisions_fts WHERE provisions_fts MATCH '\"osobnih podataka\"'"
     ).get() as { cnt: number };
     expect(rows.cnt).toBeGreaterThan(0);
   });
 
   it('should find provisions matching "cybersecurity"', () => {
     const rows = db.prepare(
-      "SELECT COUNT(*) as cnt FROM provisions_fts WHERE provisions_fts MATCH 'cybersecurity'"
+      "SELECT COUNT(*) as cnt FROM provisions_fts WHERE provisions_fts MATCH 'kibernetičke'"
     ).get() as { cnt: number };
     expect(rows.cnt).toBeGreaterThan(0);
   });

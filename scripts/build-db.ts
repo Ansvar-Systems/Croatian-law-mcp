@@ -254,15 +254,18 @@ function extractEuReferences(text: string): ExtractedEUReference[] {
   const seen = new Set<string>();
 
   const patterns: RegExp[] = [
-    /\b(Regulation|Directive)\s*\((EU|EC|EEC|Euratom)\)\s*(?:No\.?\s*)?(\d{2,4})\/(\d{1,4})\b/gi,
-    /\b(Regulation|Directive)\s*(?:No\.?\s*)?(\d{2,4})\/(\d{1,4})\/(EU|EC|EEC|Euratom)\b/gi,
-    /\b(Regulation|Directive)\s*(?:No\.?\s*)?(\d{2,4})\/(\d{1,4})\b/gi,
+    /\b(Regulation|Directive|Uredba|Uredbe|Direktiva|Direktive)\s*\((EU|EC|EEC|Euratom|EZ|EEZ)\)\s*(?:No\.?\s*|br\.?\s*)?(\d{2,4})\/(\d{1,4})\b/gi,
+    /\b(Regulation|Directive|Uredba|Uredbe|Direktiva|Direktive)\s*(?:No\.?\s*|br\.?\s*)?(\d{2,4})\/(\d{1,4})\/(EU|EC|EEC|Euratom|EZ|EEZ)\b/gi,
+    /\b(Regulation|Directive|Uredba|Uredbe|Direktiva|Direktive)\s*(?:No\.?\s*|br\.?\s*)?(\d{2,4})\/(\d{1,4})\b/gi,
   ];
 
   for (const pattern of patterns) {
     let match: RegExpExecArray | null;
     while ((match = pattern.exec(text)) !== null) {
-      const type = match[1].toLowerCase() as EUDocumentType;
+      const keyword = match[1].toLowerCase();
+      const type: EUDocumentType = keyword.startsWith('dir') || keyword.startsWith('direkt')
+        ? 'directive'
+        : 'regulation';
       let rawYear: string, rawNumber: string, communityRaw: string | undefined;
 
       if (pattern === patterns[0]) {
@@ -278,14 +281,17 @@ function extractEuReferences(text: string): ExtractedEUReference[] {
       const number = Number.parseInt(rawNumber, 10);
       if (year <= 0 || Number.isNaN(number) || number <= 0) continue;
 
-      const community = (communityRaw?.toUpperCase() ?? 'EU') as EUCommunity;
+      const communityNorm = (communityRaw?.toUpperCase() ?? 'EU')
+        .replace('EZ', 'EC')
+        .replace('EEZ', 'EEC');
+      const community = communityNorm as EUCommunity;
       const euDocumentId = `${type}:${year}/${number}`;
 
       const start = Math.max(0, match.index - 120);
       const end = Math.min(text.length, match.index + match[0].length + 120);
       const referenceContext = text.slice(start, end).replace(/\s+/g, ' ').trim();
-      const euArticle = referenceContext.match(/\bArticle\s+(\d+[A-Za-z]?(?:\(\d+\))?)/i)?.[1] ?? null;
-      const referenceType: EUReferenceType = /\b(implement|align|transpos|equivalent)\b/i.test(referenceContext) ? 'implements' : 'references';
+      const euArticle = referenceContext.match(/\b(?:Article|članak)\s+(\d+[A-Za-z]?(?:\(\d+\))?)/i)?.[1] ?? null;
+      const referenceType: EUReferenceType = /\b(implement|align|transpos|equivalent|provedb|usklađ|prijenos|primjen)\b/i.test(referenceContext) ? 'implements' : 'references';
 
       const dedupeKey = `${euDocumentId}:${euArticle ?? ''}`;
       if (seen.has(dedupeKey)) continue;

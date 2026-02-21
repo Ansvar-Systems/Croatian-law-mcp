@@ -3,21 +3,22 @@ mcp_name: "Croatian Law MCP"
 jurisdiction: "HR"
 
 sources:
-  - name: "Narodne novine (Official Gazette)"
+  - name: "Narodne novine ELI / NN API"
     authority: "Narodne novine d.d."
-    official_portal: "https://www.nn.hr"
-    retrieval_method: "HTML_SCRAPE"
-    update_frequency: "weekly"
+    official_portal: "https://narodne-novine.nn.hr"
+    retrieval_method: "API + HTML_SCRAPE"
+    update_frequency: "continuous"
     last_ingested: "2026-02-21"
     license_or_terms:
-      type: "Croatian Government Open Data (public domain under Croatian Copyright Act Art. 8)"
-      url: "https://www.nn.hr"
-      summary: "Official legislative texts are public domain"
+      type: "government_terms"
+      url: "https://narodne-novine.nn.hr/data_access_hr.aspx"
+      summary: "Content is publicly accessible for browsing and machine access; usage is subject to Narodne novine terms."
     coverage:
-      scope: "Key Croatian legislation covering data protection, cybersecurity, e-commerce, criminal law cyber provisions, and related statutes"
-      limitations: "AI-generated seed data; full official ingestion pending"
+      scope: "Official and international legislation pages with ELI metadata and HTML representations"
+      limitations: "This ingestion covers a curated set of 10 statutes relevant to digital regulation and cyber/compliance practice."
     languages:
       - "hr"
+      - "en"
 
 data_freshness:
   automated_checks: true

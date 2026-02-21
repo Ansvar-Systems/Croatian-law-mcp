@@ -1,42 +1,22 @@
 /**
- * HTML parser for Croatian legislation from the Sejm ELI API (api.sejm.gov.pl).
- *
- * Parses the structured HTML served by the ELI text endpoint into seed JSON.
- * The HTML structure uses:
- *
- * - <div class="unit unit_chpt" id="chpt_N"> for chapters (Rozdział)
- * - <div class="unit unit_arti" id="chpt_N-arti_M"> for articles (Art.)
- * - <h3> inside articles for article number (Art. N.)
- * - <div class="unit unit_pass"> for numbered paragraphs (ustępy)
- * - <div class="unit unit_pint"> for numbered points (punkty)
- * - <div data-template="xText" class="pro-text"> for text content
- *
- * Croatian legislation references: Dz.U. YYYY poz. NNNN
- * API endpoint: https://api.sejm.gov.pl/eli/acts/DU/{YEAR}/{POZ}/text.html
+ * Parser and target catalogue for Croatian legislation from Narodne novine ELI pages.
  */
 
-export interface ActIndexEntry {
+export interface LawTarget {
+  seedFile: string;
   id: string;
   title: string;
   titleEn: string;
   shortName: string;
-  status: 'in_force' | 'amended' | 'repealed' | 'not_yet_in_force';
-  issuedDate: string;
-  inForceDate: string;
-  /** ISAP display address, e.g. "Dz.U. 2018 poz. 1000" */
-  dziennikRef: string;
-  /** Year of publication in Dziennik Ustaw */
   year: number;
-  /** Position number (poz.) in Dziennik Ustaw */
-  poz: number;
-  /** Human-readable URL on ISAP */
-  url: string;
-  description?: string;
+  issue: number;
+  actNum: string;
+  status: 'in_force' | 'amended' | 'repealed' | 'not_yet_in_force';
+  description: string;
 }
 
 export interface ParsedProvision {
   provision_ref: string;
-  chapter?: string;
   section: string;
   title: string;
   content: string;
@@ -48,7 +28,7 @@ export interface ParsedDefinition {
   source_provision?: string;
 }
 
-export interface ParsedAct {
+export interface ParsedLaw {
   id: string;
   type: 'statute';
   title: string;
@@ -58,391 +38,318 @@ export interface ParsedAct {
   issued_date: string;
   in_force_date: string;
   url: string;
-  description?: string;
+  description: string;
   provisions: ParsedProvision[];
   definitions: ParsedDefinition[];
 }
 
-/**
- * Strip HTML tags and decode common entities, normalising whitespace.
- */
-function stripHtml(html: string): string {
-  return html
-    .replace(/<[^>]+>/g, ' ')
+export const TARGET_LAWS: LawTarget[] = [
+  {
+    seedFile: '01-gdpr-implementation-act.json',
+    id: 'gdpr-impl-nn-42-18',
+    title: 'Zakon o provedbi Opće uredbe o zaštiti podataka',
+    titleEn: 'Act on the Implementation of the General Data Protection Regulation',
+    shortName: 'GDPR provedbeni zakon',
+    year: 2018,
+    issue: 42,
+    actNum: '805',
+    status: 'in_force',
+    description:
+      'Zakon osigurava provedbu GDPR-a u Republici Hrvatskoj, uređuje nadzorne ovlasti AZOP-a i posebna nacionalna pravila o obradi osobnih podataka.',
+  },
+  {
+    seedFile: '02-cybersecurity-act.json',
+    id: 'cybersecurity-nn-14-24',
+    title: 'Zakon o kibernetičkoj sigurnosti',
+    titleEn: 'Cybersecurity Act',
+    shortName: 'ZKS',
+    year: 2024,
+    issue: 14,
+    actNum: '254',
+    status: 'in_force',
+    description:
+      'Zakon uređuje nacionalni okvir kibernetičke sigurnosti, obveze subjekata i tijela nadležnih za upravljanje rizicima i prijavu incidenata.',
+  },
+  {
+    seedFile: '03-electronic-communications-act.json',
+    id: 'ecomm-nn-76-22',
+    title: 'Zakon o elektroničkim komunikacijama',
+    titleEn: 'Electronic Communications Act',
+    shortName: 'ZEK',
+    year: 2022,
+    issue: 76,
+    actNum: '1116',
+    status: 'in_force',
+    description:
+      'Zakon uređuje tržište elektroničkih komunikacija, prava korisnika, ovlasti regulatora i sigurnosne obveze operatora.',
+  },
+  {
+    seedFile: '04-electronic-commerce-act.json',
+    id: 'ecommerce-nn-173-03',
+    title: 'Zakon o elektroničkoj trgovini',
+    titleEn: 'Electronic Commerce Act',
+    shortName: 'ZET',
+    year: 2003,
+    issue: 173,
+    actNum: '2504',
+    status: 'in_force',
+    description:
+      'Zakon uređuje pružanje usluga informacijskog društva, odgovornost pružatelja i sklapanje ugovora elektroničkim putem.',
+  },
+  {
+    seedFile: '05-right-of-access-to-information-act.json',
+    id: 'access-info-nn-25-13',
+    title: 'Zakon o pravu na pristup informacijama',
+    titleEn: 'Right of Access to Information Act',
+    shortName: 'ZPPI',
+    year: 2013,
+    issue: 25,
+    actNum: '403',
+    status: 'in_force',
+    description:
+      'Zakon uređuje pravo javnosti na pristup informacijama tijela javne vlasti, ponovnu uporabu informacija i postupovna pravila ostvarivanja tog prava.',
+  },
+  {
+    seedFile: '06-electronic-identification-act.json',
+    id: 'eid-trust-nn-62-17',
+    title:
+      'Zakon o provedbi Uredbe (EU) br. 910/2014 Europskog parlamenta i Vijeća od 23. srpnja 2014. o elektroničkoj identifikaciji i uslugama povjerenja za elektroničke transakcije na unutarnjem tržištu i stavljanju izvan snage Direktive 1999/93/EZ',
+    titleEn:
+      'Act on the Implementation of Regulation (EU) No 910/2014 on Electronic Identification and Trust Services',
+    shortName: 'eIDAS provedbeni zakon',
+    year: 2017,
+    issue: 62,
+    actNum: '1430',
+    status: 'in_force',
+    description:
+      'Zakon uređuje nacionalnu provedbu eIDAS okvira, nadležna tijela i nadzor pružatelja usluga povjerenja.',
+  },
+  {
+    seedFile: '07-criminal-code-cybercrime.json',
+    id: 'criminal-code-nn-125-11',
+    title: 'Kazneni zakon',
+    titleEn: 'Criminal Code',
+    shortName: 'KZ',
+    year: 2011,
+    issue: 125,
+    actNum: '2498',
+    status: 'in_force',
+    description:
+      'Kazneni zakon propisuje kaznena djela i sankcije, uključujući odredbe relevantne za računalni kriminal i zaštitu informacijskih sustava.',
+  },
+  {
+    seedFile: '08-critical-infrastructure-protection-act.json',
+    id: 'cip-nn-56-13',
+    title: 'Zakon o kritičnim infrastrukturama',
+    titleEn: 'Critical Infrastructures Act',
+    shortName: 'ZKI',
+    year: 2013,
+    issue: 56,
+    actNum: '1134',
+    status: 'in_force',
+    description:
+      'Zakon uređuje identifikaciju, zaštitu i otpornost kritičnih infrastruktura te obveze nadležnih tijela i operatora.',
+  },
+  {
+    seedFile: '09-state-information-infrastructure-act.json',
+    id: 'sii-nn-92-14',
+    title: 'Zakon o državnoj informacijskoj infrastrukturi',
+    titleEn: 'State Information Infrastructure Act',
+    shortName: 'ZDII',
+    year: 2014,
+    issue: 92,
+    actNum: '1840',
+    status: 'in_force',
+    description:
+      'Zakon uređuje uspostavu i upravljanje državnom informacijskom infrastrukturom te interoperabilnost i digitalne usluge javne uprave.',
+  },
+  {
+    seedFile: '10-trade-secrets-act.json',
+    id: 'trade-secrets-nn-30-18',
+    title: 'Zakon o zaštiti neobjavljenih informacija s tržišnom vrijednosti',
+    titleEn: 'Trade Secrets Act',
+    shortName: 'Zakon o poslovnoj tajni',
+    year: 2018,
+    issue: 30,
+    actNum: '605',
+    status: 'in_force',
+    description:
+      'Zakon uređuje zaštitu poslovnih tajni od nezakonitog pribavljanja, korištenja i otkrivanja te sudsku zaštitu nositelja prava.',
+  },
+];
+
+export function buildEliLawUrl(target: LawTarget): string {
+  return `https://narodne-novine.nn.hr/eli/sluzbeni/${target.year}/${target.issue}/${target.actNum}`;
+}
+
+export function buildEliPrintHtmlUrl(target: LawTarget): string {
+  return `${buildEliLawUrl(target)}/hrv/printhtml`;
+}
+
+function decodeEntities(input: string): string {
+  const named = input
     .replace(/&nbsp;/g, ' ')
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
-    .replace(/&shy;/g, '')
-    .replace(/\u00a0/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+    .replace(/&ndash;/g, '–')
+    .replace(/&mdash;/g, '—')
+    .replace(/&hellip;/g, '…')
+    .replace(/&middot;/g, '·');
+
+  return named.replace(/&#(\d+);/g, (_, n: string) => {
+    const code = Number.parseInt(n, 10);
+    return Number.isFinite(code) ? String.fromCharCode(code) : _;
+  });
 }
 
-/**
- * Find the chapter heading (Rozdział) for a given article position.
- * Searches backwards from the article position for the nearest chapter div.
- */
-function findChapterHeading(html: string, articlePos: number): string | undefined {
-  const beforeArticle = html.substring(Math.max(0, articlePos - 10000), articlePos);
-
-  // Look for the last chapter heading: Rozdział N ... Title
-  // Pattern in ISAP HTML: <div class="unit unit_chpt"...> <h3> Rozdział N ... Title </h3>
-  const chapterMatches = [
-    ...beforeArticle.matchAll(/Rozdzia[łl]\s*&nbsp;\s*(\d+[a-z]?)\s*(.*?)(?=<\/h3>|<\/P>)/gi),
-  ];
-
-  if (chapterMatches.length > 0) {
-    const last = chapterMatches[chapterMatches.length - 1];
-    const chapterNum = last[1].trim();
-    // Try to find the title in subsequent <P> or <SPAN> tags
-    const afterChapter = beforeArticle.substring(last.index! + last[0].length);
-    const titleMatch = afterChapter.match(/<SPAN[^>]*class="pro-title-unit"[^>]*>(.*?)<\/SPAN>/i);
-    const title = titleMatch ? stripHtml(titleMatch[1]) : '';
-
-    return title
-      ? `Rozdział ${chapterNum} - ${title}`
-      : `Rozdział ${chapterNum}`;
-  }
-
-  // Also check for Dział (Division) used in larger codes
-  const dzialMatches = [
-    ...beforeArticle.matchAll(/Dzia[łl]\s*&nbsp;\s*([IVXLCDM]+[a-z]?)\s*(.*?)(?=<\/h3>|<\/P>)/gi),
-  ];
-
-  if (dzialMatches.length > 0) {
-    const last = dzialMatches[dzialMatches.length - 1];
-    const dzialNum = last[1].trim();
-    const afterDzial = beforeArticle.substring(last.index! + last[0].length);
-    const titleMatch = afterDzial.match(/<SPAN[^>]*class="pro-title-unit"[^>]*>(.*?)<\/SPAN>/i);
-    const title = titleMatch ? stripHtml(titleMatch[1]) : '';
-
-    return title
-      ? `Dział ${dzialNum} - ${title}`
-      : `Dział ${dzialNum}`;
-  }
-
-  return undefined;
+function stripHtml(input: string): string {
+  return decodeEntities(
+    input
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim(),
+  );
 }
 
-/**
- * Parse HTML from the Sejm ELI API (api.sejm.gov.pl/eli/acts/DU/YYYY/POZ/text.html)
- * to extract provisions from a Croatian statute.
- *
- * The HTML uses div-based structure:
- *   <div class="unit unit_arti" id="chpt_N-arti_M" data-id="arti_M">
- *     <h3><B>Art. M.</B></h3>
- *     <div class="unit-inner">
- *       <div class="unit unit_pass">
- *         <h3>1.</h3>
- *         <div class="unit-inner">
- *           <div data-template="xText">...content...</div>
- *         </div>
- *       </div>
- *     </div>
- *   </div>
- */
-export function parseCroatianHtml(html: string, act: ActIndexEntry): ParsedAct {
-  const provisions: ParsedProvision[] = [];
-  const definitions: ParsedDefinition[] = [];
+function extractMetaContent(html: string, propertyName: string): string | null {
+  const escaped = propertyName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(
+    `<meta[^>]*property=\\"${escaped}\\"[^>]*content=\\"([^\\"]+)\\"[^>]*>`,
+    'i',
+  );
+  const m = html.match(re);
+  return m ? decodeEntities(m[1]).trim() : null;
+}
 
-  // Match all article divs: <div class="unit unit_arti ..." id="...-arti_N" data-id="arti_N">
-  const articleRegex = /<div[^>]*class="unit unit_arti[^"]*"[^>]*id="([^"]*-)?arti_(\d+[a-z_]*)"[^>]*data-id="arti_(\d+[a-z_]*)"[^>]*>/gi;
-  const articleStarts: { fullId: string; artNum: string; pos: number }[] = [];
+function normalizeSection(section: string): string {
+  return section.replace(/[^0-9A-Za-z]/g, '').toLowerCase();
+}
 
-  let match: RegExpExecArray | null;
-  while ((match = articleRegex.exec(html)) !== null) {
-    // Skip nested articles inside amendment provisions (chpt_12-arti_111-arti_22_2 etc.)
-    const fullId = match[0];
-    const idAttr = fullId.match(/id="([^"]+)"/)?.[1] ?? '';
-    // Count how many "arti_" segments appear in the ID
-    const artiSegments = (idAttr.match(/arti_/g) ?? []).length;
-    if (artiSegments > 1) continue;
+function extractProvisions(html: string): ParsedProvision[] {
+  const cleaned = html
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ');
 
-    articleStarts.push({
-      fullId: idAttr,
-      artNum: match[3],
-      pos: match.index,
-    });
-  }
+  const articleHeadingRe = new RegExp(
+    String.raw`<p[^>]*class\s*=\s*(?:"[^"]*Clanak[^"]*"|'[^']*Clanak[^']*'|[^\s>]*Clanak[^\s>]*)[^>]*>[\s\S]*?Članak\s*(\d+[a-z]?)\.[\s\S]*?<\/p>`,
+    'giu',
+  );
+  const headings = [...cleaned.matchAll(articleHeadingRe)];
 
-  for (let i = 0; i < articleStarts.length; i++) {
-    const article = articleStarts[i];
-    const startPos = article.pos;
+  const longestBySection = new Map<string, ParsedProvision>();
 
-    // Extract content up to next article or end
-    const endPos = i + 1 < articleStarts.length
-      ? articleStarts[i + 1].pos
-      : html.length;
-    const articleHtml = html.substring(startPos, endPos);
+  for (let i = 0; i < headings.length; i++) {
+    const sectionRaw = headings[i][1].trim();
+    const section = normalizeSection(sectionRaw);
+    if (!section) continue;
 
-    // Extract article number from <h3><B>Art. N.</B></h3> or <h3><B>Art. N<sup>...</B></h3>
-    const artHeadingMatch = articleHtml.match(
-      /<h3[^>]*>\s*<B[^>]*>\s*Art\.?\s*&nbsp;?\s*(\d+[a-z]*)\b/i
-    );
+    const start = (headings[i].index ?? 0) + headings[i][0].length;
+    const end = headings[i + 1] ? (headings[i + 1].index ?? cleaned.length) : cleaned.length;
+    const articleHtml = cleaned.slice(start, end);
 
-    const artNum = artHeadingMatch
-      ? artHeadingMatch[1].trim()
-      : article.artNum.replace(/_/g, '');
+    const content = stripHtml(articleHtml);
+    if (content.length < 20) continue;
 
-    // Normalize: remove underscores from article numbers like "22_2"
-    const normalizedNum = artNum.replace(/_/g, '');
-    const provisionRef = `art${normalizedNum}`;
-
-    // Find chapter heading
-    const chapter = findChapterHeading(html, startPos);
-
-    // Extract text content, stripping HTML
-    // Remove the article heading to avoid duplication
-    const contentHtml = articleHtml
-      .replace(/<h3[^>]*>\s*<B[^>]*>\s*Art\.?\s*&nbsp;?\s*\d+[a-z]*\.?\s*<\/B>\s*<\/h3>/i, '');
-    let content = stripHtml(contentHtml);
-
-    // Skip very short articles (likely just structural markers)
-    if (content.length < 5) continue;
-
-    // Cap content at 12K characters
-    if (content.length > 12000) {
-      content = content.substring(0, 12000);
-    }
-
-    // Build a title from the first sentence or paragraph if meaningful
-    const title = `Art. ${normalizedNum}`;
-
-    provisions.push({
-      provision_ref: provisionRef,
-      chapter,
-      section: normalizedNum,
-      title,
+    const provision: ParsedProvision = {
+      provision_ref: `art${section}`,
+      section,
+      title: `Članak ${sectionRaw}.`,
       content,
-    });
+    };
 
-    // Extract definitions from definition articles
-    // Croatian acts use "ilekroć mowa" (whenever mentioned), "rozumie się przez to"
-    // (this is understood as), or "oznacza" (means)
-    if (
-      content.includes('ilekro') ||
-      content.includes('rozumie si') ||
-      content.includes('oznacza') ||
-      content.includes('nale') && content.includes('rozumie')
-    ) {
-      extractDefinitions(content, provisionRef, definitions);
+    const existing = longestBySection.get(section);
+    if (!existing || provision.content.length > existing.content.length) {
+      longestBySection.set(section, provision);
     }
   }
+
+  return [...longestBySection.values()].sort((a, b) => {
+    const an = Number.parseInt(a.section, 10);
+    const bn = Number.parseInt(b.section, 10);
+    if (Number.isFinite(an) && Number.isFinite(bn) && an !== bn) return an - bn;
+    return a.section.localeCompare(b.section, 'hr');
+  });
+}
+
+function extractDefinitions(provisions: ParsedProvision[]): ParsedDefinition[] {
+  const definitions: ParsedDefinition[] = [];
+  const seen = new Set<string>();
+
+  for (const provision of provisions) {
+    const text = provision.content;
+    const lower = text.toLowerCase();
+
+    const isDefinitionArticle =
+      lower.includes('u smislu ovoga zakona') ||
+      lower.includes('pojedini izrazi') ||
+      lower.includes('značenje izraza') ||
+      lower.includes('u smislu ove uredbe');
+
+    if (!isDefinitionArticle) continue;
+
+    const numberedPattern = /(?:\(|\b)(\d{1,3})\)?\.?\s*[\-–—]?\s*[„"«]?([^"»“”\n:;]{2,90})["»“”]?\s*[:\-–—]\s*([^\n]{8,800}?)(?=(?:\s*\(\d+\)|\s+\d+\)|$))/g;
+    let match: RegExpExecArray | null;
+
+    while ((match = numberedPattern.exec(text)) !== null) {
+      const term = match[2].replace(/\s+/g, ' ').trim();
+      const definition = match[3].replace(/\s+/g, ' ').replace(/[;,.]\s*$/, '').trim();
+      const key = `${term.toLowerCase()}|${definition.toLowerCase()}`;
+
+      if (term.length < 2 || term.length > 120) continue;
+      if (definition.length < 8) continue;
+      if (seen.has(key)) continue;
+
+      definitions.push({
+        term,
+        definition,
+        source_provision: provision.provision_ref,
+      });
+      seen.add(key);
+    }
+
+    const quotedPattern = /[„"«]([^"»“”]{2,90})["»“”]\s+(?:znači|označava)\s+([^.;]{8,600})/gi;
+    while ((match = quotedPattern.exec(text)) !== null) {
+      const term = match[1].replace(/\s+/g, ' ').trim();
+      const definition = match[2].replace(/\s+/g, ' ').trim();
+      const key = `${term.toLowerCase()}|${definition.toLowerCase()}`;
+
+      if (seen.has(key)) continue;
+      definitions.push({
+        term,
+        definition,
+        source_provision: provision.provision_ref,
+      });
+      seen.add(key);
+    }
+  }
+
+  return definitions;
+}
+
+export function parseCroatianEliHtml(html: string, target: LawTarget): ParsedLaw {
+  const titleMeta = extractMetaContent(html, 'http://data.europa.eu/eli/ontology#title');
+  const dateDocument = extractMetaContent(html, 'http://data.europa.eu/eli/ontology#date_document');
+  const datePublication = extractMetaContent(html, 'http://data.europa.eu/eli/ontology#date_publication');
+
+  const provisions = extractProvisions(html);
+  const definitions = extractDefinitions(provisions);
 
   return {
-    id: act.id,
+    id: target.id,
     type: 'statute',
-    title: act.title,
-    title_en: act.titleEn,
-    short_name: act.shortName,
-    status: act.status,
-    issued_date: act.issuedDate,
-    in_force_date: act.inForceDate,
-    url: act.url,
-    description: act.description,
+    title: titleMeta ?? target.title,
+    title_en: target.titleEn,
+    short_name: target.shortName,
+    status: target.status,
+    issued_date: dateDocument ?? `${target.year}-01-01`,
+    in_force_date: datePublication ?? dateDocument ?? `${target.year}-01-01`,
+    url: buildEliLawUrl(target),
+    description: target.description,
     provisions,
     definitions,
   };
 }
-
-/**
- * Extract definitions from Croatian legal text.
- *
- * Croatian definitions typically use patterns like:
- *   - "«term» – oznacza ..." ("term" – means ...)
- *   - "N) term – ..." (numbered list of definitions)
- *   - "ilekroć ... mowa o «term» – rozumie się przez to ..."
- */
-function extractDefinitions(
-  text: string,
-  sourceProvision: string,
-  definitions: ParsedDefinition[],
-): void {
-  // Pattern: numbered definitions like "1) term - definition;"
-  const numberedDefRegex = /\d+\)\s+([^–\-]+?)\s+[–\-]\s+(.*?)(?=;\s*\d+\)|$)/g;
-  let defMatch: RegExpExecArray | null;
-
-  while ((defMatch = numberedDefRegex.exec(text)) !== null) {
-    const term = defMatch[1].trim();
-    const definition = defMatch[2].replace(/;$/, '').trim();
-
-    if (term.length > 1 && term.length < 100 && definition.length > 5) {
-      definitions.push({
-        term,
-        definition,
-        source_provision: sourceProvision,
-      });
-    }
-  }
-
-  // Pattern: «quoted term» – definition
-  const quotedDefRegex = /[„«\u201e]([^"»\u201d]+)["\u201d»]\s*[–\-]\s*(.*?)(?=[;.]\s*[„«\u201e]|[;.]\s*$)/g;
-  while ((defMatch = quotedDefRegex.exec(text)) !== null) {
-    const term = defMatch[1].trim();
-    const definition = defMatch[2].replace(/[;.]$/, '').trim();
-
-    if (term.length > 1 && term.length < 100 && definition.length > 5) {
-      definitions.push({
-        term,
-        definition,
-        source_provision: sourceProvision,
-      });
-    }
-  }
-}
-
-/**
- * Pre-configured list of key Croatian Acts to ingest.
- *
- * Source: api.sejm.gov.pl (Sejm ELI API)
- * URL pattern: https://api.sejm.gov.pl/eli/acts/DU/{YEAR}/{POZ}/text.html
- *
- * These are the most important Croatian statutes for cybersecurity, data protection,
- * and compliance use cases. References use the Dziennik Ustaw (Journal of Laws)
- * format: Dz.U. YYYY poz. NNNN.
- */
-export const KEY_CROATIAN_ACTS: ActIndexEntry[] = [
-  {
-    id: 'dpa-2018',
-    title: 'Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych',
-    titleEn: 'Personal Data Protection Act 2018',
-    shortName: 'UODO 2018',
-    status: 'in_force',
-    issuedDate: '2018-05-10',
-    inForceDate: '2018-05-25',
-    dziennikRef: 'Dz.U. 2018 poz. 1000',
-    year: 2018,
-    poz: 1000,
-    url: 'https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180001000',
-    description: 'GDPR implementing provisions (RODO); establishes UODO (Urząd Ochrony Danych Osobowych) as the supervisory authority; covers certification, codes of conduct, and administrative penalties',
-  },
-  {
-    id: 'ksc-2018',
-    title: 'Ustawa z dnia 5 lipca 2018 r. o krajowym systemie cyberbezpieczeństwa',
-    titleEn: 'National Cybersecurity System Act 2018 (KSC)',
-    shortName: 'KSC',
-    status: 'in_force',
-    issuedDate: '2018-07-05',
-    inForceDate: '2018-08-28',
-    dziennikRef: 'Dz.U. 2018 poz. 1560',
-    year: 2018,
-    poz: 1560,
-    url: 'https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180001560',
-    description: 'NIS Directive implementation; establishes national cybersecurity system with CSIRT teams (CSIRT NASK, CSIRT GOV, CSIRT MON); covers essential services operators and digital service providers',
-  },
-  {
-    id: 'ksh-2000',
-    title: 'Ustawa z dnia 15 września 2000 r. - Kodeks spółek handlowych',
-    titleEn: 'Commercial Companies Code (KSH)',
-    shortName: 'KSH',
-    status: 'in_force',
-    issuedDate: '2000-09-15',
-    inForceDate: '2001-01-01',
-    dziennikRef: 'Dz.U. 2000 nr 94 poz. 1037',
-    year: 2000,
-    poz: 1037,
-    url: 'https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20000940037',
-    description: 'Comprehensive commercial companies law governing partnerships (spółka jawna, komandytowa, etc.) and capital companies (sp. z o.o. and S.A.); corporate governance requirements',
-  },
-  {
-    id: 'kodeks-karny-1997',
-    title: 'Ustawa z dnia 6 czerwca 1997 r. - Kodeks karny',
-    titleEn: 'Criminal Code (Kodeks karny)',
-    shortName: 'KK',
-    status: 'in_force',
-    issuedDate: '1997-06-06',
-    inForceDate: '1998-09-01',
-    dziennikRef: 'Dz.U. 1997 nr 88 poz. 553',
-    year: 1997,
-    poz: 553,
-    url: 'https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970880553',
-    description: 'Criminal Code; cybercrime provisions in Art. 267 (unauthorized access), Art. 268 (data destruction), Art. 268a (computer sabotage), Art. 269 (sabotage of critical systems), Art. 269a (DoS), Art. 269b (hacking tools)',
-  },
-  {
-    id: 'e-services-2002',
-    title: 'Ustawa z dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną',
-    titleEn: 'Act on Provision of Electronic Services',
-    shortName: 'E-Services Act',
-    status: 'in_force',
-    issuedDate: '2002-07-18',
-    inForceDate: '2002-10-10',
-    dziennikRef: 'Dz.U. 2002 nr 144 poz. 1204',
-    year: 2002,
-    poz: 1204,
-    url: 'https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20021441204',
-    description: 'E-Commerce Directive implementation; regulates electronic services, ISP liability, spam prohibition, electronic contracts',
-  },
-  {
-    id: 'telecom-2004',
-    title: 'Ustawa z dnia 16 lipca 2004 r. - Prawo telekomunikacyjne',
-    titleEn: 'Telecommunications Law',
-    shortName: 'PT',
-    status: 'in_force',
-    issuedDate: '2004-07-16',
-    inForceDate: '2004-09-03',
-    dziennikRef: 'Dz.U. 2004 nr 171 poz. 1800',
-    year: 2004,
-    poz: 1800,
-    url: 'https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20041711800',
-    description: 'Telecommunications regulation; data retention, communications security, network integrity obligations, UKE (Office of Electronic Communications) authority',
-  },
-  {
-    id: 'constitution-1997',
-    title: 'Konstytucja Rzeczypospolitej Polskiej z dnia 2 kwietnia 1997 r.',
-    titleEn: 'Constitution of the Republic of Poland',
-    shortName: 'Konstytucja RP',
-    status: 'in_force',
-    issuedDate: '1997-04-02',
-    inForceDate: '1997-10-17',
-    dziennikRef: 'Dz.U. 1997 nr 78 poz. 483',
-    year: 1997,
-    poz: 483,
-    url: 'https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19970780483',
-    description: 'Supreme law; Art. 47 (privacy), Art. 49 (communication secrecy), Art. 51 (personal data protection), Art. 54 (freedom of expression)',
-  },
-  {
-    id: 'kodeks-cywilny-1964',
-    title: 'Ustawa z dnia 23 kwietnia 1964 r. - Kodeks cywilny',
-    titleEn: 'Civil Code (Kodeks cywilny)',
-    shortName: 'KC',
-    status: 'in_force',
-    issuedDate: '1964-04-23',
-    inForceDate: '1965-01-01',
-    dziennikRef: 'Dz.U. 1964 nr 16 poz. 93',
-    year: 1964,
-    poz: 93,
-    url: 'https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19640160093',
-    description: 'Core private law; personality rights protection (Art. 23-24), contract law, liability for damages, electronic declarations of intent',
-  },
-  {
-    id: 'banking-law-1997',
-    title: 'Ustawa z dnia 29 sierpnia 1997 r. - Prawo bankowe',
-    titleEn: 'Banking Law',
-    shortName: 'PB',
-    status: 'in_force',
-    issuedDate: '1997-08-29',
-    inForceDate: '1998-01-01',
-    dziennikRef: 'Dz.U. 1997 nr 140 poz. 939',
-    year: 1997,
-    poz: 939,
-    url: 'https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19971400939',
-    description: 'Banking regulation; banking secrecy obligations, outsourcing of banking activities, IT security requirements for banks, cloud computing provisions',
-  },
-  {
-    id: 'kpa-1960',
-    title: 'Ustawa z dnia 14 czerwca 1960 r. - Kodeks postępowania administracyjnego',
-    titleEn: 'Code of Administrative Procedure (KPA)',
-    shortName: 'KPA',
-    status: 'in_force',
-    issuedDate: '1960-06-14',
-    inForceDate: '1961-01-01',
-    dziennikRef: 'Dz.U. 1960 nr 30 poz. 168',
-    year: 1960,
-    poz: 168,
-    url: 'https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19600300168',
-    description: 'Administrative procedure code; governs proceedings before UODO (data protection authority), UKE, and other regulators; electronic administration provisions',
-  },
-];

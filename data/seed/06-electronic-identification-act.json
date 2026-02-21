@@ -1,151 +1,141 @@
 {
   "id": "eid-trust-nn-62-17",
   "type": "statute",
-  "title": "Zakon o provedbi Uredbe (EU) br. 910/2014 o elektroničkoj identifikaciji i uslugama povjerenja",
-  "title_en": "Electronic Identification and Trust Services Act",
-  "short_name": "eIDAS Implementation Act",
+  "title": "Zakon o provedbi Uredbe (EU) br. 910/2014 Europskog parlamenta i Vijeća od 23. srpnja 2014. o elektroničkoj identifikaciji i uslugama povjerenja za elektroničke transakcije na unutarnjem tržištu i stavljanju izvan snage Direktive 1999/93/EZ",
+  "title_en": "Act on the Implementation of Regulation (EU) No 910/2014 on Electronic Identification and Trust Services",
+  "short_name": "eIDAS provedbeni zakon",
   "status": "in_force",
-  "issued_date": "2017-06-30",
-  "in_force_date": "2017-07-15",
-  "url": "https://www.nn.hr/clanci/sluzbeni/2017_62_1369.html",
-  "description": "Croatia's legislation implementing Regulation (EU) No 910/2014 (eIDAS Regulation) on electronic identification and trust services for electronic transactions in the internal market. Designates the supervisory body, establishes the national eID scheme, and regulates trust service providers.",
+  "issued_date": "2017-06-19",
+  "in_force_date": "2017-06-30",
+  "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2017/62/1430",
+  "description": "Zakon uređuje nacionalnu provedbu eIDAS okvira, nadležna tijela i nadzor pružatelja usluga povjerenja.",
   "provisions": [
     {
       "provision_ref": "art1",
       "section": "1",
-      "title": "Article 1 – Subject matter",
-      "content": "This Act regulates the implementation of Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market (eIDAS Regulation). This Act designates the competent authorities, establishes the national electronic identification scheme, and provides supplementary rules for trust services in the Republic of Croatia."
+      "title": "Članak 1.",
+      "content": "Ovim se Zakonom: 1. utvrđuju nadležna tijela i zadaće nadležnih tijela za provedbu Uredbe (EU) br. 910/2014 Europskog parlamenta i Vijeća od 23. srpnja 2014. o elektroničkoj identifikaciji i uslugama povjerenja za elektroničke transakcije na unutarnjem tržištu i stavljanju izvan snage Direktive 1999/93/EZ (SL L 257/73 28. 8. 2014. – u daljnjem tekstu: Uredba (EU) br. 910/2014) 2. utvrđuju tijela za inspekcijski nadzor nad provedbom Uredbe (EU) br. 910/2014 3. određuje tijelo nadležno za akreditaciju tijela za ocjenu sukladnosti 4. utvrđuju prava, obveze i odgovornosti potpisnika i pružatelja usluga povjerenja 5. određuju prekršajne odredbe za postupanje protivno Uredbi (EU) br. 910/2014. Pojmovi"
     },
     {
       "provision_ref": "art2",
       "section": "2",
-      "title": "Article 2 – Definitions",
-      "content": "The terms used in this Act shall have the same meaning as in Regulation (EU) No 910/2014. For the purposes of this Act: (1) 'supervisory body' means the body designated under this Act for the supervision of trust service providers; (2) 'national eID scheme' means the Croatian electronic identification scheme notified to the European Commission under Article 9 of Regulation (EU) No 910/2014."
+      "title": "Članak 2.",
+      "content": "(1) Pojmovi u smislu ovoga Zakona imaju jednako značenje kao pojmovi korišteni u Uredbi (EU) br. 910/2014. (2) Pojam pravne osobe iz članka 3. stavaka 24., 29. i 38. Uredbe (EU) br. 910/2014 označava pravne osobe javnoga prava i pravne osobe privatnoga prava. II. NADLEŽNA TIJELA Nadležno tijelo za područje identifikacije"
     },
     {
       "provision_ref": "art3",
       "section": "3",
-      "title": "Article 3 – Supervisory body",
-      "content": "The ministry responsible for the economy shall be the supervisory body for trust service providers in the Republic of Croatia for the purposes of Article 17 of Regulation (EU) No 910/2014. The supervisory body shall supervise qualified and non-qualified trust service providers established in the territory of Croatia and shall ensure compliance with the requirements of the eIDAS Regulation."
+      "title": "Članak 3.",
+      "content": "(1) Nadležno tijelo za provedbu Uredbe (EU) br. 910/2014 te ovoga Zakona u pogledu odredbi kojima se uređuje elektronička identifikacija od članka 6. do članka 12. Uredbe (EU) br. 910/2014 je središnje tijelo državne uprave nadležno za poslove e-Hrvatske. (2) Središnje tijelo državne uprave iz stavka 1. ovoga članka obavlja sljedeće poslove: 1. prijavljivanje i uklanjanje nacionalnih sustava za elektroničku identifikaciju Europskoj komisiji radi njihove objave u Službenom listu Europske unije 2. suradnja s tijelima za zaštitu osobnih podataka. Nadležno tijelo za usluge povjerenja"
     },
     {
       "provision_ref": "art4",
       "section": "4",
-      "title": "Article 4 – Tasks of the supervisory body",
-      "content": "The supervisory body shall: (1) supervise qualified trust service providers to ensure they meet the requirements of Article 24 of Regulation (EU) No 910/2014; (2) take action against trust service providers that do not fulfil the requirements; (3) grant qualified status to trust service providers and maintain the trusted list; (4) verify the conformity assessment reports of qualified trust service providers; (5) cooperate with supervisory bodies of other Member States; (6) report to the European Commission as required by the eIDAS Regulation."
+      "title": "Članak 4.",
+      "content": "(1) Nadležno tijelo za provedbu Uredbe (EU) br. 910/2014 te ovoga Zakona u pogledu odredbi kojima se uređuju usluge povjerenja od članka 13. do članka 45. Uredbe (EU) br. 910/2014 je središnje tijelo državne uprave nadležno za poslove gospodarstva. (2) Središnje tijelo državne uprave iz stavka 1. ovoga članka obavlja sljedeće poslove: 1. nadzor nad pružateljima usluga povjerenja, dodjeljivanje i ukidanje kvalificiranog statusa, analizu izvješća o ocjeni sukladnosti, reviziju, zahtijevanje od pružatelja usluga povjerenja da otklone svako nepoštivanje odredbi Uredbe (EU) br. 910/2014 2. izradu, vođenje i objavljivanje pouzdanih popisa pružatelja i kvalificiranih pružatelja usluga povjerenja 3. suradnju s nadzornim tijelima u drugim državama članicama Europske unije (pružanje uzajamne pomoći, razmjena dobre prakse) 4. obavješćivanje drugih tijela i javnosti o povredama sigurnosti 5 . periodično godišnje izvješćivanje Europske komisije o svojim glavnim aktivnostima (do 31. ožujka za prethodnu kalendarsku godinu). (3) Čelnik središnjeg tijela državne uprave nadležnog za poslove gospodarstva pravilnikom će propisati druge metode identifikacije koje po pitanju pouzdanosti pružaju sigurnost jednaku fizičkoj prisutnosti, a kojima pružatelj usluga povjerenja provjerava identitet i, ako je to primjenjivo, posebna obilježja fizičke ili pravne osobe kojoj se izdaje kvalificirani certifikat. Nacionalno akreditacijsko tijelo"
     },
     {
       "provision_ref": "art5",
       "section": "5",
-      "title": "Article 5 – Trusted list",
-      "content": "The supervisory body shall establish and maintain the national trusted list of qualified trust service providers and the qualified trust services they provide, in accordance with Article 22 of Regulation (EU) No 910/2014. The trusted list shall be published in a form suitable for automated processing and shall be made available electronically. The supervisory body shall notify the European Commission of the trusted list and any changes thereto."
+      "title": "Članak 5.",
+      "content": "Tijelo nadležno za akreditaciju Tijela za ocjenjivanje sukladnosti kvalificiranih pružatelja usluga povjerenja i kvalificiranih usluga povjerenja koje on pruža, sukladno odredbama članka 3. točke 18. te članka 20. Uredbe (EU) br. 910/2014, je nacionalno akreditacijsko tijelo. Suradnja"
     },
     {
       "provision_ref": "art6",
       "section": "6",
-      "title": "Article 6 – National electronic identification scheme",
-      "content": "The Republic of Croatia shall establish a national electronic identification scheme for the purpose of cross-border authentication in accordance with Article 6 of Regulation (EU) No 910/2014. The national eID scheme shall be based on the Croatian personal identity card (osobna iskaznica) with electronic identification functionality. The scheme shall be notified to the European Commission and shall be interoperable with other notified schemes."
+      "title": "Članak 6.",
+      "content": "(1) Tijela iz članaka 3. i 4. ovoga Zakona surađuju međusobno te s drugim nadležnim tijelima u Republici Hrvatskoj, kao i s tijelima drugih država članica Europske unije nadležnima za nadzor nad primjenom Uredbe (EU) br. 910/2014 te, prema potrebi, s drugim odgovarajućim nadležnim tijelima u skladu sa zakonodavstvom Europske unije i nacionalnim zakonodavstvima država članica Europske unije. (2) U sklopu suradnje iz stavka 1. ovoga članka, tijela iz članaka 3. i 4. ovoga Zakona, osim međusobno, razmjenjuju informacije i: 1. s tijelima drugih država članica Europske unije nadležnima za nadzor nad primjenom Uredbe (EU) br. 910/2014 2. s Europskom komisijom te, prema potrebi, s drugim javnim tijelima 3. s drugim tijelima nadležnim prema zakonima kojima se uređuje zaštita osobnih podataka. (3) Dostavljanje informacija iz stavka 2. ovoga članka ne smatra se kršenjem obveze čuvanja povjerljivih podataka. (4) Tijelo koje primi informacije iz stavka 2. ovoga članka dužno ih je čuvati kao povjerljive i može ih koristiti samo u svrhu za koju su mu dostavljene, a dostupnim trećima može ih učiniti u skladu s posebnim propisima. III. INSPEKCIJSKI NADZOR"
     },
     {
       "provision_ref": "art7",
       "section": "7",
-      "title": "Article 7 – Assurance levels",
-      "content": "The national electronic identification scheme shall provide assurance levels as defined in Article 8 of Regulation (EU) No 910/2014 and Commission Implementing Regulation (EU) 2015/1502. The personal identity card with electronic identification functionality shall provide at least a substantial or high assurance level. The ministry responsible for public administration shall determine the specific technical and procedural requirements for each assurance level."
+      "title": "Članak 7.",
+      "content": "(1) Inspekcijski nadzor nad provedbom Uredbe (EU) br. 910/2014 te ovoga Zakona u pogledu odredbi kojima se uređuje elektronička identifikacija od članaka 6. do 12. Uredbe (EU) br. 910/2014 provode državni službenici središnjeg tijela državne uprave nadležnog za poslove e-Hrvatske ovlašteni za provedbu nadzora. (2) Inspekcijski nadzor nad provedbom Uredbe (EU) br. 910/2014 te ovoga Zakona u pogledu odredbi kojima se uređuju usluge povjerenja od članaka 13. do 45. Uredbe (EU) br. 910/2014 provode inspektori i drugi državni službenici središnjeg tijela državne uprave nadležnog za poslove gospodarstva ovlašteni za provedbu nadzora. (3) Inspekcijski nadzor nad radom pružatelja usluga povjerenja i kvalificiranih pružatelja usluga povjerenja te nacionalnih sustava elektroničkih identifikacija u području prikupljanja, uporabe i zaštite osobnih podataka potpisnika provode inspektori i drugi državni službenici ovlašteni za provedbu nadzora određeni zakonom i drugim propisima kojima se uređuje zaštita osobnih podataka, u skladu s propisanim djelokrugom. (4) U okviru inspekcijskog nadzora pružatelja usluga povjerenja i kvalificiranih pružatelja usluga povjerenja: – utvrđuje se jesu li ispunjeni uvjeti propisani Uredbom (EU) br. 910/2014 i provedbenim propisima donesenim na temelju Uredbe (EU) br. 910/2014 – nadzire se pravilnost primjene propisanih postupaka i organizacijsko-tehničkih mjera te primjena internih pravila koja su u vezi s uvjetima propisanima Uredbom (EU) br. 910/2014 i provedbenim propisima donesenim na temelju Uredbe (EU) br. 910/2014. (5) Pružatelj usluga povjerenja i kvalificirani pružatelj usluga povjerenja dužan je radi provedbe inspekcijskog nadzora omogućiti neograničen uvid u podatke o poslovanju, uvid u poslovnu dokumentaciju, pristup registru potpisnika i pridruženoj računalnoj opremi i uređajima. IV. PRAVA, OBVEZE I ODGOVORNOSTI POTPISNIKA, PRUŽATELJA USLUGA POVJERENJA I IMATELJA SREDSTAVA ELEKTRONIČKE IDENTIFIKACIJE"
     },
     {
       "provision_ref": "art8",
       "section": "8",
-      "title": "Article 8 – Qualified trust service providers",
-      "content": "Trust service providers intending to provide qualified trust services shall notify the supervisory body and submit a conformity assessment report issued by a conformity assessment body. The supervisory body shall verify the report and, if the requirements are met, grant qualified status within three months. Qualified trust service providers shall be subject to at least biennial audits by a conformity assessment body."
+      "title": "Članak 8.",
+      "content": "Svaki potpisnik dužan je poduzeti sve potrebne mjere zaštite od gubitaka i šteta koje može uzrokovati drugim potpisnicima, pružateljima usluga povjerenja ili trećim osobama."
     },
     {
       "provision_ref": "art9",
       "section": "9",
-      "title": "Article 9 – Qualified electronic signatures",
-      "content": "A qualified electronic signature shall have the equivalent legal effect of a handwritten signature in the Republic of Croatia, in accordance with Article 25(2) of Regulation (EU) No 910/2014. A qualified electronic signature based on a qualified certificate issued in one Member State shall be recognised as a qualified electronic signature in all other Member States. Public authorities shall accept qualified electronic signatures for their online services."
+      "title": "Članak 9.",
+      "content": "Potpisnik je dužan pažnjom dobrog domaćina koristiti i čuvati sredstva i podatke za izradu elektroničkog potpisa, koristiti sredstva i podatke za izradu elektroničkog potpisa u skladu s odredbama ovoga Zakona, zaštititi i čuvati sredstva i podatke za izradu elektroničkog potpisa od neovlaštenog pristupa i uporabe."
     },
     {
       "provision_ref": "art10",
       "section": "10",
-      "title": "Article 10 – Qualified electronic seals",
-      "content": "A qualified electronic seal shall enjoy the presumption of integrity of the data and of correctness of the origin of the data to which the qualified electronic seal is linked, in accordance with Article 35(2) of Regulation (EU) No 910/2014. Legal persons may use qualified electronic seals to ensure the origin and integrity of data in electronic documents."
+      "title": "Članak 10.",
+      "content": "(1) Potpisnik je dužan dostaviti pružatelju usluge povjerenja sve potrebne podatke i informacije o promjenama koje utječu ili mogu utjecati na točnost elektroničkog potpisa u roku od sedam dana od nastalih promjena. (2) Potpisnik je dužan zatražiti opoziv svog certifikata odmah po saznanju u svim slučajevima gubitka ili oštećenja sredstava ili podataka za izradu svog elektroničkog potpisa."
     },
     {
       "provision_ref": "art11",
       "section": "11",
-      "title": "Article 11 – Qualified electronic time stamps",
-      "content": "A qualified electronic time stamp shall enjoy the presumption of the accuracy of the date and time it indicates and the integrity of the data to which the date and time are bound, in accordance with Article 41(2) of Regulation (EU) No 910/2014. Qualified electronic time stamps shall be admissible as evidence in legal proceedings."
+      "title": "Članak 11.",
+      "content": "(1) Imatelj sredstva elektroničke identifikacije dužan je poduzeti sve potrebne mjere kako bi sredstva za elektroničku identifikaciju bila pod njegovim isključivim nadzorom, kako bi spriječio krađu, gubitak ili neovlašteno ustupanje svojih sredstava elektroničke identifikacije te je dužan odmah kod izdavatelja sredstva elektroničke identifikacije opozvati svoju elektroničku identifikaciju ako utvrdi da je ona izgubljena, ukradena ili neovlašteno ustupljena drugima. (2) Ako sredstva za elektroničku identifikaciju budu opozvana ili vremenski isteknu, imatelj sredstva elektroničkog identiteta ne smije ih više svjesno upotrebljavati, odnosno služiti se njima."
     },
     {
       "provision_ref": "art12",
       "section": "12",
-      "title": "Article 12 – Electronic registered delivery services",
-      "content": "Data sent and received using a qualified electronic registered delivery service shall enjoy the presumption of the integrity of the data, the sending of the data by the identified sender, its receipt by the identified addressee, and the accuracy of the date and time of sending and receipt, in accordance with Article 43(2) of Regulation (EU) No 910/2014."
+      "title": "Članak 12.",
+      "content": "(1) Potpisnik odgovara za štetu koja nastane zbog neispunjavanja njegovih obveza utvrđenih ovim Zakonom. (2) Potpisnik može iznimno biti oslobođen odgovornosti u slučajevima kada može dokazati da oštećena strana nije poduzela ili je pogrešno poduzela radnje vezane za validaciju elektroničkog potpisa."
     },
     {
       "provision_ref": "art13",
       "section": "13",
-      "title": "Article 13 – Website authentication",
-      "content": "Qualified certificates for website authentication shall be issued by qualified trust service providers and shall provide assurance of the identity of the natural or legal person to whom the certificate is issued and the association of that person with the website, in accordance with Article 45 of Regulation (EU) No 910/2014."
+      "title": "Članak 13.",
+      "content": "Pružatelj usluga povjerenja ima, uz obveze navedene u Uredbi (EU) br. 910/2014, i obveze: 1. omogućiti svakoj zainteresiranoj osobi uvid u identifikacijske podatke pružatelja usluga povjerenja 2. čuvati sve podatke i dokumentaciju o izdanim certifikatima najmanje deset godina od dana izdavanja, pri čemu podaci i prateća dokumentacija mogu biti i u elektroničkom obliku 3. primjenjivati odredbe zakona i drugih propisa kojima je uređena zaštita osobnih podataka."
     },
     {
       "provision_ref": "art14",
       "section": "14",
-      "title": "Article 14 – Liability of trust service providers",
-      "content": "Qualified trust service providers shall be liable for damage caused intentionally or negligently to any natural or legal person due to a failure to comply with the obligations under the eIDAS Regulation. The burden of proving the intention or negligence of a qualified trust service provider shall lie with the injured party. Where a qualified trust service provider informs its customers of the limitations on the use of services, the provider shall not be liable for damages arising from the use of services exceeding those limitations."
+      "title": "Članak 14.",
+      "content": "(1) Pružatelj usluga povjerenja dužan je prekinuti uslugu certificiranja, odnosno izvršiti opoziv certifikata onim potpisnicima: 1. koji su to izričito zatražili 2. za koje je utvrđena netočnost ili nepotpunost podataka u Evidenciji certifikata 3. za koje je primljena službena obavijest o smrti 4. za koje je primljena službena obavijest o gubitku poslovne sposobnosti 5. za koje je utvrđeno da podatke za izradu elektroničkog potpisa koriste protivno pozitivnim propisima Republike Hrvatske. (2) Pružatelj usluga povjerenja dužan je ažurno voditi evidenciju svih opozvanih certifikata. (3) Pružatelj usluga povjerenja dužan je obavijestiti potpisnika o opozivu certifikata u roku od 24 sata od primljene obavijesti odnosno nastanka okolnosti zbog koje se certifikat opoziva. (4) Čelnik središnjeg tijela državne uprave nadležnog za poslove gospodarstva pravilnikom će propisati pravila o privremenoj suspenziji certifikata za elektroničke potpise i certifikata za elektroničke pečate u slučajevima kada certifikat privremeno izgubi svoju valjanost, a koji su slučajevi različiti od opoziva certifikata."
     },
     {
       "provision_ref": "art15",
       "section": "15",
-      "title": "Article 15 – Security requirements",
-      "content": "Qualified trust service providers shall take appropriate technical and organisational measures to manage the risks posed to the security of the trust services they provide. Those measures shall ensure a level of security commensurate with the degree of risk, taking into account the latest technological developments. In the event of a security breach that significantly impacts the trust service or the personal data maintained therein, the trust service provider shall notify the supervisory body within 24 hours."
+      "title": "Članak 15.",
+      "content": "Pružatelj usluga povjerenja koji izdaje kvalificirane certifikate mora čuvati svu dokumentaciju o izdanim i opozvanim certifikatima kao sredstvo dokazivanja i verifikacije u sudskim, upravnim i drugim postupcima, u roku od najmanje deset godina od prestanka valjanosti certifikata na koji se ta dokumentacija odnosi. Prestanak pružanja usluga povjerenja"
     },
     {
       "provision_ref": "art16",
       "section": "16",
-      "title": "Article 16 – Recognition of third-country trust services",
-      "content": "Trust services provided by trust service providers established in a third country shall be recognised as legally equivalent to qualified trust services provided by qualified trust service providers established in the Union where: (a) the trust services originate from a third country that has concluded a mutual recognition agreement with the Union; or (b) the trust services meet the requirements of the eIDAS Regulation and are guaranteed by a qualified trust service provider established in the Union."
+      "title": "Članak 16.",
+      "content": "(1) Pružatelj usluga povjerenja dužan je o mogućem prestanku obavljanja usluga obavijestiti svakog korisnika usluge povjerenja, kao i tijelo državne uprave nadležno za poslove gospodarstva, odnosno nadzorno tijelo najmanje tri mjeseca prije isteka ugovorom povjerenih mu usluga povjerenja. (2) Pružatelj usluga povjerenja, koji prestaje s pružanjem tih usluga, dužan je osigurati kod drugog pružatelja usluga povjerenja nastavak obavljanja usluga povjerenja za potpisnike kojima je izdao certifikate, a ako za to nema mogućnosti, dužan je opozvati sve izdane certifikate i o tome odmah i neodgodivo obavijestiti tijelo državne uprave nadležno za poslove gospodarstva, odnosno nadzorno tijelo. (3) Pružatelj usluga povjerenja koji prekida s obavljanjem usluga povjerenja dužan je dostaviti svu dokumentaciju u svezi s obavljenim uslugama povjerenja drugom davatelju usluga povjerenja na kojega prenosi obveze s osnove obavljanja usluga povjerenja."
     },
     {
       "provision_ref": "art17",
       "section": "17",
-      "title": "Article 17 – Enforcement measures",
-      "content": "Where a trust service provider fails to comply with the requirements of the eIDAS Regulation or this Act, the supervisory body may: (1) issue a warning; (2) require the trust service provider to remedy the failure within a specified time limit; (3) withdraw the qualified status of the trust service provider; (4) require the trust service provider to cease operations. The supervisory body shall inform the European Commission and other Member States of the withdrawal of qualified status."
+      "title": "Članak 17.",
+      "content": "Odredbe glave IV. ovoga Zakona na odgovarajući se način primjenjuju na usluge izdavanja elektroničkih pečata, vremenskih žigova i elektroničke preporučene dostave. V. PREKRŠAJNE ODREDBE Fizičke osobe"
     },
     {
       "provision_ref": "art18",
       "section": "18",
-      "title": "Article 18 – Penalties",
-      "content": "A fine of HRK 10,000 to HRK 300,000 shall be imposed on a trust service provider that fails to comply with the notification requirements, security requirements, or other obligations under this Act or the eIDAS Regulation. A fine of HRK 5,000 to HRK 50,000 shall be imposed on a responsible person in a legal entity for the same offence."
+      "title": "Članak 18.",
+      "content": "(1) Novčanom kaznom od 2000,00 do 10.000,00 kuna kaznit će se za prekršaj fizička osoba koja: – neovlašteno pristupi i uporabi podatke i sredstva za izradu elektroničkog potpisa, naprednog elektroničkog potpisa, kvalificiranoga potpisa, elektroničkog pečata, naprednog elektroničkog pečata, kvalificiranog elektroničkog pečata. (2) Novčanom kaznom od 2000,00 do 10.000,00 kuna kaznit će se za prekršaj potpisnik, odnosno fizička osoba ili odgovorna osoba pravne osobe koja zastupa potpisnika, a koja: 1. ne koristi sredstva i podatke za izradu elektroničkog potpisa, naprednog elektroničkog potpisa, kvalificiranoga potpisa, elektroničkog pečata, naprednog elektroničkog pečata, kvalificiranog elektroničkog pečata s pažnjom dobrog domaćina (članak 9. ovoga Zakona) 2. davatelju usluga certificiranja u roku od sedam dana od nastalih promjena ne dostavi potrebne podatke i informacije o promjenama koje utječu ili mogu utjecati na točnost elektroničkog potpisa, naprednog elektroničkog potpisa, kvalificiranoga potpisa, elektroničkog pečata, naprednog elektroničkog pečata, kvalificiranog elektroničkog pečata (članak 10. ovoga Zakona) 3. davatelju usluga certificiranja pravodobno ne dostavi zahtjev za opoziv certifikata, odnosno ako odmah po saznanju ne zatraži opoziv svog certifikata u slučajevima gubitka ili oštećenja sredstava/podataka za izradu svog elektroničkog potpisa (članak 10. ovoga Zakona). Pravne osobe"
     },
     {
       "provision_ref": "art19",
       "section": "19",
-      "title": "Article 19 – Transitional provisions",
-      "content": "Trust service providers that were providing trust services before the entry into force of this Act shall comply with the requirements of the eIDAS Regulation and this Act within 12 months. Qualified certificates and qualified electronic signatures issued before the entry into force of this Act under the previous Electronic Signature Act (NN 10/02, 80/08) shall remain valid until their expiry."
+      "title": "Članak 19.",
+      "content": "Novčanom kaznom od 5000,00 do 100.000,00 kuna kaznit će se za prekršaj kvalificirani pružatelj usluga povjerenja koji: 1. ne utvrdi pravovaljano identitet fizičke ili pravne osobe za koju izdaje kvalificirani certifikat (članak 24. stavak 1. Uredbe (EU) br. 910/2014) 2. ne obavijesti nadzorno tijelo o svim promjenama u vezi s pružanjem svojih kvalificiranih usluga povjerenja te o namjeri prestanka obavljanja te djelatnosti najmanje 3 (tri) mjeseca prije isteka ugovorom povjerenih mu usluga povjerenja (članak 24. stavak 2. podstavak (a) Uredbe (EU) br. 910/2014) 3. ne zapošljava osoblje i/ili podizvođače koji posjeduju potrebna stručna znanja, pouzdanost, iskustvo i kvalifikacije i koji su prošli odgovarajuće osposobljavanje u vezi sa sigurnošću i propisima o zaštiti osobnih podataka te ne primjenjuju upravne i upravljačke postupke u skladu s europskim ili međunarodnim normama (članak 24. stavak 2. podstavak (b) Uredbe (EU) br. 910/2014) 4. ne raspolaže dostatnim financijskim sredstvima i/ili nije sklopio odgovarajuće osiguranje od odgovornosti za štetu, u vezi s člankom 13. Uredbe (EU) br. 910/2014 (članak 24. stavak 2. podstavak (c) Uredbe (EU) br. 910/2014) 5. ne obavijesti prije stupanja u ugovorni odnos, na jasan i sveobuhvatan način, svaku osobu koja želi koristiti kvalificiranu uslugu povjerenja o točnim uvjetima korištenja tom uslugom, uključujući bilo kakva ograničenja korištenja (članak 24. stavak 2. podstavak (d) Uredbe (EU) br. 910/2014) 6. ne koristi vjerodostojne sustave i proizvode koji su zaštićeni od preinaka te osiguravaju tehničku sigurnost i pouzdanost postupaka koje ti sustavi i proizvodi podržavaju (članak 24. stavak 2. podstavak (e) Uredbe (EU) br. 910/2014) 7. ne koristi vjerodostojne sustave za pohranu podataka koji su mu dostavljeni, u obliku koji se može provjeriti (članak 24. stavak 2. podstavak (f) Uredbe (EU) br. 910/2014) 8. ne poduzima odgovarajuće mjere protiv krivotvorenja i krađe podataka (članak 24. stavak 2. podstavak (g) Uredbe (EU) br. 910/2014) 9. ne bilježi i ne čini dostupnim tijekom odgovarajućeg razdoblja, uključujući razdoblje nakon prestanka obavljanja djelatnosti kvalificiranog pružatelja usluga povjerenja, sve bitne informacije u vezi s podacima koje izdaje i prima kvalificirani pružatelj usluga povjerenja, a posebno za potrebe predlaganja dokaza u sudskim postupcima i u svrhu osiguravanja kontinuiteta usluge (članak 24. stavak 2. podstavak (h) Uredbe (EU) br. 910/2014) 10. nema uspostavljen i ažuriran plan prekida pružanja usluge radi osiguravanja njezina kontinuiteta u skladu s odredbama koje je potvrdilo nadzorno tijelo sukladno članku 17. stavku 4. točki (i) Uredbe (EU) br. 910/2014 (članak 24. stavak 2. podstavak (i) Uredbe (EU) br. 910/2014) 11. ne osigurava zakonitu obradu osobnih podataka u skladu s Direktivom 95/46/EZ (članak 24. stavak 2. podstavak (j) Uredbe (EU) br. 910/2014) 12. ne uspostavi i ne ažurira bazu podataka certifikata, kada se radi o kvalificiranim pružateljima usluga povjerenja koji izdaju kvalificirane certifikate (članak 24. stavak 2. podstavak (k) Uredbe (EU) br. 910/2014). VI. PRIJELAZNE I ZAVRŠNE ODREDBE"
     },
     {
       "provision_ref": "art20",
       "section": "20",
-      "title": "Article 20 – Entry into force",
-      "content": "This Act shall enter into force on the fifteenth day after its publication in the Official Gazette (Narodne novine). The Electronic Signature Act (Narodne novine, No. 10/02, 80/08) is hereby repealed."
+      "title": "Članak 20.",
+      "content": "(1) Čelnik središnjeg tijela državne uprave nadležnog za poslove gospodarstva donijet će pravilnike iz članka 4. stavka 3. te članka 14. stavka 4. ovoga Zakona u roku od godine dana od dana stupanja na snagu ovoga Zakona. (2) Danom stupanja na snagu ovoga Zakona prestaje važiti Zakon o elektroničkom potpisu (»Narodne novine«, br. 10/02., 80/08. i 30/14.)."
+    },
+    {
+      "provision_ref": "art21",
+      "section": "21",
+      "title": "Članak 21.",
+      "content": "Ovaj Zakon stupa na snagu osmoga dana od dana objave u »Narodnim novinama«. Klasa: 022-03/17-01/33 Zagreb, 19. lipnja 2017. HRVATSKI SABOR Predsjednik Hrvatskoga sabora Gordan Jandroković, v. r."
     }
   ],
-  "definitions": [
-    {
-      "term": "qualified trust service provider",
-      "definition": "A trust service provider who provides one or more qualified trust services and is granted the qualified status by the supervisory body, in accordance with Article 3(20) of Regulation (EU) No 910/2014.",
-      "source_provision": "art8"
-    },
-    {
-      "term": "electronic identification",
-      "definition": "The process of using person identification data in electronic form uniquely representing a natural or legal person, or a natural person representing a legal person, as defined in Article 3(1) of Regulation (EU) No 910/2014.",
-      "source_provision": "art2"
-    },
-    {
-      "term": "national eID scheme",
-      "definition": "The Croatian electronic identification scheme based on the personal identity card (osobna iskaznica) with electronic identification functionality, notified to the European Commission under Article 9 of the eIDAS Regulation.",
-      "source_provision": "art6"
-    }
-  ]
+  "definitions": []
 }

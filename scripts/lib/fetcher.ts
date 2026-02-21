@@ -1,31 +1,27 @@
 /**
- * Rate-limited HTTP client for Croatian legislation from the Sejm ELI API.
+ * Rate-limited HTTP client for Narodne novine ingestion.
  *
- * Data source: api.sejm.gov.pl — the official ELI (European Legislation Identifier)
- * API provided by the Chancellery of the Sejm of the Republic of Poland.
- *
- * URL patterns:
- *   Metadata: https://api.sejm.gov.pl/eli/acts/DU/{YEAR}/{POZ}
- *   HTML text: https://api.sejm.gov.pl/eli/acts/DU/{YEAR}/{POZ}/text.html
- *
- * - 500ms minimum delay between requests (respectful to government servers)
- * - User-Agent header identifying the MCP
- * - Retry on 429/5xx with exponential backoff
- * - No auth needed (public government data)
+ * Official limits documented by NN API: up to 3 requests/second.
+ * We stay below this with a 1.2s minimum delay between requests.
  */
 
-const USER_AGENT = 'Croatian-Law-MCP/1.0 (https://github.com/Ansvar-Systems/croatian-law-mcp; hello@ansvar.ai)';
-const MIN_DELAY_MS = 500;
+const USER_AGENT =
+  'Ansvar-Law-MCP-Ingestion/1.0 (+https://github.com/Ansvar-Systems/Croatian-law-mcp)';
+const MIN_DELAY_MS = 1200;
 
-let lastRequestTime = 0;
+let lastRequestAt = 0;
 
-async function rateLimit(): Promise<void> {
+function sleep(ms: number): Promise<void> {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function enforceRateLimit(): Promise<void> {
   const now = Date.now();
-  const elapsed = now - lastRequestTime;
+  const elapsed = now - lastRequestAt;
   if (elapsed < MIN_DELAY_MS) {
-    await new Promise(resolve => setTimeout(resolve, MIN_DELAY_MS - elapsed));
+    await sleep(MIN_DELAY_MS - elapsed);
   }
-  lastRequestTime = Date.now();
+  lastRequestAt = Date.now();
 }
 
 export interface FetchResult {
@@ -35,29 +31,22 @@ export interface FetchResult {
   url: string;
 }
 
-/**
- * Fetch a URL with rate limiting and proper headers.
- * Retries up to 3 times on 429/5xx errors with exponential backoff.
- */
 export async function fetchWithRateLimit(url: string, maxRetries = 3): Promise<FetchResult> {
-  await rateLimit();
-
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    await enforceRateLimit();
+
     const response = await fetch(url, {
       headers: {
         'User-Agent': USER_AGENT,
-        'Accept': 'text/html, application/json, */*',
+        Accept: 'text/html, application/json;q=0.9, */*;q=0.8',
       },
       redirect: 'follow',
     });
 
-    if (response.status === 429 || response.status >= 500) {
-      if (attempt < maxRetries) {
-        const backoff = Math.pow(2, attempt + 1) * 1000;
-        console.log(`  HTTP ${response.status} for ${url}, retrying in ${backoff}ms...`);
-        await new Promise(resolve => setTimeout(resolve, backoff));
-        continue;
-      }
+    if ((response.status === 429 || response.status >= 500) && attempt < maxRetries) {
+      const backoff = 1000 * Math.pow(2, attempt + 1);
+      await sleep(backoff);
+      continue;
     }
 
     const body = await response.text();
@@ -69,5 +58,5 @@ export async function fetchWithRateLimit(url: string, maxRetries = 3): Promise<F
     };
   }
 
-  throw new Error(`Failed to fetch ${url} after ${maxRetries} retries`);
+  throw new Error(`Failed to fetch ${url} after ${maxRetries + 1} attempts`);
 }

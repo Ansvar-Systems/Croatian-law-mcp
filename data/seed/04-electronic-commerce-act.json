@@ -5,146 +5,166 @@
   "title_en": "Electronic Commerce Act",
   "short_name": "ZET",
   "status": "in_force",
-  "issued_date": "2003-10-24",
-  "in_force_date": "2003-11-08",
-  "url": "https://www.nn.hr/clanci/sluzbeni/2003_173_2739.html",
-  "description": "Croatia's legislation on electronic commerce, transposing Directive 2000/31/EC (E-Commerce Directive). Regulates information society services, electronic contracts, intermediary liability, commercial communications, and establishes the principle of the country of origin.",
+  "issued_date": "2003-01-01",
+  "in_force_date": "2003-01-01",
+  "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2003/173/2504",
+  "description": "Zakon uređuje pružanje usluga informacijskog društva, odgovornost pružatelja i sklapanje ugovora elektroničkim putem.",
   "provisions": [
     {
       "provision_ref": "art1",
       "section": "1",
-      "title": "Article 1 – Subject matter",
-      "content": "This Act regulates the provision of information society services in the Republic of Croatia, implementing Directive 2000/31/EC of the European Parliament and of the Council of 8 June 2000 on certain legal aspects of information society services, in particular electronic commerce, in the Internal Market (E-Commerce Directive). This Act establishes the legal framework for electronic contracts, intermediary service provider liability, commercial communications, and supervision of information society services."
+      "title": "Članak 1.",
+      "content": "(1) Ovim se Zakonom uređuje pružanje usluga informacij­skog društva, odgovornost davatelja usluga informacijskog društ­va, te pravila u vezi sa sklapanjem ugovora u elektroničkom obliku. (2) Odredbe se ovoga Zakona ne primjenjuju na zaštitu podataka, područje oporezivanja, javnobilježničku djelatnost, zastupanje stranaka i zaštitu njihovih interesa pred sudovima, te na igre na sreću s novčanim ulozima, uključujući lutrijske igre, igre u casinima, kladioničke igre i igre na sreću u automatima, a u skladu s odredbama posebnih zakona koji uređuju odnosna područja. OpĆi pojmovi"
     },
     {
       "provision_ref": "art2",
       "section": "2",
-      "title": "Article 2 – Definitions",
-      "content": "For the purposes of this Act: (1) 'information society service' means any service normally provided for remuneration, at a distance, by electronic means and at the individual request of a recipient of the service; (2) 'service provider' means any natural or legal person providing an information society service; (3) 'recipient of the service' means any natural or legal person who, for professional or other purposes, uses an information society service; (4) 'commercial communication' means any form of communication designed to promote, directly or indirectly, the goods, services, or image of a company, organisation, or person."
+      "title": "Članak 2.",
+      "content": "U smislu ovoga Zakona pojedini pojmovi imaju sljedeća značenja: 1. podatak – informacija, poruka i dokument sastavljen, poslan, primljen, zabilježen, pohranjen ili prikazan elektroničkim, optičkim ili sličnim sredstvom, uključujući, ali ne ograničavajući se na prijenos Internetom, elektroničku poštu, telefaksove, 2. usluga informacijskog društva – usluga koja se uz naknadu pruža elektroničkim putem na individualni zahtjev korisnika, a posebno Internet prodaja robe i usluga, nuđenje podataka na Internetu, reklamiranje putem Interneta, elektronički pretraživači, te mogućnost traženja podataka i usluga koje se prenose elektroničkom mrežom, posreduju u pristupu mreži ili pohranjuju podatke korisnika, 3. elektronički potpis – skup podataka u elektroničkom obliku koji su pridruženi ili su logički povezani s drugim podacima u elektroničkom obliku, a služe za identifikaciju potpisnika i vjerodostojnosti potpisanoga elektroničkog dokumenta, kako je to definirano posebnim zakonom, 4. davatelj usluga – pravna ili fizička osoba koja pruža usluge informacijskog društva, 5. korisnik usluge – svaka fizička ili pravna osoba koja zbog profesionalnih ili drugih ciljeva koristi uslugu informacijskog društva, 6. ugovori u elektroničkom obliku – ugovori što ih pravne i fizičke osobe u cijelosti ili djelomično sklapaju, šalju, primaju, raskidaju, otkazuju, pristupaju i prikazuju elektroničkim putem koristeći elektronička, optička ili slična sredstva, uključujući, ali ne ograničavajući se na prijenos Internetom, 7. komercijalno priopćenje - priopćenje u bilo kojem obliku, oblikovano da promiče, izravno ili neizravno, robu, usluge ili ugled ( image ) svake pravne ili fizičke osobe koja obavlja registriranu djelatnost, osim podataka: – koji omogućuju izravan pristup aktivnosti pravne osobe ili fizičke osobe, uključujući adrese, naziv domene ili adrese za elektroničku poštu, – koji se odnose na robu, usluge ili ugled ( image ) osobe, prikupljene na neovisan način, posebice ako je učinjeno bez razmatranja financijskih učinaka, 8. potrošač – svaka fizička osoba koja sklapa pravni posao na tržištu u svrhe koje nisu namijenjene njezinu zanimanju niti njezinoj poslovnoj aktivnosti ili poduzetničkoj djelatnosti, a u skladu s odredbama posebnoga zakona. Primjena prava"
     },
     {
       "provision_ref": "art3",
       "section": "3",
-      "title": "Article 3 – Country of origin principle",
-      "content": "Information society services provided by a service provider established in the Republic of Croatia shall comply with Croatian law regarding the coordinated field. Croatia shall not restrict the freedom to provide information society services from another Member State of the European Union, except where necessary for reasons of public policy, public health, public security, or consumer protection, and in accordance with the procedures laid down in Directive 2000/31/EC."
+      "title": "Članak 3.",
+      "content": "Davatelj usluga informacijskog društva sa sjedištem u Republici Hrvatskoj dužan je postupati i pružati usluge u skladu sa zakonima i drugim propisima Republike Hrvatske. Iznimka od primjene prava"
     },
     {
       "provision_ref": "art4",
       "section": "4",
-      "title": "Article 4 – Information requirements",
-      "content": "A service provider shall make available to recipients of the service and to competent authorities, in an easily, directly, and permanently accessible manner: (1) the name and legal form of the service provider; (2) the geographic address at which the service provider is established; (3) contact details, including email address; (4) the trade register in which the service provider is entered and the registration number; (5) the VAT identification number; (6) where the activity is subject to an authorisation scheme, the particulars of the relevant supervisory authority."
+      "title": "Članak 4.",
+      "content": "(1) Odredbe članka 3. ne primjenjuju se na davatelja usluga čije je sjedište u zemlji članici Europske unije i koji nudi usluge informacijskog društva, čak i u slučajevima kada je usluga ciljano usmjerena prema građanima Republike Hrvatske. (2) Iznimno, stavak 1. ne primjenjuje se na subjekte iz stavka 1. ovoga članka, u sljedećim područjima: – autorsko pravo i pravo intelektualnog vlasništva, – emisija elektroničkog novca, – valjanost u vezi s oblikom ugovora kojima se stvaraju ili pre­nose prava vezana uz nekretnine, – aktivnosti osiguravajućih društava, – ugovorne obveze iz i u vezi s potrošačkim ugovorima, – sloboda ugovornih strana na izbor prava primjenjiva na njihov ugovor, – dopustivost netraženih komercijalnih priopćenja elektro­ničkom poštom, – promet lijekova, medicinskih proizvoda i homeopatskih proizvoda. Sloboda obavljanja usluga informacijskog druŠtva"
     },
     {
       "provision_ref": "art5",
       "section": "5",
-      "title": "Article 5 – Commercial communications",
-      "content": "Commercial communications which are part of, or constitute, an information society service shall be clearly identifiable as such. The natural or legal person on whose behalf the commercial communication is made shall be clearly identifiable. Promotional offers, competitions, and games shall be clearly identifiable as such, and the conditions for participation shall be easily accessible and presented clearly and unambiguously. Unsolicited commercial communications by email shall be clearly and unambiguously identifiable as such as soon as they are received."
+      "title": "Članak 5.",
+      "content": "(1) Pružanje usluga informacijskog društva slobodno je. (2) Za pružanje usluga informacijskog društva nije potrebna posebna dozvola, odobrenje ili koncesija. (3) Pravni subjekt koji obavlja uslugu informacijskog društva upisuje u nadležni registar naziv djelatnosti – usluge informacijskog društva. II. OBVEZA INFORMIRANJA I KOMERCIJALNA PRIOPĆENJA OpĆe informacije"
     },
     {
       "provision_ref": "art6",
       "section": "6",
-      "title": "Article 6 – Regulated professions",
-      "content": "Commercial communications by members of regulated professions shall be permitted provided that they comply with the professional rules regarding the independence, dignity, and honour of the profession, professional secrecy, and fairness towards clients and other members of the profession. The relevant professional bodies shall be encouraged to establish codes of conduct relating to commercial communications."
+      "title": "Članak 6.",
+      "content": "(1) Davatelj usluga informacijskog društva mora u obliku i na način koji je neposredno i stalno dostupan korisnicima i nadležnim tijelima državne uprave Republike Hrvatske pružiti informacije kao što su: – ime i prezime ili tvrtku davatelja usluga, – sjedište obrta ili sjedište pravne osobe davatelja usluga, – ostale podatke o davatelju usluga na temelju kojih korisnik može brzo i nesmetano stupiti s njim u vezu, uključujući elektroničku adresu putem koje je moguće uspostaviti izravan kontakt, – broj sudskog ili drugoga javnog registra u koji je davatelj usluga upisan, te podatke o registru, – pojedinosti o nadležnom tijelu, ako djelatnost davatelja usluga podliježe službenom nadzoru, – u pogledu posebno reguliranih djelatnosti/profesija: § profesionalna ili slična institucija kod koje je davatelj usluga registriran, § profesionalni naziv i zemlja koja ga je odobrila, § uputa o profesionalnim pravilima u zemlji u kojoj se obavlja djelatnost i mjestu njihove dostupnosti, – porezni broj ako je davatelj usluga obveznik plaćanja poreza na dodanu vrijednost. (2) Ako davatelj usluga prikazuje cijene, one moraju biti jasno i nedvosmisleno naznačene, a posebno se mora naznačiti jesu li u prikazane cijene uključeni troškovi dostave, ostali manipulativni troškovi, porez i drugi troškovi koji na bilo koji način utječu na prikazanu cijenu. SadrŽaj komercijalnog priopĆenja"
     },
     {
       "provision_ref": "art7",
       "section": "7",
-      "title": "Article 7 – Electronic contracts",
-      "content": "Contracts concluded by electronic means shall not be denied legal effectiveness and validity solely on the ground that they are concluded by electronic means. The legal requirements for the formation and validity of contracts shall apply equally to contracts concluded by electronic means, including requirements as to offer and acceptance, consideration, and capacity of the parties. Specific provisions of consumer protection law shall apply to electronic contracts concluded with consumers."
+      "title": "Članak 7.",
+      "content": "Davatelj usluga dužan je osigurati da svaki podatak iz komercijalnog priopćenja, koji je dijelom ili u cijelosti usluga informacijskog društva, jasno i nedvosmisleno zadovoljava sljedeće uvjete: – da je komercijalno priopćenje moguće kao takvo jasno identificirati u trenutku kada ga korisnik primi, – da je osobu u čije je ime sastavljeno komercijalno priopćenje moguće jasno identificirati, – da svaki promotivni poziv za stavljanje ponude iz komercijalnog priopćenja (uključujući popuste i poklone) mora biti jasno identificiran kao takav, – da uvjeti koji se moraju ispunjavati za stavljanje ponude iz komercijalnog priopćenja moraju biti lako dostupni, te predočeni jasno i nedvosmisleno. NetraŽena komercijalna priopĆenja (NeŽeljena telekomunikacijska priopĆenja)"
     },
     {
       "provision_ref": "art8",
       "section": "8",
-      "title": "Article 8 – Information prior to placing an order",
-      "content": "Before an order is placed, the service provider shall provide the recipient with the following information clearly, comprehensibly, and unambiguously: (1) the technical steps to follow to conclude the contract; (2) whether the concluded contract will be filed by the service provider and whether it will be accessible; (3) the technical means for identifying and correcting input errors prior to placing the order; (4) the languages offered for the conclusion of the contract; (5) the relevant codes of conduct and the means of accessing them."
+      "title": "Članak 8.",
+      "content": "Korištenje elektroničke pošte u svrhu slanja netraženoga komercijalnog priopćenja (neželjenoga telekomunikacijskog priopćenja) dopušteno je samo uz prethodni pristanak osobe kojoj je takva vrsta priopćenja namijenjena, a u skladu s odredbma Zakona o telekomunikacijama. III. ISPRAVE U ELEKTRONIČKOM OBLIKU Oblik i valjanost ugovora u elektroniČkom obliku"
     },
     {
       "provision_ref": "art9",
       "section": "9",
-      "title": "Article 9 – Order placement and acknowledgement",
-      "content": "Where a recipient of the service places an order through electronic means, the service provider shall acknowledge receipt of the order without undue delay and by electronic means. The order and the acknowledgement of receipt shall be deemed to be received when the parties to whom they are addressed are able to access them. The service provider shall make available to the recipient appropriate, effective, and accessible technical means allowing the identification and correction of input errors prior to placing the order."
+      "title": "Članak 9.",
+      "content": "(1) Sklapanje ugovora moguće je elektroničkim putem, odnosno u elektroničkom obliku. (2) Ponuda i prihvat ponude mogu se dati elektroničkim putem, odnosno u elektroničkom obliku. (3) Kada se elektronička poruka, odnosno elektronički oblik koristi kao oblik u sklapanju ugovora, takvu ugovoru neće se osporiti pravna valjanost samo na temelju činjenice da je sastavljen u obliku elektroničke poruke, odnosno u elektroničkom obliku. (4) Odredbe ovoga Zakona neće se primjenjivati na sljedeće ugovore: – imovinske, predbračne, odnosno bračne ugovore i druge ugovore koje uređuje Obiteljski zakon, – ugovore o opterećenju i otuđenju imovine za koje je potrebno odobrenje centra za socijalnu skrb, – ugovore o ustupu i raspodjeli imovine za života, ugovore o doživotnom uzdržavanju i sporazume u vezi s nasljeđivanjem, ugovore o odricanju od nasljedstva, ugovore o prijenosu nasljednog dijela prije diobe, oporučne poslove i druge ugovore koje uređuje Zakon o nasljeđivanju, – darovne ugovore, – ugovore o prijenosu prava vlasništva na nekretninama ili druge pravne poslove kojima se uređuju stvarna prava na nekretninama, osim ugovora o najmu i zakupu nekretnina, – druge ugovore za koje je posebnim zakonom propisano da se sastavljaju u obliku javnobilježničkog akta, odnosno isprave, – druge ugovore za koje je posebnim zakonom ili propisom donesenom na temelju zakona izričito određena uporaba vlastoručnog potpisa u dokumentima na papiru ili ovjera vlastoručnog potpisa, – ugovore i očitovanja volje jamaca, ako je jamac osoba koja djeluje izvan svoje trgovačke, poslovne ili profesionalne djelatnosti. Supsidijarna primjena propisa"
     },
     {
       "provision_ref": "art10",
       "section": "10",
-      "title": "Article 10 – Mere conduit",
-      "content": "Where an information society service is provided that consists of the transmission in a communication network of information provided by a recipient of the service, or the provision of access to a communication network, the service provider shall not be liable for the information transmitted, on condition that the provider: (a) does not initiate the transmission; (b) does not select the receiver of the transmission; and (c) does not select or modify the information contained in the transmission."
+      "title": "Članak 10.",
+      "content": "Ako ovim Zakonom nije drukčije određeno, na obveznopravne odnose proizašle iz ili u vezi s ugovorima sklopljenima elektroničkim putem ili u elektroničkom obliku primjenjivat će se odredbe Zakona o obveznim odnosima, odnosno odgovarajući propis koji uređuje ugovorne odnose. ElektroniČki potpis"
     },
     {
       "provision_ref": "art11",
       "section": "11",
-      "title": "Article 11 – Caching",
-      "content": "Where an information society service is provided that consists of the transmission in a communication network of information provided by a recipient of the service, the service provider shall not be liable for the automatic, intermediate, and temporary storage of that information, performed for the sole purpose of making more efficient the onward transmission of the information to other recipients, on condition that the provider: (a) does not modify the information; (b) complies with conditions on access to the information; (c) acts expeditiously to remove or disable access to the information upon obtaining actual knowledge that the information has been removed or access to it disabled."
+      "title": "Članak 11.",
+      "content": "Kada se kao pretpostavka valjanosti i nastanka ugovora traži potpis osobe, smatrat će se da tome uvjetu udovoljava elektronička poruka potpisana elektroničkim potpisom u skladu s odredbama Zakona o elektroničkom potpisu. Podaci i obavijesti za sklapanje ugovora"
     },
     {
       "provision_ref": "art12",
       "section": "12",
-      "title": "Article 12 – Hosting",
-      "content": "Where an information society service is provided that consists of the storage of information provided by a recipient of the service, the service provider shall not be liable for the information stored at the request of a recipient of the service, on condition that: (a) the provider does not have actual knowledge of illegal activity or information and is not aware of facts or circumstances from which the illegal activity or information is apparent; or (b) the provider, upon obtaining such knowledge or awareness, acts expeditiously to remove or disable access to the information."
+      "title": "Članak 12.",
+      "content": "(1) Davatelj usluga informacijskog društva dužan je mogu­ćem korisniku usluga, prije sklapanja ugovora o pružanju usluga informacijskog društva, osigurati na jasan, razumljiv i nedvosmislen način podatke i obavijesti: – različiti stupnjevi koji slijede u postupku sklapanja ugovora, – ugovorne odredbe, – opći uvjeti poslovanja ako su sastavni dio ugovora, – jezici ponuđeni za sklapanje ugovora, – kodeksi postupanja u skladu s kojima postupaju davatelji usluga i informacije o tome kako se ti kodeksi mogu pregledati elektroničkim putem. (2) Davatelj usluga informacijskog društva dužan je mogu­ćem korisniku usluga, prije sklapanja ugovora o pružanju usluga informacijskog društva, osigurati tehnička sredstva za prepoznavanje i ispravljanje pogrešnog unosa podataka u poruku prije njezine predaje ili slanja. (3) Ugovorne strane koje nisu potrošači u međusobnim ugovornim odnosima mogu izričito ugovoriti odstupanje od odredaba iz stavka 1. i 2. ovoga članka. (4) Odredbe stavka 1., 2. i 3. ovoga članka ne primjenjuju se na ugovore sklopljene putem elektroničke pošte ili njoj izjednačenog oblika individualne komunikacije. Dostupnost ugovora i opĆih uvjeta poslovanja"
     },
     {
       "provision_ref": "art13",
       "section": "13",
-      "title": "Article 13 – No general obligation to monitor",
-      "content": "Service providers shall not be under a general obligation to monitor the information which they transmit or store, nor under a general obligation actively to seek facts or circumstances indicating illegal activity. This provision shall not affect any obligation imposed by the competent court or administrative authority to remove or prevent access to specific identified illegal content, in accordance with applicable law."
+      "title": "Članak 13.",
+      "content": "Ugovorne odredbe i odredbe općih uvjeta poslovanja ugovora sklopljenih u elektroničkom obliku koje sklapaju davatelji usluga informacijskog društva moraju biti dostupne korisnicima usluga na način da im je omogućeno njihovo spremanje, ponovno korištenje i reproduciranje. Potvrda primitka"
     },
     {
       "provision_ref": "art14",
       "section": "14",
-      "title": "Article 14 – Codes of conduct",
-      "content": "Trade associations, consumer organisations, and professional bodies shall be encouraged to draw up codes of conduct at the national and European level for the purpose of the proper implementation of this Act. Where appropriate, the codes of conduct shall address the protection of minors and human dignity. The Government shall encourage the involvement of associations representing consumers in the drafting of codes of conduct."
+      "title": "Članak 14.",
+      "content": "(1) Davatelj usluga informacijskog društva mora bez odgode elektroničkim putem, posebnom elektroničkom porukom, potvrditi primitak elektroničke poruke koja sadrži ponudu ili prihvat ponude za sklapanje ugovora. (2) Ugovorne strane koje nisu potrošači u međusobnim ugovornim odnosima mogu izričito ugovoriti odstupanje od odredbe stavka 1. ovoga članka. (3) Odredbe stavka 1. i 2. ovoga članka ne primjenjuju se na ugovore sklopljene putem elektroničke pošte ili njoj izjednačenog oblika individualne komunikacije. Trenutak sklapanja ugovora"
     },
     {
       "provision_ref": "art15",
       "section": "15",
-      "title": "Article 15 – Out-of-court dispute settlement",
-      "content": "The law shall not hamper the use of out-of-court dispute settlement mechanisms, including appropriate electronic means, for the resolution of disputes arising from the provision of information society services. Bodies responsible for out-of-court settlement of disputes shall operate in compliance with the principles of independence, transparency, and due process."
+      "title": "Članak 15.",
+      "content": "(1) Ugovor u elektroničkom obliku sklopljen je onoga trenutka kad ponuditelj primi elektroničku poruku koja sadrži izjavu ponuđenog da prihvaća ponudu. (2) Ponuda i prihvat, te druga očitovanja volje poduzeta elektroničkim putem, primljena su kada im osoba kojoj su upućena može pristupiti. (3) Kod potrošačkih ugovora nije dopušteno isključiti primjenu odredbe stavka 2. ovoga članka. IV. ODGOVORNOST DAVATELJA USLUGA INFORMACIJSKOG DRUŠTVA OpĆa odredba"
     },
     {
       "provision_ref": "art16",
       "section": "16",
-      "title": "Article 16 – Court proceedings",
-      "content": "Court proceedings relating to information society services shall allow for appropriate measures to be taken, including interim measures, to terminate any alleged infringement and to prevent any further impairment of the interests involved. Courts may order service providers to terminate or prevent an infringement, including by removing illegal content or disabling access to it."
+      "title": "Članak 16.",
+      "content": "(1) Davatelj usluga informacijskog društva koji prenosi elektroničke poruke koje mu je predao korisnik usluga nije odgovoran za sadržaj poslane poruke i njezino upućivanje, a pod uvjetom: – da nije inicirao prijenos, – da nije izvršio odabir podataka ili dokumenata koji su pred­met prijenosa, – da nije izuzeo ili preinačio podatke u sadržaju poruka ili dokumenata, – da nije odabrao korisnika prijenosa. (2) Prijenos poruka i pružanje pristupa porukama iz stavka 1. ovoga članka mora biti obavljeno na način da omogućuje automatsku, posredničku i prolazno-privremenu pohranu prenesenih poruka i u njima sadržanih podataka, te moraju biti privremeno pohranjene samo u vremenskom razdoblju koje je potrebno za prijenos poruka. Privremena pohrana ( caching )"
     },
     {
       "provision_ref": "art17",
       "section": "17",
-      "title": "Article 17 – Supervision",
-      "content": "The ministry responsible for the economy shall be the competent authority for the supervision of information society services. The competent authority shall cooperate with the competent authorities of other EU Member States for the purposes of the effective implementation of Directive 2000/31/EC. The competent authority shall provide a contact point for questions arising from the provision of information society services."
+      "title": "Članak 17.",
+      "content": "Davatelj usluga informacijskog društva koji podatke, što ih je unio korisnik, priopćava putem komunikacijske mreže nije odgovoran za automatsku, posredničku i privremenu pohranu, koja služi samo za učinkovitije oblikovanje prijenosa podataka koju su tražili drugi korisnici ako: – ne mijenja podatke, – uvažava uvjete za pristup podacima, – postupa u skladu s pravilima za ažuriranje podataka, – djeluje u skladu s dopuštenom primjenom tehnologija za prikupljanje podataka, – trenutačno ukloni ili trenutačno onemogući pristup podacima koje je pohranio odmah čim je saznao da su podaci u polazištu uklonjeni iz prijenosa putem mreže ili je onemogućen pristup do njih ili je sud ili drugo nadležno tijelo naredilo njihovo uklanjanje ili onemogućavanje pristupa. Pohrana ( hosting )"
     },
     {
       "provision_ref": "art18",
       "section": "18",
-      "title": "Article 18 – Penalties",
-      "content": "A fine of HRK 10,000 to HRK 500,000 shall be imposed on a legal person that fails to comply with the information requirements set out in Article 4 of this Act or the requirements for commercial communications set out in Article 5. A fine of HRK 5,000 to HRK 100,000 shall be imposed on a responsible person in a legal entity for the same infringement."
+      "title": "Članak 18.",
+      "content": "(1) Davatelj usluga informacijskog društva koji pohranjuje podatke pružene od strane korisnika na zahtjev korisnika nije odgovoran za sadržaj pohranjenog podatka: – ako nema saznanja niti je mogao znati o nedopuštenom djelovanju korisnika ili sadržaju podataka, – ako odmah čim je saznao da se radi o nedopuštenom djelovanju ili podatku ukloni ili onemogući pristup podacima. (2) Odredba stavka 1. ovoga članka neće se primijeniti u slučajevima kada je korisnik usluge osoba ovisna na bilo koja način o davatelju usluge, (na primjer: trgovačka društva koji imaju udjele jedno u drugome, trgovačka društva u kojima udjele imaju iste fizičke osobe itd). Linkovi"
     },
     {
       "provision_ref": "art19",
       "section": "19",
-      "title": "Article 19 – Transitional provisions",
-      "content": "Service providers established in the Republic of Croatia that were providing information society services before the entry into force of this Act shall ensure compliance with the requirements of this Act within six months of its entry into force."
+      "title": "Članak 19.",
+      "content": "Davatelj usluga koji putem elektroničkog upućivanja otvori pristup trećim podacima nije odgovoran za te informacije: – ako nema saznanja niti je mogao znati o nedopuštenom djelovanju korisnika ili sadržaju podataka u tim informacijama, – ako odmah čim je saznao da se radi o nedopuštenom djelovanju ili podatku ukloni ili onemogući pristup podacima. ZaŠtita prava"
     },
     {
       "provision_ref": "art20",
       "section": "20",
-      "title": "Article 20 – Entry into force",
-      "content": "This Act shall enter into force on the eighth day after its publication in the Official Gazette (Narodne novine). The provisions of this Act relating to the coordinated field and the country of origin principle shall apply from the date of accession of the Republic of Croatia to the European Union."
+      "title": "Članak 20.",
+      "content": "Odredbe ovoga Zakona, a posebno odredbe članka 16., članka 17., članka 18. i članka 19., nemaju nikakav utjecaj na ovlast sudova i drugih nadležnih tijela Republike Hrvatske da u skladu sa zakonima Republike Hrvatske, a na zahtjev ovlaštene osobe, nalažu davateljima usluga informacijskog društva i njihovim korisnicima otklanjanje i sprječavanje povreda važećih propisa, te da prema njima poduzimaju i druge na zakonu zasnovane mjere. Obveze davatelja usluga informacijskog druŠtva"
+    },
+    {
+      "provision_ref": "art21",
+      "section": "21",
+      "title": "Članak 21.",
+      "content": "(1) Prilikom pružanja usluge informacijskog društva davatelj usluga nije obvezan pregledavati podatke koje je pohranio, prenio ili učinio dostupnima, odnosno ispitivati okolnosti koje bi upućivale na nedopušteno djelovanje korisnika. (2) Davatelj usluga informacijskog društva mora obavijestiti nadležno državno tijelo ako utvrdi: – postojanje osnovane sumnje da korištenjem njegove usluge korisnik poduzima nedopuštene aktivnosti, – postojanje osnovane sumnje da je korisnik njegove usluge pružio nedopušteni podatak. (3) Davatelj usluga mora na temelju odgovarajućeg sudskog akta, odnosno upravnog akta, predočiti sve podatke na temelju kojih se može poduzeti otkrivanje ili progon počinitelja kaznenih djela, odnosno zaštita prava trećih osoba. V. INSPEKCIJSKI NADZOR"
+    },
+    {
+      "provision_ref": "art22",
+      "section": "22",
+      "title": "Članak 22.",
+      "content": "(1) Inspekcijski nadzor nad provedbom ovoga Zakona obavlja Državni inspektorat i inspektori nadležnog ministarstva u skladu s ovlastima utvrđenima zakonom. (2) Radi provedbe inspekcijskog nadzora, davatelji usluga informacijskog društva moraju ovlaštenim osobama omogućiti pristup računalnoj opremi i uređajima, te bez odgode predočiti ili dostaviti potrebne podatke i dokumentaciju u vezi s predmetom inspekcijskog nadzora. VI. KAZNENA ODREDBA"
+    },
+    {
+      "provision_ref": "art23",
+      "section": "23",
+      "title": "Članak 23.",
+      "content": "(1) Novčanom kaznom od 5.000,00 do 100.000,00 kuna kaznit će se za prekršaj pravna osoba davatelj usluga informacijskog društva: – ako prekrši opće obveze o informiranju (članak 6.), – ako prekrši obvezu informiranja u komercijalnom priop­ćenju (članak 8.), – ako prekrši obvezu osiguranja dostupnosti podataka za sklapanje ugovora (članak 12.), – ako suprotno članku 13. ovoga Zakona ne omogući pristup odredbama ugovora i općim uvjetima poslovanja na način da ih korisnik može spremiti, ponovno koristiti i reproducirati, – ako prekrši obveze propisane člankom 21. stavkom 2. i 3. ovoga Zakona, – ako ne omogući pristup računalnoj opremi i uređajima, te bez odgode ne predoči ili ne dostavi potrebne podatke ili dokumentaciju, a radi provedbe inspekcijskog nadzora (članak 22. stavak 2.). (2) Za počinjeni prekršaj iz stavka 1. ovoga članka kaznit će se novčanom kaznom u iznosu od 1.000,00 do 10.000,00 kuna odgovorna osoba u pravnoj osobi davatelju usluga informacijskog društva. (3) Ako prekršaj iz stavka 1. ovoga članka počini fizička osoba – davatelj usluga informacijskog društva, kaznit će se novčanom kaznom u iznosu od 1.000,00 do 10.000,00 kuna. (4) U osobito teškim povredama iz stavka 1. i 3. ovoga članka ili u slučaju ponavljanja povreda iz navedenih stavaka, sud može izreći zabranu obavljanja djelatnosti iz članka 5. stavka 3. ovoga Zakona davatelju usluga informacijskog društva i odgovornoj osobi u pravnoj osobi davatelju usluga informacijskog društva na određeno vrijeme u trajanju od 3 do 6 mjeseci. VII. PRIJELAZNE I ZAVRŠNE ODREDBE"
+    },
+    {
+      "provision_ref": "art24",
+      "section": "24",
+      "title": "Članak 24.",
+      "content": "Odredbe članka 4. ovoga Zakona primjenjivat će se od dana službenog primitka Republike Hrvatske u punopravno članstvo Europske unije."
+    },
+    {
+      "provision_ref": "art25",
+      "section": "25",
+      "title": "Članak 25.",
+      "content": "Ovaj Zakon stupa na snagu osmoga dana od dana objave u »Narodnim novinama«. Klasa: 330-01/03-01/06 Zagreb, 15. listopada 2003. HRVATSKI SABOR Predsjednik Hrvatskoga sabora Zlatko Tomčić, v. r."
     }
   ],
   "definitions": [
     {
-      "term": "information society service",
-      "definition": "Any service normally provided for remuneration, at a distance, by electronic means and at the individual request of a recipient of the service, as defined in Directive 2000/31/EC and Directive (EU) 2015/1535.",
-      "source_provision": "art2"
-    },
-    {
-      "term": "service provider",
-      "definition": "Any natural or legal person providing an information society service.",
-      "source_provision": "art2"
-    },
-    {
-      "term": "commercial communication",
-      "definition": "Any form of communication designed to promote, directly or indirectly, the goods, services, or image of a company, organisation, or person pursuing a commercial, industrial, or craft activity or exercising a regulated profession.",
+      "term": "komercijalno priopćenje",
+      "definition": "priopćenje u bilo kojem obliku, oblikovano da promiče, izravno ili neizravno, robu, usluge ili ugled ( image ) svake pravne ili fizičke osobe koja obavlja registriranu djelatnost, osim podataka: – koji omogućuju izravan pristup aktivnosti pravne osobe ili fizičke osobe, uključujući adrese, naziv domene ili adrese za elektroničku poštu, – koji se odnose na robu, usluge ili ugled ( image ) osobe, prikupljene na neovisan način, posebice ako je učinjeno bez razmatranja financijskih učinaka, 8. potrošač – svaka fizička osoba koja sklapa pravni posao na tržištu u svrhe koje nisu namijenjene njezinu zanimanju niti njezinoj poslovnoj aktivnosti ili poduzetničkoj djelatnosti, a u skladu s odredbama posebnoga zakona. Primjena prava",
       "source_provision": "art2"
     }
   ]
