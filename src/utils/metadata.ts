@@ -33,8 +33,8 @@ export function generateResponseMetadata(
     data_source: 'Narodne novine (Official Gazette) (www.nn.hr) — Narodne novine d.d.',
     jurisdiction: 'HR',
     disclaimer:
-      'This data is sourced from the Narodne novine (Official Gazette) under CC BY 4.0 licence. ' +
-      'The authoritative versions are maintained by the Australian Government. ' +
+      'This data is sourced from the Narodne novine (Official Gazette) under public domain. ' +
+      'The authoritative versions are maintained by Narodne novine d.d.. ' +
       'Always verify with the official Narodne novine (Official Gazette) portal (www.nn.hr).',
     freshness,
   };

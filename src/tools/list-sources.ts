@@ -45,7 +45,7 @@ export async function listSources(
       sources: [
         {
           name: 'Narodne novine (Official Gazette)',
-          authority: 'Croatian Government, Office of Parliamentary Counsel',
+          authority: 'Narodne novine d.d.',
           url: 'https://www.www.nn.hr',
           license: 'Creative Commons Attribution 4.0 International (CC BY 4.0)',
           coverage:
