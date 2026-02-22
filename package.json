@@ -1,13 +1,13 @@
 {
   "name": "@ansvar/croatian-law-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "mcpName": "eu.ansvar/croatian-law-mcp",
   "description": "Croatian law database covering data protection, cybersecurity, e-commerce, and criminal law provisions via Model Context Protocol",
   "author": "Ansvar Systems <hello@ansvar.eu>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Ansvar-Systems/Croatian-law-mcp.git"
+    "url": "git+https://github.com/Ansvar-Systems/Croatian-law-mcp.git"
   },
   "homepage": "https://ansvar.eu",
   "keywords": [
