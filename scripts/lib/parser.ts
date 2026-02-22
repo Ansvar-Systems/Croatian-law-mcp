@@ -229,16 +229,21 @@ function normalizeSection(section: string): string {
   return section.replace(/[^0-9A-Za-z]/g, '').toLowerCase();
 }
 
-function extractProvisions(html: string): ParsedProvision[] {
-  const cleaned = html
-    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
-    .replace(/<style[\s\S]*?<\/style>/gi, ' ');
+function sortProvisions(provisions: ParsedProvision[]): ParsedProvision[] {
+  return provisions.sort((a, b) => {
+    const an = Number.parseInt(a.section, 10);
+    const bn = Number.parseInt(b.section, 10);
+    if (Number.isFinite(an) && Number.isFinite(bn) && an !== bn) return an - bn;
+    return a.section.localeCompare(b.section, 'hr');
+  });
+}
 
+function extractProvisionsFromClassAnchors(cleanedHtml: string): ParsedProvision[] {
   const articleHeadingRe = new RegExp(
     String.raw`<p[^>]*class\s*=\s*(?:"[^"]*Clanak[^"]*"|'[^']*Clanak[^']*'|[^\s>]*Clanak[^\s>]*)[^>]*>[\s\S]*?Članak\s*(\d+[a-z]?)\.[\s\S]*?<\/p>`,
     'giu',
   );
-  const headings = [...cleaned.matchAll(articleHeadingRe)];
+  const headings = [...cleanedHtml.matchAll(articleHeadingRe)];
 
   const longestBySection = new Map<string, ParsedProvision>();
 
@@ -248,11 +253,11 @@ function extractProvisions(html: string): ParsedProvision[] {
     if (!section) continue;
 
     const start = (headings[i].index ?? 0) + headings[i][0].length;
-    const end = headings[i + 1] ? (headings[i + 1].index ?? cleaned.length) : cleaned.length;
-    const articleHtml = cleaned.slice(start, end);
+    const end = headings[i + 1] ? (headings[i + 1].index ?? cleanedHtml.length) : cleanedHtml.length;
+    const articleHtml = cleanedHtml.slice(start, end);
 
     const content = stripHtml(articleHtml);
-    if (content.length < 20) continue;
+    if (content.length < 3) continue;
 
     const provision: ParsedProvision = {
       provision_ref: `art${section}`,
@@ -267,12 +272,67 @@ function extractProvisions(html: string): ParsedProvision[] {
     }
   }
 
-  return [...longestBySection.values()].sort((a, b) => {
-    const an = Number.parseInt(a.section, 10);
-    const bn = Number.parseInt(b.section, 10);
-    if (Number.isFinite(an) && Number.isFinite(bn) && an !== bn) return an - bn;
-    return a.section.localeCompare(b.section, 'hr');
-  });
+  return sortProvisions([...longestBySection.values()]);
+}
+
+function extractProvisionsFromPlainText(cleanedHtml: string): ParsedProvision[] {
+  const text = decodeEntities(
+    cleanedHtml
+      .replace(/<script[\s\S]*?<\/script>/gi, '\n')
+      .replace(/<style[\s\S]*?<\/style>/gi, '\n')
+      .replace(/<br\s*\/?>/gi, '\n')
+      .replace(/<\/(p|div|center|h1|h2|h3|h4|h5|h6|li|tr|table)>/gi, '\n')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\r/g, ''),
+  );
+
+  const headingRe = /(?:^|\n)\s*Član(?:ak)?\s*(\d+[a-z]?)\.?\s*(?:\n|$)/giu;
+  const headings = [...text.matchAll(headingRe)];
+  if (headings.length === 0) return [];
+
+  const longestBySection = new Map<string, ParsedProvision>();
+
+  for (let i = 0; i < headings.length; i++) {
+    const sectionRaw = headings[i][1].trim();
+    const section = normalizeSection(sectionRaw);
+    if (!section) continue;
+
+    const start = (headings[i].index ?? 0) + headings[i][0].length;
+    const end = headings[i + 1] ? (headings[i + 1].index ?? text.length) : text.length;
+    const chunk = text
+      .slice(start, end)
+      .replace(/\u00a0/g, ' ')
+      .replace(/[ \t]+\n/g, '\n')
+      .replace(/\n{2,}/g, '\n')
+      .replace(/[ \t]{2,}/g, ' ')
+      .trim();
+
+    if (chunk.length < 3) continue;
+
+    const provision: ParsedProvision = {
+      provision_ref: `art${section}`,
+      section,
+      title: `Članak ${sectionRaw}.`,
+      content: chunk,
+    };
+
+    const existing = longestBySection.get(section);
+    if (!existing || provision.content.length > existing.content.length) {
+      longestBySection.set(section, provision);
+    }
+  }
+
+  return sortProvisions([...longestBySection.values()]);
+}
+
+function extractProvisions(html: string): ParsedProvision[] {
+  const cleaned = html
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ');
+
+  const primary = extractProvisionsFromClassAnchors(cleaned);
+  if (primary.length > 0) return primary;
+  return extractProvisionsFromPlainText(cleaned);
 }
 
 function extractDefinitions(provisions: ParsedProvision[]): ParsedDefinition[] {
