@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-21T22:19:17.459Z",
+  "generated_at": "2026-02-22T04:35:47.408Z",
   "source": "https://narodne-novine.nn.hr/api",
   "entries": [
     {
@@ -2550,6 +2550,987 @@
       "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2017/94/2194"
     },
     {
+      "key": "2018-100-1929",
+      "year": 2018,
+      "issue": 100,
+      "act_num": "1929",
+      "type": "ZAKON",
+      "title": "Zakon o zdravstvenoj zaštiti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/100/1929"
+    },
+    {
+      "key": "2018-100-1930",
+      "year": 2018,
+      "issue": 100,
+      "act_num": "1930",
+      "type": "ZAKON",
+      "title": "Zakon o provedbi Uredbe (EU) 2017/745 o medicinskim proizvodima i Uredbe (EU) 2017/746 o in vitro dijagnostičkim medicinskim proizvodima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/100/1930"
+    },
+    {
+      "key": "2018-100-1931",
+      "year": 2018,
+      "issue": 100,
+      "act_num": "1931",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o lijekovima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/100/1931"
+    },
+    {
+      "key": "2018-106-2056",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2056",
+      "type": "ZAKON",
+      "title": "Zakon o zakladama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2056"
+    },
+    {
+      "key": "2018-106-2057",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2057",
+      "type": "ZAKON",
+      "title": "Zakon o stambenom zbrinjavanju na potpomognutim područjima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2057"
+    },
+    {
+      "key": "2018-106-2058",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2058",
+      "type": "ZAKON",
+      "title": "Zakon o trošarinama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2058"
+    },
+    {
+      "key": "2018-106-2059",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2059",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o porezu na dodanu vrijednost",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2059"
+    },
+    {
+      "key": "2018-106-2060",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2060",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o porezu na promet nekretnina",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2060"
+    },
+    {
+      "key": "2018-106-2061",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2061",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o porezu na dobit",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2061"
+    },
+    {
+      "key": "2018-106-2062",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2062",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o porezu na dohodak",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2062"
+    },
+    {
+      "key": "2018-106-2063",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2063",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o doprinosima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2063"
+    },
+    {
+      "key": "2018-106-2064",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2064",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o fiskalizaciji u prometu gotovinom",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2064"
+    },
+    {
+      "key": "2018-106-2065",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2065",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Općeg poreznog zakona",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2065"
+    },
+    {
+      "key": "2018-106-2066",
+      "year": 2018,
+      "issue": 106,
+      "act_num": "2066",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o administrativnoj suradnji u području poreza",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/106/2066"
+    },
+    {
+      "key": "2018-108-2091",
+      "year": 2018,
+      "issue": 108,
+      "act_num": "2091",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o izvršavanju Državnog proračuna Republike Hrvatske za 2018. godinu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/108/2091"
+    },
+    {
+      "key": "2018-111-2142",
+      "year": 2018,
+      "issue": 111,
+      "act_num": "2142",
+      "type": "ZAKON",
+      "title": "Zakon o fiskalnoj odgovornosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/111/2142"
+    },
+    {
+      "key": "2018-111-2143",
+      "year": 2018,
+      "issue": 111,
+      "act_num": "2143",
+      "type": "ZAKON",
+      "title": "Zakon o Hrvatskoj agenciji za poljoprivredu i hranu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/111/2143"
+    },
+    {
+      "key": "2018-111-2144",
+      "year": 2018,
+      "issue": 111,
+      "act_num": "2144",
+      "type": "ZAKON",
+      "title": "Zakon o prestanku važenja Zakona o Hrvatskoj poljoprivredno-šumarskoj savjetodavnoj službi",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/111/2144"
+    },
+    {
+      "key": "2018-111-2145",
+      "year": 2018,
+      "issue": 111,
+      "act_num": "2145",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o akvakulturi",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/111/2145"
+    },
+    {
+      "key": "2018-111-2146",
+      "year": 2018,
+      "issue": 111,
+      "act_num": "2146",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o drvenastim kulturama kratkih ophodnji",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/111/2146"
+    },
+    {
+      "key": "2018-111-2147",
+      "year": 2018,
+      "issue": 111,
+      "act_num": "2147",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o zaštiti biljnih sorti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/111/2147"
+    },
+    {
+      "key": "2018-111-2148",
+      "year": 2018,
+      "issue": 111,
+      "act_num": "2148",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o obeštećenju radnika profesionalno izloženih azbestu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/111/2148"
+    },
+    {
+      "key": "2018-111-2149",
+      "year": 2018,
+      "issue": 111,
+      "act_num": "2149",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o obveznom zdravstvenom nadzoru radnika profesionalno izloženih azbestu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/111/2149"
+    },
+    {
+      "key": "2018-111-2150",
+      "year": 2018,
+      "issue": 111,
+      "act_num": "2150",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o mjeriteljstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/111/2150"
+    },
+    {
+      "key": "2018-111-2151",
+      "year": 2018,
+      "issue": 111,
+      "act_num": "2151",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o obnovljivim izvorima energije i visokoučinkovitoj kogeneraciji",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/111/2151"
+    },
+    {
+      "key": "2018-112-2166",
+      "year": 2018,
+      "issue": 112,
+      "act_num": "2166",
+      "type": "ZAKON",
+      "title": "Zakon o provedbi Uredbe (EU) br. 1286/2014 o dokumentima s ključnim informacijama za upakirane investicijske proizvode",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/112/2166"
+    },
+    {
+      "key": "2018-112-2167",
+      "year": 2018,
+      "issue": 112,
+      "act_num": "2167",
+      "type": "ZAKON",
+      "title": "Zakon o državnoj izmjeri i katastru nekretnina",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/112/2167"
+    },
+    {
+      "key": "2018-112-2168",
+      "year": 2018,
+      "issue": 112,
+      "act_num": "2168",
+      "type": "ZAKON",
+      "title": "Zakon o Središnjem registru državne imovine",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/112/2168"
+    },
+    {
+      "key": "2018-112-2169",
+      "year": 2018,
+      "issue": 112,
+      "act_num": "2169",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o zakupu i kupoprodaji poslovnoga prostora",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/112/2169"
+    },
+    {
+      "key": "2018-112-2170",
+      "year": 2018,
+      "issue": 112,
+      "act_num": "2170",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o osiguranju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/112/2170"
+    },
+    {
+      "key": "2018-113-2198",
+      "year": 2018,
+      "issue": 113,
+      "act_num": "2198",
+      "type": "ZAKON",
+      "title": "Zakon o izvršavanju Državnog proračuna Republike Hrvatske za 2019. godinu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/113/2198"
+    },
+    {
+      "key": "2018-114-2199",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2199",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni i dopunama Zakona o zaštiti od buke",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2199"
+    },
+    {
+      "key": "2018-114-2200",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2200",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o ograničavanju uporabe duhanskih i srodnih proizvoda",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2200"
+    },
+    {
+      "key": "2018-114-2201",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2201",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o predmetima opće uporabe",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2201"
+    },
+    {
+      "key": "2018-114-2202",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2202",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o materijalima i predmetima koji dolaze u neposredan dodir s hranom",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2202"
+    },
+    {
+      "key": "2018-114-2203",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2203",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o provedbi Uredbe (EZ) br. 648/2004 Europskoga parlamenta i Vijeća od 31. ožujka 2004. godine o deterdžentima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2203"
+    },
+    {
+      "key": "2018-114-2204",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2204",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o zaštiti od neionizirajućeg zračenja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2204"
+    },
+    {
+      "key": "2018-114-2205",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2205",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o zaštiti pučanstva od zaraznih bolesti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2205"
+    },
+    {
+      "key": "2018-114-2206",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2206",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o kontaminantima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2206"
+    },
+    {
+      "key": "2018-114-2207",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2207",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o prehrambenim i zdravstvenim tvrdnjama te hrani obogaćenoj nutrijentima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2207"
+    },
+    {
+      "key": "2018-114-2208",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2208",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o uvozu hrane i hrane za životinje iz trećih zemalja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2208"
+    },
+    {
+      "key": "2018-114-2209",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2209",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o prehrambenim aditivima, aromama i prehrambenim enzimima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2209"
+    },
+    {
+      "key": "2018-114-2210",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2210",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o provedbi Uredbe (EU) 2015/2283 Europskog parlamenta i Vijeća od 25. studenoga 2015. o novoj hrani",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2210"
+    },
+    {
+      "key": "2018-114-2211",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2211",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o provedbi Uredbe (EU) br. 609/2013 Europskog parlamenta i Vijeća od 12. lipnja 2013. o hrani za dojenčad i malu djecu, hrani za posebne medicinske potrebe i zamjeni za cjelodnevnu prehranu pri redukcijskoj dijeti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2211"
+    },
+    {
+      "key": "2018-114-2212",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2212",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o provedbi Uredbe (EZ) br. 1829/2003 Europskoga parlamenta i Vijeća od 22. rujna 2003. godine o genetski modificiranoj hrani i hrani za životinje i Uredbe (EZ) br. 1830/2003 Europskoga parlamenta i Vijeća od 22. rujna 2003. godine o sljedivosti i označavanju genetski modificiranih organizama i sljedivosti hrane i hrane za životinje proizvedenih od genetski modificiranih organizama kojom se izmjenjuje i dopunjuje Direktiva 2001/18/EZ",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2212"
+    },
+    {
+      "key": "2018-114-2213",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2213",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o zadrugama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2213"
+    },
+    {
+      "key": "2018-114-2214",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2214",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o javno-privatnom partnerstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2214"
+    },
+    {
+      "key": "2018-114-2215",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2215",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o poticanju ulaganja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2215"
+    },
+    {
+      "key": "2018-114-2216",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2216",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o strateškim investicijskim projektima Republike Hrvatske",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2216"
+    },
+    {
+      "key": "2018-114-2217",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2217",
+      "type": "ZAKON",
+      "title": "Zakon o dopuni Zakona o komori arhitekata i komorama inženjera u graditeljstvu i prostornom uređenju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2217"
+    },
+    {
+      "key": "2018-114-2218",
+      "year": 2018,
+      "issue": 114,
+      "act_num": "2218",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o prostornom uređenju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/114/2218"
+    },
+    {
+      "key": "2018-115-2234",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2234",
+      "type": "ZAKON",
+      "title": "Zakon o stažu osiguranja s povećanim trajanjem",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2234"
+    },
+    {
+      "key": "2018-115-2235",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2235",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o mirovinskom osiguranju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2235"
+    },
+    {
+      "key": "2018-115-2236",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2236",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o dodatku na mirovine ostvarene prema Zakonu o mirovinskom osiguranju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2236"
+    },
+    {
+      "key": "2018-115-2237",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2237",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o obveznim mirovinskim fondovima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2237"
+    },
+    {
+      "key": "2018-115-2238",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2238",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o dobrovoljnim mirovinskim fondovima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2238"
+    },
+    {
+      "key": "2018-115-2239",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2239",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o mirovinskim osiguravajućim društvima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2239"
+    },
+    {
+      "key": "2018-115-2240",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2240",
+      "type": "ZAKON",
+      "title": "Zakon o udomiteljstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2240"
+    },
+    {
+      "key": "2018-115-2241",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2241",
+      "type": "ZAKON",
+      "title": "Zakon o uzgoju domaćih životinja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2241"
+    },
+    {
+      "key": "2018-115-2242",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2242",
+      "type": "ZAKON",
+      "title": "Zakon o prestanku važenja Zakona o osnivanju Agencije za investicije i konkurentnost",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2242"
+    },
+    {
+      "key": "2018-115-2243",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2243",
+      "type": "ZAKON",
+      "title": "Zakon o državnom inspektoratu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2243"
+    },
+    {
+      "key": "2018-115-2244",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2244",
+      "type": "ZAKON",
+      "title": "Zakon o provedbi Uredbe (EU) 2017/852 Europskog parlamenta i Vijeća od 17. svibnja 2017. o živi i stavljanju izvan snage Uredbe (EZ) br. 1102/2008",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2244"
+    },
+    {
+      "key": "2018-115-2245",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2245",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o održivoj uporabi pesticida",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2245"
+    },
+    {
+      "key": "2018-115-2246",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2246",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o biljnom zdravstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2246"
+    },
+    {
+      "key": "2018-115-2247",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2247",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o provedbi Uredbe (EZ) br. 396/2005 o maksimalnim razinama ostataka pesticida u i na hrani i hrani za životinje biljnog i životinjskog podrijetla",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2247"
+    },
+    {
+      "key": "2018-115-2248",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2248",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o sjemenu, sadnom materijalu i priznavanju sorti poljoprivrednog bilja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2248"
+    },
+    {
+      "key": "2018-115-2249",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2249",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o šumama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2249"
+    },
+    {
+      "key": "2018-115-2250",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2250",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o hrani",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2250"
+    },
+    {
+      "key": "2018-115-2251",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2251",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o higijeni hrane i mikrobiološkim kriterijima za hranu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2251"
+    },
+    {
+      "key": "2018-115-2252",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2252",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o veterinarstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2252"
+    },
+    {
+      "key": "2018-115-2253",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2253",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o poljoprivrednom zemljištu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2253"
+    },
+    {
+      "key": "2018-115-2254",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2254",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o provedbi Uredbe (EZ) br. 1272/2008 Europskoga parlamenta i Vijeća od 16. prosinca 2008. o razvrstavanju, označavanju i pakiranju tvari i smjesa, kojom se izmjenjuju, dopunjuju i ukidaju Direktiva 67/548/EEZ i Direktiva 1999/45/EZ i izmjenjuje i dopunjuje Uredba (EZ) br. 1907/2006",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2254"
+    },
+    {
+      "key": "2018-115-2255",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2255",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o provedbi Uredbe (EZ) br. 1223/2009 Europskoga parlamenta i Vijeća od 30. studenoga 2009. godine o kozmetičkim proizvodima (preinačena verzija)",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2255"
+    },
+    {
+      "key": "2018-115-2256",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2256",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o provedbi Uredbe (EU) br. 649/2012 o izvozu i uvozu opasnih kemikalija",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2256"
+    },
+    {
+      "key": "2018-115-2257",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2257",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o provedbi Uredbe (EZ) br. 1907/2006 Europskoga parlamenta i Vijeća EZ o registraciji, evaluaciji, autorizaciji i ograničavanju kemikalija",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2257"
+    },
+    {
+      "key": "2018-115-2258",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2258",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o vodi za ljudsku potrošnju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2258"
+    },
+    {
+      "key": "2018-115-2259",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2259",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o genetski modificiranim organizmima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2259"
+    },
+    {
+      "key": "2018-115-2260",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2260",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o kemikalijama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2260"
+    },
+    {
+      "key": "2018-115-2261",
+      "year": 2018,
+      "issue": 115,
+      "act_num": "2261",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o provedbi Uredbe (EU) br. 528/2012 Europskoga parlamenta i Vijeća u vezi sa stavljanjem na raspolaganje na tržištu i uporabi biocidnih proizvoda",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/115/2261"
+    },
+    {
+      "key": "2018-116-2287",
+      "year": 2018,
+      "issue": 116,
+      "act_num": "2287",
+      "type": "ZAKON",
+      "title": "Zakon o otocima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/116/2287"
+    },
+    {
+      "key": "2018-116-2288",
+      "year": 2018,
+      "issue": 116,
+      "act_num": "2288",
+      "type": "ZAKON",
+      "title": "Zakon o udžbenicima i drugim obrazovnim materijalima za osnovnu i srednju školu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/116/2288"
+    },
+    {
+      "key": "2018-116-2289",
+      "year": 2018,
+      "issue": 116,
+      "act_num": "2289",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o Vladi Republike Hrvatske",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/116/2289"
+    },
+    {
+      "key": "2018-116-2290",
+      "year": 2018,
+      "issue": 116,
+      "act_num": "2290",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o ustrojstvu i djelokrugu ministarstava i drugih središnjih tijela državne uprave",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/116/2290"
+    },
+    {
+      "key": "2018-116-2291",
+      "year": 2018,
+      "issue": 116,
+      "act_num": "2291",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o energetskoj učinkovitosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/116/2291"
+    },
+    {
+      "key": "2018-116-2292",
+      "year": 2018,
+      "issue": 116,
+      "act_num": "2292",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o računovodstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/116/2292"
+    },
+    {
+      "key": "2018-118-2332",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2332",
+      "type": "ZAKON",
+      "title": "Zakon o minimalnoj plaći",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2332"
+    },
+    {
+      "key": "2018-118-2333",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2333",
+      "type": "ZAKON",
+      "title": "Zakon o tržištu rada",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2333"
+    },
+    {
+      "key": "2018-118-2334",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2334",
+      "type": "ZAKON",
+      "title": "Zakon o prestanku važenja Zakona o poticanju zapošljavanja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2334"
+    },
+    {
+      "key": "2018-118-2335",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2335",
+      "type": "ZAKON",
+      "title": "Zakon o sudskim pristojbama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2335"
+    },
+    {
+      "key": "2018-118-2336",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2336",
+      "type": "ZAKON",
+      "title": "Zakon o provedbi Uredbe (EU) br. 2017/1131 o novčanim fondovima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2336"
+    },
+    {
+      "key": "2018-118-2337",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2337",
+      "type": "ZAKON",
+      "title": "Zakon o Projektu zaštite od poplava u slivu rijeke Kupe",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2337"
+    },
+    {
+      "key": "2018-118-2338",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2338",
+      "type": "ZAKON",
+      "title": "Zakon o lučkim kapetanijama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2338"
+    },
+    {
+      "key": "2018-118-2339",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2339",
+      "type": "ZAKON",
+      "title": "Zakon o kvaliteti zdravstvene zaštite",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2339"
+    },
+    {
+      "key": "2018-118-2340",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2340",
+      "type": "ZAKON",
+      "title": "Zakon o prestanku važenja Zakona o Nacionalnoj zakladi za potporu učeničkom i studentskom standardu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2340"
+    },
+    {
+      "key": "2018-118-2341",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2341",
+      "type": "ZAKON",
+      "title": "Zakon o brdsko-planinskim područjima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2341"
+    },
+    {
+      "key": "2018-118-2342",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2342",
+      "type": "ZAKON",
+      "title": "Zakon o potpomognutim područjima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2342"
+    },
+    {
+      "key": "2018-118-2343",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2343",
+      "type": "ZAKON",
+      "title": "Zakon  o poljoprivredi",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2343"
+    },
+    {
+      "key": "2018-118-2344",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2344",
+      "type": "ZAKON",
+      "title": "Zakon  o izmjenama Zakona o regionalnom razvoju Republike Hrvatske",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2344"
+    },
+    {
+      "key": "2018-118-2345",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2345",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o zaštiti okoliša",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2345"
+    },
+    {
+      "key": "2018-118-2346",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2346",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o zaštiti zraka",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2346"
+    },
+    {
+      "key": "2018-118-2347",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2347",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o provedbi Uredbe (EU) 2015/757 Europskog parlamenta i Vijeća od 29. travnja 2015. o praćenju emisija ugljikova dioksida iz pomorskog prometa, izvješćivanju o njima i njihovoj verifikaciji te o izmjeni Direktive 2009/16/EZ",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2347"
+    },
+    {
+      "key": "2018-118-2348",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2348",
+      "type": "ZAKON",
+      "title": "Zakon  o izmjenama Zakona o provedbi Uredbe (EU) br. 517/2014 Europskog parlamenta i Vijeća od 16. travnja 2014. o fluoriranim stakleničkim plinovima i stavljanju izvan snage Uredbe (EZ) br. 842/2006",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2348"
+    },
+    {
+      "key": "2018-118-2349",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2349",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o plovidbi i lukama unutarnjih voda",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2349"
+    },
+    {
+      "key": "2018-118-2350",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2350",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o poslovima i djelatnostima prostornog uređenja i gradnje",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2350"
+    },
+    {
+      "key": "2018-118-2351",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2351",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o sustavu civilne zaštite",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2351"
+    },
+    {
+      "key": "2018-118-2352",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2352",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o radiološkoj i nuklearnoj sigurnosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2352"
+    },
+    {
+      "key": "2018-118-2353",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2353",
+      "type": "ZAKON",
+      "title": "Zakon  o izmjenama Zakona o protuminskom djelovanju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2353"
+    },
+    {
+      "key": "2018-118-2354",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2354",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Prekršajnog zakona",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2354"
+    },
+    {
+      "key": "2018-118-2355",
+      "year": 2018,
+      "issue": 118,
+      "act_num": "2355",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Kaznenog zakona",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/118/2355"
+    },
+    {
       "key": "2018-12-264",
       "year": 2018,
       "issue": 12,
@@ -3421,6 +4402,735 @@
       "type": "ZAKON",
       "title": "Ispravak Zakona o izmjenama i dopunama Zakona o zaštiti na radu",
       "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/96/1869"
+    },
+    {
+      "key": "2018-99-1910",
+      "year": 2018,
+      "issue": 99,
+      "act_num": "1910",
+      "type": "ZAKON",
+      "title": "Zakon o probaciji",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/99/1910"
+    },
+    {
+      "key": "2018-99-1911",
+      "year": 2018,
+      "issue": 99,
+      "act_num": "1911",
+      "type": "ZAKON",
+      "title": "Zakon o provedbi projekata međunarodne institucionalne suradnje Europske unije i projekata tehničke pomoći",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/99/1911"
+    },
+    {
+      "key": "2018-99-1912",
+      "year": 2018,
+      "issue": 99,
+      "act_num": "1912",
+      "type": "ZAKON",
+      "title": "Zakon o provedbi Konvencije o građanskopravnim vidovima međunarodne otmice djece",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/99/1912"
+    },
+    {
+      "key": "2018-99-1913",
+      "year": 2018,
+      "issue": 99,
+      "act_num": "1913",
+      "type": "ZAKON",
+      "title": "Zakon o lovstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/99/1913"
+    },
+    {
+      "key": "2018-99-1914",
+      "year": 2018,
+      "issue": 99,
+      "act_num": "1914",
+      "type": "ZAKON",
+      "title": "Zakon o Fondu hrvatskih branitelja iz Domovinskog rata i članova njihovih obitelji",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/99/1914"
+    },
+    {
+      "key": "2018-99-1915",
+      "year": 2018,
+      "issue": 99,
+      "act_num": "1915",
+      "type": "ZAKON",
+      "title": "Zakon o prestanku važenja Zakona o Fondu za stipendiranje hrvatskih branitelja iz Domovinskog rata i djece hrvatskih branitelja iz Domovinskog rata",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/99/1915"
+    },
+    {
+      "key": "2018-99-1916",
+      "year": 2018,
+      "issue": 99,
+      "act_num": "1916",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o Zakladi hrvatskih branitelja iz Domovinskog rata i članova njihovih obitelji",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/99/1916"
+    },
+    {
+      "key": "2018-99-1917",
+      "year": 2018,
+      "issue": 99,
+      "act_num": "1917",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o ugostiteljskoj djelatnosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2018/99/1917"
+    },
+    {
+      "key": "2019-14-268",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "268",
+      "type": "ZAKON",
+      "title": "Zakon o sudjelovanju civilnih stručnjaka u međunarodnim misijama i operacijama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/268"
+    },
+    {
+      "key": "2019-14-269",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "269",
+      "type": "ZAKON",
+      "title": "Zakon o podacima i informacijama u zdravstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/269"
+    },
+    {
+      "key": "2019-14-270",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "270",
+      "type": "ZAKON",
+      "title": "Zakon o provedbi Uredbe (EU) br. 536/2014 Europskog parlamenta i vijeća od 16. travnja 2014. o kliničkim ispitivanjima lijekova za primjenu kod ljudi te o stavljanju izvan snage Direktive 2001/20/EZ",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/270"
+    },
+    {
+      "key": "2019-14-271",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "271",
+      "type": "ZAKON",
+      "title": "Zakon o zaštiti od svjetlosnog onečišćenja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/271"
+    },
+    {
+      "key": "2019-14-272",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "272",
+      "type": "ZAKON",
+      "title": "Zakon o žigu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/272"
+    },
+    {
+      "key": "2019-14-273",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "273",
+      "type": "ZAKON",
+      "title": "Zakon o vježbenicima u pravosudnim tijelima i pravosudnom ispitu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/273"
+    },
+    {
+      "key": "2019-14-274",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "274",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o prekograničnom prometu i trgovini divljim vrstama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/274"
+    },
+    {
+      "key": "2019-14-275",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "275",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o sprječavanju unošenja i širenja stranih te invazivnih stranih vrsta i upravljanju njima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/275"
+    },
+    {
+      "key": "2019-14-276",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "276",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o zaštiti prirode",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/276"
+    },
+    {
+      "key": "2019-14-277",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "277",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o održivom gospodarenju otpadom",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/277"
+    },
+    {
+      "key": "2019-14-278",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "278",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o provedbi Uredbe (EU) br. 511/2014 o mjerama usklađivanja za korisnike Protokola iz Nagoye o pristupu genetskim resursima te poštenoj i pravičnoj podjeli dobiti koja proizlazi iz njihova korištenja u Uniji",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/278"
+    },
+    {
+      "key": "2019-14-279",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "279",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o zaštiti potrošača",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/279"
+    },
+    {
+      "key": "2019-14-280",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "280",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o postupanju s nezakonito izgrađenim zgradama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/280"
+    },
+    {
+      "key": "2019-14-281",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "281",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni i dopunama Zakona o nasljeđivanju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/281"
+    },
+    {
+      "key": "2019-14-282",
+      "year": 2019,
+      "issue": 14,
+      "act_num": "282",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o morskom ribarstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/14/282"
+    },
+    {
+      "key": "2019-16-314",
+      "year": 2019,
+      "issue": 16,
+      "act_num": "314",
+      "type": "ZAKON",
+      "title": "Zakon o ublažavanju i uklanjanju posljedica prirodnih nepogoda",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/16/314"
+    },
+    {
+      "key": "2019-16-315",
+      "year": 2019,
+      "issue": 16,
+      "act_num": "315",
+      "type": "ZAKON",
+      "title": "Zakon o djelatnosti socijalnog rada",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/16/315"
+    },
+    {
+      "key": "2019-16-316",
+      "year": 2019,
+      "issue": 16,
+      "act_num": "316",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o edukacijsko-rehabilitacijskoj djelatnosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/16/316"
+    },
+    {
+      "key": "2019-16-317",
+      "year": 2019,
+      "issue": 16,
+      "act_num": "317",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o sanaciji kreditnih institucija i investicijskih društava",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/16/317"
+    },
+    {
+      "key": "2019-16-318",
+      "year": 2019,
+      "issue": 16,
+      "act_num": "318",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o plaćama sudaca i drugih pravosudnih dužnosnika",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/16/318"
+    },
+    {
+      "key": "2019-17-356",
+      "year": 2019,
+      "issue": 17,
+      "act_num": "356",
+      "type": "ZAKON",
+      "title": "Zakon o knjižnicama i knjižničnoj djelatnosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/17/356"
+    },
+    {
+      "key": "2019-17-357",
+      "year": 2019,
+      "issue": 17,
+      "act_num": "357",
+      "type": "ZAKON",
+      "title": "Zakon o zaštiti prijavitelja nepravilnosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/17/357"
+    },
+    {
+      "key": "2019-17-358",
+      "year": 2019,
+      "issue": 17,
+      "act_num": "358",
+      "type": "ZAKON",
+      "title": "Zakon o pristupačnosti mrežnih stranica i programskih rješenja za pokretne uređaje tijela javnog sektora",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/17/358"
+    },
+    {
+      "key": "2019-17-359",
+      "year": 2019,
+      "issue": 17,
+      "act_num": "359",
+      "type": "ZAKON",
+      "title": "Zakon  o izmjenama i dopunama Zakona o proizvodnji, remontu i prometu naoružanja i vojne opreme",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/17/359"
+    },
+    {
+      "key": "2019-17-360",
+      "year": 2019,
+      "issue": 17,
+      "act_num": "360",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Pomorskog zakonika",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/17/360"
+    },
+    {
+      "key": "2019-21-437",
+      "year": 2019,
+      "issue": 21,
+      "act_num": "437",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni i dopuni Zakona o privatizaciji INA – Industrije nafte d.d.",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/21/437"
+    },
+    {
+      "key": "2019-25-490",
+      "year": 2019,
+      "issue": 25,
+      "act_num": "490",
+      "type": "ZAKON",
+      "title": "Zakon o Državnom uredu za reviziju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/25/490"
+    },
+    {
+      "key": "2019-25-491",
+      "year": 2019,
+      "issue": 25,
+      "act_num": "491",
+      "type": "ZAKON",
+      "title": "Zakon o izboru vijeća i predstavnika nacionalnih manjina",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/25/491"
+    },
+    {
+      "key": "2019-25-492",
+      "year": 2019,
+      "issue": 25,
+      "act_num": "492",
+      "type": "ZAKON",
+      "title": "Zakon o provedbi Uredbe (EU) 2018/302 Europskog parlamenta i Vijeća od 28. veljače 2018. o rješavanju pitanja neopravdanog geografskog blokiranja i drugih oblika diskriminacije na unutarnjem tržištu na temelju državljanstva, mjesta boravišta ili mjesta poslovnog nastana klijenata te o izmjeni Uredbi (EZ) 2006/2004 i (EU) 2017/2394 i Direktive 2009/22/EZ",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/25/492"
+    },
+    {
+      "key": "2019-25-493",
+      "year": 2019,
+      "issue": 25,
+      "act_num": "493",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o ugostiteljskoj djelatnosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/25/493"
+    },
+    {
+      "key": "2019-25-494",
+      "year": 2019,
+      "issue": 25,
+      "act_num": "494",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o pružanju usluga u turizmu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/25/494"
+    },
+    {
+      "key": "2019-29-602",
+      "year": 2019,
+      "issue": 29,
+      "act_num": "602",
+      "type": "ZAKON",
+      "title": "Zakon o financiranju političkih aktivnosti, izborne promidžbe i referenduma",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/29/602"
+    },
+    {
+      "key": "2019-32-641",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "641",
+      "type": "ZAKON",
+      "title": "Zakon o vinu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/641"
+    },
+    {
+      "key": "2019-32-642",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "642",
+      "type": "ZAKON",
+      "title": "Zakon o željeznici",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/642"
+    },
+    {
+      "key": "2019-32-643",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "643",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o općoj sigurnosti proizvoda",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/643"
+    },
+    {
+      "key": "2019-32-644",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "644",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o alternativnom rješavanju potrošačkih sporova",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/644"
+    },
+    {
+      "key": "2019-32-645",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "645",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o tehničkim zahtjevima za proizvode i ocjenjivanju sukladnosti",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/645"
+    },
+    {
+      "key": "2019-32-646",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "646",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o elektroničkoj trgovini",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/646"
+    },
+    {
+      "key": "2019-32-647",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "647",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o posredovanju u prometu nekretnina",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/647"
+    },
+    {
+      "key": "2019-32-648",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "648",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o trgovini",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/648"
+    },
+    {
+      "key": "2019-32-649",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "649",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o veterinarsko-medicinskim proizvodima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/649"
+    },
+    {
+      "key": "2019-32-650",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "650",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o uskladištenju i skladišnici za žitarice i industrijsko bilje",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/650"
+    },
+    {
+      "key": "2019-32-651",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "651",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni Zakona o duhanu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/651"
+    },
+    {
+      "key": "2019-32-652",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "652",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o gnojivima i poboljšivačima tla",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/652"
+    },
+    {
+      "key": "2019-32-653",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "653",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o provedbi Uredbe (EZ) br. 2003/2003 o gnojivima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/653"
+    },
+    {
+      "key": "2019-32-654",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "654",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o provedbi Uredbe (EZ) br. 1107/2009 o stavljanju na tržište sredstava za zaštitu bilja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/654"
+    },
+    {
+      "key": "2019-32-655",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "655",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o informiranju potrošača o hrani",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/655"
+    },
+    {
+      "key": "2019-32-656",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "656",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o zaštiti životinja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/656"
+    },
+    {
+      "key": "2019-32-657",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "657",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o provedbi uredbi Europske unije o zaštiti životinja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/657"
+    },
+    {
+      "key": "2019-32-658",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "658",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o obiteljskom poljoprivrednom gospodarstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/658"
+    },
+    {
+      "key": "2019-32-659",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "659",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o šumskom reprodukcijskom materijalu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/659"
+    },
+    {
+      "key": "2019-32-660",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "660",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o lovstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/660"
+    },
+    {
+      "key": "2019-32-661",
+      "year": 2019,
+      "issue": 32,
+      "act_num": "661",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o službenim kontrolama koje se provode sukladno propisima o hrani, hrani za životinje, o zdravlju i dobrobiti životinja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/32/661"
+    },
+    {
+      "key": "2019-39-797",
+      "year": 2019,
+      "issue": 39,
+      "act_num": "797",
+      "type": "ZAKON",
+      "title": "Zakon o korištenju psa pomagača",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/39/797"
+    },
+    {
+      "key": "2019-39-798",
+      "year": 2019,
+      "issue": 39,
+      "act_num": "798",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o građevnim proizvodima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/39/798"
+    },
+    {
+      "key": "2019-39-799",
+      "year": 2019,
+      "issue": 39,
+      "act_num": "799",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o suzbijanju zlouporabe droga",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/39/799"
+    },
+    {
+      "key": "2019-39-800",
+      "year": 2019,
+      "issue": 39,
+      "act_num": "800",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o sprječavanju pranja novca i financiranja terorizma",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/39/800"
+    },
+    {
+      "key": "2019-39-801",
+      "year": 2019,
+      "issue": 39,
+      "act_num": "801",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o prostornom uređenju",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/39/801"
+    },
+    {
+      "key": "2019-39-802",
+      "year": 2019,
+      "issue": 39,
+      "act_num": "802",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o gradnji",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/39/802"
+    },
+    {
+      "key": "2019-39-803",
+      "year": 2019,
+      "issue": 39,
+      "act_num": "803",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o carinskoj službi",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/39/803"
+    },
+    {
+      "key": "2019-40-816",
+      "year": 2019,
+      "issue": 40,
+      "act_num": "816",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o trgovačkim društvima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/40/816"
+    },
+    {
+      "key": "2019-40-817",
+      "year": 2019,
+      "issue": 40,
+      "act_num": "817",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o sudskom registru",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/40/817"
+    },
+    {
+      "key": "2019-52-990",
+      "year": 2019,
+      "issue": 52,
+      "act_num": "990",
+      "type": "ZAKON",
+      "title": "Zakon o turističkim zajednicama i promicanju hrvatskog turizma",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/52/990"
+    },
+    {
+      "key": "2019-52-991",
+      "year": 2019,
+      "issue": 52,
+      "act_num": "991",
+      "type": "ZAKON",
+      "title": "Zakon o članarinama u turističkim zajednicama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/52/991"
+    },
+    {
+      "key": "2019-52-992",
+      "year": 2019,
+      "issue": 52,
+      "act_num": "992",
+      "type": "ZAKON",
+      "title": "Zakon o turističkoj pristojbi",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/52/992"
+    },
+    {
+      "key": "2019-52-993",
+      "year": 2019,
+      "issue": 52,
+      "act_num": "993",
+      "type": "ZAKON",
+      "title": "Zakon o Pravosudnoj akademiji",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/52/993"
+    },
+    {
+      "key": "2019-52-994",
+      "year": 2019,
+      "issue": 52,
+      "act_num": "994",
+      "type": "ZAKON",
+      "title": "Zakon o izmjeni i dopuni Zakona o tržištu električne energije",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/52/994"
+    },
+    {
+      "key": "2019-52-995",
+      "year": 2019,
+      "issue": 52,
+      "act_num": "995",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama Zakona o istraživanju i eksploataciji ugljikovodika",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/52/995"
+    },
+    {
+      "key": "2019-52-996",
+      "year": 2019,
+      "issue": 52,
+      "act_num": "996",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopuni Zakona o provedbi Uredbe (EZ) br. 850/2004 o postojanim organskim onečišćujućim tvarima",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/52/996"
+    },
+    {
+      "key": "2019-63-1232",
+      "year": 2019,
+      "issue": 63,
+      "act_num": "1232",
+      "type": "ZAKON",
+      "title": "Zakon o slatkovodnom ribarstvu",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/63/1232"
+    },
+    {
+      "key": "2019-63-1233",
+      "year": 2019,
+      "issue": 63,
+      "act_num": "1233",
+      "type": "ZAKON",
+      "title": "Zakon o Popisu poljoprivrede 2020.",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/63/1233"
+    },
+    {
+      "key": "2019-63-1234",
+      "year": 2019,
+      "issue": 63,
+      "act_num": "1234",
+      "type": "ZAKON",
+      "title": "Zakon o zemljišnim knjigama",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/63/1234"
+    },
+    {
+      "key": "2019-63-1235",
+      "year": 2019,
+      "issue": 63,
+      "act_num": "1235",
+      "type": "ZAKON",
+      "title": "Zakon o izmjenama i dopunama Zakona o međunarodnim mjerama ograničavanja",
+      "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2019/63/1235"
     }
   ]
 }

@@ -42,6 +42,10 @@ interface CatalogEntry {
   url: string;
 }
 
+// Respect NN rate limits with a conservative 1.2s minimum request interval.
+const MIN_DELAY_MS = 1200;
+let lastRequestAt = 0;
+
 function parseArgs(): CliArgs {
   const args = process.argv.slice(2);
   let maxLookups = 500;
@@ -64,7 +68,17 @@ function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+async function enforceRateLimit(): Promise<void> {
+  const now = Date.now();
+  const elapsed = now - lastRequestAt;
+  if (elapsed < MIN_DELAY_MS) {
+    await sleep(MIN_DELAY_MS - elapsed);
+  }
+  lastRequestAt = Date.now();
+}
+
 async function getJson(url: string): Promise<unknown> {
+  await enforceRateLimit();
   const res = await fetch(url, {
     headers: {
       'User-Agent': 'Ansvar-Law-MCP-Catalog/1.0',
@@ -76,6 +90,7 @@ async function getJson(url: string): Promise<unknown> {
 }
 
 async function postJson(url: string, body: unknown): Promise<unknown> {
+  await enforceRateLimit();
   const res = await fetch(url, {
     method: 'POST',
     headers: {
@@ -223,15 +238,12 @@ async function main(): Promise<void> {
           console.log(`Progress: lookups_total=${state.lookupsDone}, laws_cataloged=${catalog.length}, cursor=${year}/${issue}/${actNum}`);
         }
 
-        await sleep(350);
       }
 
       if (state.actIndex >= acts.length) {
         state.actIndex = 0;
         state.editionIndex++;
       }
-
-      await sleep(350);
     }
 
     if (state.editionIndex >= editions.length) {

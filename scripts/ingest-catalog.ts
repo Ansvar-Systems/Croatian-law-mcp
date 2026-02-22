@@ -29,10 +29,15 @@ interface CatalogEntry {
   url: string;
 }
 
+function isCorrectionNotice(entry: CatalogEntry): boolean {
+  return /^ispravak\b/i.test(entry.title.trim());
+}
+
 interface CliArgs {
   limit: number | null;
   offset: number;
   skipFetch: boolean;
+  onlyNew: boolean;
 }
 
 function parseArgs(): CliArgs {
@@ -40,6 +45,7 @@ function parseArgs(): CliArgs {
   let limit: number | null = null;
   let offset = 0;
   let skipFetch = false;
+  let onlyNew = true;
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--limit' && args[i + 1]) {
@@ -55,9 +61,15 @@ function parseArgs(): CliArgs {
     if (args[i] === '--skip-fetch') {
       skipFetch = true;
     }
+    if (args[i] === '--only-new') {
+      onlyNew = true;
+    }
+    if (args[i] === '--all') {
+      onlyNew = false;
+    }
   }
 
-  return { limit, offset, skipFetch };
+  return { limit, offset, skipFetch, onlyNew };
 }
 
 function slugify(value: string): string {
@@ -73,6 +85,22 @@ function slugify(value: string): string {
 function loadCatalog(): CatalogEntry[] {
   const parsed = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf-8')) as { entries?: CatalogEntry[] };
   return (parsed.entries ?? []).sort((a, b) => a.key.localeCompare(b.key));
+}
+
+function listExistingIds(): Set<string> {
+  if (!fs.existsSync(OUTPUT_DIR)) return new Set<string>();
+
+  const ids = new Set<string>();
+  const files = fs.readdirSync(OUTPUT_DIR).filter(name => name.endsWith('.json'));
+
+  for (const file of files) {
+    const base = path.basename(file, '.json');
+    // New files may include a numeric ingestion prefix; existing id starts after it.
+    const withoutPrefix = base.replace(/^\d{5}-/, '');
+    ids.add(withoutPrefix);
+  }
+
+  return ids;
 }
 
 function toTarget(entry: CatalogEntry, idx: number): LawTarget {
@@ -109,7 +137,7 @@ async function fetchHtml(target: LawTarget, skipFetch: boolean): Promise<string>
 }
 
 async function main(): Promise<void> {
-  const { limit, offset, skipFetch } = parseArgs();
+  const { limit, offset, skipFetch, onlyNew } = parseArgs();
 
   if (!fs.existsSync(CATALOG_PATH)) {
     throw new Error(`Catalog not found: ${CATALOG_PATH}`);
@@ -122,8 +150,14 @@ async function main(): Promise<void> {
   const slice = limit == null
     ? catalog.slice(offset)
     : catalog.slice(offset, offset + limit);
-
-  const targets = slice.map((entry, idx) => toTarget(entry, offset + idx));
+  const existingIds = listExistingIds();
+  const filtered = slice.filter(entry => !isCorrectionNotice(entry));
+  const targets = filtered
+    .map((entry, idx) => toTarget(entry, offset + idx))
+    .filter(target => !onlyNew || !existingIds.has(target.id));
+  const skippedCorrections = slice.length - filtered.length;
+  const skippedAlreadyIngested = onlyNew ? filtered.length - targets.length : 0;
+  const skipped = skippedCorrections + skippedAlreadyIngested;
 
   let ok = 0;
   let failed = 0;
@@ -151,6 +185,9 @@ async function main(): Promise<void> {
   console.log(`Targets:    ${targets.length}`);
   console.log(`Ingested:   ${ok}`);
   console.log(`Failed:     ${failed}`);
+  console.log(`Skipped:    ${skipped}`);
+  console.log(`  - already ingested: ${skippedAlreadyIngested}`);
+  console.log(`  - correction notices: ${skippedCorrections}`);
   console.log(`Provisions: ${provisions}`);
   console.log(`Output:     ${OUTPUT_DIR}`);
 }
