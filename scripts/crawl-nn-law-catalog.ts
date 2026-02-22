@@ -42,8 +42,8 @@ interface CatalogEntry {
   url: string;
 }
 
-// Respect NN rate limits with a conservative 1.2s minimum request interval.
-const MIN_DELAY_MS = 1200;
+// Respect NN rate limits with a conservative 1.0s minimum request interval.
+const MIN_DELAY_MS = 1000;
 let lastRequestAt = 0;
 
 function parseArgs(): CliArgs {

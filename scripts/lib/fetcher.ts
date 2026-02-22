@@ -2,12 +2,12 @@
  * Rate-limited HTTP client for Narodne novine ingestion.
  *
  * Official limits documented by NN API: up to 3 requests/second.
- * We stay below this with a 1.2s minimum delay between requests.
+ * We stay below this with a 1.0s minimum delay between requests.
  */
 
 const USER_AGENT =
   'Ansvar-Law-MCP-Ingestion/1.0 (+https://github.com/Ansvar-Systems/Croatian-law-mcp)';
-const MIN_DELAY_MS = 1200;
+const MIN_DELAY_MS = 1000;
 
 let lastRequestAt = 0;
 
