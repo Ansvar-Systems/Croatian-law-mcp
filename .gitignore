@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.*
+.vercel
+.DS_Store
+coverage/
+data/source/
+data/source-catalog/
+data/seed/
+data/seed-catalog/
+data/catalog/nn-law-catalog.state.json
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm

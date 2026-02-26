@@ -1,0 +1,56 @@
+{
+  "$schema": "./golden-hashes.schema.json",
+  "version": "1.0",
+  "mcp_name": "Croatian Law MCP",
+  "jurisdiction": "HR",
+  "provisions": [
+    {
+      "id": "hr-hash-001",
+      "description": "GDPR Implementation Act Art. 1 -- scope and subject matter of Croatian GDPR implementing provisions",
+      "upstream_url": "https://www.nn.hr/clanci/sluzbeni/2018_42_805.html",
+      "selector_hint": "Art. 1 - Subject matter",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "Regulation (EU) 2016/679"
+    },
+    {
+      "id": "hr-hash-002",
+      "description": "Cybersecurity Act Art. 1 -- scope of the NIS2 transposition for Croatia",
+      "upstream_url": "https://www.nn.hr/clanci/sluzbeni/2024_14_218.html",
+      "selector_hint": "Art. 1 - Subject matter and scope",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "Directive (EU) 2022/2555"
+    },
+    {
+      "id": "hr-hash-003",
+      "description": "Criminal Code Art. 266 -- unauthorised access to a computer system",
+      "upstream_url": "https://www.nn.hr/clanci/sluzbeni/2011_125_2498.html",
+      "selector_hint": "Art. 266 - Unauthorised access",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "computer system"
+    },
+    {
+      "id": "hr-hash-004",
+      "description": "Electronic Commerce Act Art. 12 -- hosting liability exemption",
+      "upstream_url": "https://www.nn.hr/clanci/sluzbeni/2003_173_2739.html",
+      "selector_hint": "Art. 12 - Hosting",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "storage of information"
+    },
+    {
+      "id": "hr-hash-005",
+      "description": "Trade Secrets Act Art. 2 -- definition of trade secret",
+      "upstream_url": "https://www.nn.hr/clanci/sluzbeni/2018_54_1089.html",
+      "selector_hint": "Art. 2 - Definitions",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "trade secret"
+    },
+    {
+      "id": "hr-hash-006",
+      "description": "Right of Access to Information Act Art. 4 -- right of access to public information",
+      "upstream_url": "https://www.nn.hr/clanci/sluzbeni/2013_25_403.html",
+      "selector_hint": "Art. 4 - Right of access",
+      "expected_sha256": "COMPUTE_ON_FIRST_INGEST",
+      "expected_snippet": "access to information"
+    }
+  ]
+}

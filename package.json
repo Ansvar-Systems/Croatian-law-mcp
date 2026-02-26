@@ -1,0 +1,82 @@
+{
+  "name": "@ansvar/croatian-law-mcp",
+  "version": "2.0.0",
+  "mcpName": "eu.ansvar/croatian-law-mcp",
+  "description": "Full Croatian legislation database -- 4,531 laws, 157,667 provisions from Narodne novine (1990-2026) via Model Context Protocol",
+  "author": "Ansvar Systems <hello@ansvar.eu>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ansvar-Systems/Croatian-law-mcp.git"
+  },
+  "homepage": "https://ansvar.eu",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "croatian-law",
+    "data-protection",
+    "gdpr",
+    "cybersecurity",
+    "legislation",
+    "legal",
+    "compliance",
+    "ansvar"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "croatian-law-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "data/database.db",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:db": "node --import tsx scripts/build-db.ts",
+    "dev": "node --import tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "census": "node --import tsx scripts/census.ts",
+    "ingest": "node --import tsx scripts/ingest.ts",
+    "verify:upstream": "node --import tsx scripts/verify-upstream.ts",
+    "catalog:build-csv": "node --import tsx scripts/build-catalog-from-csv.ts",
+    "catalog:crawl": "node --import tsx scripts/crawl-nn-law-catalog.ts",
+    "catalog:ingest": "node --import tsx scripts/ingest-catalog.ts",
+    "catalog:sync-fast": "npm run catalog:build-csv && npm run catalog:ingest",
+    "test:contract": "vitest run __tests__/contract/",
+    "drift:detect": "node --import tsx scripts/drift-detect.ts",
+    "validate": "npm run lint && npm test && npm run test:contract",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "postinstall": "test -d dist || npm run build || true",
+    "check-updates": "node --import tsx scripts/check-updates.ts"
+  },
+  "dependencies": {
+    "@ansvar/mcp-sqlite": "^1.0.3",
+    "@modelcontextprotocol/sdk": "^1.25.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.15.29",
+    "@vercel/node": "^5.6.4",
+    "better-sqlite3": "^12.6.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "overrides": {
+    "path-to-regexp": "^8.0.0",
+    "undici": "^7.0.0",
+    "ajv": "^8.18.0"
+  }
+}

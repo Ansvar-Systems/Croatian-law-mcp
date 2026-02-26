@@ -1,0 +1,171 @@
+{
+  "id": "cip-nn-56-13",
+  "type": "statute",
+  "title": "Zakon o kritičnim infrastrukturama",
+  "title_en": "Critical Infrastructures Act",
+  "short_name": "ZKI",
+  "status": "in_force",
+  "issued_date": "2013-01-01",
+  "in_force_date": "2013-01-01",
+  "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2013/56/1134",
+  "description": "Zakon uređuje identifikaciju, zaštitu i otpornost kritičnih infrastruktura te obveze nadležnih tijela i operatora.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Članak 1.",
+      "content": "(1) Ovim Zakonom uređuju se nacionalne i europske kritične infrastrukture, sektori nacionalnih kritičnih infrastruktura, upravljanje kritičnim infrastrukturama, izrada Analize rizika, Sigurnosni plan vlasnika/upravitelja, sigurnosni koordinator za kritičnu infrastrukturu, postupanje s osjetljivim i klasificiranim podacima te nadzor nad provedbom ovog Zakona. (2) Ovim se Zakonom u zakonodavstvo Republike Hrvatske preuzima pravna stečevina Europske unije sadržana u Direktivi Vijeća 2008/114/EC od 8. prosinca 2008. o identifikaciji i određivanju europskih kritičnih infrastruktura i procjeni potrebe za unapređenjem njihove zaštite (SL L 345/75, 23. 12. 2008.)"
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Članak 2.",
+      "content": "Pojedini pojmovi u smislu ovoga Zakona imaju sljedeće značenje: 1. Analiza rizika označava razmatranje mogućih scenarija prijetnji kako bi se ocijenile ranjivosti i mogući učinak poremećaja u radu kritične infrastrukture ili njezina uništenja. 2. Europska kritična infrastruktura označava kritičnu infrastrukturu koja je od interesa za najmanje dvije države članice, ili jednu državu članicu, a nalazi se na teritoriju druge države članice. 3. Međusektorska mjerila označuju skup općih mjerila na temelju kojih se procjenjuje rizik za pojedine sustave i mreže kritičnih infrastruktura u svim sektorima. 4. Osjetljivi podaci su podaci o kritičnoj infrastrukturi koji su sukladno posebnom propisu označeni kao klasificirani podaci. 5. Kontaktna točka je središnje tijelo državne uprave koje u ime države provodi komunikaciju s nadležnim tijelima Europske unije i drugih država radi razmjene informacija o kritičnim infrastrukturama i provedbe utvrđenih aktivnosti u njihovoj zaštiti i osiguranju neprekidnog djelovanja. 6. Sektorska mjerila označuju skup specifičnih mjerila na temelju kojih se procjenjuje rizik za sustave i mreže kritičnih infrastruktura u pojedinom sektoru. 7. Sigurnosni koordinator za kritičnu infrastrukturu je osoba koja djeluje za pitanja vezana uz zaštitu kritične infrastrukture između vlasnika/upravitelja i središnjih tijela državne uprave nadležnih za pojedini sektor kritične infrastrukture. 8. Sigurnosni plan vlasnika/upravitelja označuje plan koji osigurava povjerljivost, cjelovitost i raspoloživost organizacijskih, kadrovskih, materijalnih, informacijsko-komunikacijskih i drugih rješenja te stalnih i stupnjevanih sigurnosnih mjera potrebnih za neprekidno funkcioniranje kritične infrastrukture. 9. Upravljanje kritičnom infrastrukturom je osiguravanje uvjeta za rad i kontinuirano djelovanje kritične infrastrukture. 10. Vlasnici/upravitelji su pravne osobe odgovorne za upravljanje kritičnom infrastrukturom. 11. Zaštita kritične infrastrukture označuje aktivnosti koje imaju za cilj osigurati funkcionalnost, neprekidno djelovanje i isporuku usluga/robe kritične infrastrukture te spriječiti ugrožavanje kritične infrastrukture. II. NACIONALNE KRITIČNE INFRASTRUKTURE"
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Članak 3.",
+      "content": "Nacionalne kritične infrastrukture su sustavi, mreže i objekti od nacionalne važnosti čiji prekid djelovanja ili prekid isporuke roba ili usluga može imati ozbiljne posljedice na nacionalnu sigurnost, zdravlje i živote ljudi, imovinu i okoliš, sigurnost i ekonomsku stabilnost i neprekidno funkcioniranje vlasti."
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Članak 4.",
+      "content": "(1) Sektori nacionalnih kritičnih infrastruktura mogu biti osobito: – energetika (proizvodnja, uključivo akumulacije i brane, prijenos, skladištenje, transport energenata i energije, sustavi za distribuciju), – komunikacijska i informacijska tehnologija (elektroničke komunikacije, prijenos podataka, informacijski sustavi, pružanje audio i audiovizualnih medijskih usluga), – promet (cestovni, željeznički, zračni, pomorski i promet unutarnjim plovnim putovima), – zdravstvo (zdravstvena zaštita, proizvodnja, promet i nadzor nad lijekovima), – vodno gospodarstvo (regulacijske i zaštitne vodne građevine i komunalne vodne građevine), – hrana (proizvodnja i opskrba hranom i sustav sigurnosti hrane, robne zalihe), – financije (bankarstvo, burze, investicije, sustavi osiguranja i plaćanja), – proizvodnja, skladištenje i prijevoz opasnih tvari (kemijski, biološki, radiološki i nuklearni materijali), – javne službe (osiguranje javnog reda i mira, zaštita i spašavanje, hitna medicinska pomoć), – nacionalni spomenici i vrijednosti. (2) Osim sektora navedenih u stavku 1. ovog Zakona, Vlada Republike Hrvatske može odlukom odrediti kritične infrastrukture i iz drugih sektora."
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Članak 5.",
+      "content": "(1) Vlada Republike Hrvatske posebnom odlukom određuje sektore iz kojih središnja tijela državne uprave identificiraju pojedine nacionalne kritične infrastrukture, radi osiguranja cjelovitog djelovanja na zaštiti i smanjenju negativnih učinaka u slučaju ugroze kritičnih infrastruktura, na prijedlog središnjeg tijela državne uprave u čijem su djelokrugu poslovi zaštite i spašavanja te određuje listu redoslijeda sektora kritičnih infrastruktura zbog njihova značenja za opće funkcioniranje zemlje (rangiranje sektora kritičnih infrastruktura zbog njihove kritičnosti) i zaštitu kritičnih infrastruktura na državnoj razini. (2) Vlada Republike Hrvatske, na prijedlog nadležnih središnjih tijela državne uprave, posebnom odlukom potvrđuje identificirane kritične infrastrukture."
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Članak 6.",
+      "content": "(1) Središnje tijelo državne uprave u čijem su djelokrugu poslovi zaštite i spašavanja, u suradnji s nadležnim središnjim tijelima državne uprave iz čijeg djelokruga je pojedina kritična infrastruktura, redovito prati, procjenjuje ugroze i predlaže operativne i druge mjere za procjenjivanje kritičnosti i potrebe prijedloga mjera za upravljanje i zaštitu kritičnih infrastruktura. (2) Središnje tijelo državne uprave u čijem su djelokrugu poslovi zaštite i spašavanja jednom godišnje podnosi izvješće Vladi Republike Hrvatske i odboru Hrvatskoga sabora nadležnog za nacionalnu sigurnost o broju nacionalnih kritičnih infrastruktura po sektoru i njihovoj kritičnosti te provedbi mjera zaštite kritičnih infrastruktura."
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Članak 7.",
+      "content": "(1) Središnja tijela državne uprave u suradnji s nadležnim regulatornim agencijama odgovorna su u okviru svog djelokruga za identifikaciju (određivanje) pojedinih sustava ili njihovih dijelova kao nacionalnih kritičnih infrastruktura, osiguranje upravljanja kritičnim infrastrukturama i njihovu zaštitu. (2) Čelnik središnjeg tijela državne uprave iz stavka 1. ovog članka donosi odluku o određivanju nacionalne kritične infrastrukture na temelju odluke Vlade Republike Hrvatske o potvrđivanju identificirane kritične infrastrukture iz članka 5. stavka 2. ovog Zakona te je dostavlja na provedbu vlasniku/upravitelju tih infrastruktura i središnjem tijelu državne uprave u čijem su djelokrugu poslovi zaštite i spašavanja. (3) Vlasnici/upravitelji identificiranih (određenih) kritičnih infrastruktura izravno su odgovorni za upravljanje i zaštitu kritičnih infrastruktura u svim uvjetima."
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Članak 8.",
+      "content": "Kriteriji za određivanje pojedine mreže, sustava i objekata nacionalnom kritičnom infrastrukturom predstavljaju klasificirani podatak i označuju se odgovarajućim stupnjem tajnosti sukladno posebnim propisima o tajnosti podataka. III. ANALIZA RIZIKA ZA IDENTIFIKACIJU KRITIČNIH INFRASTRUKTURA"
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Članak 9.",
+      "content": "(1) Analizom rizika utvrđuju se ukupni učinci prekida rada kritične infrastrukture, a provodi se uz poštivanje međusektorskih i sektorskih mjerila. (2) Međusektorska mjerila se primjenjuju u analizi rizika svih kritičnih infrastruktura prema sljedećem redoslijedu i uključuju: 1. ljudske gubitke (procjenjuje se mogući broj smrtno stradalih ili ozlijeđenih zbog prekida rada pojedine kritične infrastrukture), 2. gospodarske gubitke (procjenjuju se s obzirom na važnost gospodarskoga gubitka i/ili srozavanje kakvoće proizvoda ili usluga, uključivo i moguće učinke na okoliš), 3. utjecaj na javnost (koji se procjenjuje s obzirom na utjecaj na povjerenje javnosti, tjelesne patnje i remećenje svakodnevnog života, uključivo i gubitak osnovnih te javnih usluga). (3) Sektorska mjerila određuju nadležna središnja tijela državne uprave u suradnji s regulatornim agencijama i strukovnim udruženjima za svaki pojedini sektor."
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Članak 10.",
+      "content": "(1) Središnja tijela državne uprave, u suradnji s nadležnim regulatornim agencijama, izrađuju analize rizika i sektorske planove osiguranja rada kritičnih infrastruktura s osiguranjem isporuke roba/usluga za sektorske kritične infrastrukture iz svog djelokruga. (2) Središnja tijela državne uprave surađuju s nadležnim regulatornim agencijama kod izrade analiza rizika i planova osiguranja rada kritičnih infrastruktura, a pri tome uzimaju u obzir postojeće sektorske procjene ugroženosti i planove nastavka rada za pojedini sektor izrađene na temelju drugih sektorskih propisa koji obuhvaćaju ovim zakonom utvrđene rizike, ako oni mogu u potpunosti nadomjestiti analize rizika i planove osiguranja rada kritičnih infrastruktura. (3) Pri procjenjivanju rizika i potrebnog stupnja zaštite mora se uzeti u obzir i djelovanje pojedinog sektora ili mreže kritične infrastrukture na druge kritične infrastrukture te osigurati razmjenu podataka potrebnih za izradu analiza rizika."
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Članak 11.",
+      "content": "(1) Vlasnici/upravitelji pojedine kritične infrastrukture dužni su izraditi analizu rizika, kao podlogu za izradu Sigurnosnog plana temeljem mjerila iz članka 9. ovog Zakona. (2) U izradi analiza rizika vlasnici/upravitelji surađuju sa središnjim tijelima državne uprave u čijem je djelokrugu kritična infrastruktura, nadležnim regulatornim agencijama i središnjim tijelom državne uprave u čijem su djelokrugu poslovi zaštite i spašavanja. (3) Čelnik središnjeg tijela državne uprave u čijem su djelokrugu poslovi zaštite i spašavanja, u suradnji sa središnjim tijelima državne uprave nadležnima za poslove gospodarstva, prometa, zdravlja, financija, poljoprivrede, unutarnjih poslova i obrane, donijet će Pravilnik o metodologiji za izradu analize rizika poslovanja kritičnih infrastruktura. IV. SIGURNOSNI PLAN VLASNIKA/UPRAVITELJA"
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Članak 12.",
+      "content": "(1) Vlasnici/upravitelji kritičnih infrastruktura dužni su izraditi Sigurnosni plan vlasnika/upravitelja koji obuhvaća mjere zaštite i osiguranja nastavka poslovanja kritične infrastrukture i isporuke usluga/roba. Rok za izradu sigurnosnih planova vlasnika/upravitelja je 6 mjeseci od zaprimanja akta nadležnog središnjeg tijela kojim su određeni kao nacionalna kritična infrastruktura. (2) Sigurnosni plan vlasnika/upravitelja mogu zamijeniti postojeći jednakovrijedni dokumenti izrađeni na temelju drugih sektorskih propisa. Središnje tijelo državne uprave u čijem se djelokrugu nalazi kritična infrastruktura iz stavka 1. ovog članka utvrđuje jednakovrijednost dokumenata izrađenih na temelju drugih sektorskih propisa."
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Članak 13.",
+      "content": "(1) Vlasnici/upravitelji kritične infrastrukture dužni su donijeti Sigurnosni plan uz pribavljenu prethodnu suglasnost središnjeg tijela državne uprave u čijem je djelokrugu kritična infrastruktura. U procesu izdavanja suglasnosti nadležna središnja tijela državne uprave dužna su u suradnji s nadležnim regulatornim agencijama utvrditi je li Sigurnosni plan izrađen uz poštivanje međusektorskih i sektorskih mjerila. (2) Sigurnosni plan vlasnika/upravitelja kritičnih infrastruktura dio je poslovnog plana pravne osobe i nije javno dostupan. (3) Sigurnosni plan vlasnika/upravitelja kritičnih infrastruktura obuhvaća najmanje: 1. identifikaciju važnih dijelova ili objekata mreže, 2. provedbu analize rizika temeljene na scenarijima velikih prijetnji, ranjivosti svakog objekta, sustava, mreža i funkcionalnosti i mogućim posljedicama u redovnom radu te u slučaju prestanka rada/korištenja kritične infrastrukture, uključujući i rizik od napuštanja lokacije kritične infrastrukture. 3. identifikaciju, odabir i određivanje svih potrebnih mjera i postupaka za smanjenje ranjivosti i osiguranje djelovanja svih utvrđenih kritičnih dijelova ili objekata mreže ili sustava, uz razlikovanje sljedećih mjera: – stalnih sigurnosnih mjera i postupaka (tehničkih, organizacijskih, komunikacijskih mjera i mjera i postupaka ranog upozoravanja i jačanja svijesti) koje određuju neizbježne troškove u sigurnosti i kontinuirano se primjenjuju, – stupnjevanih sigurnosnih mjera koje se aktiviraju ovisno o jačanju prijetnji. (4) Sigurnosni planovi se preispituju unutar godine dana od imenovanja kritične infrastrukture, a redovito jednom godišnje. V. SIGURNOSNI KOORDINATOR ZA KRITIČNU INFRASTRUKTURU"
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Članak 14.",
+      "content": "(1) Središnja tijela državne uprave određuju sigurnosnog koordinatora za kritičnu infrastrukturu i njegovog zamjenika za svaki sektor kritične infrastrukture iz svog djelokruga. (2) Vlasnici/upravitelji kritičnih infrastruktura dužni su odrediti sigurnosnog koordinatora za kritičnu infrastrukturu koji je u provedbi zaštite kritične infrastrukture odgovoran za komunikaciju u sigurnosnim pitanjima između vlasnika/upravitelja i nadležnog središnjeg tijela državne uprave u čijem je djelokrugu kritična infrastruktura, kako bi se osigurala zaštita i kontinuitet rada kritične infrastrukture. VI. EUROPSKE KRITIČNE INFRASTRUKTURE"
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Članak 15.",
+      "content": "(1) Europske kritične infrastrukture su infrastrukture koje su od interesa za najmanje dvije države članice, ili jednu državu članicu, a nalaze se na teritoriju druge države članice. (2) Europske kritične infrastrukture mogu se odrediti u sektorima koje određuje Europska komisija. (3) Ako su ispunjeni uvjeti iz stavka 1. ovog članka, Europsku kritičnu infrastrukturu na području Republike Hrvatske, na prijedlog središnjeg tijela državne uprave u čijem je djelokrugu pojedini sektor kritičnih infrastruktura, određuje Vlada Republike Hrvatske, na zahtjev i u suglasnosti sa zainteresiranim državama članicama Europske unije te obavješćuje zainteresirane države članice o određivanju europske kritične infrastrukture na području Republike Hrvatske. (4) Podaci vezani uz određivanje pojedine kritične infrastrukture europskom kritičnom infrastrukturom predstavljaju klasificirani podatak i označuju se odgovarajućim stupnjem tajnosti. Kriterije za određivanje stupnjeva tajnosti tih podataka propisuje odlukom Vlada Republike Hrvatske. (5) Središnja tijela državne uprave o odluci Vlade Republike Hrvatske iz stavka 3. ovog članka obavještavaju vlasnike/upravitelje kritičnih infrastruktura iz svog djelokruga i nadležne regulatorne agencije. (6) Ako se kritična infrastruktura od značenja za Republiku Hrvatsku nalazi na području druge države članice Europske unije, Vlada Republike Hrvatske predlaže nadležnom tijelu te države određivanje europske kritične infrastrukture. (7) Ako država članica na čijem teritoriju se nalazi kritična infrastruktura ne prihvati prijedlog Republike Hrvatske, Vlada Republike Hrvatske o tome obavještava Europsku komisiju i traži njezino uključivanje. (8) U određivanju europske kritične infrastrukture u Republici Hrvatskoj primjenjuju se odredbe ovog Zakona koje se odnose na određivanje nacionalne kritične infrastrukture te sektorska i međusektorska mjerila iz ovog Zakona, uz osiguranje sudjelovanja ovlaštenih predstavnika zainteresiranih država članica."
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Članak 16.",
+      "content": "Europske kritične infrastrukture na području Republike Hrvatske štite se na isti način kao i nacionalne kritične infrastrukture, osim ako je uredbama Europske unije to pitanje drugačije uređeno."
+    },
+    {
+      "provision_ref": "art17",
+      "section": "17",
+      "title": "Članak 17.",
+      "content": "(1) Vlada Republike Hrvatske usvaja godišnje izvješće o broju europskih kritičnih infrastruktura po sektoru i broju zainteresiranih država koje ovise o svakoj određenoj kritičnoj infrastrukturi, na prijedlog središnjeg tijela državne uprave u čijem su djelokrugu poslovi zaštite i spašavanja koje objedinjava izvješća svih središnjih tijela državne uprave u kojima su određene europske kritične infrastrukture. (2) Izvješće iz stavka 1. ovog članka dostavlja se Europskoj komisiji i zainteresiranim državama koje ovise o određenim kritičnim infrastrukturama. (3) Vlada Republike Hrvatske svake dvije godine dostavlja Europskoj komisiji sažetak općih podataka o vrstama opasnosti, prijetnjama i slabostima utvrđenim u svakom sektoru u kojem je u Republici Hrvatskoj utvrđena europska kritična infrastruktura. (4) Izvješće iz stavka 1. i sažetak iz stavka 3. ovog članka predstavljaju klasificirani podatak i označuju se odgovarajućim stupnjem tajnosti."
+    },
+    {
+      "provision_ref": "art18",
+      "section": "18",
+      "title": "Članak 18.",
+      "content": "(1) Kontaktna točka za potrebe razmjene informacija i koordiniranje aktivnosti u vezi s europskim kritičnim infrastrukturama s drugim državama članicama i tijelima Europske unije je središnje tijelo državne uprave u čijem su djelokrugu poslovi zaštite i spašavanja. (2) Razmjena informacija o europskim kritičnim infrastrukturama putem kontaktnih točaka država članica ne isključuje prava i obveze drugih središnjih tijela državne uprave za razmjenu informacija, znanja i iskustava sa srodnim tijelima drugih država. VII. POSTUPANJE S OSJETLJIVIM PODACIMA"
+    },
+    {
+      "provision_ref": "art19",
+      "section": "19",
+      "title": "Članak 19.",
+      "content": "Postupanje s osjetljivim podacima o nacionalnoj i europskoj kritičnoj infrastrukturi odvija se sukladno posebnim propisima iz područja informacijske sigurnosti te međunarodnim ugovorima. Osim podataka koji sukladno ovom Zakonu predstavljaju klasificirani podatak i označuju se odgovarajućim stupnjem tajnosti, u području zaštite kritičnih infrastruktura klasificirat će se i drugi podaci povezani s pojedinom kritičnom infrastrukturom, ako je klasificiranje takvog podatka potrebno radi zaštite vrijednosti štićenih propisom o tajnosti podataka. VIII. NADZOR"
+    },
+    {
+      "provision_ref": "art20",
+      "section": "20",
+      "title": "Članak 20.",
+      "content": "(1) Inspekcijski nadzor nad provedbom ovog Zakona kod vlasnika/upravitelja kritičnih infrastruktura provode središnja tijela državne uprave u čijem su djelokrugu pojedine kritične infrastrukture te nadležne regulatorne agencije. (2) U inspekcijskom nadzoru inspektor nadzire osobe koje su obvezne provoditi mjere i aktivnosti iz ovog Zakona, ispunjavanje uvjeta i način rada nadziranih osoba, obavlja izravan uvid u opće i pojedinačne akte te poduzima mjere određene ovim Zakonom. (3) Ako u inspekcijskom nadzoru inspektor utvrdi povredu odredbi ovog Zakona, osobito odredbi članaka 11. – 14. ovog Zakona, ima pravo i obvezu nadziranoj osobi rješenjem narediti mjere za otklanjanje utvrđenih nepravilnosti s primjerenim rokom izvršenja. (4) Ako inspekcijskim nadzorom utvrdi da je povrijeđen ovaj Zakon, inspektor ima pravo i obvezu bez odgađanja: – pokrenuti prekršajni postupak, – poduzeti druge mjere i izvršiti druge radnje koje je ovlašten poduzeti i izvršiti na temelju ovoga Zakona i posebnog propisa. (5) Ako tijekom inspekcijskog nadzora inspektor utvrdi da nije ovlašten izravno postupati, odmah će izvijestiti nadležno središnje tijelo državne uprave ili regulatornu agenciju te zatražiti pokretanje postupka i poduzimanje mjera u skladu s posebnim propisima."
+    },
+    {
+      "provision_ref": "art21",
+      "section": "21",
+      "title": "Članak 21.",
+      "content": "Radi osiguranja jedinstvenog pristupa analizi rizika kritičnih infrastruktura, nadzor nad primjenom međusektorskih mjerila iz članka 9. stavka 2. ovog Zakona kod svih sudionika provedbe Zakona provodi središnje tijelo državne uprave u čijem su djelokrugu poslovi zaštite i spašavanja, a nadzor kod vlasnika/upravitelja kritičnih infrastruktura nad primjenom sektorskih mjerila u analizi rizika iz članka 9. stavka 3. ovog Zakona provode središnja tijela državne uprave i regulatorne agencije u sektoru iz svog djelokruga. IX. PREKRŠAJNE ODREDBE"
+    },
+    {
+      "provision_ref": "art22",
+      "section": "22",
+      "title": "Članak 22.",
+      "content": "(1) Novčanom kaznom od 500.000,00 do 1.000.000,00 kuna kaznit će se za prekršaj vlasnik/upravitelj kritične infrastrukture ako: – ne izradi Analizu rizika, kao podlogu za izradu Sigurnosnog plana temeljem mjerila iz članka 9. ovog Zakona (članak 11. stavak 1.), – ne izradi i ne donese Sigurnosni plan vlasnika/upravitelja koji obuhvaća mjere zaštite i osiguranja nastavka poslovanja kritične infrastrukture i isporuke usluga/robe (članak 12. stavak 1. i članak 13. stavak 1.), – ne odredi sigurnosnog koordinatora za kritičnu infrastrukturu (članak 14. stavak 2.). (2) Za prekršaj iz stavka 1. ovoga članka kaznit će se novčanom kaznom od 10.000,00 do 50.000,00 kuna i odgovorna osoba vlasnika/upravitelja kritičnih infrastruktura. X. PRIJELAZNE I ZAVRŠNE ODREDBE"
+    },
+    {
+      "provision_ref": "art23",
+      "section": "23",
+      "title": "Članak 23.",
+      "content": "Središnja tijela državne uprave dužna su u roku od šest mjeseci od dana stupanja na snagu ovog Zakona predložiti Vladi Republike Hrvatske kritične infrastrukture iz sektora iz njihovog djelokruga i razinu njihove kritičnosti."
+    },
+    {
+      "provision_ref": "art24",
+      "section": "24",
+      "title": "Članak 24.",
+      "content": "Čelnik središnjeg tijela državne uprave u čijem su djelokrugu poslovi zaštite i spašavanja donijet će pravilnik iz članka 11. stavka 3. ovog Zakona u roku od šest mjeseci od dana stupanja na snagu ovog Zakona."
+    },
+    {
+      "provision_ref": "art25",
+      "section": "25",
+      "title": "Članak 25.",
+      "content": "Čelnici središnjih tijela državne uprave dužni su donijeti sektorska mjerila iz ovog Zakona u roku od šest mjeseci od dana stupanja na snagu ovoga Zakona."
+    },
+    {
+      "provision_ref": "art26",
+      "section": "26",
+      "title": "Članak 26.",
+      "content": "Ovaj Zakon stupa na snagu osmoga dana od dana objave u »Narodnim novinama«, osim članaka 15. – 18. ovog Zakona koji stupaju na snagu danom pristupanja Republike Hrvatske u punopravno članstvo u Europskoj uniji. Klasa: 022-03/13-01/68 Zagreb, 26. travnja 2013. HRVATSKI SABOR Predsjednik Hrvatskoga sabora Josip Leko, v. r."
+    }
+  ],
+  "definitions": []
+}

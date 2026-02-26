@@ -1,0 +1,153 @@
+{
+  "id": "sii-nn-92-14",
+  "type": "statute",
+  "title": "Zakon o državnoj informacijskoj infrastrukturi",
+  "title_en": "State Information Infrastructure Act",
+  "short_name": "ZDII",
+  "status": "in_force",
+  "issued_date": "2014-01-01",
+  "in_force_date": "2014-01-01",
+  "url": "https://narodne-novine.nn.hr/eli/sluzbeni/2014/92/1840",
+  "description": "Zakon uređuje uspostavu i upravljanje državnom informacijskom infrastrukturom te interoperabilnost i digitalne usluge javne uprave.",
+  "provisions": [
+    {
+      "provision_ref": "art1",
+      "section": "1",
+      "title": "Članak 1.",
+      "content": "Ovim se Zakonom utvrđuju prava, obveze i odgovornosti nadležnih tijela javnog sektora vezano uz uspostavu, razvoj i upravljanje sustavom državne informacijske infrastrukture, uspostavljanje i upravljanje sustavom javnih registara i uvjeti koje državna informacijska infrastruktura mora osigurati u odnosu na javne registre, kao i korištenje zajedničke osnovice za sigurnu razmjenu podataka unutar sustava državne informacijske infrastrukture, zajedničkog sustava identifikacije i autentifikacije, jedinstvene točke interakcije s građanima i drugim korisnicima. Osnovni pojmovi"
+    },
+    {
+      "provision_ref": "art2",
+      "section": "2",
+      "title": "Članak 2.",
+      "content": "U smislu ovoga Zakona pojedini pojmovi imaju sljedeće značenje: 1. Autentični podatak je podatak koji je izvoran i vjerodostojan, te je kao takav određen zakonom ili proizlazi iz svrhe uspostave javnog registra određene zakonom. 2. Autentifikacija je formalizirani proces verifikacije vjerodajnice korisnika elektroničkih javnih usluga koji rezultira potvrđivanjem/osporavanjem identiteta. 3. Državna informacijska infrastruktura (DII) je sustav koji čine zajednička državna osnovica za sigurnu razmjenu podataka i alati za interoperabilnost kao što su Metaregistar, tehnički standardi, klasifikacije, javni registri, sustav e-Građani, te mreže državne informacijske infrastrukture HITRONet i CARNet. 4. Elektronička vjerodajnica (vjerodajnica) je skup podataka kojim se predstavlja korisnik elektroničke usluge, a služi kao dokaz za provjeru elektroničkog identiteta (e-ID) kako bi se omogućio pristup elektroničkim uslugama (e-uslugama). 5. Elektroničke usluge su javne usluge koje tijela javnog sektora pružaju građanima i drugim korisnicima putem interneta. 6. Elektronički identitet predstavlja jedinstveni skup identifikacijskih podataka o određenom subjektu (osobi, tijelu javnog sektora, računalnom sustavu) koji se vode u elektroničkom obliku i na osnovi kojih je moguće nedvojbeno utvrditi identitet subjekta kojem ti podaci pripadaju. 7. Identifikacija je proces u kojem je potrebno provjeriti ili prepoznati identitet korisnika elektroničkih javnih usluga. 8. Interoperabilnost predstavlja sposobnost različitih sustava da djeluju jedinstveno. 9. Javne službe jesu: javne ustanove i druge pravne osobe kojima se sredstva za plaće osiguravaju u državnom proračunu, Hrvatski zavod za mirovinsko osiguranje, Hrvatski zavod za zapošljavanje, Hrvatski zavod za zdravstveno osiguranje i javne ustanove kojima se sredstva za plaće osiguravaju iz sredstava Hrvatskog zavoda za zdravstveno osiguranje. 10. Javni registar je službena evidencija koja se vodi u elektroničkom obliku, a sastoji se od strukturiranih, uređenih, međusobno povezanih i usklađenih podataka o subjektu upisa u registar i podataka koji su u svezi sa subjektom upisa u registar iz djelokruga tijela javnog sektora, a ustrojen je i vodi se na temelju zakona ili međunarodnog sporazuma i služi za prikupljanje i pohranu podataka u okviru obavljanja propisanih poslova tijela javnog sektora. 11. Metaregistar je javni registar koji čini dio državne informacijske infrastrukture, a sadrži podatke o svim javnim registrima. 12. Podatak znači osobne podatke sukladno propisima koji reguliraju zaštitu osobnih podataka, kao i druge podatke koji se obrađuju u javnim registrima sa svrhom obavljanja zakonom određenih poslova i zadaća tijela javnog sektora. Podatak određuje entitet, odnosno predmet upisa, koji može biti pravna ili fizička osoba, prostor, stvar, događaj ili veza entiteta. 13. Podatkovni centar je pravna osoba koja raspolaže računalno-komunikacijskom i ostalom infrastrukturom te ljudskim resursima i kojoj se mogu povjeriti na pohranu podaci iz javnih registara odnosno koja služi za pohranu javnih registara. 14. Preuzimanje podataka u baze podataka odnosi se na pribavljanje podataka iz temeljnih registara, a putem državne informacijske infrastrukture. 15. Prikupljanje podataka odnosi se na izravno pribavljanje podataka od stranaka. 16. Središnji državni portal je mjesto pristupa informacijama na internetu na kojem se objedinjuju na jednom mjestu i u lako dostupnim formatima informacije o javnim uslugama, kao i druge informacije i dokumenti u svezi s obavljanjem poslova tijela javnog sektora. 17. Sustav e-Građani je dio državnog informacijskog sustava, a čine ga središnji državni portal, nacionalni identifikacijski i autentifikacijski sustav i sustav osobnog korisničkog pretinca. 18. Temeljni registar je javni registar u kojem se prikuplja i vodi barem jedan autentični podatak, a koji je kao temeljni određen odlukom Vlade Republike Hrvatske. 19. Tijela državne uprave i druga državna tijela su ministarstva, državni uredi, državne upravne organizacije, uredi državne uprave u županijama, pravosudna tijela, Ured predsjednika Republike Hrvatske, stručne službe i uredi Vlade Republike Hrvatske, stručne službe Hrvatskoga sabora, Ustavnog suda Republike Hrvatske, pučkog pravobranitelja, pravobranitelja za djecu, pravobranitelja za ravnopravnost spolova, pravobranitelja za osobe s invaliditetom, Državnog izbornog povjerenstva Republike Hrvatske, Državni ured za reviziju i druga tijela koja se osnivaju za obavljanje poslova državne vlasti. 20. Tijela javnog sektora su tijela državne uprave i druga državna tijela i javne službe. 21. Voditelj javnog registra je tijelo javnog sektora koje ima propisanu obvezu ustrojavanja i vođenja javnog registra. Vlasništvo nad javnim registrima"
+    },
+    {
+      "provision_ref": "art3",
+      "section": "3",
+      "title": "Članak 3.",
+      "content": "Javni registri, podaci u njima i svi elementi potrebni za njihovu interpretaciju su imovina Republike Hrvatske. II. DRŽAVNA INFORMACIJSKA INFRASTRUKTURA Svrha državne informacijske infrastrukture"
+    },
+    {
+      "provision_ref": "art4",
+      "section": "4",
+      "title": "Članak 4.",
+      "content": "(1) Svrha državne informacijske infrastrukture jest osiguranje interoperabilnosti javnih registara i informacijskih sustava tijela javnog sektora te osiguranje zajedničkih elemenata za interakciju s građanima ili drugim korisnicima. (2) Vlada Republike Hrvatske će uredbom o državnoj informacijskoj infrastrukturi propisati organizacijske i tehničke standarde za povezivanje na državnu informacijsku infrastrukturu, uvjete i aktivnosti nužne za pokretanje, implementaciju, razvoj i nadzor projekata vezanih uz državnu informacijsku infrastrukturu, način upravljanja, razvoja te ostale elemente neophodne za rad državne informacijske infrastrukture. Načela razvitka državne informacijske infrastrukture"
+    },
+    {
+      "provision_ref": "art5",
+      "section": "5",
+      "title": "Članak 5.",
+      "content": "Načela razvitka državne informacijske infrastrukture jesu: 1. dostupnost podataka iz javnih registara svim tijelima javnog sektora, građanima i drugim korisnicima sukladno propisima o zaštiti osobnih podataka, tajnosti podataka, informacijske sigurnosti te propisima o pravu na pristup informacijama 2. sustavni razvitak informacijske infrastrukture 3. sustavna zaštita i sigurnost informacijske infrastrukture sukladno propisima o sigurnosti informacijskih sustava 4. jedinstveno upravljanje razvitkom informacijske infrastrukture od strane Vlade Republike Hrvatske na osnovi usuglašavanja potreba i prioriteta 5. usklađivanje planova i projekata informatizacije s normama i drugim odrednicama izgradnje informacijske infrastrukture u Republici Hrvatskoj i Europskoj uniji 6. interoperabilnost, skalabilnost i ponovno korištenje, labavo povezivanje 7. racionalizacija izdataka za izgradnju informacijske infrastrukture na razini svih tijela javnog sektora. Javni registar za koordinaciju projekata izgradnje državne informacijske infrastrukture"
+    },
+    {
+      "provision_ref": "art6",
+      "section": "6",
+      "title": "Članak 6.",
+      "content": "(1) Za potrebe koordinacije projekata izgradnje državne informacijske infrastrukture ustrojava se Javni registar za koordinaciju projekata izgradnje državne informacijske infrastrukture (u daljnjem tekstu: Registar ProDII). (2) Tijelo nadležno za upravljanje i vođenje Registra ProDII je središnje tijelo državne uprave nadležno za poslove e-Hrvatske. (3) Pregled projekata unesenih u Registar ProDII je javan. (4) Vlada Republike Hrvatske će uredbom urediti način uspostave, sadržaj, oblik i način vođenja Registra ProDII iz stavka 1. ovoga članka. Sustav e-Građani"
+    },
+    {
+      "provision_ref": "art7",
+      "section": "7",
+      "title": "Članak 7.",
+      "content": "(1) Sustav e-Građani je dio državne informacijske infrastrukture koji čine sustav središnjeg državnog portala, nacionalni sustav za identifikaciju i autentifikaciju i sustav osobnog korisničkog pretinca. (2) Tijela javnog sektora obvezna su koristiti sustav središnjeg državnog portala za prikaz informacija o javnim uslugama te informacija i dokumenata vezanih uz provođenje politika iz svog djelokruga. (3) Tijela javnog sektora obvezna su za identificirani i autentificirani pristup elektroničkim javnim uslugama iz svog djelokruga koristiti nacionalni sustav za identifikaciju i autentifikaciju te elektroničke vjerodajnice koje prihvaća navedeni sustav, osim ako je drukčije utvrđeno međunarodnim sporazumom. (4) Tijela javnog sektora obvezna su informacije u elektroničkom obliku dostaviti građanima i drugim korisnicima putem sustava osobnog korisničkog pretinca. (5) Način povezivanja na sustav središnjeg državnog portala, na nacionalni identifikacijski i autentifikacijski sustav i na korisnički pretinac propisat će Vlada Republike Hrvatske uredbom iz članka 4. stavka 2. ovoga Zakona. III. JAVNI I TEMELJNI REGISTRI Svrha temeljnih registara"
+    },
+    {
+      "provision_ref": "art8",
+      "section": "8",
+      "title": "Članak 8.",
+      "content": "(1) Svrha temeljnih registara je, pored registracije podataka propisanih posebnim zakonima, putem državne informacijske infrastrukture osigurati dostupnost prikupljenih autentičnih podataka svim tijelima javnog sektora koji su im potrebni za obavljanje poslova iz svog djelokruga. (2) Autentični podaci se prikupljaju samo jednom i zapisuju se u temeljni registar. (3) Vlada Republike Hrvatske donosi odluku o određivanju registra temeljnim registrom na prijedlog središnjeg tijela državne uprave nadležnog za poslove e-Hrvatske. Ustrojavanje javnih registara i prikupljanje podataka"
+    },
+    {
+      "provision_ref": "art9",
+      "section": "9",
+      "title": "Članak 9.",
+      "content": "(1) Službene evidencije tijela javnog sektora ustrojavaju se isključivo u obliku javnog registra. (2) Odredba stavka 1. ovoga članka ne odnosi se na službene evidencije koje vode tijela javnog sektora za potrebe vođenja podataka klasificiranih stupnjem tajnosti većim od »OGRANIČENO«. (3) Odredba stavka 1. ovoga članka ne odnosi se na službene evidencije koje vodi policija vezane uz policijske poslove sukladno posebnom propisu. (4) Javni registri se ustrojavaju na temelju zakona ili međunarodnog sporazuma, kojima se točno utvrđuju podaci koji će se evidentirati te koji podaci su autentični i tko je voditelj javnog registra. (5) Tijela javnog sektora koja vode temeljne registre obvezna su bez odgode te bez traženja dodatnih dozvola dostaviti autentične podatke u javni registar drugog tijela javnog sektora, koji se odnose na podatke koje drugo tijelo evidentira temeljem stavka 4. ovoga članka. (6) Podatke u javne registre dostavljaju pravne i fizičke osobe dobrovoljno ili temeljem propisane obveze dostavljanja tih podataka. (7) Tijelo javnog sektora te pravna ili fizička osoba koja je dostavila podatke u javni registar ima pravo opozvati podatke koje je dostavila, ako postoji opravdana sumnja u ispravnost podataka. (8) Nije dozvoljeno ustrojavanje javnih registara za prikupljanje podataka koji se već prikupljaju kao autentični podaci u temeljnim registrima, već se u tom slučaju podaci obvezno preuzimaju iz temeljnih registara. (9) Tijela javnog sektora ili tijela jedinica lokalne i područne (regionalne) samouprave koja donose odluke na temelju kojih druga tijela javnog sektora evidentiraju autentične podatke u temeljne registre, dužna su dobiti prethodnu suglasnost na tehničku provedivost i ispravnost od voditelja temeljnog registra. Korištenje podataka iz temeljnih registara"
+    },
+    {
+      "provision_ref": "art10",
+      "section": "10",
+      "title": "Članak 10.",
+      "content": "(1) Tijela javnog sektora preuzimaju autentične podatke iz temeljnih registara u pravilu bez dodatnih provjera. Preuzimaju se autentični podaci utvrđeni zakonom ili međunarodnim sporazumom o ustrojavanju javnog registra i/ili podaci potrebni u okviru obavljanja zakonom propisanih poslova. (2) Tijela javnog sektora u provedbi pojedinačnih postupaka dužna su pribaviti odnosno preuzeti podatke iz javnih registara po službenoj dužnosti, bez traženja istih podataka od stranaka, građana ili poslovnih subjekata u postupku. (3) Tijela javnog sektora koja vode temeljne registre obvezna su bez traženja dodatnih dozvola dostaviti autentične podatke koje tijelo javnog sektora koristi temeljem stavka 1. ovoga članka. (4) Pravni učinak prikupljenih podataka iz stavka 2. ovoga članka je isti kao i kod prikupljanja podataka od stranaka. (5) Podaci se neće preuzeti ako: 1. postoji opravdana sumnja u ispravnost podataka 2. podatak je u statusu provjere i 3. postoji drugi pravni temelj koji nalaže tijelu javnog sektora provjeru ispravnosti podatka. (6) Tijelo javnog sektora obavijestit će voditelja temeljnog registra o postojanju opravdane sumnje u ispravnost podataka. Voditelj temeljnog registra je obvezan podatak za koji postoji opravdana sumnja u ispravnost, označiti statusom: »podatak je u statusu provjere«. (7) Nakon izvršene provjere podatka, svi javni registri ažuriraju podatke na osnovi dojave temeljnog registra, a putem državne informacijske infrastrukture. (8) Pravne osobe koje nisu tijela javnog sektora, a imaju pravo prikupljanja podataka koji su u temeljnim registrima određeni kao autentični, sukladno posebnim propisima preuzimaju te podatke uz suglasnost voditelja javnog registra. Korištenje podataka iz javnih registara"
+    },
+    {
+      "provision_ref": "art11",
+      "section": "11",
+      "title": "Članak 11.",
+      "content": "Tijela javnog sektora koja vode javne registre dostavit će bez traženja dodatnih dozvola podatke drugom tijelu javnog sektora koje te podatke koristi u okviru obavljanja propisanih poslova. Pohrana javnih registara"
+    },
+    {
+      "provision_ref": "art12",
+      "section": "12",
+      "title": "Članak 12.",
+      "content": "Javni registri se pohranjuju u podatkovnim centrima koji se nalaze na teritoriju Republike Hrvatske, a koji zadovoljavaju uvjete propisane uredbom iz članka 4. stavka 2. ovoga Zakona. Odgovornost voditelja javnog registra"
+    },
+    {
+      "provision_ref": "art13",
+      "section": "13",
+      "title": "Članak 13.",
+      "content": "(1) Voditelj javnog registra organizira ustrojavanje, održavanje i obradu podataka javnog registra. Voditelj javnog registra odgovoran je za zakonitost ustrojavanja, obrade i korištenja podataka javnog registra, te za točnost prikupljenih podataka u javnom registru. (2) Prije ustrojavanja javnog registra, voditelj javnog registra dužan je ishoditi odobrenje od središnjeg tijela državne uprave nadležnog za poslove e-Hrvatske o sukladnosti s uredbom iz članka 4. stavka 2. ovoga Zakona, te popuniti podatke o javnom registru u Metaregistru. (3) Odredba stavka 2. ovoga članka ne odnosi se na registre koji se ustrojavaju radi ispunjavanja internih potreba tijela javnog sektora te ne predstavljaju javne registre. (4) U slučaju prijenosa poslova iz djelokruga tijela javnog sektora na tijela jedinica lokalne i područne (regionalne) samouprave, ta tijela javnog sektora dužna su organizirati ustrojavanje javnog registra za prenesene poslove. (5) Iznimno od stavka 2. ovoga članka, ako se radi o javnom registru koji se ustrojava sa svrhom obavljanja zadataka koji proizlaze iz međunarodnih sporazuma, središnje tijelo državne uprave nadležno za e-Hrvatsku odobrit će ustroj javnog registra koji nije sukladan uredbi iz članka 4. stavka 2. ovoga Zakona. (6) Voditelja javnog registra utvrđuje propis kojim se ustrojava javni registar. Dostupnost podataka iz javnih registara"
+    },
+    {
+      "provision_ref": "art14",
+      "section": "14",
+      "title": "Članak 14.",
+      "content": "Podaci prikupljeni u javnim registrima dostupni su javnosti sukladno propisima temeljem kojih su ustrojeni i temeljem kojih se vode, propisima o zaštiti osobnih podataka, tajnosti podataka te propisima o pravu na pristup informacijama. Ukidanje javnih registara"
+    },
+    {
+      "provision_ref": "art15",
+      "section": "15",
+      "title": "Članak 15.",
+      "content": "(1) Javni registri ukidaju se zakonom kojim su ustrojeni. (2) Zakonom kojim se ukida javni registar utvrđuje se i način osiguravanja kontinuiteta daljnje dostupnosti i obrade podataka ukinutog javnog registra. IV. METAREGISTAR Ustroj i svrha Metaregistra"
+    },
+    {
+      "provision_ref": "art16",
+      "section": "16",
+      "title": "Članak 16.",
+      "content": "(1) Za potrebe postizanja interoperabilnosti javnih registara ustrojava se Metaregistar. (2) Metaregistar sadrži osnovne podatke o javnom registru, temelj ustrojavanja javnog registra, oznaku radi li se o temeljnom registru, naznaku vrste podataka koje prikuplja javni registar uz oznaku autentičnosti podataka, mogućnosti dostave podataka i primatelje kojima dostavlja podatke, pravni temelj dostave podataka, opis procesa prikupljanja podataka te pregled načina i uvjeta korištenja podataka. (3) Način pristupa podacima iz javnih registara i reguliranje prava pristupa tim podacima opisan je u Metaregistru. (4) Voditelj Metaregistra je središnje tijelo državne uprave nadležno za poslove e-Hrvatske. (5) Svi javni registri registriraju se u Metaregistru. (6) Uredbom iz članka 4. stavka 2. ovoga Zakona regulirat će se ustroj, sadržaj, način korištenja i uvjeti za evidenciju javnih registara u Metaregistru. V. UPRAVLJANJE DRŽAVNOM INFORMACIJSKOM INFRASTRUKTUROM Upravljanje državnom informacijskom infrastrukturom"
+    },
+    {
+      "provision_ref": "art17",
+      "section": "17",
+      "title": "Članak 17.",
+      "content": "Za upravljanje državnom informacijskom infrastrukturom nadležno je središnje tijelo državne uprave nadležno za poslove e-Hrvatske. Djelokrug središnjeg tijela državne uprave nadležnog za poslove e-Hrvatske u odnosu na upravljanje državnom informacijskom infrastrukturom"
+    },
+    {
+      "provision_ref": "art18",
+      "section": "18",
+      "title": "Članak 18.",
+      "content": "Središnje tijelo državne uprave nadležno za poslove e-Hrvatske u odnosu na upravljanje državnom informacijskom infrastrukturom u okviru svog djelokruga obavlja sljedeće poslove: 1. prikuplja i analizira podatke potrebne za razvoj državne informacijske infrastrukture 2. koordinira projekte izgradnje državne informacijske infrastrukture i sustava koji se vežu na državnu informacijsku infrastrukturu putem javnog Registra ProDII 3. planira razvoj i daje prijedloge za unapređenje državne informacijske infrastrukture 4. izdaje odobrenje tijelima javnog sektora na zahtjeve o ustrojavanju, promjeni, ukidanju i načinu pohrane registra 5. surađuje na projektima s međunarodnim organizacijama i institucijama radi razvoja državne informacijske infrastrukture 6. nadzire provedbu i izvršenje preuzetih obveza temeljem ovoga Zakona od strane relevantnih dionika te izdaje upute o rješavanju uočenih problema 7. posreduje u slučajevima mogućih sporova između dionika uključenih u državnu informacijsku infrastrukturu 8. utvrđuje mjere u slučajevima opasnosti od uzrokovanja štete za državnu informacijsku infrastrukturu 9. priprema godišnje izvješće za Vladu Republike Hrvatske putem radnih tijela nadležnih za pitanja informatizacije javnog sektora 10. daje suglasnost na zahtjeve za pristup podacima u javnim registrima na osnovi provjere pravnog temelja iz zahtjeva. Izvještavanje"
+    },
+    {
+      "provision_ref": "art19",
+      "section": "19",
+      "title": "Članak 19.",
+      "content": "(1) Središnje tijelo državne uprave nadležno za poslove e-Hrvatske jednom godišnje podnosi izvješće o radu i razvoju državne informacijske infrastrukture matičnom odboru Hrvatskog sabora i Vladi Republike Hrvatske u roku od tri mjeseca od proteka kalendarske godine. (2) Nadležna tijela javnog sektora dužna su surađivati sa središnjim tijelom iz stavka 1. ovoga članka pri izradi godišnjeg izvješća. VI. NADZOR NAD PROVEDBOM ZAKONA"
+    },
+    {
+      "provision_ref": "art20",
+      "section": "20",
+      "title": "Članak 20.",
+      "content": "Nadzor nad provedbom ovoga Zakona te korištenjem i upravljanjem državnom informacijskom infrastrukturom obavlja središnje tijelo državne uprave nadležno za poslove e-Hrvatske. VII. PRIJELAZNE I ZAVRŠNE ODREDBE"
+    },
+    {
+      "provision_ref": "art21",
+      "section": "21",
+      "title": "Članak 21.",
+      "content": "(1) Vlada Republike Hrvatske će u roku od šest mjeseci od dana stupanja na snagu ovoga Zakona donijeti uredbu iz članka 4. stavka 2. ovoga Zakona. (2) Vlada Republike Hrvatske će u roku od šest mjeseci od dana stupanja na snagu ovoga Zakona donijeti uredbu o ustrojavanju Javnog registra za koordinaciju projekata izgradnje državne informacijske infrastrukture iz članka 6. stavka 4. ovoga Zakona."
+    },
+    {
+      "provision_ref": "art22",
+      "section": "22",
+      "title": "Članak 22.",
+      "content": "(1) Tijela javnog sektora, nadležna za vođenje javnih registara, obvezna su u roku od dvije godine od stupanja na snagu ovoga Zakona javne registre, ustrojene do dana stupanja na snagu ovoga Zakona, uskladiti s odredbama ovoga Zakona. (2) Tijela javnog sektora, koja službene evidencije ne vode u elektroničkom obliku, dužna su ih prebaciti u elektronički oblik te uskladiti s odredbama ovoga Zakona u roku od dvije godine od dana stupanja na snagu ovoga Zakona. (3) Tijela javnog sektora dužna su uskladiti svoje podatke s autentičnim podacima iz temeljnih registara u roku od dvije godine od dana stupanja na snagu ovoga Zakona. (4) Središnje tijelo državne uprave nadležno za poslove e-Hrvatske obvezno je u roku od jedne godine od dana stupanja na snagu ovoga Zakona uspostaviti Metaregistar iz članka 16. ovoga Zakona. (5) Tijela javnog sektora obvezna su u roku od tri mjeseca od uspostave Metaregistra isti popuniti. (6) Središnja tijela državne uprave obvezna su središnjem tijelu državne uprave nadležnom za poslove e-Hrvatske, u roku od tri mjeseca od dana stupanja na snagu ovog Zakona, dostaviti plan usklađivanja svojih informacijskih sustava s odredbama ovog Zakona. Isto su dužna učiniti i za tijela javnog sektora iz svoje nadležnosti. (7) Središnja tijela državne uprave obvezna su svakih šest mjeseci od dana stupanja na snagu ovog Zakona izvijestiti središnje tijelo državne uprave nadležno za poslove e-Hrvatske o provedbi odredbi ovog Zakona do njegove pune implementacije. Isto su dužna učiniti i za ti jela javnog sektora iz svoje nadležnosti. (8) Tijela javnog sektora dužna su u roku od šest mjeseci od uspostave registra ProDII unijeti sve projekte završene unazad šest mjeseci, odnosno sve projekte koji su u funkciji bez obzira na vrijeme implementacije projekta, planirane projekte, kao i projekte u tijeku koji se povezuju na državnu informacijsku infrastrukturu u svrhu njihove objave."
+    },
+    {
+      "provision_ref": "art23",
+      "section": "23",
+      "title": "Članak 23.",
+      "content": "Ovaj Zakon stupa na snagu osmoga dana od dana objave u »Narodnim novinama«. Klasa: 022-03/14-01/58 Zagreb, 15. srpnja 2014. HRVATSKI SABOR Predsjednik Hrvatskoga sabora Josip Leko, v. r. 92 28.07.2014 Zakon o državnoj informacijskoj infrastrukturi"
+    }
+  ],
+  "definitions": []
+}
