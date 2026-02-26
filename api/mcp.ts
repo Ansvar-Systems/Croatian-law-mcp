@@ -2,83 +2,116 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 import Database from '@ansvar/mcp-sqlite';
-import { join } from 'path';
-import { copyFileSync, existsSync, readFileSync, rmSync, statSync, writeFileSync } from 'fs';
-import { createHash } from 'crypto';
+import { existsSync, createWriteStream, rmSync, renameSync } from 'fs';
+import { pipeline } from 'stream/promises';
+import { createGunzip } from 'zlib';
+import https from 'https';
+import type { IncomingMessage } from 'http';
 
 import { registerTools } from '../src/tools/registry.js';
 import {
-  DB_ENV_VAR,
   SERVER_NAME,
   SERVER_VERSION,
 } from '../src/constants.js';
 import type { AboutContext } from '../src/tools/registry.js';
 
-const SOURCE_DB = process.env[DB_ENV_VAR]
-  || join(process.cwd(), 'data', 'database.db');
+// ---------------------------------------------------------------------------
+// Database — downloaded from GitHub Releases on cold start (Strategy B)
+// ---------------------------------------------------------------------------
+
 const TMP_DB = '/tmp/database.db';
+const TMP_DB_TMP = '/tmp/database.db.tmp';
 const TMP_DB_LOCK = '/tmp/database.db.lock';
-const TMP_DB_SHM = '/tmp/database.db-shm';
-const TMP_DB_WAL = '/tmp/database.db-wal';
-const TMP_DB_META = '/tmp/database.db.meta.json';
+
+const GITHUB_REPO = 'Ansvar-Systems/Croatian-law-mcp';
+const RELEASE_TAG = `v${SERVER_VERSION}`;
+const ASSET_NAME = 'database.db.gz';
+const DEFAULT_RELEASE_URL =
+  `https://github.com/${GITHUB_REPO}/releases/download/${RELEASE_TAG}/${ASSET_NAME}`;
 
 let db: InstanceType<typeof Database> | null = null;
+let dbReady = false;
+let dbReadyPromise: Promise<void> | null = null;
 
-interface TmpDbMeta {
-  source_db: string;
-  source_signature: string;
+function httpsGet(url: string): Promise<IncomingMessage> {
+  return new Promise((resolve, reject) => {
+    https
+      .get(url, { headers: { 'User-Agent': SERVER_NAME } }, resolve)
+      .on('error', reject);
+  });
 }
 
-function computeSourceSignature(): string {
-  const stats = statSync(SOURCE_DB);
-  return `${stats.size}:${Math.trunc(stats.mtimeMs)}`;
-}
+async function downloadDatabase(url: string): Promise<void> {
+  let response = await httpsGet(url);
 
-function readTmpMeta(): TmpDbMeta | null {
-  if (!existsSync(TMP_DB_META)) return null;
-  try {
-    const parsed = JSON.parse(readFileSync(TMP_DB_META, 'utf-8')) as Partial<TmpDbMeta>;
-    if (parsed.source_db && parsed.source_signature) {
-      return { source_db: parsed.source_db, source_signature: parsed.source_signature };
-    }
-  } catch {
-    // Ignore corrupted metadata
+  // Follow up to 5 redirects (GitHub redirects to S3)
+  let redirects = 0;
+  while (
+    response.statusCode &&
+    response.statusCode >= 300 &&
+    response.statusCode < 400 &&
+    response.headers.location &&
+    redirects < 5
+  ) {
+    response = await httpsGet(response.headers.location);
+    redirects++;
   }
-  return null;
+
+  if (response.statusCode !== 200) {
+    throw new Error(
+      `Failed to download database: HTTP ${response.statusCode} from ${url}`,
+    );
+  }
+
+  const gunzip = createGunzip();
+  const out = createWriteStream(TMP_DB_TMP);
+  await pipeline(response, gunzip, out);
+  renameSync(TMP_DB_TMP, TMP_DB);
 }
 
-function clearTmpDbArtifacts() {
-  rmSync(TMP_DB_LOCK, { recursive: true, force: true });
-  rmSync(TMP_DB_SHM, { force: true });
-  rmSync(TMP_DB_WAL, { force: true });
-  rmSync(TMP_DB, { force: true });
-  rmSync(TMP_DB_META, { force: true });
-}
-
-function ensureTempDbIsFresh() {
-  const sourceSignature = computeSourceSignature();
-  const meta = readTmpMeta();
-  const shouldRefresh =
-    !existsSync(TMP_DB) || !meta || meta.source_db !== SOURCE_DB || meta.source_signature !== sourceSignature;
-
-  if (shouldRefresh) {
-    clearTmpDbArtifacts();
-    copyFileSync(SOURCE_DB, TMP_DB);
-    writeFileSync(TMP_DB_META, JSON.stringify({ source_db: SOURCE_DB, source_signature: sourceSignature }), 'utf-8');
+async function initializeDatabase(): Promise<void> {
+  if (dbReady) {
     return;
   }
 
-  rmSync(TMP_DB_LOCK, { recursive: true, force: true });
+  // Check for bundled database first (local/Docker)
+  const bundledPath = process.env.CROATIAN_LAW_DB || 'data/database.db';
+  if (existsSync(bundledPath)) {
+    db = new Database(bundledPath, { readonly: true });
+    db.pragma('foreign_keys = ON');
+    dbReady = true;
+    return;
+  }
+
+  // Check if already downloaded to /tmp
+  if (existsSync(TMP_DB)) {
+    db = new Database(TMP_DB, { readonly: true });
+    db.pragma('foreign_keys = ON');
+    dbReady = true;
+    return;
+  }
+
+  // Strategy B: download from GitHub Releases
+  const downloadUrl = process.env.CROATIAN_LAW_DB_URL ?? DEFAULT_RELEASE_URL;
+  console.log(`[${SERVER_NAME}] Downloading database from ${downloadUrl}`);
+  await downloadDatabase(downloadUrl);
+  console.log(`[${SERVER_NAME}] Database download complete`);
+
+  db = new Database(TMP_DB, { readonly: true });
+  db.pragma('foreign_keys = ON');
+  dbReady = true;
+}
+
+function getDatabase(): InstanceType<typeof Database> {
+  if (!db) {
+    throw new Error('Database not initialized');
+  }
+  return db;
 }
 
 function computeAboutContext(): AboutContext {
-  let fingerprint = 'unknown';
+  let fingerprint = 'http-runtime';
   let dbBuilt = 'unknown';
-
-  try {
-    const buf = readFileSync(SOURCE_DB);
-    fingerprint = createHash('sha256').update(buf).digest('hex').slice(0, 12);
-  } catch { /* ignore */ }
 
   try {
     const database = getDatabase();
@@ -87,15 +120,6 @@ function computeAboutContext(): AboutContext {
   } catch { /* ignore */ }
 
   return { version: SERVER_VERSION, fingerprint, dbBuilt };
-}
-
-function getDatabase(): InstanceType<typeof Database> {
-  if (!db) {
-    ensureTempDbIsFresh();
-    db = new Database(TMP_DB, { readonly: true });
-    db.pragma('foreign_keys = ON');
-  }
-  return db;
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -119,10 +143,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    if (!existsSync(SOURCE_DB)) {
-      res.status(500).json({ error: `Database not found at ${SOURCE_DB}` });
-      return;
+    if (!dbReadyPromise) {
+      dbReadyPromise = initializeDatabase();
     }
+    await dbReadyPromise;
 
     const database = getDatabase();
     const server = new Server({ name: SERVER_NAME, version: SERVER_VERSION }, { capabilities: { tools: {} } });
