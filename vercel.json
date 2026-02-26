@@ -8,12 +8,12 @@
   ],
   "functions": {
     "api/mcp.ts": {
-      "maxDuration": 30,
+      "maxDuration": 60,
       "memory": 1024,
       "includeFiles": "{node_modules/node-sqlite3-wasm/dist/node-sqlite3-wasm.wasm}"
     },
     "api/health.ts": {
-      "maxDuration": 10,
+      "maxDuration": 30,
       "memory": 256,
       "includeFiles": "{node_modules/node-sqlite3-wasm/dist/node-sqlite3-wasm.wasm}"
     }
