@@ -1,6 +1,10 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import Database from '@ansvar/mcp-sqlite';
-import { existsSync } from 'fs';
+import { existsSync, createWriteStream, renameSync, rmSync } from 'fs';
+import { pipeline } from 'stream/promises';
+import { createGunzip } from 'zlib';
+import https from 'https';
+import type { IncomingMessage } from 'http';
 import {
   REPOSITORY_URL,
   SERVER_NAME,
@@ -8,7 +12,45 @@ import {
 } from '../src/constants.js';
 
 const TMP_DB = '/tmp/database.db';
+const TMP_DB_TMP = '/tmp/database.db.health.tmp';
 const STALENESS_THRESHOLD_DAYS = 30;
+
+const GITHUB_REPO = 'Ansvar-Systems/Croatian-law-mcp';
+const RELEASE_TAG = `v${SERVER_VERSION}`;
+const ASSET_NAME = 'database.db.gz';
+const DEFAULT_RELEASE_URL =
+  `https://github.com/${GITHUB_REPO}/releases/download/${RELEASE_TAG}/${ASSET_NAME}`;
+
+function httpsGet(url: string): Promise<IncomingMessage> {
+  return new Promise((resolve, reject) => {
+    https
+      .get(url, { headers: { 'User-Agent': SERVER_NAME } }, resolve)
+      .on('error', reject);
+  });
+}
+
+async function downloadDatabase(): Promise<void> {
+  const url = process.env.CROATIAN_LAW_DB_URL ?? DEFAULT_RELEASE_URL;
+  let response = await httpsGet(url);
+  let redirects = 0;
+  while (
+    response.statusCode &&
+    response.statusCode >= 300 &&
+    response.statusCode < 400 &&
+    response.headers.location &&
+    redirects < 5
+  ) {
+    response = await httpsGet(response.headers.location);
+    redirects++;
+  }
+  if (response.statusCode !== 200) {
+    throw new Error(`Failed to download database: HTTP ${response.statusCode}`);
+  }
+  const gunzip = createGunzip();
+  const out = createWriteStream(TMP_DB_TMP);
+  await pipeline(response, gunzip, out);
+  renameSync(TMP_DB_TMP, TMP_DB);
+}
 
 function getHealthDb(): InstanceType<typeof Database> | null {
   try {
@@ -33,7 +75,7 @@ function safeCount(db: InstanceType<typeof Database>, sql: string): number {
   } catch { return 0; }
 }
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
   const url = new URL(req.url ?? '/', `https://${req.headers.host}`);
 
   if (url.pathname === '/version' || url.searchParams.has('version')) {
@@ -45,7 +87,14 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     return;
   }
 
-  const db = getHealthDb();
+  // Strategy B: download DB from GitHub Releases if not available locally
+  let db = getHealthDb();
+  if (!db) {
+    try {
+      await downloadDatabase();
+      db = getHealthDb();
+    } catch { /* download failed — report degraded */ }
+  }
   let dataStatus: 'ok' | 'stale' | 'degraded' = 'degraded';
   let builtAt: string | null = null;
   let daysSinceBuilt: number | null = null;
