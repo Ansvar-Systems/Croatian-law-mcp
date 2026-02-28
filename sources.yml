@@ -3,23 +3,24 @@ mcp_name: "Croatian Law MCP"
 jurisdiction: "HR"
 
 sources:
-  - name: "Narodne novine (Official Gazette)"
+  - name: "Narodne novine ELI / NN API"
     authority: "Narodne novine d.d."
     official_portal: "https://narodne-novine.nn.hr"
-    retrieval_method: "CSV_INDEX + ELI_HTML_SCRAPE"
+    retrieval_method: "API + HTML_SCRAPE"
     update_frequency: "continuous"
-    last_ingested: "2026-02-26"
+    last_ingested: "2026-02-21"
     license_or_terms:
-      type: "government_open_data"
+      type: "government_terms"
       url: "https://narodne-novine.nn.hr/data_access_hr.aspx"
-      summary: "Croatian Government Open Data -- public domain under Croatian Copyright Act Art. 8. Content is publicly accessible for browsing and machine access."
+      summary: "Content is publicly accessible for browsing and machine access; usage is subject to Narodne novine terms."
     coverage:
-      scope: "Full Croatian legislation corpus from Narodne novine yearly CSV indexes (1990-2026). 4,531 laws ingested via ELI print HTML endpoints."
-      limitations: "Coverage spans 1990-present. Correction notices (ispravak) are excluded from ingestion. Most recent amendments may not yet be reflected."
+      scope: "Official and international legislation pages with ELI metadata and HTML representations"
+      limitations: "This ingestion covers a curated set of 10 statutes relevant to digital regulation and cyber/compliance practice."
     languages:
       - "hr"
+      - "en"
 
 data_freshness:
   automated_checks: true
-  check_frequency: "daily"
-  last_verified: "2026-02-26"
+  check_frequency: "weekly"
+  last_verified: "2026-02-21"

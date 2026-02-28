@@ -1,1 +1,6 @@
-data/database.db
+node_modules
+.git
+*.md
+tests
+data/seed
+scripts

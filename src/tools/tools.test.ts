@@ -23,9 +23,9 @@ afterAll(() => {
 });
 
 describe('database integrity', () => {
-  it('should have at least 4,500 legal documents (full corpus)', () => {
+  it('should have 10 legal documents', () => {
     const row = db.prepare('SELECT COUNT(*) as cnt FROM legal_documents').get() as { cnt: number };
-    expect(row.cnt).toBeGreaterThanOrEqual(4500);
+    expect(row.cnt).toBe(10);
   });
 
   it('should have at least 150 provisions', () => {

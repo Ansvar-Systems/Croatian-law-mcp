@@ -17,7 +17,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const SEED_DIR = path.resolve(__dirname, '../data/seed');
-const SEED_CATALOG_DIR = path.resolve(__dirname, '../data/seed-catalog');
 const DB_PATH = path.resolve(__dirname, '../data/database.db');
 
 // Seed file types
@@ -355,38 +354,20 @@ function buildDatabase(): void {
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
 
-  // Collect seed files from both data/seed (curated) and data/seed-catalog (census-driven).
-  // Deduplicate by document ID — curated seeds take priority over catalog seeds.
-  const seedFilePaths: { filePath: string; source: string }[] = [];
-  const seenIds = new Set<string>();
-
-  // 1. Load curated seeds first (higher priority)
-  if (fs.existsSync(SEED_DIR)) {
-    const files = fs.readdirSync(SEED_DIR)
-      .filter(f => f.endsWith('.json') && !f.startsWith('.') && !f.startsWith('_'));
-    for (const file of files) {
-      seedFilePaths.push({ filePath: path.join(SEED_DIR, file), source: 'curated' });
-    }
-    console.log(`  Curated seed files: ${files.length}`);
-  }
-
-  // 2. Load catalog seeds (census-driven, skipping any already seen IDs)
-  if (fs.existsSync(SEED_CATALOG_DIR)) {
-    const files = fs.readdirSync(SEED_CATALOG_DIR)
-      .filter(f => f.endsWith('.json') && !f.startsWith('.') && !f.startsWith('_'));
-    for (const file of files) {
-      seedFilePaths.push({ filePath: path.join(SEED_CATALOG_DIR, file), source: 'catalog' });
-    }
-    console.log(`  Catalog seed files: ${files.length}`);
-  }
-
-  if (seedFilePaths.length === 0) {
-    console.log('No seed files found in data/seed or data/seed-catalog. Database created with empty schema.');
+  if (!fs.existsSync(SEED_DIR)) {
+    console.log(`No seed directory at ${SEED_DIR} — creating empty database.`);
     db.close();
     return;
   }
 
-  console.log(`  Total seed files:  ${seedFilePaths.length}\n`);
+  const seedFiles = fs.readdirSync(SEED_DIR)
+    .filter(f => f.endsWith('.json') && !f.startsWith('.') && !f.startsWith('_'));
+
+  if (seedFiles.length === 0) {
+    console.log('No seed files found. Database created with empty schema.');
+    db.close();
+    return;
+  }
 
   let totalDocs = 0;
   let totalProvisions = 0;
@@ -396,13 +377,10 @@ function buildDatabase(): void {
   const primaryImplementationByDocument = new Set<string>();
 
   const loadAll = db.transaction(() => {
-    for (const { filePath, source } of seedFilePaths) {
+    for (const file of seedFiles) {
+      const filePath = path.join(SEED_DIR, file);
       const content = fs.readFileSync(filePath, 'utf-8');
       const seed = JSON.parse(content) as DocumentSeed;
-
-      // Skip duplicate IDs (curated seeds are loaded first and take priority)
-      if (seenIds.has(seed.id)) continue;
-      seenIds.add(seed.id);
 
       insertDoc.run(
         seed.id, seed.type ?? 'statute', seed.title, seed.title_en ?? null,
@@ -465,11 +443,6 @@ function buildDatabase(): void {
         );
         totalDefs++;
       }
-
-      // Progress logging every 500 documents
-      if (totalDocs % 500 === 0) {
-        console.log(`  ... ${totalDocs} documents loaded (${totalProvisions} provisions)`);
-      }
     }
   });
 
@@ -481,16 +454,10 @@ function buildDatabase(): void {
     insertMeta.run('tier', 'free');
     insertMeta.run('schema_version', '2');
     insertMeta.run('built_at', new Date().toISOString());
-    insertMeta.run('build_date', new Date().toISOString().split('T')[0]);
     insertMeta.run('builder', 'build-db.ts');
     insertMeta.run('jurisdiction', 'HR');
     insertMeta.run('source', 'official-source');
     insertMeta.run('licence', 'See sources.yml');
-    insertMeta.run('total_documents', String(totalDocs));
-    insertMeta.run('total_provisions', String(totalProvisions));
-    insertMeta.run('total_definitions', String(totalDefs));
-    insertMeta.run('total_eu_documents', String(totalEuDocuments));
-    insertMeta.run('total_eu_references', String(totalEuReferences));
   });
   writeMeta();
 

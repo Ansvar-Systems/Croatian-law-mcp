@@ -1,8 +1,8 @@
 {
   "$schema": "./golden-tests.schema.json",
-  "version": "2.0",
+  "version": "1.0",
   "mcp_name": "Croatian Law MCP",
-  "description": "Golden contract tests for the Croatian Law MCP -- 16 tests covering article retrieval, search, citation, cross-reference, full-corpus coverage, and negative cases",
+  "description": "Golden contract tests for the Croatian Law MCP -- 12 tests covering article retrieval, search, citation, cross-reference, and negative cases",
   "tests": [
     {
       "id": "hr-001",
@@ -71,43 +71,43 @@
     {
       "id": "hr-005",
       "category": "search",
-      "description": "Full-text search for 'osobni podaci' (personal data in Croatian) returns GDPR-related provisions",
+      "description": "Full-text search for 'personal data' returns GDPR Implementation Act and related provisions",
       "tool": "search_legislation",
       "input": {
-        "query": "osobni podaci"
+        "query": "personal data"
       },
       "assertions": {
         "result_not_empty": true,
-        "min_results": 5,
-        "any_result_contains": ["osobni", "podaci", "zaštita"]
+        "min_results": 1,
+        "any_result_contains": ["personal data", "data protection", "GDPR", "Regulation (EU) 2016/679"]
       }
     },
     {
       "id": "hr-006",
       "category": "search",
-      "description": "Full-text search for 'kibernetička sigurnost' returns cybersecurity provisions across Croatian law",
+      "description": "Full-text search for 'cybersecurity' returns Cybersecurity Act provisions",
       "tool": "search_legislation",
       "input": {
-        "query": "kibernetička sigurnost"
+        "query": "cybersecurity"
       },
       "assertions": {
         "result_not_empty": true,
         "min_results": 1,
-        "any_result_contains": ["kibernetičk", "sigurnost"]
+        "any_result_contains": ["cybersecurity", "NIS2", "essential entities", "CSIRT"]
       }
     },
     {
       "id": "hr-007",
       "category": "search",
-      "description": "Full-text search for 'poslovna tajna' (trade secret in Croatian) returns Trade Secrets Act provisions",
+      "description": "Full-text search for 'trade secret' returns Trade Secrets Act provisions",
       "tool": "search_legislation",
       "input": {
-        "query": "poslovna tajna"
+        "query": "trade secret"
       },
       "assertions": {
         "result_not_empty": true,
         "min_results": 1,
-        "any_result_contains": ["tajna", "zaštita"]
+        "any_result_contains": ["trade secret", "unlawful acquisition", "disclosure", "Directive (EU) 2016/943"]
       }
     },
     {
@@ -177,64 +177,6 @@
       },
       "assertions": {
         "handles_gracefully": true
-      }
-    },
-    {
-      "id": "hr-013",
-      "category": "article_retrieval",
-      "description": "Retrieve Obligations Act Art. 1 -- full corpus law (Zakon o obveznim odnosima, 1163 provisions)",
-      "tool": "get_provision",
-      "input": {
-        "law_identifier": "Zakon o obveznim odnosima",
-        "article": "1"
-      },
-      "assertions": {
-        "result_not_empty": true,
-        "fields_present": ["text", "article_number"],
-        "text_not_empty": true
-      }
-    },
-    {
-      "id": "hr-014",
-      "category": "article_retrieval",
-      "description": "Retrieve Maritime Code Art. 1 -- full corpus law (Pomorski zakonik, 1031 provisions)",
-      "tool": "get_provision",
-      "input": {
-        "law_identifier": "Pomorski zakonik",
-        "article": "1"
-      },
-      "assertions": {
-        "result_not_empty": true,
-        "fields_present": ["text", "article_number"],
-        "text_not_empty": true
-      }
-    },
-    {
-      "id": "hr-015",
-      "category": "search",
-      "description": "Full-text search for 'javna nabava' (public procurement) returns provisions across Croatian law",
-      "tool": "search_legislation",
-      "input": {
-        "query": "javna nabava"
-      },
-      "assertions": {
-        "result_not_empty": true,
-        "min_results": 3,
-        "any_result_contains": ["javna", "nabava"]
-      }
-    },
-    {
-      "id": "hr-016",
-      "category": "search",
-      "description": "Full-text search for 'radni odnos' (employment relationship) returns labour law provisions",
-      "tool": "search_legislation",
-      "input": {
-        "query": "radni odnos"
-      },
-      "assertions": {
-        "result_not_empty": true,
-        "min_results": 3,
-        "any_result_contains": ["radn", "odnos"]
       }
     }
   ]

@@ -1,13 +1,13 @@
 {
   "name": "@ansvar/croatian-law-mcp",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "mcpName": "eu.ansvar/croatian-law-mcp",
-  "description": "Full Croatian legislation database -- 4,531 laws, 157,667 provisions from Narodne novine (1990-2026) via Model Context Protocol",
+  "description": "Croatian law database covering data protection, cybersecurity, e-commerce, and criminal law provisions via Model Context Protocol",
   "author": "Ansvar Systems <hello@ansvar.eu>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ansvar-Systems/Croatian-law-mcp.git"
+    "url": "https://github.com/Ansvar-Systems/Croatian-law-mcp.git"
   },
   "homepage": "https://ansvar.eu",
   "keywords": [
@@ -40,7 +40,6 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "census": "node --import tsx scripts/census.ts",
     "ingest": "node --import tsx scripts/ingest.ts",
     "verify:upstream": "node --import tsx scripts/verify-upstream.ts",
     "catalog:build-csv": "node --import tsx scripts/build-catalog-from-csv.ts",
@@ -52,8 +51,7 @@
     "validate": "npm run lint && npm test && npm run test:contract",
     "lint": "tsc --noEmit",
     "prepublishOnly": "npm run build",
-    "postinstall": "test -d dist || npm run build || true",
-    "check-updates": "node --import tsx scripts/check-updates.ts"
+    "postinstall": "test -d dist || npm run build || true"
   },
   "dependencies": {
     "@ansvar/mcp-sqlite": "^1.0.3",

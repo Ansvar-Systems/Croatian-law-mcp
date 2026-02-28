@@ -1,5 +1,6 @@
 node_modules/
 dist/
+*.db
 .env
 .env.*
 .vercel
@@ -7,11 +8,5 @@ dist/
 coverage/
 data/source/
 data/source-catalog/
-data/seed/
 data/seed-catalog/
 data/catalog/nn-law-catalog.state.json
-data/*.db-journal
-data/*.db-wal
-data/*.db-shm
-.claude/
-.serena/
