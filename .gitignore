@@ -13,3 +13,5 @@ data/catalog/nn-law-catalog.state.json
 data/*.db-journal
 data/*.db-wal
 data/*.db-shm
+.claude/
+.serena/
