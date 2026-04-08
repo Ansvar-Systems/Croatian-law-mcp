@@ -85,11 +85,11 @@ export const TOOLS: Tool[] = [
   {
     name: 'get_provision',
     description:
-      'Retrieve the full text of a specific provision (section) from an Croatian statute. ' +
+      'Retrieve the full text of a specific provision (section) from a Croatian statute. ' +
       'Specify a document_id (Act title, abbreviation, or internal ID) and optionally a section or provision_ref. ' +
       'Omit section/provision_ref to get ALL provisions in the statute (use sparingly — can be large). ' +
       'Returns provision text, chapter, section number, and metadata. ' +
-      'Supports Act title references (e.g., "Privacy Act 1988"), abbreviations, and full titles. ' +
+      'Supports Act title references (e.g., "Zakon o zaštiti osobnih podataka"), abbreviations, and full titles. ' +
       'Use this when you know WHICH provision you want. For discovery, use search_legislation instead.',
     inputSchema: {
       type: 'object',
@@ -97,8 +97,8 @@ export const TOOLS: Tool[] = [
         document_id: {
           type: 'string',
           description:
-            'Statute identifier: Act title (e.g., "Privacy Act 1988"), abbreviation, ' +
-            'or internal document ID (e.g., "privacy-act-1988").',
+            'Statute identifier: Act title (e.g., "Zakon o zaštiti osobnih podataka"), abbreviation, ' +
+            'or internal document ID (e.g., "criminal-code-nn-125-11").',
         },
         section: {
           type: 'string',
@@ -115,16 +115,16 @@ export const TOOLS: Tool[] = [
   {
     name: 'validate_citation',
     description:
-      'Validate an Croatian legal citation against the database — zero-hallucination check. ' +
+      'Validate a Croatian legal citation against the database — zero-hallucination check. ' +
       'Parses the citation, checks that the document and provision exist, and returns warnings about status ' +
       '(repealed, amended). Use this to verify any citation BEFORE including it in a legal analysis. ' +
-      'Supports formats: "Section 13 Privacy Act 1988", "Privacy Act 1988 s 13", "s 13".',
+      'Supports formats: "Zakon o zaštiti osobnih podataka čl. 13", "criminal-code-nn-125-11 čl. 13".',
     inputSchema: {
       type: 'object',
       properties: {
         citation: {
           type: 'string',
-          description: 'Citation string to validate. Examples: "Section 13 Privacy Act 1988", "Privacy Act 1988 s 13".',
+          description: 'Citation string to validate. Examples: "Zakon o zaštiti osobnih podataka čl. 13", "criminal-code-nn-125-11 čl. 13".',
         },
       },
       required: ['citation'],
@@ -160,9 +160,9 @@ export const TOOLS: Tool[] = [
   {
     name: 'format_citation',
     description:
-      'Format an Croatian legal citation per standard conventions. ' +
-      'Three formats: "full" (formal, e.g., "Section 13, Privacy Act 1988"), ' +
-      '"short" (abbreviated, e.g., "Privacy Act 1988 s 13"), "pinpoint" (section reference only, e.g., "s 13").',
+      'Format a Croatian legal citation per standard conventions. ' +
+      'Three formats: "full" (formal, e.g., "Članak 13., Zakon o zaštiti osobnih podataka"), ' +
+      '"short" (abbreviated, e.g., "ZZOP čl. 13"), "pinpoint" (section reference only, e.g., "čl. 13").',
     inputSchema: {
       type: 'object',
       properties: {
@@ -180,7 +180,7 @@ export const TOOLS: Tool[] = [
   {
     name: 'check_currency',
     description:
-      'Check whether an Croatian statute or provision is currently in force, amended, repealed, or not yet in force. ' +
+      'Check whether a Croatian statute or provision is currently in force, amended, repealed, or not yet in force. ' +
       'Returns the document status, issued date, in-force date, and warnings. ' +
       'Essential before citing any provision — always verify currency.',
     inputSchema: {
@@ -201,9 +201,9 @@ export const TOOLS: Tool[] = [
   {
     name: 'get_eu_basis',
     description:
-      'Get the EU legal basis that an Croatian statute references or aligns with. ' +
+      'Get the EU legal basis that a Croatian statute references or aligns with. ' +
       'As an EU Member State, Croatia transposes EU directives and implements EU regulations ' +
-      '(e.g., Privacy Act references GDPR concepts, SOCI Act aligns with NIS2 patterns). ' +
+      '(e.g., ZZOP transposes GDPR, ZKI aligns with NIS2/CER Directive). ' +
       'Returns EU document identifiers, reference types, and alignment status.',
     inputSchema: {
       type: 'object',
@@ -268,7 +268,7 @@ export const TOOLS: Tool[] = [
   {
     name: 'get_provision_eu_basis',
     description:
-      'Get the EU legal basis for a SPECIFIC provision within an Croatian statute. ' +
+      'Get the EU legal basis for a SPECIFIC provision within a Croatian statute. ' +
       'More granular than get_eu_basis (which operates at the statute level). ' +
       'Use this for pinpoint EU alignment checks at the provision level.',
     inputSchema: {
@@ -283,7 +283,7 @@ export const TOOLS: Tool[] = [
   {
     name: 'validate_eu_compliance',
     description:
-      'Check EU alignment status for an Croatian statute or provision. ' +
+      'Check EU alignment status for a Croatian statute or provision. ' +
       'Detects references to EU directives, alignment status, and cross-references. ' +
       'Returns compliance status (compliant, partial, unclear, not_applicable) with warnings. ' +
       'Note: As an EU Member State, Croatia is bound by EU law. This checks transposition and compliance status.',
