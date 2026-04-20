@@ -23,9 +23,11 @@ afterAll(() => {
 });
 
 describe('database integrity', () => {
-  it('should have 10 legal documents', () => {
+  it('should have legal documents ingested', () => {
     const row = db.prepare('SELECT COUNT(*) as cnt FROM legal_documents').get() as { cnt: number };
-    expect(row.cnt).toBe(10);
+    // Original ingestion seeded 10 documents; full ingestion now carries 4500+.
+    // Use a lower bound so re-ingestion growth doesn't re-break this test.
+    expect(row.cnt).toBeGreaterThan(100);
   });
 
   it('should have at least 150 provisions', () => {
