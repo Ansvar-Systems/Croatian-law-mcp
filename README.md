@@ -39,12 +39,12 @@ This MCP server makes Croatian law **searchable, cross-referenceable, and AI-rea
 
 > Connect directly to the hosted version -- zero dependencies, nothing to install.
 
-**Endpoint:** `https://mcp.ansvar.eu/law-croatian-law-mcp/mcp`
+**Endpoint:** `https://mcp.ansvar.eu/law-hr/mcp`
 
 | Client | How to Connect |
 |--------|---------------|
 | **Claude.ai** | Settings > Connectors > Add Integration > paste URL |
-| **Claude Code** | `claude mcp add croatian-law --transport http https://mcp.ansvar.eu/law-croatian-law-mcp/mcp` |
+| **Claude Code** | `claude mcp add croatian-law --transport http https://mcp.ansvar.eu/law-hr/mcp` |
 | **Claude Desktop** | Add to config (see below) |
 | **GitHub Copilot** | Add to VS Code settings (see below) |
 
@@ -55,7 +55,7 @@ This MCP server makes Croatian law **searchable, cross-referenceable, and AI-rea
   "mcpServers": {
     "croatian-law": {
       "type": "url",
-      "url": "https://mcp.ansvar.eu/law-croatian-law-mcp/mcp"
+      "url": "https://mcp.ansvar.eu/law-hr/mcp"
     }
   }
 }
@@ -68,7 +68,7 @@ This MCP server makes Croatian law **searchable, cross-referenceable, and AI-rea
   "github.copilot.chat.mcp.servers": {
     "croatian-law": {
       "type": "http",
-      "url": "https://mcp.ansvar.eu/law-croatian-law-mcp/mcp"
+      "url": "https://mcp.ansvar.eu/law-hr/mcp"
     }
   }
 }
