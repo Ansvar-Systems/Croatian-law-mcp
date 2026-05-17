@@ -357,8 +357,36 @@ Apache License 2.0. See [LICENSE](./LICENSE) for details.
 
 ### Data Licenses
 
-- **Statutes & Legislation:** Narodne novine d.d. (public domain government works)
-- **EU Metadata:** EUR-Lex (EU public domain)
+Ansvar attribution code: **`HR-Statutory-PD-Conditional`**. Basis: ZASP
+(`Zakon o autorskom pravu i srodnim pravima`) Art. 18(3) — a
+**CONDITIONAL** statutory-PD carve-out.
+
+- **Statutes & Legislation:** Narodne novine d.d. via
+  `narodne-novine.nn.hr`. Reused under ZASP Art. 18(3) — for texts that
+  have crossed a triggering event.
+- **EU Metadata:** EUR-Lex (EU public-domain notice).
+
+### Coverage scope (CONDITIONAL — trigger requirement)
+
+Croatian ZASP Art. 18(3) is **CONDITIONAL** and structurally different
+from the broad statutory-PD carve-outs in other jurisdictions.
+
+- **Default state:** all works (including draft legislative texts) are
+  protected by copyright from the moment of creation.
+- **Trigger required:** protection is lost only when one of three
+  triggering events occurs:
+  1. The work is submitted to an official procedure (e.g. legislative
+     procedure in the Sabor).
+  2. The work is disclosed under public-information rules.
+  3. The work is published in Narodne novine (the official gazette).
+- **Practical implication for this MCP:** ingestion MUST restrict to
+  post-trigger texts — typically, the version published in Narodne
+  novine — NOT to working drafts, internal ministerial preparatory
+  materials, or pre-submission committee drafts. Those remain protected.
+
+See `docs/audits/2026-05-17-eu-copyright-statutory-works-batch-3-BG-HR-SK-SI-SE.md`
+in the Ansvar architecture-documentation repo for the verbatim Art. 18(3)
+text and the conditional-trigger analysis.
 
 ---
 
