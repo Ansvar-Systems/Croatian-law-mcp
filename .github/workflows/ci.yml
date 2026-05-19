@@ -52,7 +52,7 @@ jobs:
 
           printf '%s\n' "$changed"
 
-          if printf '%s\n' "$changed" | grep -Eq '^(data/|sources\.ya?ml|coverage\.json|COVERAGE\.md|scripts/(ingest|build|premium-ingestion)|src/(db|data|ingest|schema)/|src/.*(db|data|ingest|schema)|package(-lock)?\.json|tsconfig\.json)'; then
+          if printf '%s\n' "$changed" | grep -Eq '^(data/|sources\.ya?ml|coverage\.json|COVERAGE\.md|scripts/(ingest|build|premium-ingestion)|src/(db|data|ingest|schema)/|src/.*(db|data|ingest|schema)|tsconfig\.json)'; then
             echo "db_changed=true" >> "$GITHUB_OUTPUT"
           else
             echo "db_changed=false" >> "$GITHUB_OUTPUT"
@@ -72,15 +72,8 @@ jobs:
 
       - name: Build database
         run: |
-          if jq -e '.scripts["build:db"]' package.json >/dev/null 2>&1; then
-            if [ "${{ steps.changes.outputs.db_changed }}" = "true" ]; then
-              npm run build:db
-            else
-              echo "No data/ingestion/schema change detected — skipping build:db"
-            fi
-          else
-            echo "build:db script not present — skipping (native-curated MCP without DB build step)"
-          fi
+          echo "Committed data/database.db is authoritative for this curated MCP."
+          echo "Skipping build:db: the current script rebuilds only the seed fixture subset, not the full Croatian corpus."
 
       - name: Type check
         run: |

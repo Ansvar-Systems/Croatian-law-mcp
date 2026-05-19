@@ -215,9 +215,10 @@ All content is sourced from authoritative Croatian legal databases:
 | **Coverage** | All national Croatian legislation; EU regulations apply directly |
 | **Source** | narodne-novine.nn.hr, zakon.hr |
 
-### Automated Freshness Checks
+### Freshness Checks
 
-A [GitHub Actions workflow](.github/workflows/check-updates.yml) monitors Narodne novine for changes:
+Freshness tooling is available under `scripts/check-updates.ts` and `scripts/drift-detect.ts`.
+This curated release does not currently wire those checks to a scheduled GitHub Actions workflow.
 
 | Check | Method |
 |-------|--------|

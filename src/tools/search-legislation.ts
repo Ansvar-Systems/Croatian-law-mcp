@@ -6,7 +6,12 @@ import type Database from '@ansvar/mcp-sqlite';
 import { buildFtsQueryVariants, buildLikePattern, sanitizeFtsInput } from '../utils/fts-query.js';
 import { normalizeAsOfDate } from '../utils/as-of-date.js';
 import { resolveDocumentId } from '../utils/statute-id.js';
-import { buildProvisionCitation, type CitationMetadata } from '../utils/citation.js';
+import {
+  buildCitationEnvelope,
+  buildProvisionCitation,
+  type EntityCitationMetadata,
+  type SourceCitationMetadata,
+} from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface SearchLegislationInput {
@@ -27,7 +32,8 @@ export interface SearchLegislationResult {
   snippet: string;
   relevance: number;
   url?: string;
-  _citation?: CitationMetadata;
+  _citation?: SourceCitationMetadata;
+  _entity_citation?: EntityCitationMetadata;
 }
 
 const DEFAULT_LIMIT = 10;
@@ -190,14 +196,18 @@ function deduplicateResults(
 function attachCitations(rows: SearchLegislationResult[]): SearchLegislationResult[] {
   return rows.map((row) => ({
     ...row,
-    _citation: buildProvisionCitation(
-      row.document_id,
-      row.document_title,
-      row.provision_ref,
-      row.document_id,
-      row.provision_ref.replace(/^s/, ''),
+    ...buildCitationEnvelope(
+      buildProvisionCitation(
+        row.document_id,
+        row.document_title,
+        row.provision_ref,
+        row.document_id,
+        row.provision_ref.replace(/^s/, ''),
+        row.url ?? null,
+        null,
+      ),
       row.url ?? null,
-      null,
+      'fts-index',
     ),
   }));
 }

@@ -5,7 +5,12 @@
 import type Database from '@ansvar/mcp-sqlite';
 import { resolveDocumentId } from '../utils/statute-id.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
-import { buildProvisionCitation, type CitationMetadata } from '../utils/citation.js';
+import {
+  buildCitationEnvelope,
+  buildProvisionCitation,
+  type EntityCitationMetadata,
+  type SourceCitationMetadata,
+} from '../utils/citation.js';
 
 export interface GetProvisionInput {
   document_id: string;
@@ -25,7 +30,8 @@ export interface ProvisionResult {
   content: string;
   section_number?: string;
   url?: string;
-  _citation?: CitationMetadata;
+  _citation?: SourceCitationMetadata;
+  _entity_citation?: EntityCitationMetadata;
 }
 
 export async function getProvision(
@@ -91,6 +97,7 @@ export async function getProvision(
         docRow.url ?? null,
         null,
       );
+      const citationEnvelope = buildCitationEnvelope(citation, docRow.url ?? null, 'verbatim');
       return {
         results: [{
           document_id: resolvedId,
@@ -102,9 +109,9 @@ export async function getProvision(
           content: String(provision.content),
           section_number: String(provision.provision_ref).replace(/^s/, ''),
           url: docRow.url ?? undefined,
-          _citation: citation,
+          ...citationEnvelope,
         }],
-        _citation: citation,
+        ...citationEnvelope,
         _metadata: generateResponseMetadata(db),
       };
     }
@@ -127,25 +134,29 @@ export async function getProvision(
     results: provisions.map(p => {
       const provisionRef = String(p.provision_ref);
       return {
-      document_id: resolvedId,
-      document_title: docRow.title,
-      provision_ref: provisionRef,
-      chapter: p.chapter as string | null,
-      section: String(p.section),
-      title: p.title as string | null,
-      content: String(p.content),
-      section_number: provisionRef.replace(/^s/, ''),
-      url: docRow.url ?? undefined,
-      _citation: buildProvisionCitation(
-        resolvedId,
-        docRow.title,
-        provisionRef,
-        input.document_id,
-        provisionRef.replace(/^s/, ''),
-        docRow.url ?? null,
-        null,
-      ),
-    };
+        document_id: resolvedId,
+        document_title: docRow.title,
+        provision_ref: provisionRef,
+        chapter: p.chapter as string | null,
+        section: String(p.section),
+        title: p.title as string | null,
+        content: String(p.content),
+        section_number: provisionRef.replace(/^s/, ''),
+        url: docRow.url ?? undefined,
+        ...buildCitationEnvelope(
+          buildProvisionCitation(
+            resolvedId,
+            docRow.title,
+            provisionRef,
+            input.document_id,
+            provisionRef.replace(/^s/, ''),
+            docRow.url ?? null,
+            null,
+          ),
+          docRow.url ?? null,
+          'verbatim',
+        ),
+      };
     }),
     _metadata: generateResponseMetadata(db),
   };

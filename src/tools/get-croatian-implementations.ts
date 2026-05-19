@@ -3,7 +3,12 @@
  */
 
 import type Database from '@ansvar/mcp-sqlite';
-import { buildCitation, type CitationMetadata } from '../utils/citation.js';
+import {
+  buildCitation,
+  buildCitationEnvelope,
+  type EntityCitationMetadata,
+  type SourceCitationMetadata,
+} from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface GetCroatianImplementationsInput {
@@ -21,7 +26,8 @@ export interface CroatianImplementationResult {
   is_primary: boolean;
   reference_count: number;
   source_url?: string;
-  _citation?: CitationMetadata;
+  _citation?: SourceCitationMetadata;
+  _entity_citation?: EntityCitationMetadata;
 }
 
 export async function getCroatianImplementations(
@@ -70,12 +76,16 @@ export async function getCroatianImplementations(
   return {
     results: rows.map((row) => ({
       ...row,
-      _citation: buildCitation(
-        `${input.eu_document_id} implemented by ${row.document_id}`,
-        `${row.document_title} references ${input.eu_document_id}`,
-        'get_croatian_implementations',
-        { eu_document_id: input.eu_document_id },
+      ...buildCitationEnvelope(
+        buildCitation(
+          `${input.eu_document_id} implemented by ${row.document_id}`,
+          `${row.document_title} references ${input.eu_document_id}`,
+          'get_croatian_implementations',
+          { eu_document_id: input.eu_document_id },
+          row.source_url ?? null,
+        ),
         row.source_url ?? null,
+        'verbatim',
       ),
     })),
     _metadata: generateResponseMetadata(db),

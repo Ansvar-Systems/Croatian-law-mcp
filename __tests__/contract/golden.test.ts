@@ -33,7 +33,17 @@ interface ContractFile {
 interface ToolResponse {
   results?: unknown;
   _metadata?: unknown;
-  _citation?: { source_url?: string; publisher?: string; license?: string };
+  _citation?: {
+    source_url?: string;
+    publisher?: string;
+    license?: string;
+    processing_type?: string;
+  };
+  _entity_citation?: {
+    canonical_ref?: string;
+    display_text?: string;
+    lookup?: { tool?: string; args?: Record<string, string> };
+  };
 }
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -94,13 +104,22 @@ function getTextCarrier(item: unknown): string {
   return '';
 }
 
-function expectAttribution(item: unknown): void {
+function expectAttribution(item: unknown, toolName: string): void {
   expect(item && typeof item === 'object').toBe(true);
-  const citation = (item as Record<string, unknown>)._citation as Record<string, unknown> | undefined;
+  const record = item as Record<string, unknown>;
+  const citation = record._citation as Record<string, unknown> | undefined;
+  const entityCitation = record._entity_citation as Record<string, unknown> | undefined;
   expect(citation).toBeDefined();
   expect(citation?.source_url).toEqual(expect.stringMatching(/^https?:\/\/(?:www\.)?narodne-novine\.nn\.hr\//));
   expect(citation?.publisher).toBe('narodne-novine.nn.hr');
   expect(citation?.license).toBe('HR-Statutory-PD-Conditional');
+  expect(citation?.processing_type).toBe(toolName === 'search_legislation' ? 'fts-index' : 'verbatim');
+  expect(citation?.canonical_ref).toBeUndefined();
+
+  expect(entityCitation).toBeDefined();
+  expect(typeof entityCitation?.canonical_ref).toBe('string');
+  expect(typeof entityCitation?.display_text).toBe('string');
+  expect(entityCitation?.lookup).toMatchObject({ tool: expect.any(String) });
 }
 
 describe('golden contract fixtures', () => {
@@ -117,7 +136,7 @@ describe('golden contract fixtures', () => {
       if (assertions.result_not_empty) {
         expect(items.length).toBeGreaterThan(0);
         for (const item of items.slice(0, 3)) {
-          expectAttribution(item);
+          expectAttribution(item, testCase.tool);
         }
       }
 

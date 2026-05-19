@@ -12,27 +12,59 @@
  * See: docs/guides/law-mcp-golden-standard.md Section 4.9c
  */
 
-export interface CitationMetadata {
+export type ProcessingType = 'verbatim' | 'ocr' | 'translation' | 'summary' | 'fts-index';
+
+export interface EntityCitationMetadata {
   canonical_ref: string;
   display_text: string;
   aliases?: string[];
   source_url?: string;
-  publisher: string;
-  license: string;
-  processing_authority: string;
-  processing_type: string;
   lookup: {
     tool: string;
     args: Record<string, string>;
   };
 }
 
+export interface SourceCitationMetadata {
+  source_url?: string;
+  publisher: string;
+  license: string;
+  processing_authority: string;
+  processing_type: ProcessingType;
+}
+
+export interface CitationEnvelope {
+  _citation: SourceCitationMetadata;
+  _entity_citation: EntityCitationMetadata;
+}
+
 const ATTRIBUTION = {
   publisher: 'narodne-novine.nn.hr',
   license: 'HR-Statutory-PD-Conditional',
   processing_authority: 'Ansvar',
-  processing_type: 'fts-index',
 } as const;
+
+export function buildSourceCitation(
+  sourceUrl?: string | null,
+  processingType: ProcessingType = 'verbatim',
+): SourceCitationMetadata {
+  return {
+    ...(sourceUrl && { source_url: sourceUrl }),
+    ...ATTRIBUTION,
+    processing_type: processingType,
+  };
+}
+
+export function buildCitationEnvelope(
+  entityCitation: EntityCitationMetadata,
+  sourceUrl?: string | null,
+  processingType: ProcessingType = 'verbatim',
+): CitationEnvelope {
+  return {
+    _citation: buildSourceCitation(sourceUrl, processingType),
+    _entity_citation: entityCitation,
+  };
+}
 
 /**
  * Build citation metadata for any retrieval tool response.
@@ -53,13 +85,12 @@ export function buildCitation(
   toolArgs: Record<string, string>,
   sourceUrl?: string | null,
   aliases?: string[],
-): CitationMetadata {
+): EntityCitationMetadata {
   return {
     canonical_ref: canonicalRef,
     display_text: displayText,
     ...(aliases && aliases.length > 0 && { aliases }),
     ...(sourceUrl && { source_url: sourceUrl }),
-    ...ATTRIBUTION,
     lookup: {
       tool: toolName,
       args: toolArgs,
@@ -89,7 +120,7 @@ export function buildProvisionCitation(
   inputSection: string,
   sourceUrl?: string | null,
   shortName?: string | null,
-): CitationMetadata {
+): EntityCitationMetadata {
   // Build canonical_ref — detect common statute ID formats
   let canonicalRef: string;
   if (documentId.match(/^\d{4}:\d+$/)) {
@@ -125,7 +156,6 @@ export function buildProvisionCitation(
     display_text: displayText,
     ...(aliases.length > 0 && { aliases }),
     ...(sourceUrl && { source_url: sourceUrl }),
-    ...ATTRIBUTION,
     lookup: {
       tool: 'get_provision',
       args: { document_id: inputDocId, section: inputSection },
@@ -150,7 +180,7 @@ export function buildRegulationCitation(
   toolArgs: Record<string, string>,
   authority?: string | null,
   sourceUrl?: string | null,
-): CitationMetadata {
+): EntityCitationMetadata {
   const canonicalRef = reference;
   const displayText = title || reference;
   const aliases: string[] = [];
@@ -161,7 +191,6 @@ export function buildRegulationCitation(
     display_text: displayText,
     ...(aliases.length > 0 && { aliases }),
     ...(sourceUrl && { source_url: sourceUrl }),
-    ...ATTRIBUTION,
     lookup: { tool: toolName, args: toolArgs },
   };
 }

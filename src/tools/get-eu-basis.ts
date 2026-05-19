@@ -4,7 +4,12 @@
 
 import type Database from '@ansvar/mcp-sqlite';
 import { resolveDocumentId } from '../utils/statute-id.js';
-import { buildCitation, type CitationMetadata } from '../utils/citation.js';
+import {
+  buildCitation,
+  buildCitationEnvelope,
+  type EntityCitationMetadata,
+  type SourceCitationMetadata,
+} from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface GetEUBasisInput {
@@ -22,7 +27,8 @@ export interface EUBasisResult {
   implementation_status: string | null;
   articles?: string[];
   source_url?: string;
-  _citation?: CitationMetadata;
+  _citation?: SourceCitationMetadata;
+  _entity_citation?: EntityCitationMetadata;
 }
 
 export async function getEUBasis(
@@ -86,12 +92,16 @@ export async function getEUBasis(
   return {
     results: rows.map((row) => ({
       ...row,
-      _citation: buildCitation(
-        `${row.eu_document_id} via ${resolvedId}`,
-        `${row.eu_document_title ?? row.eu_document_id} referenced by ${resolvedId}`,
-        'get_eu_basis',
-        { document_id: input.document_id },
+      ...buildCitationEnvelope(
+        buildCitation(
+          `${row.eu_document_id} via ${resolvedId}`,
+          `${row.eu_document_title ?? row.eu_document_id} referenced by ${resolvedId}`,
+          'get_eu_basis',
+          { document_id: input.document_id },
+          row.source_url ?? null,
+        ),
         row.source_url ?? null,
+        'verbatim',
       ),
     })),
     _metadata: generateResponseMetadata(db),

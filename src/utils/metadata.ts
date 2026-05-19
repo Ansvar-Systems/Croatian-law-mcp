@@ -16,7 +16,8 @@ export interface ResponseMetadata {
 export interface ToolResponse<T> {
   results: T;
   _metadata: ResponseMetadata;
-  _citation?: import('./citation.js').CitationMetadata;
+  _citation?: import('./citation.js').SourceCitationMetadata;
+  _entity_citation?: import('./citation.js').EntityCitationMetadata;
 }
 
 export function generateResponseMetadata(

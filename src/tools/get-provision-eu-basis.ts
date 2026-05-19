@@ -4,7 +4,12 @@
 
 import type Database from '@ansvar/mcp-sqlite';
 import { resolveDocumentId } from '../utils/statute-id.js';
-import { buildProvisionCitation, type CitationMetadata } from '../utils/citation.js';
+import {
+  buildCitationEnvelope,
+  buildProvisionCitation,
+  type EntityCitationMetadata,
+  type SourceCitationMetadata,
+} from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface GetProvisionEUBasisInput {
@@ -21,7 +26,8 @@ export interface ProvisionEUBasisResult {
   reference_context: string | null;
   full_citation: string | null;
   source_url?: string;
-  _citation?: CitationMetadata;
+  _citation?: SourceCitationMetadata;
+  _entity_citation?: EntityCitationMetadata;
 }
 
 export async function getProvisionEUBasis(
@@ -88,7 +94,7 @@ export async function getProvisionEUBasis(
     results: rows.map((row) => ({
       ...row,
       source_url: docRow?.url ?? undefined,
-      _citation: citation,
+      ...buildCitationEnvelope(citation, docRow?.url ?? null, 'verbatim'),
     })),
     _metadata: generateResponseMetadata(db),
   };

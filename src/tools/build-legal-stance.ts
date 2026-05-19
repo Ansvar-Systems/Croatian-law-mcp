@@ -5,7 +5,12 @@
 import type Database from '@ansvar/mcp-sqlite';
 import { buildFtsQueryVariants, sanitizeFtsInput } from '../utils/fts-query.js';
 import { resolveDocumentId } from '../utils/statute-id.js';
-import { buildProvisionCitation, type CitationMetadata } from '../utils/citation.js';
+import {
+  buildCitationEnvelope,
+  buildProvisionCitation,
+  type EntityCitationMetadata,
+  type SourceCitationMetadata,
+} from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface BuildLegalStanceInput {
@@ -23,7 +28,8 @@ export interface LegalStanceResult {
   snippet: string;
   relevance: number;
   url?: string;
-  _citation?: CitationMetadata;
+  _citation?: SourceCitationMetadata;
+  _entity_citation?: EntityCitationMetadata;
 }
 
 export async function buildLegalStance(
@@ -125,14 +131,18 @@ function deduplicateResults(
 function attachCitations(rows: LegalStanceResult[]): LegalStanceResult[] {
   return rows.map((row) => ({
     ...row,
-    _citation: buildProvisionCitation(
-      row.document_id,
-      row.document_title,
-      row.provision_ref,
-      row.document_id,
-      row.provision_ref.replace(/^s/, ''),
+    ...buildCitationEnvelope(
+      buildProvisionCitation(
+        row.document_id,
+        row.document_title,
+        row.provision_ref,
+        row.document_id,
+        row.provision_ref.replace(/^s/, ''),
+        row.url ?? null,
+        null,
+      ),
       row.url ?? null,
-      null,
+      'fts-index',
     ),
   }));
 }

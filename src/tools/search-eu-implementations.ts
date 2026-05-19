@@ -3,7 +3,12 @@
  */
 
 import type Database from '@ansvar/mcp-sqlite';
-import { buildCitation, type CitationMetadata } from '../utils/citation.js';
+import {
+  buildCitation,
+  buildCitationEnvelope,
+  type EntityCitationMetadata,
+  type SourceCitationMetadata,
+} from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface SearchEUImplementationsInput {
@@ -24,7 +29,8 @@ export interface EUImplementationSearchResult {
   short_name: string | null;
   croatian_statute_count: number;
   source_url?: string;
-  _citation?: CitationMetadata;
+  _citation?: SourceCitationMetadata;
+  _entity_citation?: EntityCitationMetadata;
 }
 
 export async function searchEUImplementations(
@@ -95,15 +101,19 @@ export async function searchEUImplementations(
   return {
     results: rows.map((row) => ({
       ...row,
-      _citation: buildCitation(
-        row.eu_document_id,
-        row.title ?? row.short_name ?? row.eu_document_id,
-        'search_eu_implementations',
-        {
-          ...(input.query ? { query: input.query } : {}),
-          ...(input.type ? { type: input.type } : {}),
-        },
+      ...buildCitationEnvelope(
+        buildCitation(
+          row.eu_document_id,
+          row.title ?? row.short_name ?? row.eu_document_id,
+          'search_eu_implementations',
+          {
+            ...(input.query ? { query: input.query } : {}),
+            ...(input.type ? { type: input.type } : {}),
+          },
+          row.source_url ?? null,
+        ),
         row.source_url ?? null,
+        'verbatim',
       ),
     })),
     _metadata: generateResponseMetadata(db),
