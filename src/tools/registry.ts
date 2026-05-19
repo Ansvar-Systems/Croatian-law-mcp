@@ -53,7 +53,7 @@ export const TOOLS: Tool[] = [
       'Search Croatian statutes and regulations by keyword using full-text search (FTS5 with BM25 ranking). ' +
       'Returns matching provisions with document context, snippets with >>> <<< markers around matched terms, and relevance scores. ' +
       'Supports FTS5 syntax: quoted phrases ("exact match"), boolean operators (AND, OR, NOT), and prefix wildcards (term*). ' +
-      'Results are in English. Default limit is 10 results. For broad topics, increase the limit. ' +
+      'Results are in Croatian. Default limit is 10 results. For broad topics, increase the limit. ' +
       'Do NOT use this for retrieving a known provision — use get_provision instead.',
     inputSchema: {
       type: 'object',
@@ -61,8 +61,8 @@ export const TOOLS: Tool[] = [
         query: {
           type: 'string',
           description:
-            'Search query in English. Supports FTS5 syntax: ' +
-            '"personal information" for exact phrase, privacy* for prefix.',
+            'Search query in Croatian. Supports FTS5 syntax: ' +
+            '"osobni podaci" for exact phrase, kibernetič* for prefix.',
         },
         document_id: {
           type: 'string',

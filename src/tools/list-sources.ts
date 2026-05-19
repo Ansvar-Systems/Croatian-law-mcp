@@ -47,7 +47,7 @@ export async function listSources(
           name: 'Narodne novine (Official Gazette)',
           authority: 'Narodne novine d.d.',
           url: 'https://narodne-novine.nn.hr',
-          license: 'Creative Commons Attribution 4.0 International (CC BY 4.0)',
+          license: 'HR-Statutory-PD-Conditional',
           coverage:
             'All Croatian statutes and legislative instruments published in the Official Gazette, ' +
             'including civil, criminal, administrative, data protection, cybersecurity, ' +
