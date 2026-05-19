@@ -5,7 +5,12 @@
 import type Database from '@ansvar/mcp-sqlite';
 import { resolveDocumentId } from '../utils/statute-id.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
-import { buildProvisionCitation } from '../utils/citation.js';
+import {
+  buildCitationEnvelope,
+  buildProvisionCitation,
+  type EntityCitationMetadata,
+  type SourceCitationMetadata,
+} from '../utils/citation.js';
 
 export interface GetProvisionInput {
   document_id: string;
@@ -25,6 +30,8 @@ export interface ProvisionResult {
   content: string;
   section_number?: string;
   url?: string;
+  _citation?: SourceCitationMetadata;
+  _entity_citation?: EntityCitationMetadata;
 }
 
 export async function getProvision(
@@ -81,6 +88,16 @@ export async function getProvision(
     }
 
     if (provision) {
+      const citation = buildProvisionCitation(
+        resolvedId,
+        docRow.title,
+        String(provision.provision_ref),
+        input.document_id,
+        input.section || input.provision_ref || input.article || '',
+        docRow.url ?? null,
+        null,
+      );
+      const citationEnvelope = buildCitationEnvelope(citation, docRow.url ?? null, 'verbatim');
       return {
         results: [{
           document_id: resolvedId,
@@ -92,16 +109,9 @@ export async function getProvision(
           content: String(provision.content),
           section_number: String(provision.provision_ref).replace(/^s/, ''),
           url: docRow.url ?? undefined,
+          ...citationEnvelope,
         }],
-        _citation: buildProvisionCitation(
-          resolvedId,
-          docRow.title,
-          String(provision.provision_ref),
-          input.document_id,
-          input.section || input.provision_ref || input.article || '',
-          docRow.url ?? null,
-          null,
-        ),
+        ...citationEnvelope,
         _metadata: generateResponseMetadata(db),
       };
     }
@@ -121,17 +131,33 @@ export async function getProvision(
   ).all(resolvedId) as Record<string, unknown>[];
 
   return {
-    results: provisions.map(p => ({
-      document_id: resolvedId,
-      document_title: docRow.title,
-      provision_ref: String(p.provision_ref),
-      chapter: p.chapter as string | null,
-      section: String(p.section),
-      title: p.title as string | null,
-      content: String(p.content),
-      section_number: String(p.provision_ref).replace(/^s/, ''),
-      url: docRow.url ?? undefined,
-    })),
+    results: provisions.map(p => {
+      const provisionRef = String(p.provision_ref);
+      return {
+        document_id: resolvedId,
+        document_title: docRow.title,
+        provision_ref: provisionRef,
+        chapter: p.chapter as string | null,
+        section: String(p.section),
+        title: p.title as string | null,
+        content: String(p.content),
+        section_number: provisionRef.replace(/^s/, ''),
+        url: docRow.url ?? undefined,
+        ...buildCitationEnvelope(
+          buildProvisionCitation(
+            resolvedId,
+            docRow.title,
+            provisionRef,
+            input.document_id,
+            provisionRef.replace(/^s/, ''),
+            docRow.url ?? null,
+            null,
+          ),
+          docRow.url ?? null,
+          'verbatim',
+        ),
+      };
+    }),
     _metadata: generateResponseMetadata(db),
   };
 }

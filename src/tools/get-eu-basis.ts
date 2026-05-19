@@ -4,6 +4,12 @@
 
 import type Database from '@ansvar/mcp-sqlite';
 import { resolveDocumentId } from '../utils/statute-id.js';
+import {
+  buildCitation,
+  buildCitationEnvelope,
+  type EntityCitationMetadata,
+  type SourceCitationMetadata,
+} from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface GetEUBasisInput {
@@ -20,6 +26,9 @@ export interface EUBasisResult {
   reference_count: number;
   implementation_status: string | null;
   articles?: string[];
+  source_url?: string;
+  _citation?: SourceCitationMetadata;
+  _entity_citation?: EntityCitationMetadata;
 }
 
 export async function getEUBasis(
@@ -51,9 +60,12 @@ export async function getEUBasis(
       COALESCE(ed.title, ed.short_name) as eu_document_title,
       er.reference_type,
       COUNT(*) as reference_count,
-      MAX(er.implementation_status) as implementation_status
+      MAX(er.implementation_status) as implementation_status,
+      MAX(ld.title) as document_title,
+      MAX(ld.url) as source_url
     FROM eu_references er
     LEFT JOIN eu_documents ed ON ed.id = er.eu_document_id
+    JOIN legal_documents ld ON ld.id = er.document_id
     WHERE er.document_id = ?
   `;
   const params: string[] = [resolvedId];
@@ -77,5 +89,21 @@ export async function getEUBasis(
     }
   }
 
-  return { results: rows, _metadata: generateResponseMetadata(db) };
+  return {
+    results: rows.map((row) => ({
+      ...row,
+      ...buildCitationEnvelope(
+        buildCitation(
+          `${row.eu_document_id} via ${resolvedId}`,
+          `${row.eu_document_title ?? row.eu_document_id} referenced by ${resolvedId}`,
+          'get_eu_basis',
+          { document_id: input.document_id },
+          row.source_url ?? null,
+        ),
+        row.source_url ?? null,
+        'verbatim',
+      ),
+    })),
+    _metadata: generateResponseMetadata(db),
+  };
 }

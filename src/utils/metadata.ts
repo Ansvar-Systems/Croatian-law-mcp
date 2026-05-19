@@ -16,7 +16,8 @@ export interface ResponseMetadata {
 export interface ToolResponse<T> {
   results: T;
   _metadata: ResponseMetadata;
-  _citation?: import('./citation.js').CitationMetadata;
+  _citation?: import('./citation.js').SourceCitationMetadata;
+  _entity_citation?: import('./citation.js').EntityCitationMetadata;
 }
 
 export function generateResponseMetadata(
@@ -36,7 +37,7 @@ export function generateResponseMetadata(
     data_source: 'Narodne novine (Official Gazette) (www.nn.hr) — Narodne novine d.d.',
     jurisdiction: 'HR',
     disclaimer:
-      'This data is sourced from the Narodne novine (Official Gazette) under public domain. ' +
+      'This data is sourced from the Narodne novine (Official Gazette) under HR-Statutory-PD-Conditional. ' +
       'The authoritative versions are maintained by Narodne novine d.d.. ' +
       'Always verify with the official Narodne novine (Official Gazette) portal (www.nn.hr).',
     freshness,

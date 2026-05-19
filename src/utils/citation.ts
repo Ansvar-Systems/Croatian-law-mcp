@@ -12,7 +12,9 @@
  * See: docs/guides/law-mcp-golden-standard.md Section 4.9c
  */
 
-export interface CitationMetadata {
+export type ProcessingType = 'verbatim' | 'ocr' | 'translation' | 'summary' | 'fts-index';
+
+export interface EntityCitationMetadata {
   canonical_ref: string;
   display_text: string;
   aliases?: string[];
@@ -20,6 +22,47 @@ export interface CitationMetadata {
   lookup: {
     tool: string;
     args: Record<string, string>;
+  };
+}
+
+export interface SourceCitationMetadata {
+  source_url?: string;
+  publisher: string;
+  license: string;
+  processing_authority: string;
+  processing_type: ProcessingType;
+}
+
+export interface CitationEnvelope {
+  _citation: SourceCitationMetadata;
+  _entity_citation: EntityCitationMetadata;
+}
+
+const ATTRIBUTION = {
+  publisher: 'narodne-novine.nn.hr',
+  license: 'HR-Statutory-PD-Conditional',
+  processing_authority: 'Ansvar',
+} as const;
+
+export function buildSourceCitation(
+  sourceUrl?: string | null,
+  processingType: ProcessingType = 'verbatim',
+): SourceCitationMetadata {
+  return {
+    ...(sourceUrl && { source_url: sourceUrl }),
+    ...ATTRIBUTION,
+    processing_type: processingType,
+  };
+}
+
+export function buildCitationEnvelope(
+  entityCitation: EntityCitationMetadata,
+  sourceUrl?: string | null,
+  processingType: ProcessingType = 'verbatim',
+): CitationEnvelope {
+  return {
+    _citation: buildSourceCitation(sourceUrl, processingType),
+    _entity_citation: entityCitation,
   };
 }
 
@@ -42,7 +85,7 @@ export function buildCitation(
   toolArgs: Record<string, string>,
   sourceUrl?: string | null,
   aliases?: string[],
-): CitationMetadata {
+): EntityCitationMetadata {
   return {
     canonical_ref: canonicalRef,
     display_text: displayText,
@@ -77,7 +120,7 @@ export function buildProvisionCitation(
   inputSection: string,
   sourceUrl?: string | null,
   shortName?: string | null,
-): CitationMetadata {
+): EntityCitationMetadata {
   // Build canonical_ref — detect common statute ID formats
   let canonicalRef: string;
   if (documentId.match(/^\d{4}:\d+$/)) {
@@ -137,7 +180,7 @@ export function buildRegulationCitation(
   toolArgs: Record<string, string>,
   authority?: string | null,
   sourceUrl?: string | null,
-): CitationMetadata {
+): EntityCitationMetadata {
   const canonicalRef = reference;
   const displayText = title || reference;
   const aliases: string[] = [];
