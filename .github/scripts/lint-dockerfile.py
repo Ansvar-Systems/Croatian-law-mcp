@@ -36,28 +36,33 @@ from pathlib import Path
 _NATIVE_DEPS: tuple[str, ...] = ("better-sqlite3",)
 
 
-def _detect_native_dep(repo_root: Path) -> str:
-    """Return the native dep name found in package.json, or '' if none.
+def _detect_native_dep(repo_root: Path) -> tuple[str, str]:
+    """Return (native_dep_name, manifest_section), or ('', '') if none.
 
-    Walks both `dependencies` and `devDependencies`. A repo without a
-    package.json sibling to the Dockerfile is treated as non-Node and
-    the gate skips.
+    manifest_section is "dependencies" (shipped to runtime) or
+    "devDependencies" (build-time only, excluded by `--omit=dev`). The
+    distinction matters because a build-time-only native dep with
+    `--omit=dev` in the runtime stage is not actually present in the
+    final image, so `--ignore-scripts` is moot.
+
+    A repo without a package.json sibling to the Dockerfile is treated
+    as non-Node and the gate skips.
     """
     pkg_path = repo_root / "package.json"
     if not pkg_path.is_file():
-        return ""
+        return "", ""
     try:
         manifest = json.loads(pkg_path.read_text())
     except (json.JSONDecodeError, OSError):
-        return ""
-    deps = {
-        **(manifest.get("dependencies") or {}),
-        **(manifest.get("devDependencies") or {}),
-    }
+        return "", ""
+    runtime_deps = manifest.get("dependencies") or {}
+    dev_deps = manifest.get("devDependencies") or {}
     for name in _NATIVE_DEPS:
-        if name in deps:
-            return name
-    return ""
+        if name in runtime_deps:
+            return name, "dependencies"
+        if name in dev_deps:
+            return name, "devDependencies"
+    return "", ""
 
 
 def _split_stages(dockerfile: str) -> list[tuple[str, str]]:
@@ -107,30 +112,44 @@ def lint(dockerfile_path: Path, repo_root: Path) -> list[str]:
     if not stages:
         return ["Dockerfile has no FROM directive"]
 
-    dep_name = _detect_native_dep(repo_root)
+    dep_name, dep_section = _detect_native_dep(repo_root)
     if not dep_name:
         # Pure-JS MCPs (no native bindings) are allowed single-stage with
         # `npm ci --ignore-scripts`. The regression doesn't apply.
         return issues
 
     if len(stages) < 2:
-        issues.append(
-            f"Dockerfile is single-stage but `{dep_name}` is a native dependency. "
-            f"Native bindings need a multi-stage build (builder + runtime). "
-            f"See docs/superpowers/specs/2026-04-25-mcp-infrastructure-standard-design.md §3.1.1."
-        )
-        # Without a builder stage there's nothing more to check.
+        # Single-stage is only unsafe when the dep ships to runtime. A
+        # devDeps-only native binding (e.g. better-sqlite3 for build:db)
+        # never reaches a `--omit=dev` runtime image.
+        if dep_section == "dependencies":
+            issues.append(
+                f"Dockerfile is single-stage but `{dep_name}` is a native runtime dependency. "
+                f"Native bindings need a multi-stage build (builder + runtime). "
+                f"See docs/superpowers/specs/2026-04-25-mcp-infrastructure-standard-design.md §3.1.1."
+            )
         return issues
 
     runtime_idx = _runtime_stage_index(stages)
     runtime_body = stages[runtime_idx][1]
-    if re.search(r"npm\s+ci\b[^\n]*--ignore-scripts", runtime_body):
+    runtime_omits_dev = bool(
+        re.search(r"npm\s+ci\b[^\n]*--omit[= ]dev", runtime_body)
+        or re.search(r"npm\s+ci\b[^\n]*--production\b", runtime_body)
+    )
+    # The native binding is only physically present in the runtime image
+    # when (a) it's a runtime dep OR (b) it's a devDep but runtime didn't
+    # opt to drop devDeps. Only in those cases does `--ignore-scripts`
+    # leave a broken binding behind.
+    dep_in_runtime_image = dep_section == "dependencies" or not runtime_omits_dev
+    if dep_in_runtime_image and re.search(r"npm\s+ci\b[^\n]*--ignore-scripts", runtime_body):
         issues.append(
             f"Runtime stage runs `npm ci --ignore-scripts` while `{dep_name}` is a "
-            f"native dependency. This strips the postinstall step that fetches or "
-            f"builds the native binding; every tool call then fails with `Could not "
-            f"locate the bindings file`. Fix: COPY node_modules from the builder "
-            f"stage instead of re-running npm ci. See spec §3.1.1."
+            f"native dependency present in the runtime image. This strips the "
+            f"postinstall step that fetches or builds the native binding; every "
+            f"tool call then fails with `Could not locate the bindings file`. "
+            f"Fix: COPY node_modules from the builder stage instead of re-running "
+            f"npm ci, OR add `--omit=dev` if the binding is only a devDep. "
+            f"See spec §3.1.1."
         )
 
     if dep_name == "better-sqlite3":
