@@ -25,6 +25,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
+          lfs: true  # data/database.db is LFS-tracked; without this, tests see the pointer and sqlite errors with SQLITE_NOTADB
 
       - uses: actions/setup-node@v4
         with:
