@@ -5,6 +5,12 @@
 import type Database from '@ansvar/mcp-sqlite';
 import { buildFtsQueryVariants, sanitizeFtsInput } from '../utils/fts-query.js';
 import { resolveDocumentId } from '../utils/statute-id.js';
+import {
+  buildCitationEnvelope,
+  buildProvisionCitation,
+  type EntityCitationMetadata,
+  type SourceCitationMetadata,
+} from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface BuildLegalStanceInput {
@@ -21,6 +27,9 @@ export interface LegalStanceResult {
   title: string | null;
   snippet: string;
   relevance: number;
+  url?: string;
+  _citation?: SourceCitationMetadata;
+  _entity_citation?: EntityCitationMetadata;
 }
 
 export async function buildLegalStance(
@@ -60,6 +69,7 @@ export async function buildLegalStance(
         lp.provision_ref,
         lp.section,
         lp.title,
+        ld.url,
         snippet(provisions_fts, 0, '>>>', '<<<', '...', 48) as snippet,
         bm25(provisions_fts) as relevance
       FROM provisions_fts
@@ -83,7 +93,7 @@ export async function buildLegalStance(
         queryStrategy = ftsQuery === queryVariants[0] ? 'exact' : 'fallback';
         const deduped = deduplicateResults(rows, limit);
         return {
-          results: deduped,
+          results: attachCitations(deduped),
           _metadata: {
             ...generateResponseMetadata(db),
             ...(queryStrategy === 'fallback' ? { query_strategy: 'broadened' } : {}),
@@ -116,4 +126,23 @@ function deduplicateResults(
     if (deduped.length >= limit) break;
   }
   return deduped;
+}
+
+function attachCitations(rows: LegalStanceResult[]): LegalStanceResult[] {
+  return rows.map((row) => ({
+    ...row,
+    ...buildCitationEnvelope(
+      buildProvisionCitation(
+        row.document_id,
+        row.document_title,
+        row.provision_ref,
+        row.document_id,
+        row.provision_ref.replace(/^s/, ''),
+        row.url ?? null,
+        null,
+      ),
+      row.url ?? null,
+      'fts-index',
+    ),
+  }));
 }

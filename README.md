@@ -1,8 +1,54 @@
 # Croatian Law MCP Server
 
+<!-- ANSVAR-CTA-BEGIN -->
+> ### ▶ Try this MCP instantly via Ansvar Gateway
+> **50 free queries/day · no card required · OAuth signup at [ansvar.eu/gateway](https://ansvar.eu/gateway)**
+>
+> One endpoint, one OAuth signup, access from any MCP-compatible client.
+
+### Connect
+
+**Claude Code** (one line):
+
+```bash
+claude mcp add ansvar --transport http https://gateway.ansvar.eu/mcp
+```
+
+**Claude Desktop / Cursor** — add to `claude_desktop_config.json` (or `mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "ansvar": {
+      "type": "url",
+      "url": "https://gateway.ansvar.eu/mcp"
+    }
+  }
+}
+```
+
+**Claude.ai** — Settings → Connectors → Add custom connector → paste `https://gateway.ansvar.eu/mcp`
+
+First request opens an OAuth flow at [ansvar.eu/gateway](https://ansvar.eu/gateway). After signup, your client is bound to your account; tier (free / premium / team / company) determines fan-out, quota, and which downstream MCPs are reachable.
+
+---
+
+## Self-host this MCP
+
+You can also clone this repo and build the corpus yourself. The schema,
+fetcher, and tool implementations all live here. What is not in the repo is
+the pre-built database — TDM and standards-licensing constraints on the
+upstream sources mean we host the corpus on Ansvar infrastructure rather
+than redistribute it as a public artifact.
+
+Build your own: run this repo's ingestion script (entry-point varies per
+repo — typically `scripts/ingest.sh`, `npm run ingest`, or `make ingest`;
+check the repo root).
+<!-- ANSVAR-CTA-END -->
+
+
 **The NN (Narodne novine) alternative for the AI age.**
 
-[![npm version](https://badge.fury.io/js/@ansvar%2Fcroatian-law-mcp.svg)](https://www.npmjs.com/package/@ansvar/croatian-law-mcp)
 [![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![GitHub stars](https://img.shields.io/github/stars/Ansvar-Systems/croatian-law-mcp?style=social)](https://github.com/Ansvar-Systems/croatian-law-mcp)
@@ -32,82 +78,6 @@ Croatian legal research means navigating Narodne novine, zakon.hr, and EUR-Lex f
 This MCP server makes Croatian law **searchable, cross-referenceable, and AI-readable**.
 
 ---
-
-## Quick Start
-
-### Use Remotely (No Install Needed)
-
-> Connect directly to the hosted version -- zero dependencies, nothing to install.
-
-**Endpoint:** `https://mcp.ansvar.eu/law-hr/mcp`
-
-| Client | How to Connect |
-|--------|---------------|
-| **Claude.ai** | Settings > Connectors > Add Integration > paste URL |
-| **Claude Code** | `claude mcp add croatian-law --transport http https://mcp.ansvar.eu/law-hr/mcp` |
-| **Claude Desktop** | Add to config (see below) |
-| **GitHub Copilot** | Add to VS Code settings (see below) |
-
-**Claude Desktop** -- add to `claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "croatian-law": {
-      "type": "url",
-      "url": "https://mcp.ansvar.eu/law-hr/mcp"
-    }
-  }
-}
-```
-
-**GitHub Copilot** -- add to VS Code `settings.json`:
-
-```json
-{
-  "github.copilot.chat.mcp.servers": {
-    "croatian-law": {
-      "type": "http",
-      "url": "https://mcp.ansvar.eu/law-hr/mcp"
-    }
-  }
-}
-```
-
-### Use Locally (npm)
-
-```bash
-npx @ansvar/croatian-law-mcp
-```
-
-**Claude Desktop** -- add to `claude_desktop_config.json`:
-
-**macOS:** `~/Library/Application Support/Claude/claude_desktop_config.json`
-**Windows:** `%APPDATA%\Claude\claude_desktop_config.json`
-
-```json
-{
-  "mcpServers": {
-    "croatian-law": {
-      "command": "npx",
-      "args": ["-y", "@ansvar/croatian-law-mcp"]
-    }
-  }
-}
-```
-
-**Cursor / VS Code:**
-
-```json
-{
-  "mcp.servers": {
-    "croatian-law": {
-      "command": "npx",
-      "args": ["-y", "@ansvar/croatian-law-mcp"]
-    }
-  }
-}
-```
 
 ## Example Queries
 
@@ -245,9 +215,10 @@ All content is sourced from authoritative Croatian legal databases:
 | **Coverage** | All national Croatian legislation; EU regulations apply directly |
 | **Source** | narodne-novine.nn.hr, zakon.hr |
 
-### Automated Freshness Checks
+### Freshness Checks
 
-A [GitHub Actions workflow](.github/workflows/check-updates.yml) monitors Narodne novine for changes:
+Freshness tooling is available under `scripts/check-updates.ts` and `scripts/drift-detect.ts`.
+This curated release does not currently wire those checks to a scheduled GitHub Actions workflow.
 
 | Check | Method |
 |-------|--------|
@@ -336,23 +307,9 @@ npm run drift:detect              # Run drift detection against anchors
 
 ---
 
-## Related Projects: Complete Compliance Suite
+## More Ansvar MCPs
 
-This server is part of **Ansvar's Compliance Suite** -- MCP servers that work together for end-to-end compliance coverage:
-
-### [@ansvar/eu-regulations-mcp](https://github.com/Ansvar-Systems/EU_compliance_MCP)
-**Query 49 EU regulations directly from Claude** -- GDPR, AI Act, DORA, NIS2, MiFID II, eIDAS, and more. `npx @ansvar/eu-regulations-mcp`
-
-### [@ansvar/slovenian-law-mcp](https://github.com/Ansvar-Systems/Slovenian-law-mcp)
-**Query Slovenian legislation** -- neighbour state, similar legal system. `npx @ansvar/slovenian-law-mcp`
-
-### [@ansvar/security-controls-mcp](https://github.com/Ansvar-Systems/security-controls-mcp)
-**Query 261 security frameworks** -- ISO 27001, NIST CSF, SOC 2, CIS Controls, SCF, and more. `npx @ansvar/security-controls-mcp`
-
-**70+ national law MCPs** covering Austria, Belgium, Czech Republic, Denmark, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, and more.
-
----
-
+Full fleet at [ansvar.eu/gateway](https://ansvar.eu/gateway).
 ## Contributing
 
 Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
@@ -371,9 +328,8 @@ Priority areas:
 - [x] Full corpus ingestion (4,531 statutes, 157,667 provisions)
 - [x] EU law integration tools
 - [x] Vercel Streamable HTTP deployment
-- [x] npm package publication
+
 - [ ] Court case law expansion (Vrhovni sud, Ustavni sud)
-- [ ] Full EU text integration (via @ansvar/eu-regulations-mcp)
 - [ ] Lower court coverage (Županijski, Općinski archives)
 - [ ] Historical statute versions (amendment tracking)
 - [ ] Web API for programmatic access
@@ -402,8 +358,36 @@ Apache License 2.0. See [LICENSE](./LICENSE) for details.
 
 ### Data Licenses
 
-- **Statutes & Legislation:** Narodne novine d.d. (public domain government works)
-- **EU Metadata:** EUR-Lex (EU public domain)
+Ansvar attribution code: **`HR-Statutory-PD-Conditional`**. Basis: ZASP
+(`Zakon o autorskom pravu i srodnim pravima`) Art. 18(3) — a
+**CONDITIONAL** statutory-PD carve-out.
+
+- **Statutes & Legislation:** Narodne novine d.d. via
+  `narodne-novine.nn.hr`. Reused under ZASP Art. 18(3) — for texts that
+  have crossed a triggering event.
+- **EU Metadata:** EUR-Lex (EU public-domain notice).
+
+### Coverage scope (CONDITIONAL — trigger requirement)
+
+Croatian ZASP Art. 18(3) is **CONDITIONAL** and structurally different
+from the broad statutory-PD carve-outs in other jurisdictions.
+
+- **Default state:** all works (including draft legislative texts) are
+  protected by copyright from the moment of creation.
+- **Trigger required:** protection is lost only when one of three
+  triggering events occurs:
+  1. The work is submitted to an official procedure (e.g. legislative
+     procedure in the Sabor).
+  2. The work is disclosed under public-information rules.
+  3. The work is published in Narodne novine (the official gazette).
+- **Practical implication for this MCP:** ingestion MUST restrict to
+  post-trigger texts — typically, the version published in Narodne
+  novine — NOT to working drafts, internal ministerial preparatory
+  materials, or pre-submission committee drafts. Those remain protected.
+
+See `docs/audits/2026-05-17-eu-copyright-statutory-works-batch-3-BG-HR-SK-SI-SE.md`
+in the Ansvar architecture-documentation repo for the verbatim Art. 18(3)
+text and the conditional-trigger analysis.
 
 ---
 

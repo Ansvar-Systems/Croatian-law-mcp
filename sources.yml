@@ -8,14 +8,22 @@ sources:
     official_portal: "https://narodne-novine.nn.hr"
     retrieval_method: "API + HTML_SCRAPE"
     update_frequency: "continuous"
-    last_ingested: "2026-02-21"
+    last_ingested: "2026-02-26"
     license_or_terms:
-      type: "government_terms"
+      type: "HR-Statutory-PD-Conditional"
+      ansvar_code: "HR-Statutory-PD-Conditional"
+      statute_ref: "ZASP Art. 18(3)"
       url: "https://narodne-novine.nn.hr/data_access_hr.aspx"
-      summary: "Content is publicly accessible for browsing and machine access; usage is subject to Narodne novine terms."
+      url_pattern: '^https?://(?:www\.)?narodne-novine\.nn\.hr/.+'
+      conditional: true
+      triggering_events:
+        - "submission to official procedure (e.g. legislative procedure)"
+        - "public-information disclosure"
+        - "publication in Narodne novine (the official gazette)"
+      summary: "Croatian statutory-PD carve-out per ZASP Art. 18(3) — CONDITIONAL. Works are protected by copyright from creation, and lose protection only at one of three triggering events: submission to official procedure, public-information disclosure, or publication in Narodne novine. Pre-trigger drafts remain protected. Ingestion MUST restrict to post-trigger texts (i.e. texts as published in Narodne novine), NOT working drafts. See infrastructure/attribution-licenses.json HR-Statutory-PD-Conditional."
     coverage:
-      scope: "Official and international legislation pages with ELI metadata and HTML representations"
-      limitations: "This ingestion covers a curated set of 10 statutes relevant to digital regulation and cyber/compliance practice."
+      scope: "Official and international legislation pages with ELI metadata and HTML representations. The census contains 4,763 records: 4,529 ingestable laws and 234 correction notices."
+      limitations: "Correction notices are tracked in the census but are not treated as standalone ingestable laws. Freshness depends on the scheduled check-updates and drift-detect workflows."
     languages:
       - "hr"
       - "en"
@@ -23,4 +31,4 @@ sources:
 data_freshness:
   automated_checks: true
   check_frequency: "weekly"
-  last_verified: "2026-02-21"
+  last_verified: "2026-02-26"
