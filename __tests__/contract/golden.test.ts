@@ -33,7 +33,7 @@ interface ContractFile {
 interface ToolResponse {
   results?: unknown;
   _metadata?: unknown;
-  _citation?: { source_url?: string };
+  _citation?: { source_url?: string; publisher?: string; license?: string };
 }
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -94,6 +94,15 @@ function getTextCarrier(item: unknown): string {
   return '';
 }
 
+function expectAttribution(item: unknown): void {
+  expect(item && typeof item === 'object').toBe(true);
+  const citation = (item as Record<string, unknown>)._citation as Record<string, unknown> | undefined;
+  expect(citation).toBeDefined();
+  expect(citation?.source_url).toEqual(expect.stringMatching(/^https?:\/\/(?:www\.)?narodne-novine\.nn\.hr\//));
+  expect(citation?.publisher).toBe('narodne-novine.nn.hr');
+  expect(citation?.license).toBe('HR-Statutory-PD-Conditional');
+}
+
 describe('golden contract fixtures', () => {
   for (const testCase of contract.tests) {
     it(`${testCase.id}: ${testCase.description}`, async () => {
@@ -107,6 +116,9 @@ describe('golden contract fixtures', () => {
 
       if (assertions.result_not_empty) {
         expect(items.length).toBeGreaterThan(0);
+        for (const item of items.slice(0, 3)) {
+          expectAttribution(item);
+        }
       }
 
       if (typeof assertions.min_results === 'number') {
@@ -138,6 +150,11 @@ describe('golden contract fixtures', () => {
         const pattern = new RegExp(assertions.citation_url_pattern);
         const urls = [
           response._citation?.source_url,
+          ...items.map((item) =>
+            item && typeof item === 'object'
+              ? ((item as Record<string, unknown>)._citation as { source_url?: string } | undefined)?.source_url
+              : undefined,
+          ),
           ...items.map((item) =>
             item && typeof item === 'object' ? (item as Record<string, unknown>).url : undefined,
           ),

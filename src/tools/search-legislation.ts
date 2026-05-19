@@ -6,6 +6,7 @@ import type Database from '@ansvar/mcp-sqlite';
 import { buildFtsQueryVariants, buildLikePattern, sanitizeFtsInput } from '../utils/fts-query.js';
 import { normalizeAsOfDate } from '../utils/as-of-date.js';
 import { resolveDocumentId } from '../utils/statute-id.js';
+import { buildProvisionCitation, type CitationMetadata } from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface SearchLegislationInput {
@@ -25,6 +26,8 @@ export interface SearchLegislationResult {
   title: string | null;
   snippet: string;
   relevance: number;
+  url?: string;
+  _citation?: CitationMetadata;
 }
 
 const DEFAULT_LIMIT = 10;
@@ -69,6 +72,7 @@ export async function searchLegislation(
         lp.chapter,
         lp.section,
         lp.title,
+        ld.url,
         snippet(provisions_fts, 0, '>>>', '<<<', '...', 32) as snippet,
         bm25(provisions_fts) as relevance
       FROM provisions_fts
@@ -97,7 +101,7 @@ export async function searchLegislation(
         queryStrategy = ftsQuery === queryVariants[0] ? 'exact' : 'fallback';
         const deduped = deduplicateResults(rows, limit);
         return {
-          results: deduped,
+          results: attachCitations(deduped),
           _metadata: {
             ...generateResponseMetadata(db),
             ...(queryStrategy === 'fallback' ? { query_strategy: 'broadened' } : {}),
@@ -121,6 +125,7 @@ export async function searchLegislation(
         lp.chapter,
         lp.section,
         lp.title,
+        ld.url,
         substr(lp.content, 1, 200) as snippet,
         0 as relevance
       FROM legal_provisions lp
@@ -146,7 +151,7 @@ export async function searchLegislation(
       const rows = db.prepare(likeSql).all(...likeParams) as SearchLegislationResult[];
       if (rows.length > 0) {
         return {
-          results: deduplicateResults(rows, limit),
+          results: attachCitations(deduplicateResults(rows, limit)),
           _metadata: {
             ...generateResponseMetadata(db),
             query_strategy: 'like_fallback',
@@ -180,4 +185,19 @@ function deduplicateResults(
     if (deduped.length >= limit) break;
   }
   return deduped;
+}
+
+function attachCitations(rows: SearchLegislationResult[]): SearchLegislationResult[] {
+  return rows.map((row) => ({
+    ...row,
+    _citation: buildProvisionCitation(
+      row.document_id,
+      row.document_title,
+      row.provision_ref,
+      row.document_id,
+      row.provision_ref.replace(/^s/, ''),
+      row.url ?? null,
+      null,
+    ),
+  }));
 }

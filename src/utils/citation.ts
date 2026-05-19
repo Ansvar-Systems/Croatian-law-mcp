@@ -17,11 +17,22 @@ export interface CitationMetadata {
   display_text: string;
   aliases?: string[];
   source_url?: string;
+  publisher: string;
+  license: string;
+  processing_authority: string;
+  processing_type: string;
   lookup: {
     tool: string;
     args: Record<string, string>;
   };
 }
+
+const ATTRIBUTION = {
+  publisher: 'narodne-novine.nn.hr',
+  license: 'HR-Statutory-PD-Conditional',
+  processing_authority: 'Ansvar',
+  processing_type: 'fts-index',
+} as const;
 
 /**
  * Build citation metadata for any retrieval tool response.
@@ -48,6 +59,7 @@ export function buildCitation(
     display_text: displayText,
     ...(aliases && aliases.length > 0 && { aliases }),
     ...(sourceUrl && { source_url: sourceUrl }),
+    ...ATTRIBUTION,
     lookup: {
       tool: toolName,
       args: toolArgs,
@@ -113,6 +125,7 @@ export function buildProvisionCitation(
     display_text: displayText,
     ...(aliases.length > 0 && { aliases }),
     ...(sourceUrl && { source_url: sourceUrl }),
+    ...ATTRIBUTION,
     lookup: {
       tool: 'get_provision',
       args: { document_id: inputDocId, section: inputSection },
@@ -148,6 +161,7 @@ export function buildRegulationCitation(
     display_text: displayText,
     ...(aliases.length > 0 && { aliases }),
     ...(sourceUrl && { source_url: sourceUrl }),
+    ...ATTRIBUTION,
     lookup: { tool: toolName, args: toolArgs },
   };
 }

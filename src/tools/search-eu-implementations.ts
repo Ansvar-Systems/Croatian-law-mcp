@@ -3,6 +3,7 @@
  */
 
 import type Database from '@ansvar/mcp-sqlite';
+import { buildCitation, type CitationMetadata } from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface SearchEUImplementationsInput {
@@ -22,6 +23,8 @@ export interface EUImplementationSearchResult {
   title: string | null;
   short_name: string | null;
   croatian_statute_count: number;
+  source_url?: string;
+  _citation?: CitationMetadata;
 }
 
 export async function searchEUImplementations(
@@ -50,9 +53,11 @@ export async function searchEUImplementations(
       ed.number,
       ed.title,
       ed.short_name,
+      MIN(ld.url) as source_url,
       COUNT(DISTINCT er.document_id) as croatian_statute_count
     FROM eu_documents ed
     LEFT JOIN eu_references er ON er.eu_document_id = ed.id
+    LEFT JOIN legal_documents ld ON ld.id = er.document_id
     WHERE 1=1
   `;
   const params: (string | number)[] = [];
@@ -87,5 +92,20 @@ export async function searchEUImplementations(
   params.push(limit);
 
   const rows = db.prepare(sql).all(...params) as EUImplementationSearchResult[];
-  return { results: rows, _metadata: generateResponseMetadata(db) };
+  return {
+    results: rows.map((row) => ({
+      ...row,
+      _citation: buildCitation(
+        row.eu_document_id,
+        row.title ?? row.short_name ?? row.eu_document_id,
+        'search_eu_implementations',
+        {
+          ...(input.query ? { query: input.query } : {}),
+          ...(input.type ? { type: input.type } : {}),
+        },
+        row.source_url ?? null,
+      ),
+    })),
+    _metadata: generateResponseMetadata(db),
+  };
 }

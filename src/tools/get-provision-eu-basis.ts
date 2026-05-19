@@ -4,6 +4,7 @@
 
 import type Database from '@ansvar/mcp-sqlite';
 import { resolveDocumentId } from '../utils/statute-id.js';
+import { buildProvisionCitation, type CitationMetadata } from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface GetProvisionEUBasisInput {
@@ -19,6 +20,8 @@ export interface ProvisionEUBasisResult {
   reference_type: string;
   reference_context: string | null;
   full_citation: string | null;
+  source_url?: string;
+  _citation?: CitationMetadata;
 }
 
 export async function getProvisionEUBasis(
@@ -29,6 +32,10 @@ export async function getProvisionEUBasis(
   if (!resolvedId) {
     return { results: [], _metadata: generateResponseMetadata(db) };
   }
+
+  const docRow = db.prepare(
+    'SELECT title, url FROM legal_documents WHERE id = ?'
+  ).get(resolvedId) as { title: string; url: string | null } | undefined;
 
   try {
     db.prepare('SELECT 1 FROM eu_references LIMIT 1').get();
@@ -67,5 +74,22 @@ export async function getProvisionEUBasis(
     ORDER BY er.reference_type, er.eu_document_id
   `).all(provision.id) as ProvisionEUBasisResult[];
 
-  return { results: rows, _metadata: generateResponseMetadata(db) };
+  const citation = buildProvisionCitation(
+    resolvedId,
+    docRow?.title ?? resolvedId,
+    input.provision_ref,
+    input.document_id,
+    input.provision_ref,
+    docRow?.url ?? null,
+    null,
+  );
+
+  return {
+    results: rows.map((row) => ({
+      ...row,
+      source_url: docRow?.url ?? undefined,
+      _citation: citation,
+    })),
+    _metadata: generateResponseMetadata(db),
+  };
 }

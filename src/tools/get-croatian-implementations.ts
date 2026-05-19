@@ -3,6 +3,7 @@
  */
 
 import type Database from '@ansvar/mcp-sqlite';
+import { buildCitation, type CitationMetadata } from '../utils/citation.js';
 import { generateResponseMetadata, type ToolResponse } from '../utils/metadata.js';
 
 export interface GetCroatianImplementationsInput {
@@ -19,6 +20,8 @@ export interface CroatianImplementationResult {
   implementation_status: string | null;
   is_primary: boolean;
   reference_count: number;
+  source_url?: string;
+  _citation?: CitationMetadata;
 }
 
 export async function getCroatianImplementations(
@@ -41,6 +44,7 @@ export async function getCroatianImplementations(
     SELECT
       ld.id as document_id,
       ld.title as document_title,
+      ld.url as source_url,
       ld.status,
       er.reference_type,
       MAX(er.implementation_status) as implementation_status,
@@ -63,5 +67,17 @@ export async function getCroatianImplementations(
   sql += ' GROUP BY ld.id, er.reference_type ORDER BY is_primary DESC, reference_count DESC';
 
   const rows = db.prepare(sql).all(...params) as CroatianImplementationResult[];
-  return { results: rows, _metadata: generateResponseMetadata(db) };
+  return {
+    results: rows.map((row) => ({
+      ...row,
+      _citation: buildCitation(
+        `${input.eu_document_id} implemented by ${row.document_id}`,
+        `${row.document_title} references ${input.eu_document_id}`,
+        'get_croatian_implementations',
+        { eu_document_id: input.eu_document_id },
+        row.source_url ?? null,
+      ),
+    })),
+    _metadata: generateResponseMetadata(db),
+  };
 }
